@@ -7,26 +7,18 @@ const SLIDES = [
   {
     src: "/images/hidamari.jpg",
     alt: "hidamari — COSMO sashiko thread",
-    title: "COSMO Embroidery",
-    sub: "by LECIEN Corporation — crafted in Japan since 1933",
   },
   {
     src: "/images/nishikiito.jpg",
     alt: "nishikiito — Japanese gold thread",
-    title: "nishikiito",
-    sub: "Made in Japan thread with Kyoto gold thread technique",
   },
   {
     src: "/images/kits.jpg",
     alt: "Embroidery Kits",
-    title: "Embroidery Kits",
-    sub: "Complete kits for all skill levels",
   },
   {
     src: "/images/100-ladies.jpg",
     alt: "100 Ladies Embroidery Series",
-    title: "100 Ladies",
-    sub: "The beloved embroidery series",
   },
 ];
 
@@ -76,10 +68,7 @@ export default function HeroSlider() {
             style={{ objectFit: "cover", objectPosition: "center" }}
           />
           <div className="hero-overlay" />
-          <div className="hero-content">
-            <h1>{slide.title}</h1>
-            <p>{slide.sub}</p>
-          </div>
+          <div className="hero-content"></div>
         </div>
       ))}
 
