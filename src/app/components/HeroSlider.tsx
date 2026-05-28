@@ -49,6 +49,7 @@ export default function HeroSlider() {
   }, []);
 
   useEffect(() => {
+    console.log("Current slide:", current);
     if (paused) return;
     const id = setInterval(next, INTERVAL);
     return () => clearInterval(id);
