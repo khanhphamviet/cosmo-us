@@ -143,6 +143,14 @@ export default function RootLayout({
                     <li><Link href="/company">Company Profile</Link></li>
                   </ul>
                 </div>
+                <div className="footer-col">
+                  <h3>Legal</h3>
+                  <ul>
+                    <li><Link href="/terms">Terms &amp; Conditions</Link></li>
+                    <li><Link href="/returns">Return Policy</Link></li>
+                    <li><Link href="/privacy">Privacy Policy</Link></li>
+                  </ul>
+                </div>
               </nav>
               <div className="footer-social">
                 <h3 style={{fontSize:"10px",letterSpacing:".1em",textTransform:"uppercase",color:"#999",margin:"0 0 12px",fontWeight:400}}>Social</h3>
@@ -165,6 +173,11 @@ export default function RootLayout({
                 COSMO is a trademark of LECIEN Corporation.<br />
                 The seller of record for products sold in the United States is TANAAKK INC.
               </p>
+              <nav style={{display:"flex",justifyContent:"center",gap:"20px",flexWrap:"wrap",marginBottom:"16px"}}>
+                <Link href="/terms"   style={{fontSize:"11px",color:"#666",letterSpacing:".04em"}}>Terms &amp; Conditions</Link>
+                <Link href="/returns" style={{fontSize:"11px",color:"#666",letterSpacing:".04em"}}>Return Policy</Link>
+                <Link href="/privacy" style={{fontSize:"11px",color:"#666",letterSpacing:".04em"}}>Privacy Policy</Link>
+              </nav>
               <p className="footer-copy">
                 &copy; {new Date().getFullYear()} LECIEN Corporation. All rights reserved.
               </p>

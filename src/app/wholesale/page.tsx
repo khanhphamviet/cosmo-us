@@ -49,6 +49,18 @@ export default function WholesalePage() {
         </p>
 
         <div className="wholesale-box">
+          <h2>Order on Faire</h2>
+          <p>
+            COSMO Embroidery products are available for wholesale through Faire.
+            Browse our full catalog, place orders, and manage your account directly
+            on the Faire platform — operated by TANAAKK INC.
+          </p>
+          <Link href="/faire" className="btn-solid" style={{marginBottom:"12px"}}>
+            Buy on Faire
+          </Link>
+        </div>
+
+        <div className="wholesale-box" style={{marginTop:"24px",background:"#f9f9f9",border:"1px solid #e8e8e8"}}>
           <h2>Wholesale Inquiry</h2>
           <p>
             For pricing, minimum order quantities, and account setup, please contact
@@ -57,6 +69,7 @@ export default function WholesalePage() {
           <a
             href="mailto:support@lecien.com"
             className="btn-solid"
+            style={{background:"transparent",color:"#333",border:"1px solid #333"}}
           >
             Contact Us
           </a>

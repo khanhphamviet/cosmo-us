@@ -249,7 +249,8 @@ img { display: block; max-width: 100%; height: auto; }
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 32px;
 }
-.card { display: block; text-align: center; }
+.card { display: flex; flex-direction: column; text-align: center; height: 100%; }
+.card .btn-solid { margin-top: auto; align-self: flex-start; }
 .card-thumb {
   position: relative;       /* needed for Next.js Image fill */
   width: 100%;

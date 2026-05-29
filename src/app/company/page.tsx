@@ -27,6 +27,16 @@ export const metadata: Metadata = {
 export default function CompanyPage() {
   return (
     <>
+      <nav className="sub-nav">
+        <div className="sub-nav-inner">
+          <Link href="/">TOP</Link>
+          <Link href="/floss">Floss</Link>
+          <Link href="/freepatterns">Free Patterns</Link>
+          <Link href="/wholesale">Wholesale</Link>
+          <Link href="/company" className="active">Company</Link>
+        </div>
+      </nav>
+
       <div className="page-hero">
         <div className="breadcrumb">
           <Link href="/">HOME</Link> / Company

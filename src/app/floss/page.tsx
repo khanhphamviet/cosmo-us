@@ -67,17 +67,33 @@ export default function FlossPage() {
         <div className="card-grid">
           {FLOSSES.map((f) => (
             <div key={f.id} id={f.id} className="card" style={{textAlign:"left"}}>
-              <div className="card-thumb" style={{position:"relative"}}>
-                <Image
-                  src={f.img}
-                  alt={f.title}
-                  fill
-                  sizes="(max-width:640px) 50vw, (max-width:900px) 33vw, 25vw"
-                  style={{ objectFit: "cover" }}
-                />
+              <Link href={`/floss/${f.id}`} style={{display:"block"}}>
+                <div className="card-thumb" style={{position:"relative"}}>
+                  <Image
+                    src={f.img}
+                    alt={f.title}
+                    fill
+                    sizes="(max-width:640px) 50vw, (max-width:900px) 33vw, 25vw"
+                    style={{ objectFit: "cover" }}
+                  />
+                </div>
+                <h3 style={{textAlign:"left"}}>{f.title}</h3>
+                <p>{f.desc}</p>
+              </Link>
+              <div style={{display:"flex",gap:"8px",flexWrap:"wrap",marginTop:"auto",paddingTop:"16px"}}>
+                <Link href={`/floss/${f.id}`} className="btn-outline" style={{fontSize:"11px",padding:"7px 14px"}}>
+                  Details
+                </Link>
+                <a
+                  href="https://khazhjp.myshopify.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-solid"
+                  style={{fontSize:"11px",padding:"7px 14px"}}
+                >
+                  Shop Now
+                </a>
               </div>
-              <h3 style={{textAlign:"left"}}>{f.title}</h3>
-              <p>{f.desc}</p>
             </div>
           ))}
         </div>
