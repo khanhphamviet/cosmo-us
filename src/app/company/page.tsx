@@ -33,7 +33,9 @@ export default function CompanyPage() {
           <Link href="/floss">Floss</Link>
           <Link href="/freepatterns">Free Patterns</Link>
           <Link href="/wholesale">Wholesale</Link>
-          <Link href="/company" className="active">Company</Link>
+          <Link href="/company" className="active">
+            Company
+          </Link>
         </div>
       </nav>
 
@@ -45,14 +47,20 @@ export default function CompanyPage() {
       </div>
 
       <div className="page-container">
-
         {/* ── LAYER 1: TANAAKK INC (US Seller of Record) ── */}
         <div className="company-block">
           <h2>About TANAAKK INC (US Seller of Record)</h2>
-          <p style={{fontSize:"14px",color:"#444",lineHeight:1.8,marginBottom:"24px"}}>
-            TANAAKK INC is the exclusive Seller of Record for COSMO embroidery products
-            sold in the United States. All purchases, sales contracts, and customer
-            relationships in the US are conducted by TANAAKK INC.
+          <p
+            style={{
+              fontSize: "14px",
+              color: "#444",
+              lineHeight: 1.8,
+              marginBottom: "24px",
+            }}
+          >
+            TANAAKK INC is the exclusive Seller of Record for COSMO embroidery
+            products sold in the United States. All purchases, sales contracts,
+            and customer relationships in the US are conducted by TANAAKK INC.
           </p>
           <table className="company-table">
             <tbody>
@@ -66,26 +74,35 @@ export default function CompanyPage() {
               </tr>
               <tr>
                 <th>Role</th>
-                <td>Seller of Record for COSMO products sold in the United States</td>
+                <td>
+                  Seller of Record for COSMO products sold in the United States
+                </td>
               </tr>
               <tr>
                 <th>US Support</th>
-                <td><a href="mailto:support@lecien.com">support@lecien.com</a></td>
+                <td>
+                  <a href="mailto:support@lecien.com">support@lecien.com</a>
+                </td>
               </tr>
             </tbody>
           </table>
-          <p className="company-note">
-            * US address, directors, and additional company details to be updated by Furuya.
-          </p>
         </div>
 
         {/* ── LAYER 2: LECIEN Corporation (Brand Owner) ── */}
         <div className="company-block">
           <h2>About LECIEN Corporation (Brand Owner)</h2>
-          <p style={{fontSize:"14px",color:"#444",lineHeight:1.8,marginBottom:"24px"}}>
-            LECIEN Corporation is the manufacturer and brand owner of COSMO embroidery
-            products. Honoring the rich lace-making traditions born in Europe, LECIEN
-            integrates the aesthetic of Kyoto to create its brands.
+          <p
+            style={{
+              fontSize: "14px",
+              color: "#444",
+              lineHeight: 1.8,
+              marginBottom: "24px",
+            }}
+          >
+            LECIEN Corporation is the manufacturer and brand owner of COSMO
+            embroidery products. Honoring the rich lace-making traditions born
+            in Europe, LECIEN integrates the aesthetic of Kyoto to create its
+            brands.
           </p>
           <table className="company-table">
             <tbody>
@@ -104,16 +121,20 @@ export default function CompanyPage() {
               <tr>
                 <th>Registered Office</th>
                 <td>
-                  Wacoal Kyoto Bldg., 103 Shichijo Goshonouchi Minami-machi,<br />
+                  Wacoal Kyoto Bldg., 103 Shichijo Goshonouchi Minami-machi,
+                  <br />
                   Shimogyo-ku, Kyoto 600-8864 Japan
                 </td>
               </tr>
               <tr>
                 <th>Business Office</th>
                 <td>
-                  [Kyoto office]<br />
-                  Wacoal Kyoto Bldg., 103 Shichijo Goshonouchi Minami-machi,<br />
-                  Shimogyo-ku, Kyoto 600-8864 Japan<br />
+                  [Kyoto office]
+                  <br />
+                  Wacoal Kyoto Bldg., 103 Shichijo Goshonouchi Minami-machi,
+                  <br />
+                  Shimogyo-ku, Kyoto 600-8864 Japan
+                  <br />
                   TEL +81-50-3188-4870
                 </td>
               </tr>
@@ -151,15 +172,16 @@ export default function CompanyPage() {
               <tr>
                 <th>Group Companies</th>
                 <td>
-                  LECIEN (VIETNAM) CO., LTD.<br />
-                  Lecien (Cambodia) Corporation<br />
+                  LECIEN (VIETNAM) CO., LTD.
+                  <br />
+                  Lecien (Cambodia) Corporation
+                  <br />
                   Shanghai Lecien Co., Ltd.
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-
       </div>
     </>
   );
