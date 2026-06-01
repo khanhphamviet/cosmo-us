@@ -2,6 +2,7 @@
 // Super Delivery section intentionally removed for US store
 
 import Link from "next/link";
+import { SHOPIFY_URL, SHOPIFY_ENABLED } from "@/config";
 import Image from "next/image";
 import HeroSlider from "./components/HeroSlider";
 
@@ -57,14 +58,20 @@ export default function Home() {
           </div>
           <div className="view-more" style={{display:"flex",gap:"12px",justifyContent:"center",flexWrap:"wrap"}}>
             <Link href="/floss" className="btn-outline">VIEW MORE</Link>
-            <a
-              href="https://khazhjp.myshopify.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-solid"
-            >
-              Shop All Floss
-            </a>
+            {SHOPIFY_ENABLED ? (
+              <a
+                href={SHOPIFY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-solid"
+              >
+                Shop All Floss
+              </a>
+            ) : (
+              <span className="btn-solid" style={{ opacity: 0.4, cursor: "not-allowed" }}>
+                Shop All Floss
+              </span>
+            )}
           </div>
         </div>
       </section>
