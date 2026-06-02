@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Faire Wholesale — Coming Soon",
-  description: "COSMO Embroidery wholesale on Faire — coming soon. Operated by TANAAKK INC.",
+  title: "Faire Wholesale — COSMO Embroidery",
+  description: "COSMO Embroidery wholesale on Faire. Operated by TANAAKK INC.",
   alternates: { canonical: "/faire" },
 };
 
@@ -44,7 +44,7 @@ export default function FairePage() {
             lineHeight: 1.2,
           }}
         >
-          Coming Soon
+          COSMO Embroidery on Faire
         </h1>
 
         <p
@@ -56,18 +56,15 @@ export default function FairePage() {
             marginBottom: "48px",
           }}
         >
-          COSMO Embroidery wholesale on Faire is launching soon.
+          Order COSMO Embroidery wholesale directly through Faire.
           <br />
-          In the meantime, contact us directly for pricing and account setup.
+          Contact us for pricing and account setup.
         </p>
 
         <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", justifyContent: "center" }}>
-          <a href="mailto:support@lecien.com" className="btn-solid">
-            Contact Us
+          <a href="https://lecien.faire.com" className="btn-solid" target="_blank" rel="noopener noreferrer">
+            Shop on Faire
           </a>
-          <Link href="/wholesale" className="btn-outline">
-            Wholesale Info
-          </Link>
         </div>
 
         <p
