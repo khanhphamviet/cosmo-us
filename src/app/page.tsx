@@ -9,16 +9,6 @@ import HeroSlider from "./components/HeroSlider";
 export default function Home() {
   return (
     <>
-      {/* Sub-nav */}
-      <nav className="sub-nav">
-        <div className="sub-nav-inner">
-          <Link href="/" className="active">TOP</Link>
-          <Link href="/floss">Floss</Link>
-          <Link href="/freepatterns">Free Patterns</Link>
-          <Link href="/wholesale">Wholesale</Link>
-        </div>
-      </nav>
-
       {/* Hero Slider */}
       <HeroSlider />
 
@@ -76,43 +66,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Free Patterns section ── */}
-      <section className="section">
-        <div className="section-inner">
-          <h2 className="section-title">Free Patterns</h2>
-          <p style={{textAlign:"center",color:"#888",marginBottom:"32px"}}>
-            Free Patterns with COSMO floss
-          </p>
-          <div className="card-grid" style={{maxWidth:"560px",margin:"0 auto"}}>
-            <a
-              href="https://www.lecien.co.jp/en/emb_freepatterns/sky-embroidery-floss"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card"
-            >
-              <div className="card-thumb card-thumb--square">
-                <Image src="/images/pattern-sun.jpg" alt="Sky Embroidery Floss" fill sizes="(max-width:640px) 50vw, 25vw" style={{objectFit:"cover"}} />
-              </div>
-              <h3>Sky Embroidery Floss</h3>
-            </a>
-            <a
-              href="https://www.lecien.co.jp/en/emb_freepatterns/fragrant-spring-bouquet"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="card"
-            >
-              <div className="card-thumb card-thumb--square">
-                <Image src="/images/pattern-spring.jpg" alt="Fragrant Spring Bouquet" fill sizes="(max-width:640px) 50vw, 25vw" style={{objectFit:"cover"}} />
-              </div>
-              <h3>Fragrant Spring Bouquet</h3>
-            </a>
-          </div>
-          <div className="view-more">
-            <Link href="/freepatterns" className="btn-outline">VIEW MORE</Link>
-          </div>
-        </div>
-      </section>
-
       {/* ── Wholesale section ── */}
       <section className="section">
         <div className="section-inner">
@@ -121,7 +74,7 @@ export default function Home() {
             Wholesale and purchasing site for corporate customers
           </p>
           <div className="view-more" style={{display:"flex",gap:"12px",justifyContent:"center",flexWrap:"wrap"}}>
-            <Link href="/wholesale" className="btn-outline">VIEW MORE</Link>
+            <Link href="/faire" className="btn-outline">VIEW MORE</Link>
             <Link href="/faire" className="btn-solid">
               Buy on Faire
             </Link>

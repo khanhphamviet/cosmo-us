@@ -7,10 +7,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // ── Main pages ──
     { url: BASE,                          lastModified: new Date(), changeFrequency: "weekly",  priority: 1.0 },
     { url: `${BASE}/floss`,               lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE}/freepatterns`,        lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${BASE}/wholesale`,           lastModified: new Date(), changeFrequency: "yearly",  priority: 0.6 },
+    { url: `${BASE}/faire`,               lastModified: new Date(), changeFrequency: "yearly",  priority: 0.6 },
     { url: `${BASE}/company`,             lastModified: new Date(), changeFrequency: "yearly",  priority: 0.5 },
-    { url: `${BASE}/faire`,               lastModified: new Date(), changeFrequency: "yearly",  priority: 0.4 },
 
     // ── Floss detail pages ──
     { url: `${BASE}/floss/cosmo`,         lastModified: new Date(), changeFrequency: "yearly",  priority: 0.7 },

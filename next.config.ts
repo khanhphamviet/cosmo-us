@@ -9,6 +9,16 @@ const nextConfig: NextConfig = {
 
   // Enable strict mode for React
   reactStrictMode: true,
+
+  async redirects() {
+    return [
+      {
+        source: "/wholesale",
+        destination: "/faire",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

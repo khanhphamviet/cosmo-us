@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { SHOPIFY_URL, SHOPIFY_ENABLED } from "@/config";
 
 /* ── Data ─────────────────────────────────────────────────────── */
 
@@ -227,15 +226,6 @@ export default async function FlossDetailPage({
 
   return (
     <>
-      <nav className="sub-nav">
-        <div className="sub-nav-inner">
-          <Link href="/">TOP</Link>
-          <Link href="/floss" className="active">Floss</Link>
-          <Link href="/freepatterns">Free Patterns</Link>
-          <Link href="/wholesale">Wholesale</Link>
-        </div>
-      </nav>
-
       <div className="page-hero">
         <div className="breadcrumb">
           <Link href="/">HOME</Link> / <Link href="/floss">Floss</Link> / {data.title}
@@ -253,21 +243,6 @@ export default async function FlossDetailPage({
           <div style={{ flex: 1, minWidth: "240px" }}>
             <p style={{ fontSize: "15px", lineHeight: 1.8, color: "#444", marginBottom: "24px" }}>{data.intro}</p>
             {hasTopSpecs && <SpecTable specs={(data as { specs: { label: string; value: string }[] }).specs} />}
-            {SHOPIFY_ENABLED ? (
-              <a
-                href={SHOPIFY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-solid"
-                style={{ marginTop: "24px", display: "inline-block" }}
-              >
-                Shop Now
-              </a>
-            ) : (
-              <span className="btn-solid" style={{ marginTop: "24px", display: "inline-block", opacity: 0.4, cursor: "not-allowed" }}>
-                Shop Now
-              </span>
-            )}
           </div>
         </div>
 
@@ -301,23 +276,9 @@ export default async function FlossDetailPage({
           </div>
         )}
 
-        {/* Back + Shop CTA */}
+        {/* Back */}
         <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", borderTop: "1px solid var(--border)", paddingTop: "40px" }}>
           <Link href="/floss" className="btn-outline">← Back to Floss</Link>
-          {SHOPIFY_ENABLED ? (
-            <a
-              href={SHOPIFY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-solid"
-            >
-              Shop Now
-            </a>
-          ) : (
-            <span className="btn-solid" style={{ opacity: 0.4, cursor: "not-allowed" }}>
-              Shop Now
-            </span>
-          )}
         </div>
 
       </div>

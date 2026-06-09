@@ -14,14 +14,13 @@ export const metadata: Metadata = {
     template: "%s | COSMO Embroidery US",
   },
   description:
-    "COSMO Embroidery by LECIEN Corporation — premium embroidery floss, kits, and free patterns. US Official Store operated by TANAAKK INC.",
+    "COSMO Embroidery by LECIEN Corporation — premium embroidery floss and kits. US Official Store operated by TANAAKK INC.",
   keywords: [
     "COSMO embroidery",
     "embroidery floss",
     "hidamari sashiko thread",
     "nishikiito Japanese gold thread",
     "LECIEN Corporation",
-    "free embroidery patterns",
     "embroidery kits",
   ],
   authors: [{ name: "LECIEN Corporation", url: "https://www.lecien.co.jp" }],
@@ -39,7 +38,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: "COSMO Embroidery | US Official Store",
     description:
-      "Premium embroidery floss, kits, and free patterns — crafted in Japan since 1933. US Official Store operated by TANAAKK INC.",
+      "Premium embroidery floss and kits — crafted in Japan since 1933. US Official Store operated by TANAAKK INC.",
     images: [
       {
         url: "/opengraph-image.jpg",
@@ -55,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "COSMO Embroidery | US Official Store",
     description:
-      "Premium embroidery floss, kits, and free patterns — crafted in Japan since 1933.",
+      "Premium embroidery floss and kits — crafted in Japan since 1933.",
     images: ["/opengraph-image.jpg"],
   },
 
@@ -90,24 +89,23 @@ export default function RootLayout({
         {/* ── HEADER ── */}
         <header className="site-header">
           <div className="header-inner">
-            <Link href="/" className="logo" aria-label="COSMO by LECIEN — Home">
+            <Link href="/" className="logo" aria-label="COSMO LECIEN CORPORATION — Home">
               <Image
-                src="/images/logo.png"
-                alt="COSMO by LECIEN"
-                width={120}
-                height={30}
+                src="/images/cosmo-lecien-logo-cropped.png"
+                alt="COSMO LECIEN CORPORATION"
+                width={288}
+                height={77}
                 priority
-                style={{ height: "30px", width: "auto" }}
+                className="logo-image"
               />
             </Link>
 
             {/* Desktop nav */}
             <nav className="desktop-nav">
               <ul className="main-nav">
-                <li><Link href="/">Embroidery</Link></li>
+                <li><Link href="/">TOP</Link></li>
                 <li><Link href="/floss">Floss</Link></li>
-                <li><Link href="/freepatterns">Free Patterns</Link></li>
-                <li><Link href="/wholesale">Wholesale</Link></li>
+                <li><Link href="/faire">Wholesale</Link></li>
                 <li><Link href="/company">Company</Link></li>
               </ul>
             </nav>
@@ -133,8 +131,7 @@ export default function RootLayout({
                   <h3>Products</h3>
                   <ul>
                     <li><Link href="/floss">Floss</Link></li>
-                    <li><Link href="/freepatterns">Free Patterns</Link></li>
-                    <li><Link href="/wholesale">Wholesale</Link></li>
+                    <li><Link href="/faire">Wholesale</Link></li>
                   </ul>
                 </div>
                 <div className="footer-col">

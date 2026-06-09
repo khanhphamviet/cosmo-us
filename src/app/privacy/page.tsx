@@ -13,16 +13,6 @@ const EFFECTIVE_DATE = "June 1, 2026";
 export default function PrivacyPage() {
   return (
     <>
-      <nav className="sub-nav">
-        <div className="sub-nav-inner">
-          <Link href="/">TOP</Link>
-          <Link href="/floss">Floss</Link>
-          <Link href="/freepatterns">Free Patterns</Link>
-          <Link href="/wholesale">Wholesale</Link>
-          <Link href="/company">Company</Link>
-        </div>
-      </nav>
-
       <div className="page-hero">
         <div className="breadcrumb">
           <Link href="/">HOME</Link> / Privacy Policy

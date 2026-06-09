@@ -1,7 +1,6 @@
 // Floss page — mirrors lecien.co.jp/en/embroidery/floss
 import type { Metadata } from "next";
 import Link from "next/link";
-import { SHOPIFY_URL, SHOPIFY_ENABLED } from "@/config";
 import Image from "next/image";
 
 export const metadata: Metadata = {
@@ -48,15 +47,6 @@ const FLOSSES = [
 export default function FlossPage() {
   return (
     <>
-      <nav className="sub-nav">
-        <div className="sub-nav-inner">
-          <Link href="/">TOP</Link>
-          <Link href="/floss" className="active">Floss</Link>
-          <Link href="/freepatterns">Free Patterns</Link>
-          <Link href="/wholesale">Wholesale</Link>
-        </div>
-      </nav>
-
       <div className="page-hero">
         <div className="breadcrumb">
           <Link href="/">HOME</Link> / <Link href="/">Embroidery</Link> / Floss
@@ -85,21 +75,6 @@ export default function FlossPage() {
                 <Link href={`/floss/${f.id}`} className="btn-outline" style={{fontSize:"11px",padding:"7px 14px"}}>
                   Details
                 </Link>
-                {SHOPIFY_ENABLED ? (
-                  <a
-                    href={SHOPIFY_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-solid"
-                    style={{fontSize:"11px",padding:"7px 14px"}}
-                  >
-                    Shop Now
-                  </a>
-                ) : (
-                  <span className="btn-solid" style={{fontSize:"11px",padding:"7px 14px",opacity:0.4,cursor:"not-allowed"}}>
-                    Shop Now
-                  </span>
-                )}
               </div>
             </div>
           ))}

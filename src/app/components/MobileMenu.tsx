@@ -5,10 +5,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const NAV_LINKS = [
-  { href: "/",            label: "Embroidery" },
+  { href: "/",            label: "TOP" },
   { href: "/floss",       label: "Floss" },
-  { href: "/freepatterns",label: "Free Patterns" },
-  { href: "/wholesale",   label: "Wholesale" },
+  { href: "/faire",       label: "Wholesale" },
   { href: "/company",     label: "Company" },
 ];
 
