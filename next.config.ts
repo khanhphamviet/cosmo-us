@@ -13,8 +13,13 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: "/wholesale",
-        destination: "/faire",
+        source: "/faire",
+        destination: "/wholesale",
+        permanent: true,
+      },
+      {
+        source: "/floss/hidamari",
+        destination: "/sashiko",
         permanent: true,
       },
     ];

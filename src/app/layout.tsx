@@ -3,6 +3,8 @@ import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
 import MobileMenu from "./components/MobileMenu";
+import DesktopNav from "./components/DesktopNav";
+import { PRODUCT_NAV } from "./data/productNav";
 
 const SITE_URL = "https://cosmo-us.lecien.com";
 const SITE_NAME = "COSMO Embroidery US";
@@ -18,7 +20,6 @@ export const metadata: Metadata = {
   keywords: [
     "COSMO embroidery",
     "embroidery floss",
-    "hidamari sashiko thread",
     "nishikiito Japanese gold thread",
     "LECIEN Corporation",
     "embroidery kits",
@@ -100,15 +101,7 @@ export default function RootLayout({
               />
             </Link>
 
-            {/* Desktop nav */}
-            <nav className="desktop-nav">
-              <ul className="main-nav">
-                <li><Link href="/">TOP</Link></li>
-                <li><Link href="/floss">Floss</Link></li>
-                <li><Link href="/faire">Wholesale</Link></li>
-                <li><Link href="/company">Company</Link></li>
-              </ul>
-            </nav>
+            <DesktopNav />
 
             {/* Mobile hamburger + drawer (client component) */}
             <MobileMenu />
@@ -130,8 +123,18 @@ export default function RootLayout({
                 <div className="footer-col">
                   <h3>Products</h3>
                   <ul>
-                    <li><Link href="/floss">Floss</Link></li>
-                    <li><Link href="/faire">Wholesale</Link></li>
+                    {PRODUCT_NAV.map((item) => (
+                      <li key={item.label}>
+                        {item.external ? (
+                          <a href={item.href} target="_blank" rel="noopener noreferrer">
+                            {item.label}
+                          </a>
+                        ) : (
+                          <Link href={item.href}>{item.label}</Link>
+                        )}
+                      </li>
+                    ))}
+                    <li><Link href="/wholesale">Wholesale</Link></li>
                   </ul>
                 </div>
                 <div className="footer-col">

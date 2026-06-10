@@ -1,70 +1,39 @@
-// Wholesale page
 import type { Metadata } from "next";
 import Link from "next/link";
+import WholesaleContent from "../components/WholesaleContent";
 
 export const metadata: Metadata = {
-  title: "Wholesale",
+  title: "COSMO Wholesale on Faire",
   description:
-    "COSMO Embroidery wholesale purchasing for corporate customers in the United States. Contact TANAAKK INC for pricing and availability.",
+    "Unlock the COSMO wholesale catalog on Faire. Available since May 2026 with U.S. fulfillment from New Jersey and restocking from Japan. Operated by TANAAKK INC.",
   alternates: { canonical: "/wholesale" },
   openGraph: {
-    title: "Wholesale | COSMO Embroidery US",
+    title: "Unlock Our Wholesale Catalog | COSMO on Faire",
     description:
-      "Wholesale purchasing for retailers and corporate customers — COSMO floss, kits, and more. Contact us for details.",
+      "Shop COSMO wholesale on Faire — 50% off your first order, free shipping, and 60-day payment terms for eligible retailers.",
     url: "/wholesale",
+    images: [
+      {
+        url: "/images/brand-hero-floss.png",
+        width: 1200,
+        height: 800,
+        alt: "COSMO embroidery floss wholesale",
+      },
+    ],
   },
 };
 
 export default function WholesalePage() {
   return (
     <>
-      <div className="page-hero">
+      <div className="page-hero page-hero--compact page-hero--sashiko">
         <div className="breadcrumb">
           <Link href="/">HOME</Link> / Wholesale
         </div>
-        <h1>Wholesale</h1>
       </div>
 
-      <div className="page-container">
-        <p style={{
-          textAlign:"center",
-          maxWidth:"560px",
-          margin:"0 auto 48px",
-          fontSize:"15px",
-          lineHeight:1.8,
-          color:"#444"
-        }}>
-          COSMO Embroidery products are available for wholesale purchase by qualified
-          corporate customers in the United States. Products are shipped from our US
-          warehouse operated by TANAAKK INC.
-        </p>
-
-        <div className="wholesale-box">
-          <h2>Order on Faire</h2>
-          <p>
-            COSMO Embroidery products are available for wholesale through Faire.
-            Browse our full catalog, place orders, and manage your account directly
-            on the Faire platform — operated by TANAAKK INC.
-          </p>
-          <Link href="/faire" className="btn-solid" style={{marginBottom:"12px"}}>
-            Buy on Faire
-          </Link>
-        </div>
-
-        <div className="wholesale-box" style={{marginTop:"24px",background:"#f9f9f9",border:"1px solid #e8e8e8"}}>
-          <h2>Wholesale Inquiry</h2>
-          <p>
-            For pricing, minimum order quantities, and account setup, please contact
-            the TANAAKK INC. US sales team.
-          </p>
-          <a
-            href="mailto:support@lecien.com"
-            className="btn-solid"
-            style={{background:"transparent",color:"#333",border:"1px solid #333"}}
-          >
-            Contact Us
-          </a>
-        </div>
+      <div className="page-container page-container--wholesale">
+        <WholesaleContent />
       </div>
     </>
   );

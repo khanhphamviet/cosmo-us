@@ -5,11 +5,7 @@ import Image from "next/image";
 
 const SLIDES = [
   {
-    src: "/images/hidamari.jpg",
-    alt: "hidamari — COSMO sashiko thread",
-  },
-  {
-    src: "/images/nishikiito.jpg",
+    src: "/images/nishikiito-20260610.jpg",
     alt: "nishikiito — Japanese gold thread",
   },
   {
@@ -17,7 +13,7 @@ const SLIDES = [
     alt: "Embroidery Kits",
   },
   {
-    src: "/images/100-ladies.jpg",
+    src: "/images/category-jp-100ladies-20260610.jpg",
     alt: "100 Ladies Embroidery Series",
   },
 ];
