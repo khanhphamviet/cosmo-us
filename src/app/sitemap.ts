@@ -18,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/sashiko`,               lastModified: new Date(), changeFrequency: "yearly",  priority: 0.8 },
     { url: `${BASE}/100-ladies`,            lastModified: new Date(), changeFrequency: "yearly",  priority: 0.8 },
     { url: `${BASE}/crochet`,               lastModified: new Date(), changeFrequency: "yearly",  priority: 0.8 },
+    { url: `${BASE}/tools-supplies`,        lastModified: new Date(), changeFrequency: "yearly",  priority: 0.8 },
 
     // ── Legal pages ──
     { url: `${BASE}/terms`,               lastModified: new Date(), changeFrequency: "yearly",  priority: 0.3 },

@@ -42,6 +42,13 @@ const CATEGORIES: Category[] = [
     href: "/crochet",
     compactTitle: true,
   },
+  {
+    title: "Tools & Supplies",
+    image: "/images/category-jp-tools-20260610.jpg",
+    alt: "COSMO embroidery needles and stitching tools",
+    href: "/tools-supplies",
+    compactTitle: true,
+  },
 ];
 
 function CategoryTile({ category }: { category: Category }) {

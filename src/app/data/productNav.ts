@@ -25,6 +25,10 @@ export const PRODUCT_NAV: ProductNavItem[] = [
     label: "Crochet with Floss",
     href: "/crochet",
   },
+  {
+    label: "Tools & Supplies",
+    href: "/tools-supplies",
+  },
 ];
 
 export function isProductsPath(pathname: string) {
@@ -34,6 +38,7 @@ export function isProductsPath(pathname: string) {
     pathname === "/cloth" ||
     pathname === "/sashiko" ||
     pathname === "/100-ladies" ||
-    pathname === "/crochet"
+    pathname === "/crochet" ||
+    pathname === "/tools-supplies"
   );
 }
