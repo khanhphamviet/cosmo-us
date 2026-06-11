@@ -1,6 +1,5 @@
 import Image from "next/image";
-
-const FAIRE_STORE_URL = "https://lecien.faire.com";
+import { FAIRE_STORE_URL } from "../data/site";
 
 const FAIRE_BENEFITS = [
   "50% off your first order (up to $150)*",
@@ -14,7 +13,7 @@ const INFO_CARDS = [
     id: "availability" as const,
     title: "Available on Faire since May 2026",
     body:
-      "COSMO products are available on Faire for U.S. retailers since May 2026.",
+      "LECIEN COSMO products are available on Faire for U.S. retailers since May 2026.",
   },
   {
     id: "warehouse" as const,
@@ -70,6 +69,10 @@ export default function WholesaleContent() {
             <h1 className="sashiko-hero-title wholesale-hero-title" id="wholesale-hero-title">
               Unlock our wholesale catalog
             </h1>
+            <p className="sashiko-hero-sub wholesale-hero-intro">
+              LECIEN COSMO embroidery products are available for U.S. retailers
+              through our official COSMO Faire wholesale store.
+            </p>
             <ul className="wholesale-faire-benefits">
               {FAIRE_BENEFITS.map((item) => (
                 <li key={item}>{item}</li>
@@ -120,8 +123,8 @@ export default function WholesaleContent() {
       </section>
 
       <p className="wholesale-footer-note">
-        COSMO wholesale on Faire &mdash; Operated by TANAAKK INC., US Seller of
-        Record for LECIEN Corporation
+        LECIEN COSMO wholesale on Faire &mdash; Operated by TANAAKK INC., US Seller
+        of Record for LECIEN Corporation
       </p>
     </div>
   );

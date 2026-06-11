@@ -2329,6 +2329,10 @@ img { display: block; max-width: 100%; height: auto; }
 .wholesale-hero-copy .wholesale-faire-benefits {
   margin-bottom: clamp(18px, 3vw, 24px);
 }
+.wholesale-hero-intro {
+  max-width: 28em;
+  margin: 0 0 clamp(14px, 2vw, 18px);
+}
 .wholesale-hero-copy .btn-solid {
   margin-bottom: 10px;
 }

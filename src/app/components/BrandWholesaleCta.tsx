@@ -1,6 +1,5 @@
 import Link from "next/link";
-
-const FAIRE_STORE_URL = "https://lecien.faire.com";
+import { FAIRE_STORE_URL } from "../data/site";
 
 export default function BrandWholesaleCta() {
   return (
@@ -9,10 +8,12 @@ export default function BrandWholesaleCta() {
         <div className="brand-wholesale-cta-copy">
           <p className="brand-wholesale-cta-eyebrow">COSMO × FAIRE</p>
           <h2 className="brand-wholesale-cta-title" id="brand-wholesale-cta-title">
-            Wholesale for U.S. Retailers
+            LECIEN COSMO Wholesale on Faire
           </h2>
           <p className="brand-wholesale-cta-summary">
-            Available on Faire since May 2026 · U.S. warehouse in New Jersey
+            LECIEN COSMO embroidery products for U.S. retailers on our official
+            COSMO Faire store. Available since May 2026 · U.S. warehouse in New
+            Jersey.
           </p>
         </div>
         <div className="brand-wholesale-cta-actions">
@@ -22,7 +23,7 @@ export default function BrandWholesaleCta() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Shop on Faire
+            Shop COSMO on Faire
             <span className="brand-wholesale-cta-icon" aria-hidden="true">
               ↗
             </span>

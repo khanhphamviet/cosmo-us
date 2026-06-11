@@ -4,25 +4,28 @@ import Link from "next/link";
 import Image from "next/image";
 import MobileMenu from "./components/MobileMenu";
 import DesktopNav from "./components/DesktopNav";
+import SiteJsonLd from "./components/SiteJsonLd";
 import { PRODUCT_NAV } from "./data/productNav";
-
-const SITE_URL = "https://cosmo-us.lecien.com";
-const SITE_NAME = "COSMO Embroidery US";
+import { SITE_NAME, SITE_URL } from "./data/site";
 
 export const metadata: Metadata = {
   /* ── Base ── */
   title: {
-    default: "COSMO Embroidery | US Official Store",
+    default: "LECIEN COSMO Embroidery | US Official Website",
     template: "%s | COSMO Embroidery US",
   },
   description:
-    "COSMO Embroidery by LECIEN Corporation — premium embroidery floss and kits. US Official Store operated by TANAAKK INC.",
+    "Official US website for LECIEN COSMO embroidery floss, sashiko thread, kits, and tools. COSMO wholesale for retailers on Faire. Operated by TANAAKK INC.",
   keywords: [
+    "LECIEN COSMO",
+    "COSMO Faire",
+    "COSMO wholesale",
     "COSMO embroidery",
+    "LECIEN embroidery",
     "embroidery floss",
-    "nishikiito Japanese gold thread",
+    "hidamari sashiko",
+    "nishikiito",
     "LECIEN Corporation",
-    "embroidery kits",
   ],
   authors: [{ name: "LECIEN Corporation", url: "https://www.lecien.co.jp" }],
   creator: "LECIEN Corporation",
@@ -37,9 +40,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: "COSMO Embroidery | US Official Store",
+    title: "LECIEN COSMO Embroidery | US Official Website",
     description:
-      "Premium embroidery floss and kits — crafted in Japan since 1933. US Official Store operated by TANAAKK INC.",
+      "Official US website for LECIEN COSMO embroidery floss, sashiko, and kits. COSMO wholesale on Faire for U.S. retailers.",
     images: [
       {
         url: "/opengraph-image.jpg",
@@ -53,9 +56,9 @@ export const metadata: Metadata = {
   /* ── Twitter / X ── */
   twitter: {
     card: "summary_large_image",
-    title: "COSMO Embroidery | US Official Store",
+    title: "LECIEN COSMO Embroidery | US Official Website",
     description:
-      "Premium embroidery floss and kits — crafted in Japan since 1933.",
+      "Official US website for LECIEN COSMO embroidery floss, sashiko, and kits.",
     images: ["/opengraph-image.jpg"],
   },
 
@@ -74,6 +77,11 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
+
+  /* ── Google Search Console ── */
+  verification: {
+    google: "gMSbJpacA5XYmppuOeEDnua2U3GQ0klPwTBOXD_vu3A",
+  },
 };
 
 export default function RootLayout({
@@ -82,6 +90,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <SiteJsonLd />
         {/* ── US OFFICIAL STORE BANNER — required every page (PE compliance) ── */}
         <div className="us-banner">
           Official US Website by TANAAKK INC.
