@@ -59,17 +59,19 @@ function CategoryTile({ category }: { category: Category }) {
           src={category.image}
           alt={category.alt}
           fill
-          sizes="(max-width:640px) 50vw, 20vw"
+          sizes="(max-width:640px) 50vw, 33vw"
           style={{ objectFit: "cover" }}
         />
       </div>
       <div className="brand-category-caption">
-        <p
+        <span
           className={`brand-category-title${category.compactTitle ? " brand-category-title--compact" : ""}`}
         >
           {category.title}
-        </p>
-        <span className="brand-category-btn">VIEW MORE</span>
+        </span>
+        <span className="brand-category-arrow" aria-hidden="true">
+          →
+        </span>
       </div>
     </>
   );
@@ -96,7 +98,10 @@ function CategoryTile({ category }: { category: Category }) {
 
 export default function BrandCategoryGrid() {
   return (
-    <section className="brand-categories">
+    <section className="brand-categories" aria-labelledby="featured-collections-title">
+      <h2 className="brand-categories-heading" id="featured-collections-title">
+        Featured Collections
+      </h2>
       <div className="brand-categories-inner">
         {CATEGORIES.map((category) => (
           <CategoryTile key={category.title} category={category} />

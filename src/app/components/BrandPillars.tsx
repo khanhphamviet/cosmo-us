@@ -37,7 +37,7 @@ export default function BrandPillars() {
                 style={{ objectFit: "cover" }}
               />
             </div>
-            <h2 className="brand-pillar-title">{p.title}</h2>
+            <h3 className="brand-pillar-title">{p.title}</h3>
             <p className="brand-pillar-body">{p.body}</p>
           </div>
         ))}
