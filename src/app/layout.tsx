@@ -5,8 +5,11 @@ import Image from "next/image";
 import MobileMenu from "./components/MobileMenu";
 import DesktopNav from "./components/DesktopNav";
 import SiteJsonLd from "./components/SiteJsonLd";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 import { PRODUCT_NAV } from "./data/productNav";
 import { SITE_NAME, SITE_URL } from "./data/site";
+
+const bingVerification = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION;
 
 export const metadata: Metadata = {
   /* ── Base ── */
@@ -78,9 +81,12 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
 
-  /* ── Google Search Console ── */
+  /* ── Search engine verification ── */
   verification: {
     google: "gMSbJpacA5XYmppuOeEDnua2U3GQ0klPwTBOXD_vu3A",
+    ...(bingVerification
+      ? { other: { "msvalidate.01": bingVerification } }
+      : {}),
   },
 };
 
@@ -90,6 +96,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <GoogleAnalytics />
         <SiteJsonLd />
         {/* ── US OFFICIAL STORE BANNER — required every page (PE compliance) ── */}
         <div className="us-banner">

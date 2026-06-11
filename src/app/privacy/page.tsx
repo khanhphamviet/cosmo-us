@@ -78,6 +78,7 @@ export default function PrivacyPage() {
             <li><strong>3PL warehouse partner</strong> — for order fulfillment and shipping</li>
             <li><strong>Faire</strong> — for wholesale order management</li>
             <li><strong>Email providers</strong> — for transactional and marketing emails</li>
+            <li><strong>Google Analytics</strong> — anonymous website traffic and usage statistics</li>
           </ul>
           <p style={{ marginTop: "16px" }}>
             We may also share information when required by law or to protect our
