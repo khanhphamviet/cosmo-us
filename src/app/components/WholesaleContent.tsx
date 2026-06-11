@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const FAIRE_STORE_URL = "https://www.faire.com/brand/bw_9fjrhm875z";
+const FAIRE_STORE_URL = "https://lecien.faire.com";
 
 const FAIRE_BENEFITS = [
   "50% off your first order (up to $150)*",
