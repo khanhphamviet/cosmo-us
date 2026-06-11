@@ -84,7 +84,7 @@ export default function RootLayout({
       <body>
         {/* ── US OFFICIAL STORE BANNER — required every page (PE compliance) ── */}
         <div className="us-banner">
-          US Official Store operated by TANAAKK INC.
+          Official US Website by TANAAKK INC.
         </div>
 
         {/* ── HEADER ── */}
