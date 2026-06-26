@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { isProductsPath, PRODUCT_NAV } from "../data/productNav";
 
 const UTILITY_LINKS = [
-  { href: "/blog", label: "Stories" },
+  { href: "/stories", label: "Stories" },
   { href: "/wholesale", label: "Wholesale" },
   { href: "/company", label: "Company" },
 ];
@@ -141,7 +141,7 @@ export default function MobileMenu() {
               <Link
                 href={href}
                 className={
-                  pathname === href || (href === "/blog" && pathname.startsWith("/blog/"))
+                  pathname === href || (href === "/stories" && pathname.startsWith("/stories/"))
                     ? "active"
                     : ""
                 }

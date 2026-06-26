@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   title: "Stories",
   description:
     "Techniques, brand stories, and ideas from LECIEN COSMO embroidery — news and articles for stitchers in the United States.",
-  alternates: { canonical: "/blog" },
+  alternates: { canonical: "/stories" },
 };
 
-export default function BlogPage() {
+export default function StoriesPage() {
   const posts = [...BLOG_POSTS].sort((a, b) =>
     b.publishedAt.localeCompare(a.publishedAt),
   );

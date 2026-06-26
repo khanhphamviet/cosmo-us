@@ -139,7 +139,7 @@ export default function BlogArticle({ post }: Props) {
           {post.cta.label}
           <span aria-hidden="true"> →</span>
         </Link>
-        <Link href="/blog" className="blog-article-back">
+        <Link href="/stories" className="blog-article-back">
           Back to Stories
         </Link>
       </footer>

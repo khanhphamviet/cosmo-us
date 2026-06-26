@@ -156,7 +156,7 @@ export default function RootLayout({
                 <div className="footer-col">
                   <h3>Company</h3>
                   <ul>
-                    <li><Link href="/blog">Stories</Link></li>
+                    <li><Link href="/stories">Stories</Link></li>
                     <li><Link href="/company">Company Profile</Link></li>
                   </ul>
                 </div>

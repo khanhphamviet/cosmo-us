@@ -21,11 +21,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.excerpt,
-    alternates: { canonical: `/blog/${post.slug}` },
+    alternates: { canonical: `/stories/${post.slug}` },
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `/blog/${post.slug}`,
+      url: `/stories/${post.slug}`,
       type: "article",
       publishedTime: post.publishedAt,
       images: [{ url: post.image, alt: post.imageAlt }],
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function BlogPostPage({ params }: Props) {
+export default async function StoryPostPage({ params }: Props) {
   const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) notFound();
@@ -53,7 +53,7 @@ export default async function BlogPostPage({ params }: Props) {
       "@type": "Organization",
       name: "LECIEN Corporation",
     },
-    mainEntityOfPage: `${SITE_URL}/blog/${post.slug}`,
+    mainEntityOfPage: `${SITE_URL}/stories/${post.slug}`,
   };
 
   return (
@@ -64,7 +64,7 @@ export default async function BlogPostPage({ params }: Props) {
       />
       <div className="page-hero page-hero--compact">
         <div className="breadcrumb">
-          <Link href="/">HOME</Link> / <Link href="/blog">Stories</Link> / Article
+          <Link href="/">HOME</Link> / <Link href="/stories">Stories</Link> / Article
         </div>
       </div>
       <div className="page-container page-container--blog">

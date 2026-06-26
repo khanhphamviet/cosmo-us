@@ -9,7 +9,7 @@ type Props = {
 
 export default function BlogCard({ post }: Props) {
   return (
-    <Link href={`/blog/${post.slug}`} className="blog-card">
+    <Link href={`/stories/${post.slug}`} className="blog-card">
       <div className="blog-card-media">
         <Image
           src={post.image}

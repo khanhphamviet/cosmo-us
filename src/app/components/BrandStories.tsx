@@ -7,7 +7,7 @@ function StoryTile({ post }: { post: BlogPost }) {
   const compactTitle = post.title.length > 28;
 
   return (
-    <Link href={`/blog/${post.slug}`} className="brand-category-tile">
+    <Link href={`/stories/${post.slug}`} className="brand-category-tile">
       <div className="brand-category-media">
         <Image
           src={post.image}
