@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Floss | COSMO Embroidery US",
     description:
-      "Explore COSMO embroidery floss: Size 25 & 5, Seasons variegated, and nishikiito gold thread. Made in Japan since 1933.",
+      "Explore COSMO embroidery floss: Size 25 & 5, Seasons variegated, and nishikiito gold thread. Made in Japan since 1924.",
     url: "/floss",
     images: [{ url: "/images/floss-cosmo-20260610.jpg", width: 800, height: 800, alt: "No. 25 Floss" }],
   },

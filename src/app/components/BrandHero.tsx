@@ -19,7 +19,7 @@ export default function BrandHero() {
               Japanese Embroidery Thread
             </span>
             <span className="brand-hero-title-line">
-              Since 1933<span className="brand-hero-period">.</span>
+              Since 1924<span className="brand-hero-period">.</span>
             </span>
           </h1>
           <p className="brand-hero-subtitle">
@@ -30,7 +30,7 @@ export default function BrandHero() {
           </p>
           <hr className="brand-hero-rule" />
           <p className="brand-hero-body">
-            For over 90 years, COSMO has been creating beautiful embroidery
+            For over 100 years, COSMO has been creating beautiful embroidery
             threads known for their rich colors, smooth texture, and exceptional
             quality.
           </p>

@@ -14,7 +14,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Company",
   description:
-    "TANAAKK INC is the US Seller of Record for COSMO Embroidery products. LECIEN Corporation is the brand owner and manufacturer since 1933.",
+    "TANAAKK INC is the US Seller of Record for COSMO Embroidery products. LECIEN Corporation is the brand owner and manufacturer. COSMO embroidery thread heritage since 1924.",
   alternates: { canonical: "/company" },
   openGraph: {
     title: "Company | COSMO Embroidery US",
