@@ -466,75 +466,6 @@ img { display: block; max-width: 100%; height: auto; }
   transform: translateX(2px);
 }
 
-.brand-stories {
-  padding: clamp(28px, 4vw, 40px) 24px;
-  border-bottom: 1px solid var(--border);
-  background: var(--bg-light);
-}
-.brand-stories-header {
-  max-width: var(--max-w);
-  margin: 0 auto;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: clamp(16px, 3vw, 32px);
-  flex-wrap: wrap;
-}
-.brand-stories-heading-group {
-  flex: 1 1 16rem;
-  min-width: 0;
-}
-.brand-stories-heading {
-  font-family: var(--brand-serif);
-  font-size: clamp(1.375rem, 1.6vw + 0.8rem, 1.75rem);
-  font-weight: 400;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: var(--foreground);
-  margin: 0 0 8px;
-}
-.brand-stories-lead {
-  margin: 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: clamp(0.8125rem, 0.35vw + 0.72rem, 0.875rem);
-  line-height: 1.65;
-  letter-spacing: 0.01em;
-  color: #555;
-  max-width: 36rem;
-}
-.brand-stories-view-all {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  flex-shrink: 0;
-  font-family: var(--brand-serif);
-  font-size: clamp(0.9375rem, 0.5vw + 0.78rem, 1.0625rem);
-  letter-spacing: 0.02em;
-  color: var(--foreground);
-  text-decoration: none;
-  padding-bottom: 2px;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease;
-}
-.brand-stories-view-all:hover {
-  opacity: 1;
-  border-bottom-color: var(--foreground);
-}
-.brand-stories-view-all-arrow {
-  line-height: 1;
-  transition: transform 0.2s ease;
-}
-.brand-stories-view-all:hover .brand-stories-view-all-arrow {
-  transform: translateX(2px);
-}
-.brand-stories-grid {
-  max-width: var(--max-w);
-  margin: clamp(20px, 3vw, 28px) auto 0;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: clamp(12px, 2vw, 20px);
-}
-
 .page-container--blog {
   max-width: 720px;
   padding-top: clamp(24px, 4vw, 40px);
@@ -824,14 +755,6 @@ img { display: block; max-width: 100%; height: auto; }
   font-size: 0.875rem;
   color: var(--gray);
   letter-spacing: 0.04em;
-}
-
-.brand-stories-empty {
-  max-width: 720px;
-  padding-top: 0;
-  padding-bottom: clamp(48px, 8vw, 80px);
-  color: #555;
-  font-size: 0.9375rem;
 }
 
 .brand-wholesale-cta {
@@ -3203,10 +3126,6 @@ img { display: block; max-width: 100%; height: auto; }
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: clamp(10px, 2vw, 14px);
     max-width: none;
-  }
-  .brand-stories-grid {
-    grid-template-columns: 1fr;
-    max-width: 420px;
   }
   .blog-card {
     grid-template-columns: 1fr;

@@ -1,38 +1,53 @@
+import Image from "next/image";
 import Link from "next/link";
-import BlogCard from "./BlogCard";
+import type { BlogPost } from "../data/blogPosts";
 import { BLOG_POSTS } from "../data/blogPosts";
+
+function StoryTile({ post }: { post: BlogPost }) {
+  const compactTitle = post.title.length > 28;
+
+  return (
+    <Link href={`/blog/${post.slug}`} className="brand-category-tile">
+      <div className="brand-category-media">
+        <Image
+          src={post.image}
+          alt={post.imageAlt}
+          fill
+          sizes="(max-width:640px) 50vw, 33vw"
+          style={{ objectFit: post.imageFit ?? "cover" }}
+        />
+      </div>
+      <div className="brand-category-caption">
+        <span
+          className={`brand-category-title${compactTitle ? " brand-category-title--compact" : ""}`}
+        >
+          {post.title}
+        </span>
+        <span className="brand-category-arrow" aria-hidden="true">
+          →
+        </span>
+      </div>
+    </Link>
+  );
+}
 
 export default function BrandStories() {
   const latest = [...BLOG_POSTS]
     .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
     .slice(0, 3);
 
-  return (
-    <section className="brand-stories" aria-labelledby="stories-title">
-      <div className="brand-stories-header">
-        <div className="brand-stories-heading-group">
-          <h2 className="brand-stories-heading" id="stories-title">
-            Stories
-          </h2>
-          <p className="brand-stories-lead">
-            Techniques, brand stories, and ideas from COSMO.
-          </p>
-        </div>
-        <Link href="/blog" className="brand-stories-view-all">
-          View all
-          <span className="brand-stories-view-all-arrow" aria-hidden="true">
-            →
-          </span>
-        </Link>
-      </div>
+  if (latest.length === 0) return null;
 
-      {latest.length > 0 ? (
-        <div className="brand-stories-grid">
-          {latest.map((post) => (
-            <BlogCard key={post.slug} post={post} />
-          ))}
-        </div>
-      ) : null}
+  return (
+    <section className="brand-categories" aria-labelledby="stories-title">
+      <h2 className="brand-categories-heading" id="stories-title">
+        Stories
+      </h2>
+      <div className="brand-categories-inner">
+        {latest.map((post) => (
+          <StoryTile key={post.slug} post={post} />
+        ))}
+      </div>
     </section>
   );
 }
