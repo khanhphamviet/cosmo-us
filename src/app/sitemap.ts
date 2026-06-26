@@ -1,12 +1,21 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "./data/site";
+import { BLOG_POSTS } from "./data/blogPosts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const blogPosts = BLOG_POSTS.map((post) => ({
+    url: `${SITE_URL}/blog/${post.slug}`,
+    lastModified: new Date(post.publishedAt),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
   return [
     // ── Main pages ──
     { url: SITE_URL,                          lastModified: new Date(), changeFrequency: "weekly",  priority: 1.0 },
     { url: `${SITE_URL}/floss`,               lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/wholesale`,           lastModified: new Date(), changeFrequency: "monthly", priority: 0.85 },
+    { url: `${SITE_URL}/blog`,                lastModified: new Date(), changeFrequency: "weekly",  priority: 0.75 },
     { url: `${SITE_URL}/company`,             lastModified: new Date(), changeFrequency: "yearly",  priority: 0.5 },
 
     // ── Floss detail pages ──
@@ -23,5 +32,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/terms`,               lastModified: new Date(), changeFrequency: "yearly",  priority: 0.3 },
     { url: `${SITE_URL}/returns`,             lastModified: new Date(), changeFrequency: "yearly",  priority: 0.3 },
     { url: `${SITE_URL}/privacy`,             lastModified: new Date(), changeFrequency: "yearly",  priority: 0.3 },
+
+    // ── Stories ──
+    ...blogPosts,
   ];
 }

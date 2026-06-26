@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import BrandHero from "./components/BrandHero";
 import BrandPillars from "./components/BrandPillars";
 import BrandCategoryGrid from "./components/BrandCategoryGrid";
+import BrandStories from "./components/BrandStories";
 import BrandWholesaleCta from "./components/BrandWholesaleCta";
 
 export const metadata: Metadata = {
@@ -31,6 +32,7 @@ export default function Home() {
       <BrandHero />
       <BrandPillars />
       <BrandCategoryGrid />
+      <BrandStories />
       <BrandWholesaleCta />
     </>
   );

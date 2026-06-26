@@ -72,6 +72,14 @@ export default function DesktopNav() {
           </ul>
         </li>
         <li>
+          <Link
+            href="/blog"
+            className={pathname === "/blog" || pathname.startsWith("/blog/") ? "active" : ""}
+          >
+            Stories
+          </Link>
+        </li>
+        <li>
           <Link href="/wholesale" className={pathname === "/wholesale" ? "active" : ""}>
             Wholesale
           </Link>
