@@ -1,12 +1,105 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { BlogPost, BlogSection, BlogSubsection } from "../data/blogPosts";
+import type {
+  BlogFigure,
+  BlogPost,
+  BlogSection,
+  BlogSubsection,
+  BlogTimelineStep,
+} from "../data/blogPosts";
 import { formatBlogDate } from "../data/blogPosts";
 import { BlogTableBlock } from "./BlogTable";
 
 type Props = {
   post: BlogPost;
 };
+
+function BlogFigureBlock({ figure }: { figure: BlogFigure }) {
+  return (
+    <figure className="blog-article-figure">
+      <div className="blog-article-figure-media">
+        <Image
+          src={figure.src}
+          alt={figure.alt}
+          width={1440}
+          height={960}
+          sizes="(max-width: 720px) 100vw, 720px"
+          className="blog-article-figure-img"
+        />
+      </div>
+      {figure.caption ? (
+        <figcaption className="blog-article-figure-caption">
+          {figure.caption}
+        </figcaption>
+      ) : null}
+    </figure>
+  );
+}
+
+function BlogGalleryBlock({
+  items,
+  variant = "row",
+}: {
+  items: BlogFigure[];
+  variant?: BlogSection["galleryVariant"];
+}) {
+  return (
+    <div
+      className={[
+        "blog-article-gallery",
+        variant === "comparison" ? "blog-article-gallery--comparison" : "",
+        variant === "patterns" ? "blog-article-gallery--patterns" : "",
+      ]
+        .filter(Boolean)
+        .join(" ")}
+    >
+      {items.map((item) => (
+        <figure key={`${item.src}-${item.caption ?? item.alt}`} className="blog-article-gallery-item">
+          <div className="blog-article-gallery-media">
+            <Image
+              src={item.src}
+              alt={item.alt}
+              width={720}
+              height={720}
+              sizes={
+                variant === "comparison"
+                  ? "(max-width: 640px) 100vw, 50vw"
+                  : "(max-width: 640px) 100vw, 33vw"
+              }
+              className="blog-article-gallery-img"
+            />
+          </div>
+          {item.caption ? (
+            <figcaption className="blog-article-gallery-caption">
+              {item.caption}
+            </figcaption>
+          ) : null}
+        </figure>
+      ))}
+    </div>
+  );
+}
+
+function BlogTimelineBlock({ steps }: { steps: BlogTimelineStep[] }) {
+  return (
+    <ol className="blog-article-timeline">
+      {steps.map((step, index) => (
+        <li key={step.title} className="blog-article-timeline-step">
+          <div className="blog-article-timeline-marker" aria-hidden="true">
+            <span className="blog-article-timeline-dot" />
+            {index < steps.length - 1 ? (
+              <span className="blog-article-timeline-line" />
+            ) : null}
+          </div>
+          <div className="blog-article-timeline-copy">
+            <p className="blog-article-timeline-period">{step.period}</p>
+            <p className="blog-article-timeline-title">{step.title}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+  );
+}
 
 function Subsection({ subsection }: { subsection: BlogSubsection }) {
   return (
@@ -47,12 +140,25 @@ function Section({
     </p>
   ));
 
+  const mediaBlocks = (
+    <>
+      {section.figure ? <BlogFigureBlock figure={section.figure} /> : null}
+      {section.gallery?.length ? (
+        <BlogGalleryBlock
+          items={section.gallery}
+          variant={section.galleryVariant}
+        />
+      ) : null}
+    </>
+  );
+
   return (
     <section className={sectionClass}>
       {section.heading ? <h2>{section.heading}</h2> : null}
       {section.bulletsLabel ? (
         <p className="blog-article-bullets-label">{section.bulletsLabel}</p>
       ) : null}
+      {section.mediaPosition === "top" ? mediaBlocks : null}
       {section.asideImage ? (
         <div className="blog-article-section-grid">
           <div className="blog-article-section-copy">{paragraphs}</div>
@@ -69,6 +175,7 @@ function Section({
       ) : (
         paragraphs
       )}
+      {section.mediaPosition !== "top" ? mediaBlocks : null}
       {section.bullets?.length ? (
         <ul className="blog-article-bullets">
           {section.bullets.map((item) => (
@@ -77,6 +184,9 @@ function Section({
         </ul>
       ) : null}
       {section.table ? <BlogTableBlock table={section.table} /> : null}
+      {section.timeline?.length ? (
+        <BlogTimelineBlock steps={section.timeline} />
+      ) : null}
       {section.subsections?.map((subsection) => (
         <Subsection key={subsection.heading} subsection={subsection} />
       ))}

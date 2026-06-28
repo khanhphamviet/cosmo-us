@@ -18,7 +18,7 @@ const SERIES = [
     heading: "Seasons 8000",
     body:
       "Colors change about every 30 cm (11.81 in). Ideal for large motifs and firm, full stitching. A rich variety of pinks and greens — colors often used to depict landscapes and scenery.",
-    img: "/images/floss-seasons-8000-lecien.jpg",
+    img: "/images/floss-seasons-8000-lecien-20260627.jpg",
     alt: "Seasons 8000 variegated embroidery floss",
   },
   {
