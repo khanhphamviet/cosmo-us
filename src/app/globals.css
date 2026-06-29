@@ -10,7 +10,8 @@
   --bg-light:    #f8f8f6;
   --accent:      #c8a882;
   --brand-muted: #8f4f4f;
-  --brand-serif: Georgia, 'Times New Roman', Times, serif;
+  --brand-serif: var(--font-brand-serif), Georgia, "Times New Roman", serif;
+  --brand-sans: var(--font-brand-sans), "Helvetica Neue", Arial, sans-serif;
   --max-w:       1080px;
 }
 
@@ -30,10 +31,12 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--brand-sans);
   font-size: 1rem;        /* inherits fluid html base */
   line-height: 1.6;
   margin: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -338,7 +341,7 @@ img { display: block; max-width: 100%; height: auto; }
   opacity: 0.75;
 }
 .brand-hero-body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--brand-sans);
   font-size: clamp(0.8125rem, 0.3vw + 0.72rem, 0.875rem);
   line-height: 1.75;
   color: #555;
@@ -394,7 +397,7 @@ img { display: block; max-width: 100%; height: auto; }
   line-height: 1.35;
 }
 .brand-pillar-body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--brand-sans);
   font-size: clamp(0.8125rem, 0.35vw + 0.72rem, 0.875rem);
   line-height: 1.7;
   letter-spacing: 0.01em;
@@ -513,13 +516,13 @@ img { display: block; max-width: 100%; height: auto; }
 .blog-card-title {
   font-family: var(--brand-serif);
   font-size: clamp(1.0625rem, 0.8vw + 0.85rem, 1.25rem);
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.35;
   margin: 0 0 10px;
 }
 .blog-card-excerpt {
   font-size: clamp(0.8125rem, 0.35vw + 0.72rem, 0.875rem);
-  line-height: 1.65;
+  line-height: 1.7;
   color: #555;
   margin: 0 0 12px;
 }
@@ -530,13 +533,14 @@ img { display: block; max-width: 100%; height: auto; }
 }
 
 .blog-article {
-  --blog-title: clamp(1.625rem, 2vw + 1rem, 2.125rem);
-  --blog-body: clamp(1rem, 0.35vw + 0.9rem, 1.0625rem);
-  --blog-lead: clamp(1.125rem, 0.5vw + 0.95rem, 1.25rem);
-  --blog-h2: clamp(1.25rem, 0.7vw + 0.95rem, 1.4375rem);
-  --blog-h3: clamp(1.0625rem, 0.45vw + 0.9rem, 1.1875rem);
+  --blog-title: clamp(1.75rem, 2.2vw + 1rem, 2.25rem);
+  --blog-body: clamp(1.03125rem, 0.25vw + 0.95rem, 1.125rem);
+  --blog-lead: clamp(1.1875rem, 0.45vw + 1rem, 1.3125rem);
+  --blog-h2: clamp(1.3125rem, 0.65vw + 1rem, 1.5rem);
+  --blog-h3: clamp(1.0625rem, 0.35vw + 0.92rem, 1.1875rem);
   --blog-meta: clamp(0.75rem, 0.2vw + 0.68rem, 0.8125rem);
   --blog-table: clamp(0.875rem, 0.3vw + 0.78rem, 0.9375rem);
+  font-family: var(--brand-sans);
 }
 .blog-article-hero {
   position: relative;
@@ -563,22 +567,23 @@ img { display: block; max-width: 100%; height: auto; }
 .blog-article-title {
   font-family: var(--brand-serif);
   font-size: var(--blog-title);
-  font-weight: 400;
-  line-height: 1.28;
-  letter-spacing: 0.01em;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.005em;
   margin: 0;
 }
 .blog-article-body {
   font-size: var(--blog-body);
-  line-height: 1.7;
-  color: #444;
+  line-height: 1.75;
+  color: #333;
 }
 .blog-article-lead {
   font-family: var(--brand-serif);
   font-size: var(--blog-lead);
-  line-height: 1.55;
+  font-weight: 500;
+  line-height: 1.5;
   color: var(--foreground);
-  max-width: 38em;
+  max-width: 36em;
 }
 .blog-article-section {
   margin-bottom: clamp(32px, 5vw, 44px);
@@ -673,17 +678,17 @@ img { display: block; max-width: 100%; height: auto; }
 .blog-article-section h2 {
   font-family: var(--brand-serif);
   font-size: var(--blog-h2);
-  font-weight: 400;
-  line-height: 1.32;
-  letter-spacing: 0.01em;
+  font-weight: 500;
+  line-height: 1.28;
+  letter-spacing: 0.005em;
   color: var(--foreground);
   margin: 0 0 16px;
   padding-bottom: 10px;
   border-bottom: 1px solid var(--border);
 }
 .blog-article-section p {
-  margin: 0 0 14px;
-  max-width: 40em;
+  margin: 0 0 16px;
+  max-width: 38em;
 }
 .blog-article-section p:last-child {
   margin-bottom: 0;
@@ -692,12 +697,12 @@ img { display: block; max-width: 100%; height: auto; }
   margin-top: clamp(20px, 3vw, 28px);
 }
 .blog-article-subsection h3 {
-  font-family: var(--brand-serif);
+  font-family: var(--brand-sans);
   font-size: var(--blog-h3);
-  font-weight: 400;
-  line-height: 1.38;
-  letter-spacing: 0.01em;
-  margin: 0 0 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0;
+  margin: 0 0 10px;
   color: var(--foreground);
 }
 .blog-article-table-wrap {
@@ -708,7 +713,8 @@ img { display: block; max-width: 100%; height: auto; }
   width: 100%;
   border-collapse: collapse;
   font-size: var(--blog-table);
-  line-height: 1.5;
+  line-height: 1.55;
+  font-variant-numeric: tabular-nums;
 }
 .blog-article-table th,
 .blog-article-table td {
@@ -816,10 +822,11 @@ img { display: block; max-width: 100%; height: auto; }
   text-align: center;
 }
 .blog-article-gallery--comparison .blog-article-gallery-caption {
-  font-family: var(--brand-serif);
-  font-size: clamp(0.9375rem, 0.25vw + 0.85rem, 1rem);
+  font-family: var(--brand-sans);
+  font-size: clamp(0.875rem, 0.2vw + 0.8rem, 0.9375rem);
+  font-weight: 500;
   color: var(--foreground);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
 }
 .blog-article-timeline {
   list-style: none;
@@ -873,9 +880,10 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .blog-article-timeline-title {
   margin: 0;
-  font-family: var(--brand-serif);
-  font-size: clamp(1rem, 0.25vw + 0.92rem, 1.0625rem);
-  line-height: 1.4;
+  font-family: var(--brand-sans);
+  font-size: clamp(1rem, 0.2vw + 0.92rem, 1.0625rem);
+  font-weight: 500;
+  line-height: 1.45;
   color: var(--foreground);
 }
 @media (max-width: 640px) {
@@ -929,7 +937,7 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .brand-wholesale-cta-summary {
   margin: 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--brand-sans);
   font-size: clamp(0.8125rem, 0.35vw + 0.72rem, 0.875rem);
   line-height: 1.6;
   color: #555;

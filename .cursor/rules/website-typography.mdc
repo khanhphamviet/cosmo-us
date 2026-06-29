@@ -1,0 +1,64 @@
+---
+description: COSMO US website typography — unified fonts, roles, and CSS conventions
+globs: src/app/**/*.{tsx,css},src/app/fonts.ts
+alwaysApply: true
+---
+
+# Website Typography
+
+**Policy:** All site text uses the shared font system in `src/app/fonts.ts` and `globals.css`. Do not introduce ad-hoc font families.
+
+## Font stack (single source of truth)
+
+| Role | Implementation | Use for |
+|------|----------------|---------|
+| **Serif** | `Cormorant Garamond` → `--font-brand-serif` → `var(--brand-serif)` | Page titles, section headings, editorial leads, brand hero lines |
+| **Sans** | `Source Sans 3` → `--font-brand-sans` → `var(--brand-sans)` | Body copy, UI, nav, tables, FAQ subheads, bullets, captions |
+
+- Load fonts only via `next/font/google` in `src/app/fonts.ts` (`display: "swap"`, `subsets: ["latin"]`).
+- Apply variables on `<html>` in `layout.tsx` — never add `<link>` tags for Google Fonts.
+- Do **not** hardcode `Georgia`, `Helvetica Neue`, `Arial`, or other families in new CSS/inline styles.
+
+## Role rules
+
+```css
+/* ✅ Serif — display / editorial */
+font-family: var(--brand-serif);
+font-weight: 500;   /* headings, leads */
+
+/* ✅ Sans — reading / UI */
+font-family: var(--brand-sans);
+font-weight: 400;   /* body */
+font-weight: 500;   /* labels, timeline steps, gallery captions */
+font-weight: 600;   /* h3, table headers, emphasis */
+```
+
+- **Long-form body** (Stories, product copy): always sans, `line-height` 1.7–1.75, max-width ~38em.
+- **Headings h1–h2**: serif weight 500. **h3 / FAQ / UI labels**: sans weight 600.
+- **Tables**: `font-variant-numeric: tabular-nums` for spec/number columns.
+- **Do not** mix a third font family without explicit user approval.
+
+## Stories (`blog-article-*`)
+
+Extend typography in `globals.css` under `.blog-article` — reuse `--blog-title`, `--blog-body`, `--blog-h2`, etc. Do not add per-article font overrides in `blogPosts.ts` or components.
+
+| Element | Font | Weight |
+|---------|------|--------|
+| Title, lead, h2, closing | serif | 500 |
+| Body, bullets, CTA desc | sans | 400 |
+| h3 (FAQ), bullets-label | sans | 600 |
+| Comparison captions | sans | 500 |
+
+## When adding new pages or components
+
+1. Inherit `body` sans — only add `var(--brand-serif)` for intentional display headings.
+2. Prefer existing clamp scales in `globals.css`; add new tokens to `:root` or a scoped block, not magic `px` values.
+3. Enable `text-rendering: optimizeLegibility` on long-reading containers only (already on `body`).
+4. Run `npm run build` after font or typography changes.
+
+## Checklist
+
+- [ ] Uses `var(--brand-serif)` or `var(--brand-sans)` — no new font families
+- [ ] Body/long copy is sans; display headings are serif
+- [ ] New fonts (if ever needed) go in `fonts.ts` + `layout.tsx` + `:root` only
+- [ ] Stories follow `blog-article-*` scale, not one-off sizes

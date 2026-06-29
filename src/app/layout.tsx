@@ -6,6 +6,7 @@ import MobileMenu from "./components/MobileMenu";
 import DesktopNav from "./components/DesktopNav";
 import SiteJsonLd from "./components/SiteJsonLd";
 import GoogleAnalytics from "./components/GoogleAnalytics";
+import { brandSans, brandSerif } from "./fonts";
 import { PRODUCT_NAV } from "./data/productNav";
 import { SITE_NAME, SITE_URL } from "./data/site";
 
@@ -94,7 +95,10 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${brandSerif.variable} ${brandSans.variable}`}
+    >
       <body>
         <GoogleAnalytics />
         <SiteJsonLd />

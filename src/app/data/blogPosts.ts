@@ -288,6 +288,184 @@ export const BLOG_POSTS: BlogPost[] = [
       href: "/sashiko",
     },
   },
+  {
+    slug: "hidamari-sashiko-needles-4345",
+    title: "COSMO® Hidamari Sashiko Assorted Needle Set",
+    excerpt:
+      "Four needle sizes in one Japanese-made set—designed for the running-stitch rhythm of sashiko and made to pair naturally with COSMO® Hidamari Sashiko Thread.",
+    publishedAt: "2026-06-28",
+    image: "/images/blog-hidamari-needles-4345-hero-20260628.jpg",
+    imageAlt:
+      "COSMO Hidamari sashiko assorted needle set No. 4345 retail package with six needles and gold-plated eyes",
+    sections: [
+      {
+        paragraphs: [
+          "Designed for the Natural Rhythm of Sashiko",
+          "Every sashiko stitch begins with a simple tool: the needle.",
+          "While it may appear similar to a standard sewing needle, a true sashiko needle is designed for a very different purpose. Its length, eye shape, and balance are carefully engineered to support the long, flowing running stitches that define traditional sashiko.",
+          "The COSMO® Hidamari Sashiko Assorted Needle Set (No. 4345) was developed with that purpose in mind. Made in Japan by Lecien, the set combines four carefully selected needle sizes with an elongated eye and a sharp, durable point—helping stitchers find the rhythm that feels most natural to them.",
+        ],
+      },
+      {
+        heading: "A Needle Designed for the Way Sashiko Is Stitched",
+        paragraphs: [
+          "Unlike ordinary hand sewing, sashiko often involves loading multiple stitches onto the needle before pulling the thread through the fabric.",
+          "To support this technique, the COSMO® Hidamari Sashiko Assorted Needle Set features:",
+        ],
+        bullets: [
+          "Four needle lengths for different stitching styles",
+          "Sharp points for smooth penetration through cotton and layered fabrics",
+          "Elongated eyes for easier threading of sashiko thread",
+          "A balanced profile that supports continuous running stitches",
+        ],
+      },
+      {
+        paragraphs: [
+          "Rather than offering only one size, the assortment allows stitchers to discover which needle best suits their hands, fabrics, and preferred technique.",
+        ],
+      },
+      {
+        heading: "Four Sizes for Different Stitching Styles",
+        paragraphs: [
+          "Every stitcher develops a unique rhythm.",
+          "Some prefer a longer needle for loading many stitches in a single motion, while others prefer a shorter needle for detailed patterns or layered fabrics.",
+          "The assortment includes six needles across four sizes.",
+        ],
+        table: {
+          headers: ["Size", "Thickness", "Length", "Qty", "Recommended Use"],
+          rows: [
+            ["S1", "0.84 mm", "41.3 mm", "1", "Curves, smaller motifs, detailed work"],
+            ["S2", "0.84 mm", "51.0 mm", "1", "Long running stitches and straight rows"],
+            ["S3", "0.99 mm", "44.5 mm", "2", "Heavier fabrics and layered cloth"],
+            ["S4", "0.97 mm", "54.0 mm", "2", "Hitomezashi and wide geometric patterns"],
+          ],
+        },
+      },
+      {
+        paragraphs: [
+          "For many beginners, trying several lengths is the easiest way to discover which needle feels most comfortable.",
+        ],
+      },
+      {
+        heading: "Designed to Pair with COSMO® Hidamari Sashiko Thread",
+        paragraphs: [
+          "The needle set and COSMO® Hidamari Sashiko Thread were developed as part of the same product series.",
+          "The eye size and needle dimensions are designed to work naturally with Hidamari thread, helping achieve smooth threading while maintaining the strength of the needle.",
+          "Every pack also includes a threader, making it even easier to get started.",
+        ],
+        gallery: [
+          {
+            src: "/images/sashiko-display-overview-20260610.jpg",
+            alt: "COSMO Hidamari sashiko thread display with needle pack hanging at top right",
+            caption: "Hidamari thread and needles, designed as one series.",
+          },
+          {
+            src: "/images/category-jp-sashiko-20260610.jpg",
+            alt: "COSMO Hidamari sashiko thread spools in multiple colors",
+            caption: "COSMO® Hidamari Sashiko Thread—the natural pairing for this needle set.",
+          },
+        ],
+        galleryVariant: "comparison",
+      },
+      {
+        heading: "Built for Everyday Stitching",
+        paragraphs: [
+          "Sashiko today extends well beyond traditional geometric patterns.",
+          "The same needle may be used for:",
+        ],
+        bullets: [
+          "Traditional sashiko",
+          "Boro-inspired repairs",
+          "Visible mending",
+          "Big-stitch quilting",
+          "Decorative hand stitching",
+        ],
+      },
+      {
+        paragraphs: [
+          "Because these projects often involve multiple layers of cotton or denim, the needle is designed to pass through fabric smoothly while maintaining precise control.",
+        ],
+        figure: {
+          src: "/images/blog-hidamari-needles-stitching-20260628.jpg",
+          alt: "Hands sashiko stitching an orange geometric pattern with Hidamari thread",
+          caption:
+            "From single layers to layered cotton and denim—the needle is built for smooth, controlled stitching.",
+        },
+      },
+      {
+        heading: "What Stitchers Appreciate",
+        paragraphs: [
+          "The design of the needle is supported by the experiences shared by stitchers around the world.",
+          "Customer reviews from international retailers often highlight several qualities:",
+        ],
+        bullets: [
+          "Smooth stitching through cotton, denim, and layered fabrics",
+          "Sharp points that help maintain an even stitching rhythm",
+          "An elongated eye that makes sashiko thread easier to thread",
+          "The convenience of having four different needle lengths in one package",
+          "Strong overall value for everyday stitching",
+        ],
+      },
+      {
+        paragraphs: [
+          "Many experienced stitchers describe the set as one they continue to reach for, while beginners often appreciate being able to explore different needle lengths before settling on a favorite.",
+          "Although individual preferences naturally vary, the consistency of these reviews reflects the design goals behind the product.",
+        ],
+      },
+      {
+        heading: "Product Specifications",
+        table: {
+          headers: ["", ""],
+          rows: [
+            ["Product", "COSMO® Hidamari Sashiko Assorted Needle Set"],
+            ["Item No.", "4345"],
+            ["Made in", "Japan"],
+            ["Series", "COSMO® Hidamari Sashiko"],
+            ["Contents", "6 needles (4 sizes) + threader"],
+            ["Recommended for", "Sashiko, boro, visible mending, quilting"],
+          ],
+        },
+      },
+      {
+        heading: "Frequently Asked Questions",
+        subsections: [
+          {
+            heading: "Is this needle only for sashiko?",
+            paragraphs: [
+              "No. While it was designed for sashiko, many makers also use it for visible mending, boro-inspired projects, big-stitch quilting, and other forms of decorative hand stitching.",
+            ],
+          },
+          {
+            heading: "Which needle should beginners start with?",
+            paragraphs: [
+              "Many stitchers begin with one of the longer needles (S2 or S4) for straight running stitches, then experiment with the other sizes to discover which best matches their personal stitching style.",
+            ],
+          },
+          {
+            heading: "Can I use threads other than COSMO® Hidamari?",
+            paragraphs: [
+              "Yes. However, the needle was developed alongside COSMO® Hidamari Sashiko Thread, making this combination the most natural pairing.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Discover Your Natural Stitching Rhythm",
+        paragraphs: [
+          "Every stitcher develops their own rhythm over time.",
+          "The COSMO® Hidamari Sashiko Assorted Needle Set was created to support that journey—offering multiple needle sizes, thoughtful Japanese design, and dependable performance in a single set.",
+          "Whether you are learning your first sashiko pattern or returning to a familiar favorite, the right needle helps every stitch feel smoother, more comfortable, and more enjoyable.",
+        ],
+      },
+    ],
+    ctaLabel: "Shop COSMO® Sashiko",
+    ctaDescription:
+      "Explore Hidamari sashiko thread, needles, fabric, and kits to start—or continue—your stitching journey.",
+    cta: {
+      label: "Explore COSMO Sashiko",
+      href: "/sashiko",
+    },
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
