@@ -151,8 +151,6 @@ export default function PrivacyPage() {
           <p style={{ marginTop: "16px" }}>
             See also:{" "}
             <Link href="/terms" style={{ textDecoration: "underline" }}>Terms &amp; Conditions</Link>
-            {" · "}
-            <Link href="/returns" style={{ textDecoration: "underline" }}>Return Policy</Link>
           </p>
         </div>
       </div>

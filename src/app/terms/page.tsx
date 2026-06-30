@@ -80,8 +80,9 @@ export default function TermsPage() {
         <div className="company-block">
           <h2>6. Returns &amp; Refunds</h2>
           <p>
-            Please see our <Link href="/returns" style={{ textDecoration: "underline" }}>Return Policy</Link> for
-            full details. All return and refund requests are handled by TANAAKK INC.
+            Return and refund terms will be published when online sales begin on this
+            website. Until then, product purchases are handled through authorized
+            retailers and wholesale partners.
           </p>
         </div>
 
