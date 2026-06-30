@@ -607,9 +607,9 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "Thread and color draw the eye, but every stitch begins with a needle. From Paleolithic bone tools to modern steel, explore how this enduring design still shapes embroidery, cross-stitch, and sashiko today.",
     publishedAt: "2026-06-30",
-    image: "/images/blog-needle-history-hero-20260630.jpg",
+    image: "/images/blog-needle-history-harmony-flatlay-20260630.jpg",
     imageAlt:
-      "Hands stitching an orange geometric pattern with a COSMO needle, thread, and natural linen fabric",
+      "A sewing needle with a needle threader passing through the eye, alongside a spool of thread and thimble on grey fabric",
     sections: [
       {
         paragraphs: [
