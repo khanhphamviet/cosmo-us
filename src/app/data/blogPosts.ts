@@ -46,6 +46,7 @@ export type BlogPost = {
   image: string;
   imageAlt: string;
   imageFit?: "cover" | "contain";
+  heroAspectRatio?: string;
   sections: BlogSection[];
   cta: {
     label: string;
@@ -56,6 +57,135 @@ export type BlogPost = {
 };
 
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "hidamari-sashiko-thread",
+    title: "COSMO® hidamari® Sashiko Thread: A Sunlit Take on a Timeless Craft",
+    excerpt:
+      "Meet hidamari—COSMO's cone-wound sashiko thread in 60 cotton colors. Smooth, fray-resistant, and made in Japan for stitching, mending, and creative making far beyond sashiko.",
+    publishedAt: "2026-06-30",
+    image: "/images/blog-hidamari-cones-cover-20260630.jpg",
+    imageAlt:
+      "Close-up of colorful COSMO hidamari sashiko thread packs in pink, orange, and yellow",
+    heroAspectRatio: "1 / 1",
+    sections: [
+      {
+        paragraphs: [
+          "Not Just for Stitching.",
+          "In Japanese, hidamari (ひだまり) means \"a sunny spot\"—that warm pool of light where you'd happily settle in and stitch for hours.",
+          "Introduced by LECIEN under the COSMO brand in March 2019, hidamari® Sashiko Thread was made to carry that same warmth into your hands: a smooth, 100% cotton thread, neatly wound on a cone, crafted in Japan for sashiko—and for so much more.",
+        ],
+      },
+      {
+        heading: "A Modern Thread Rooted in Tradition",
+        paragraphs: [
+          "Classic sashiko is worked with a thick, low-sheen cotton thread, so each running stitch sits proud of the cloth. hidamari builds on that heritage and brings it gently up to date.",
+          "Instead of the classic skein, hidamari comes wound on a tidy cone, so you can pull exactly the length you need without tangling. And rather than limiting the palette to traditional indigo and white, COSMO expanded it into vibrant hues and nuanced, smoky tones—colors that feel right at home in both classic and contemporary work.",
+        ],
+        figure: {
+          src: "/images/blog-hidamari-cone-lineup-hd-20260630.jpg",
+          alt: "A lineup of cone-wound COSMO hidamari sashiko thread packs in solid, speckled, and heather colors",
+          caption:
+            "Neatly cone-wound rather than skeined—pull exactly the length you need, with no tangling.",
+        },
+      },
+      {
+        heading: "What Makes hidamari Different",
+        paragraphs: [
+          "Every detail of hidamari is designed around the rhythm of sashiko—long, flowing running stitches loaded several at a time before the thread is pulled through.",
+        ],
+        bullets: [
+          "Cone-wound format—pull exactly the length you need, with no tangling",
+          "Softly twisted 100% cotton with a low-sheen, matte look",
+          "A medium-weight sashiko thread—thicker and more structured than standard embroidery floss strands, and ready to use straight off the cone with no separating",
+          "A smooth surface that resists fraying as you stitch",
+          "Made in Japan by LECIEN, maker of COSMO®—a Kyoto-born brand with roots dating back to 1924",
+        ],
+      },
+      {
+        heading: "Sixty Colors, From Soft to Smoky",
+        paragraphs: [
+          "hidamari spans 60 cotton colors across solid and patterned color families—far beyond the indigo-and-white of traditional sashiko. Alongside clear, vibrant brights you'll find muted, smoky shades that add quiet depth to a piece.",
+          "Because the color does the talking, many makers like to match the thread to the mood of a project: crisp solids for graphic geometric patterns, or shifting, multi-tonal threads that paint themselves as you stitch. The palette is organized into several distinct families:",
+        ],
+        gallery: [
+          {
+            src: "/images/sashiko-display-solid-20260610.jpg",
+            alt: "Display board of hidamari solid-color sashiko thread cones in blues, reds, pinks, and greens",
+            caption: "Solid colors",
+          },
+          {
+            src: "/images/sashiko-display-variegated-20260610.jpg",
+            alt: "Display board of hidamari variegated and multi-color sashiko thread cones",
+            caption: "Variegated & multi-color",
+          },
+        ],
+        galleryVariant: "comparison",
+        bullets: [
+          "Solid—vibrant single colors plus nuanced, smoky tones",
+          "Dot Kasuri—speckled colors with a playful, candy-like look",
+          "Heather—softly mottled, melange-style shades",
+          "Variegated—colors that shift gently along the length of the thread",
+          "Multi-Color—lively blends that change as you stitch",
+        ],
+      },
+      {
+        heading: "Not Just for Sashiko",
+        paragraphs: [
+          "hidamari's guiding idea is simple: a sashiko thread that isn't only for sashiko. Its strength, smoothness, and rich color make it just as much at home in everyday making.",
+          "Use it wherever a bold cotton thread can add texture, durability, or a pop of color:",
+        ],
+        bullets: [
+          "Traditional sashiko and hitomezashi patterns",
+          "Visible mending and boro-inspired repairs",
+          "Big-stitch quilting",
+          "Hand sewing and decorative stitching",
+          "Knitting, crochet accents, tassels, and tying",
+        ],
+      },
+      {
+        heading: "Pairs Naturally with the Sashiko Needle Set",
+        paragraphs: [
+          "COSMO® hidamari® Sashiko Thread pairs naturally with the COSMO® Sashiko Needle Set No. 4345, whose long eyes make threading easy.",
+          "Each pack also includes a threader, so you can start stitching right away.",
+        ],
+        figure: {
+          src: "/images/blog-hidamari-needles-stitching-hd2-20260630.jpg",
+          alt: "Hands stitching a circular sashiko pattern in orange hidamari thread, surrounded by COSMO thread spools and tassels",
+          caption:
+            "hidamari thread and the No. 4345 needle set, made to work together—shown here mid-stitch.",
+        },
+      },
+      {
+        heading: "Product Specifications",
+        table: {
+          headers: ["", ""],
+          rows: [
+            ["Product", "COSMO® hidamari® Sashiko Thread"],
+            ["Item No.", "122301 (Solid) / 122302 (Patterned)"],
+            ["Material", "100% cotton"],
+            ["Weight", "Medium-weight sashiko thread"],
+            ["Length", "Approx. 32.81 yd (30 m) per cone"],
+            ["Colors", "60 colors across several families"],
+            ["Made in", "Japan"],
+          ],
+        },
+      },
+      {
+        heading: "Find Your Sunny Spot",
+        paragraphs: [
+          "Whether you're drawn to the meditative rhythm of traditional sashiko, the creative freedom of visible mending, or simply the joy of a beautiful color in your hands, hidamari is made to make the moment feel warm and easy.",
+          "Pick a shade that speaks to you, settle into your own sunny spot, and let the stitching begin.",
+        ],
+      },
+    ],
+    ctaLabel: "Start Stitching with hidamari",
+    ctaDescription:
+      "Explore COSMO® hidamari® Sashiko Thread, needles, fabric, and kits to begin—or deepen—your sashiko journey.",
+    cta: {
+      label: "Explore COSMO Sashiko",
+      href: "/sashiko",
+    },
+  },
   {
     slug: "embroidery-thread-brand-history",
     title: "The Story Behind COSMO® Embroidery Thread",

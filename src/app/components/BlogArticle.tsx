@@ -23,6 +23,7 @@ function BlogFigureBlock({ figure }: { figure: BlogFigure }) {
           alt={figure.alt}
           width={1440}
           height={960}
+          quality={90}
           sizes="(max-width: 720px) 100vw, 720px"
           className="blog-article-figure-img"
         />
@@ -59,8 +60,9 @@ function BlogGalleryBlock({
             <Image
               src={item.src}
               alt={item.alt}
-              width={720}
-              height={720}
+              width={900}
+              height={900}
+              quality={90}
               sizes={
                 variant === "comparison"
                   ? "(max-width: 640px) 100vw, 50vw"
@@ -204,11 +206,15 @@ export default function BlogArticle({ post }: Props) {
         ]
           .filter(Boolean)
           .join(" ")}
+        style={
+          post.heroAspectRatio ? { aspectRatio: post.heroAspectRatio } : undefined
+        }
       >
         <Image
           src={post.image}
           alt={post.imageAlt}
           fill
+          quality={90}
           sizes="(max-width: 720px) 100vw, 720px"
           priority
           style={{ objectFit: post.imageFit ?? "cover" }}

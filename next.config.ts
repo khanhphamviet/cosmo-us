@@ -10,6 +10,12 @@ const nextConfig: NextConfig = {
   // Enable strict mode for React
   reactStrictMode: true,
 
+  // Higher-quality image optimization (default is 75)
+  images: {
+    qualities: [75, 90],
+    formats: ["image/avif", "image/webp"],
+  },
+
   async redirects() {
     return [
       {
