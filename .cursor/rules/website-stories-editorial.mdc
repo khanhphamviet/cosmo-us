@@ -1,0 +1,107 @@
+---
+description: COSMO US Stories — editorial positioning, tone, structure, and content boundaries
+globs: src/app/data/blogPosts.ts, src/app/stories/**, src/app/components/Blog*.tsx
+alwaysApply: false
+---
+
+# Stories Editorial Policy
+
+**Policy:** Stories is the COSMO US editorial channel — not a review site, not an advertorial. Every article follows **Educational + Inspirational + Product Story**.
+
+## What Stories is NOT
+
+| Avoid | Why |
+|-------|-----|
+| **Review site** | No star ratings, "best of" roundups, customer-review summaries, or competitor comparisons |
+| **Advertorial** | No purchase-first openings, hype, price calls, or spec sheets as the main content |
+| **Generic blog filler** | No trend-chasing listicles unrelated to stitching, COSMO craft, or LECIEN heritage |
+
+## Positioning
+
+**Educational + Inspirational + Product Story**
+
+| Pillar | Purpose |
+|--------|---------|
+| **Educational** | Reader learns culture, technique, history, or material science |
+| **Inspirational** | Reader feels respect for handwork, craft continuity, and the maker's intent |
+| **Product Story** | Reader understands *why* COSMO designs products the way it does — not *that they should buy now* |
+
+Product Story ≠ sales copy. It is the narrative of design intent and the relationship between tool, thread, and cloth.
+
+## Reader journey (required arc)
+
+1. **Gain knowledge** — context the reader did not have before
+2. **Understand COSMO design** — how LECIEN thinks about materials, tools, and use cases
+3. **Natural interest** — related products feel like a logical next step, not a pitch
+
+**Ratio guide:** Educational + inspirational content should be **more than half** of the article. Product naming intensifies in the final third only.
+
+## Article types
+
+| Type | Examples | Product presence |
+|------|----------|------------------|
+| **A — Culture & technique** | sashiko, needle history | Product in closing bridge + CTA only |
+| **B — Brand & heritage** | embroidery-thread-brand-history | Brand-wide; CTA to category |
+| **C — Product design** | hidamari needles 4345 | Product named mid-article, but education still leads |
+
+Type C still opens with craft context — never with the SKU or package shot as the first paragraph.
+
+## Structure template
+
+```
+1. Opening hook     — craft question or insight (no product name)
+2. Educational body — history, technique, comparison of ideas (not brands)
+3. Deeper insight   — tables, timelines, figures as teaching aids
+4. Inspirational turn — why this matters to makers today
+5. Product bridge   — COSMO design philosophy; optional specs as evidence
+6. Closing line     — return to craft, not commerce
+7. CTA (one)        — single link via cta / ctaLabel in blogPosts.ts
+```
+
+## Voice & language
+
+- **Tone:** Calm, knowledgeable, editorial — like a museum label or craft journal, not a sales page
+- **Audience:** US makers; explain Japanese terms once; assume curiosity, not expert knowledge
+- **Facts:** Specs and dates must be accurate; mark uncertainty when historical
+- **COSMO® / hidamari®:** Use registered marks on first mention per brand standards
+- **Language:** English for cosmo-us.lecien.com; adapt from cosmo-jp sources — do not translate blindly
+
+## Product mentions — do / don't
+
+```text
+✅  "Tapestry needles use a blunt point so the weave is not split."
+✅  "COSMO developed this set alongside Hidamari thread for running-stitch rhythm."
+✅  Spec table supporting a design point already explained in prose
+
+❌  "Customer reviews highlight…"
+❌  "Better than other brands…"
+❌  "You should buy…"
+❌  Three SKU rows with no educational context
+❌  FAQ that only restates marketing bullets
+```
+
+## Images
+
+- Hero and figures support **teaching or atmosphere**, not catalog shots alone
+- Follow `website-images-onedrive-archive.mdc` for new assets
+- Alt text describes what is shown for accessibility and SEO
+
+## Data & files
+
+| File | Role |
+|------|------|
+| `src/app/data/blogPosts.ts` | Article content, metadata, CTA |
+| `src/app/components/BlogArticle.tsx` | Layout components (figure, gallery, timeline, table) |
+| `src/app/stories/[slug]/page.tsx` | Route; rarely needs per-article edits |
+
+Add new stories to `blogPosts.ts` and `sitemap.ts` picks them up automatically via `BLOG_POSTS`.
+
+## Checklist (before publish)
+
+- [ ] Opens without product name or purchase language
+- [ ] Educational + inspirational sections are the majority
+- [ ] No review-style or competitor language
+- [ ] Product appears as design story, not catalog entry
+- [ ] One CTA at the end
+- [ ] `npm run build` passes
+- [ ] New images archived per OneDrive rule

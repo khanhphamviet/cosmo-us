@@ -596,6 +596,167 @@ export const BLOG_POSTS: BlogPost[] = [
       href: "/sashiko",
     },
   },
+  {
+    slug: "needle-history-embroidery-cross-stitch",
+    title: "The History of the Needle: The Small Tool Behind Every Beautiful Stitch",
+    excerpt:
+      "Thread and color draw the eye, but every stitch begins with a needle. From Paleolithic bone tools to modern steel, explore how this enduring design still shapes embroidery, cross-stitch, and sashiko today.",
+    publishedAt: "2026-06-30",
+    image: "/images/blog-needle-history-hero-20260630.jpg",
+    imageAlt:
+      "A sewing needle threaded with cotton, alongside a spool of thread, needle threader, and thimble on grey fabric",
+    sections: [
+      {
+        paragraphs: [
+          "When we admire a beautiful piece of embroidery, our eyes are naturally drawn to the thread, the colors, and the finished design.",
+          "Yet every stitch begins with something much smaller.",
+          "A needle.",
+          "Simple in appearance, the sewing needle has remained one of humanity's most enduring tools. For tens of thousands of years, it has connected thread to fabric, transforming practical sewing into decoration, craftsmanship, and self-expression.",
+          "Although the materials used to make needles have evolved dramatically over time, their essential design has remained remarkably consistent.",
+          "Sometimes, the simplest ideas are the ones that last the longest.",
+        ],
+      },
+      {
+        heading: "More Than a Tool for Survival",
+        paragraphs: [
+          "For much of human history, clothing existed primarily to protect people from the environment.",
+          "Recent archaeological research suggests that the invention of the eyed needle may also have marked an important turning point in human creativity.",
+          "A 2024 review published in Science Advances argues that eyed needles—first documented in the archaeological record of Siberia around 40,000 years ago—enabled finer sewing and the decoration of clothing with beads and other ornaments. The authors suggest that this innovation contributed to clothing becoming not only functional protection, but also a medium for cultural identity and personal expression.",
+          "Whether repairing, decorating, or creating something entirely new, every stitch carries a story.",
+        ],
+      },
+      {
+        heading: "A Design That Has Endured for Thousands of Years",
+        paragraphs: [
+          "The earliest sewing needles were crafted from bone, ivory, antler, and horn.",
+          "As metallurgy advanced, those materials gradually gave way to copper, bronze, iron, and eventually hardened steel.",
+          "The material evolved. The design hardly did.",
+          "Even today, nearly every hand-sewing needle still shares the same three essential elements:",
+        ],
+        bullets: [
+          "A sharp point",
+          "A slender shaft",
+          "An eye that carries the thread",
+        ],
+      },
+      {
+        paragraphs: [
+          "Industrial manufacturing in the eighteenth and nineteenth centuries did not reinvent the needle—it refined it. Advances in steelmaking and precision manufacturing produced needles that were smoother, stronger, more consistent, and accessible to stitchers around the world.",
+        ],
+      },
+      {
+        heading: "Needle Quality",
+        paragraphs: [
+          "A needle may appear simple, but it is a precision tool.",
+          "Small differences become noticeable after hundreds—or even thousands—of stitches.",
+        ],
+        bulletsLabel: "A well-made needle should",
+        bullets: [
+          "Enter fabric smoothly",
+          "Help reduce abrasion on the thread",
+          "Maintain consistent dimensions",
+          "Provide sufficient strength for extended stitching",
+          "Remain comfortable throughout long stitching sessions",
+        ],
+      },
+      {
+        paragraphs: [
+          "One of the most overlooked features is the eye.",
+          "Every time thread passes through it, friction is created. A smoothly finished eye helps reduce abrasion, allowing delicate fibers to retain their strength, softness, and luster throughout a project.",
+          "A good needle doesn't simply pass through fabric. It helps protect the thread.",
+        ],
+      },
+      {
+        heading: "Different Crafts, Different Needles",
+        paragraphs: [
+          "Although the basic structure of a needle has remained largely unchanged, different stitching techniques have inspired specialized designs.",
+          "Embroidery needles feature a sharp point and an eye suited to stranded cotton and decorative stitching.",
+          "Cross-stitch needles—often tapestry needles—have a rounded tip that slips naturally between the woven threads of Aida and even-weave fabrics without splitting them.",
+          "Sashiko needles are longer, making it easier to load multiple running stitches before drawing the thread through the fabric—a technique that gives sashiko its distinctive rhythm.",
+          "Each design reflects the unique movement of its craft.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-needle-history-cross-stitch-4307-20260630.jpg",
+            alt: "COSMO No. 4307 cross-stitch needle set with gold-plated eyes in three sizes",
+            caption: "Cross-stitch needles — rounded tips for counted even-weave",
+          },
+          {
+            src: "/images/blog-needle-history-sashiko-needles-20260630.jpg",
+            alt: "COSMO Hidamari sashiko assorted needle set No. 4345 retail package",
+            caption: "Sashiko needles — longer shafts for running-stitch rhythm",
+          },
+        ],
+        galleryVariant: "comparison",
+      },
+      {
+        heading: "Choosing the Right Needle",
+        paragraphs: [
+          "There is no single \"best\" needle for every project.",
+          "The right choice depends on your technique, fabric, and thread.",
+          "When selecting a needle, consider:",
+        ],
+        bullets: [
+          "The type of fabric",
+          "The thickness of the thread",
+          "The stitching technique",
+          "The length of your project",
+        ],
+      },
+      {
+        paragraphs: [
+          "Using the appropriate needle not only improves the finished result—it also helps make long stitching sessions more comfortable and enjoyable.",
+          "Sometimes, the smallest tool makes the biggest difference.",
+        ],
+      },
+      {
+        heading: "The Harmony of Thread, Fabric, and Needle",
+        paragraphs: [
+          "COSMO® is widely known for embroidery thread, but beautiful stitching has never depended on thread alone.",
+          "No matter how beautiful a thread may be, it can only perform at its best when paired with the right fabric and the right needle.",
+          "Every successful project rests on the harmony of three elements: thread, fabric, and needle. Each supports the others.",
+          "A beautifully finished thread deserves a needle that helps preserve its fibers. A carefully woven fabric deserves a needle that passes through it cleanly.",
+          "When these three elements work together, stitching feels smoother, more comfortable, and more enjoyable.",
+          "LECIEN develops COSMO needles—including embroidery, cross-stitch, and sashiko assortments—to complement both the technique and the thread, so the smallest tool in your basket helps every fiber perform at its best.",
+        ],
+        figure: {
+          src: "/images/blog-needle-history-stitching-20260630.jpg",
+          alt: "Hands sashiko stitching with Hidamari thread and a long sashiko needle",
+          caption:
+            "Thread, fabric, and needle work together—the smallest tool carries every stitch.",
+        },
+      },
+      {
+        heading: "Every Beautiful Stitch Begins with a Needle",
+        paragraphs: [
+          "The history of embroidery is often told through extraordinary textiles, beautiful colors, and intricate patterns.",
+          "Yet behind every finished piece is one remarkably humble tool.",
+          "For thousands of years, the sewing needle has connected human hands to fabric—first for survival, then for craftsmanship, and today for creativity and self-expression.",
+          "Its design has changed very little. Its importance never has.",
+          "The next time you begin a new project, take a moment to appreciate the smallest tool in your stitching basket.",
+          "Every beautiful stitch begins with a needle. Choosing the right one is one of the simplest ways to make every stitch smoother, more enjoyable, and more rewarding.",
+        ],
+      },
+      {
+        heading: "Reference",
+        subsections: [
+          {
+            heading: "Further reading",
+            paragraphs: [
+              "Gilligan I, d'Errico F, Doyon L, Wang W, Kuzmin YV. Paleolithic eyed needles and the evolution of dress. Science Advances. 2024;10(26):eadp2887. DOI: 10.1126/sciadv.adp2887",
+            ],
+          },
+        ],
+      },
+    ],
+    ctaLabel: "Continue Exploring",
+    ctaDescription:
+      "When you are ready to match thread, fabric, and tool, browse COSMO needles, hoops, and counted-work supplies.",
+    cta: {
+      label: "Explore Tools & Supplies",
+      href: "/tools-supplies",
+    },
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
