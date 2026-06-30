@@ -7,6 +7,9 @@ export type BlogFigure = {
   src: string;
   alt: string;
   caption?: string;
+  fit?: "cover" | "contain";
+  width?: number;
+  height?: number;
 };
 
 export type BlogTimelineStep = {
@@ -30,8 +33,10 @@ export type BlogSection = {
     alt: string;
   };
   figure?: BlogFigure;
+  figurePosition?: "below" | "aside";
   gallery?: BlogFigure[];
-  galleryVariant?: "row" | "comparison" | "patterns";
+  galleryVariant?: "row" | "comparison" | "patterns" | "aside";
+  galleryPosition?: "below" | "aside";
   mediaPosition?: "top" | "bottom";
   timeline?: BlogTimelineStep[];
   table?: BlogTable;
@@ -604,7 +609,7 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: "2026-06-30",
     image: "/images/blog-needle-history-hero-20260630.jpg",
     imageAlt:
-      "A sewing needle threaded with cotton, alongside a spool of thread, needle threader, and thimble on grey fabric",
+      "Hands stitching an orange geometric pattern with a COSMO needle, thread, and natural linen fabric",
     sections: [
       {
         paragraphs: [
@@ -624,6 +629,16 @@ export const BLOG_POSTS: BlogPost[] = [
           "A 2024 review published in Science Advances argues that eyed needles—first documented in the archaeological record of Siberia around 40,000 years ago—enabled finer sewing and the decoration of clothing with beads and other ornaments. The authors suggest that this innovation contributed to clothing becoming not only functional protection, but also a medium for cultural identity and personal expression.",
           "Whether repairing, decorating, or creating something entirely new, every stitch carries a story.",
         ],
+        figurePosition: "aside",
+        figure: {
+          src: "/images/blog-needle-history-bone-needle-20260630.jpg",
+          alt: "An ancient eyed bone needle on a neutral background",
+          caption:
+            "Early eyed bone needles show that the essential design of the sewing needle was already established thousands of years ago.",
+          fit: "contain",
+          width: 900,
+          height: 1200,
+        },
       },
       {
         heading: "A Design That Has Endured for Thousands of Years",
@@ -677,17 +692,24 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         gallery: [
           {
-            src: "/images/blog-needle-history-cross-stitch-4307-20260630.jpg",
-            alt: "COSMO No. 4307 cross-stitch needle set with gold-plated eyes in three sizes",
+            src: "/images/blog-needle-history-cross-stitch-4306-aside-20260630.jpg",
+            alt: "COSMO No. 4306 cross-stitch needle set with gold-plated eyes in three sizes",
             caption: "Cross-stitch needles — rounded tips for counted even-weave",
+            fit: "contain",
+            width: 365,
+            height: 1024,
           },
           {
-            src: "/images/blog-needle-history-sashiko-needles-20260630.jpg",
+            src: "/images/blog-needle-history-sashiko-4345-aside-20260630.jpg",
             alt: "COSMO Hidamari sashiko assorted needle set No. 4345 retail package",
             caption: "Sashiko needles — longer shafts for running-stitch rhythm",
+            fit: "contain",
+            width: 373,
+            height: 1024,
           },
         ],
-        galleryVariant: "comparison",
+        galleryPosition: "aside",
+        galleryVariant: "aside",
       },
       {
         heading: "Choosing the Right Needle",

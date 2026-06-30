@@ -15,14 +15,32 @@ type Props = {
 };
 
 function BlogFigureBlock({ figure }: { figure: BlogFigure }) {
+  const width = figure.width ?? 1440;
+  const height = figure.height ?? 960;
+  const isContain = figure.fit === "contain";
+
   return (
-    <figure className="blog-article-figure">
-      <div className="blog-article-figure-media">
+    <figure
+      className={[
+        "blog-article-figure",
+        isContain ? "blog-article-figure--contain" : "",
+      ]
+        .filter(Boolean)
+        .join(" ")}
+    >
+      <div
+        className={[
+          "blog-article-figure-media",
+          isContain ? "blog-article-figure-media--contain" : "",
+        ]
+          .filter(Boolean)
+          .join(" ")}
+      >
         <Image
           src={figure.src}
           alt={figure.alt}
-          width={1440}
-          height={960}
+          width={width}
+          height={height}
           quality={90}
           sizes="(max-width: 720px) 100vw, 720px"
           className="blog-article-figure-img"
@@ -44,40 +62,70 @@ function BlogGalleryBlock({
   items: BlogFigure[];
   variant?: BlogSection["galleryVariant"];
 }) {
+  const isAside = variant === "aside";
+
   return (
     <div
       className={[
         "blog-article-gallery",
         variant === "comparison" ? "blog-article-gallery--comparison" : "",
+        variant === "row" ? "blog-article-gallery--row" : "",
         variant === "patterns" ? "blog-article-gallery--patterns" : "",
+        isAside ? "blog-article-gallery--aside" : "",
       ]
         .filter(Boolean)
         .join(" ")}
     >
-      {items.map((item) => (
-        <figure key={`${item.src}-${item.caption ?? item.alt}`} className="blog-article-gallery-item">
-          <div className="blog-article-gallery-media">
-            <Image
-              src={item.src}
-              alt={item.alt}
-              width={900}
-              height={900}
-              quality={90}
-              sizes={
-                variant === "comparison"
-                  ? "(max-width: 640px) 100vw, 50vw"
-                  : "(max-width: 640px) 100vw, 33vw"
-              }
-              className="blog-article-gallery-img"
-            />
-          </div>
-          {item.caption ? (
-            <figcaption className="blog-article-gallery-caption">
-              {item.caption}
-            </figcaption>
-          ) : null}
-        </figure>
-      ))}
+      {items.map((item) => {
+        const width = item.width ?? 900;
+        const height = item.height ?? 900;
+
+        return (
+          <figure key={`${item.src}-${item.caption ?? item.alt}`} className="blog-article-gallery-item">
+            <div
+              className={[
+                "blog-article-gallery-media",
+                item.fit === "contain" ? "blog-article-gallery-media--contain" : "",
+                isAside && item.fit === "contain"
+                  ? "blog-article-gallery-media--aside-fill"
+                  : "",
+              ]
+                .filter(Boolean)
+                .join(" ")}
+            >
+              {isAside && item.fit === "contain" ? (
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  fill
+                  quality={90}
+                  sizes="(max-width: 640px) 45vw, 180px"
+                  className="blog-article-gallery-img"
+                />
+              ) : (
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  width={width}
+                  height={height}
+                  quality={90}
+                  sizes={
+                    variant === "comparison"
+                      ? "(max-width: 640px) 100vw, 50vw"
+                      : "(max-width: 640px) 100vw, 33vw"
+                  }
+                  className="blog-article-gallery-img"
+                />
+              )}
+            </div>
+            {item.caption ? (
+              <figcaption className="blog-article-gallery-caption">
+                {item.caption}
+              </figcaption>
+            ) : null}
+          </figure>
+        );
+      })}
     </div>
   );
 }
@@ -124,10 +172,19 @@ function Section({
   isLead?: boolean;
   isClosing?: boolean;
 }) {
+  const hasAsideFigure =
+    Boolean(section.figure) && section.figurePosition === "aside";
+  const hasAsideGallery =
+    Boolean(section.gallery?.length) && section.galleryPosition === "aside";
+
   const sectionClass = [
     "blog-article-section",
     section.bullets?.length ? "blog-article-section--highlight" : "",
-    section.asideImage ? "blog-article-section--with-aside" : "",
+    section.asideImage || hasAsideFigure || hasAsideGallery
+      ? "blog-article-section--with-aside"
+      : "",
+    hasAsideFigure ? "blog-article-section--figure-aside" : "",
+    hasAsideGallery ? "blog-article-section--gallery-aside" : "",
     isClosing ? "blog-article-section--closing" : "",
   ]
     .filter(Boolean)
@@ -144,8 +201,10 @@ function Section({
 
   const mediaBlocks = (
     <>
-      {section.figure ? <BlogFigureBlock figure={section.figure} /> : null}
-      {section.gallery?.length ? (
+      {section.figure && section.figurePosition !== "aside" ? (
+        <BlogFigureBlock figure={section.figure} />
+      ) : null}
+      {section.gallery?.length && section.galleryPosition !== "aside" ? (
         <BlogGalleryBlock
           items={section.gallery}
           variant={section.galleryVariant}
@@ -171,6 +230,23 @@ function Section({
               width={280}
               height={120}
               className="blog-article-aside-logo"
+            />
+          </aside>
+        </div>
+      ) : hasAsideFigure && section.figure ? (
+        <div className="blog-article-section-grid">
+          <div className="blog-article-section-copy">{paragraphs}</div>
+          <aside className="blog-article-section-aside">
+            <BlogFigureBlock figure={section.figure} />
+          </aside>
+        </div>
+      ) : hasAsideGallery && section.gallery ? (
+        <div className="blog-article-section-grid">
+          <div className="blog-article-section-copy">{paragraphs}</div>
+          <aside className="blog-article-section-aside">
+            <BlogGalleryBlock
+              items={section.gallery}
+              variant={section.galleryVariant ?? "aside"}
             />
           </aside>
         </div>
