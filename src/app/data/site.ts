@@ -1,6 +1,7 @@
 export const SITE_URL = "https://cosmo-us.lecien.com";
 export const SITE_NAME = "COSMO Embroidery US";
-export const GA_MEASUREMENT_ID = "G-3B5V4KL1V3";
+export const GA_MEASUREMENT_ID =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || "G-3B5V4KL1V3";
 export const FAIRE_STORE_URL = "https://lecien.faire.com";
 export const LECIEN_EMBROIDERY_URL = "https://www.lecien.co.jp/en/embroidery";
 export const INSTAGRAM_URL = "https://instagram.com/lecien_cosmo/";

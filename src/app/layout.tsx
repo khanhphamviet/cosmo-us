@@ -100,7 +100,6 @@ export default function RootLayout({
       className={`${brandSerif.variable} ${brandSans.variable}`}
     >
       <body>
-        <GoogleAnalytics />
         <SiteJsonLd />
         {/* ── US OFFICIAL STORE BANNER — required every page (PE compliance) ── */}
         <div className="us-banner">
@@ -205,6 +204,7 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+        <GoogleAnalytics />
       </body>
     </html>
   );
