@@ -12,7 +12,7 @@ const FLOSS_DATA = {
     title: "No. 25 Floss",
     img: "/images/floss-cosmo-20260610.jpg",
     intro:
-      "In 1950, COSMO Embroidery Floss was launched with a wide assortment of 195 colors. Since then, our collection has been expanded to 501 beautiful colors. COSMO products are renowned and beloved in Japan and all over the world including North America, Asia, Europe and Australia.",
+      "In 1950, COSMO Embroidery Floss was launched with a wide assortment of 195 colors. Since then, our collection has been expanded to 500 beautiful colors. COSMO products are renowned and beloved in Japan and all over the world including North America, Asia, Europe and Australia.",
     sections: [
       {
         heading: "COSMO Size 25 Floss",
@@ -20,7 +20,7 @@ const FLOSS_DATA = {
         specs: [
           { label: "Material",       value: "100% Cotton" },
           { label: "Length",         value: "8.75 yard / 8 meter" },
-          { label: "Colors",         value: "501 solid colors" },
+          { label: "Colors",         value: "500 solid colors" },
           { label: "Per box",        value: "6 skeins" },
           { label: "Strands",        value: "6" },
           { label: "Yarn count",     value: "30 cotton, 2 ply" },
@@ -38,7 +38,7 @@ const FLOSS_DATA = {
       },
       {
         heading: "③ Long-lasting Colors",
-        body: "Our 501 colors all resist fading and discoloring due to the advanced craftsmanship of our special processing techniques.",
+        body: "Our 500 colors all resist fading and discoloring due to the advanced craftsmanship of our special processing techniques.",
       },
       {
         heading: "④ Quality You Can Trust",

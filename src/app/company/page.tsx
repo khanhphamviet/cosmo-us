@@ -66,12 +66,6 @@ export default function CompanyPage() {
                   Seller of Record for COSMO products sold in the United States
                 </td>
               </tr>
-              <tr>
-                <th>US Support</th>
-                <td>
-                  <a href="mailto:support@lecien.com">support@lecien.com</a>
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>
