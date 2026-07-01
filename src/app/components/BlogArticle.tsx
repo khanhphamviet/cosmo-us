@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { ReactNode } from "react";
 import type {
   BlogFigure,
   BlogPost,
@@ -13,6 +14,51 @@ import { BlogTableBlock } from "./BlogTable";
 type Props = {
   post: BlogPost;
 };
+
+function renderRichText(text: string): ReactNode[] {
+  const pattern = /\[([^\]]+)\]\(([^)]+)\)/g;
+  const nodes: ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = pattern.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      nodes.push(text.slice(lastIndex, match.index));
+    }
+
+    const [, label, href] = match;
+    const isExternal = href.startsWith("http");
+
+    nodes.push(
+      isExternal ? (
+        <a
+          key={`${match.index}-${href}`}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {label}
+        </a>
+      ) : (
+        <Link key={`${match.index}-${href}`} href={href}>
+          {label}
+        </Link>
+      ),
+    );
+
+    lastIndex = match.index + match[0].length;
+  }
+
+  if (lastIndex < text.length) {
+    nodes.push(text.slice(lastIndex));
+  }
+
+  return nodes.length > 0 ? nodes : [text];
+}
+
+function BlogRichText({ text }: { text: string }) {
+  return <>{renderRichText(text)}</>;
+}
 
 function BlogFigureBlock({ figure }: { figure: BlogFigure }) {
   const width = figure.width ?? 1440;
@@ -156,7 +202,9 @@ function Subsection({ subsection }: { subsection: BlogSubsection }) {
     <div className="blog-article-subsection">
       <h3>{subsection.heading}</h3>
       {subsection.paragraphs.map((paragraph) => (
-        <p key={paragraph}>{paragraph}</p>
+        <p key={paragraph}>
+          <BlogRichText text={paragraph} />
+        </p>
       ))}
       {subsection.table ? <BlogTableBlock table={subsection.table} /> : null}
     </div>
@@ -195,7 +243,7 @@ function Section({
       key={paragraph}
       className={isLead && index === 0 ? "blog-article-lead" : undefined}
     >
-      {paragraph}
+      <BlogRichText text={paragraph} />
     </p>
   ));
 
@@ -257,7 +305,9 @@ function Section({
       {section.bullets?.length ? (
         <ul className="blog-article-bullets">
           {section.bullets.map((item) => (
-            <li key={item}>{item}</li>
+            <li key={item}>
+              <BlogRichText text={item} />
+            </li>
           ))}
         </ul>
       ) : null}
@@ -325,12 +375,26 @@ export default function BlogArticle({ post }: Props) {
           {post.ctaLabel ?? "Featured in this story"}
         </p>
         {post.ctaDescription ? (
-          <p className="blog-article-cta-desc">{post.ctaDescription}</p>
+          <p className="blog-article-cta-desc">
+            <BlogRichText text={post.ctaDescription} />
+          </p>
         ) : null}
-        <Link href={post.cta.href} className="blog-article-cta">
-          {post.cta.label}
-          <span aria-hidden="true"> →</span>
-        </Link>
+        {post.cta.href.startsWith("http") ? (
+          <a
+            href={post.cta.href}
+            className="blog-article-cta"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {post.cta.label}
+            <span aria-hidden="true"> →</span>
+          </a>
+        ) : (
+          <Link href={post.cta.href} className="blog-article-cta">
+            {post.cta.label}
+            <span aria-hidden="true"> →</span>
+          </Link>
+        )}
         <Link href="/stories" className="blog-article-back">
           Back to Stories
         </Link>

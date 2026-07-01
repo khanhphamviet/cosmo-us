@@ -1,3 +1,5 @@
+import { FAIRE_STORE_URL } from "./site";
+
 export type BlogTable = {
   headers: string[];
   rows: string[][];
@@ -929,9 +931,9 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "COSMO's U.S. warehouse in New Jersey is not the brand's first chapter in America—it is the next one. How decades of independent shops, teachers, and stitchers built a community, and what changed in 2026.",
     publishedAt: "2026-07-02",
-    image: "/images/blog-cosmo-us-next-chapter-hero-20260702.jpg",
+    image: "/images/blog-cosmo-us-next-chapter-hero-tamamushi-20260702.jpg",
     imageAlt:
-      "Hands holding a bouquet of multicolored COSMO embroidery floss skeins",
+      "Embroidered butterflies and flowers with beads on white linen, showcasing COSMO thread craftsmanship",
     sections: [
       {
         heading: "COSMO Wasn't New to America",
@@ -941,7 +943,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "In other words, America was never a new market for COSMO.",
           "What changed in 2026 was not the relationship between the brand and American stitchers—it was how that relationship could be supported.",
           "The opening of a U.S. warehouse marked an important new chapter.",
-          "It marked COSMO becoming locally available.",
+          "It marked the beginning of domestic fulfillment from within the United States.",
         ],
       },
       {
@@ -949,9 +951,9 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "COSMO's embroidery story began in 1924, laying the foundation for more than a century of embroidery heritage.",
           "LECIEN was founded in Kyoto in 1933, bringing together European textile traditions and Japanese craftsmanship to create products for generations of makers.",
-          "COSMO's connection with America also has roots that reach back to 1950. According to LECIEN's company history, the company's handmade division began by importing American quilt products into Japan. That early exchange between American quilting culture and Japanese craftsmanship became part of the foundation for the embroidery and needlework business that followed.",
+          "COSMO's connection with America also reaches back to 1950. According to LECIEN's company history, the company's handmade division began by importing American quilt products into Japan. That early exchange reflects a longstanding relationship between American quilting culture and Japanese needlework—one that continues today.",
           "Around the same time, COSMO Embroidery Floss was introduced with an assortment of 195 colors. Over the decades, the collection expanded to include embroidery fabrics, needles, tools, and today more than 500 embroidery floss colors.",
-          "Today, COSMO products are used by makers throughout North America, Europe, Asia, Australia, and Japan.",
+          "Today, COSMO products are available to makers throughout North America, Europe, Asia, Australia, and Japan.",
         ],
         timeline: [
           { period: "1924", title: "COSMO embroidery heritage begins in Japan" },
@@ -967,26 +969,25 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Growing One Stitch at a Time",
         paragraphs: [
           "Unlike many consumer brands that entered the U.S. through national retail chains, COSMO grew gradually.",
-          "Independent needlework shops introduced the brand to their local communities.",
-          "Quilt stores selected colors that reflected the tastes of their customers.",
+          "Independent needlework and quilt shops introduced carefully selected COSMO products to their local communities.",
           "Teachers recommended COSMO threads in workshops and classes.",
           "Designers incorporated them into patterns.",
           "Stitchers shared finished projects with friends and online communities.",
           "One recommendation led to another.",
           "One project inspired the next.",
-          "Supported by independent retailers and long-standing wholesale partners, those countless individual connections gradually created a community that existed long before COSMO established its official U.S. warehouse.",
+          "Together with long-standing wholesale partners, independent retailers helped build a community that existed long before COSMO established domestic fulfillment in the United States.",
         ],
       },
       {
         heading: "What Changed in 2026",
         paragraphs: [
-          "In May 2026, COSMO began shipping from its first official U.S. warehouse in New Jersey, operated by TANAAKK INC., the U.S. Seller of Record. Official wholesale ordering also became available through Faire.",
+          `In May 2026, COSMO began shipping from its first official U.S. warehouse in New Jersey, operated by TANAAKK INC., the U.S. Seller of Record. Official wholesale ordering also became available through [Faire](${FAIRE_STORE_URL}).`,
           "For American retailers and stitchers, this means:",
         ],
         bullets: [
           "Faster domestic shipping",
           "Improved inventory availability",
-          "Easier wholesale ordering through Faire",
+          `Easier wholesale ordering through [Faire](${FAIRE_STORE_URL})`,
           "Continued manufacturing by LECIEN in Japan",
         ],
         bulletsLabel: "What changed in 2026",
@@ -995,7 +996,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "What changed was the supply chain.",
           "What did not change was COSMO's commitment to Japanese craftsmanship, quality, and the independent retailers and wholesale partners who helped build the brand's presence in North America.",
-          "The goal is simple: to make the same products more accessible while preserving the craftsmanship developed in Japan and the trusted retail relationships that have supported COSMO for many years.",
+          "The goal is simple: to make it easier for American retailers and stitchers to access the same trusted products while preserving the craftsmanship developed in Japan.",
         ],
       },
       {
@@ -1003,7 +1004,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "Independent shops have always been at the heart of COSMO's story in North America.",
           "The new U.S. warehouse was created not to replace those relationships, but to strengthen them—providing more reliable inventory, shorter delivery times, and a more responsive supply chain for the retailers who have introduced COSMO to generations of American makers.",
-          "Local shops remain places where stitchers discover new techniques, share ideas, and build creative communities. Supporting those businesses—and the wholesale partners who serve them—remains an important part of COSMO's long-term commitment to the North American market.",
+          "Local shops remain places where stitchers discover new techniques, share ideas, and build creative communities. Supporting those creative communities remains an important part of COSMO's long-term commitment to North America.",
         ],
       },
       {
@@ -1017,16 +1018,16 @@ export const BLOG_POSTS: BlogPost[] = [
           "For stitchers, however, it means something much simpler:",
           "Easier access to the threads, fabrics, and tools they already love.",
           "COSMO's story in America did not begin in 2026.",
-          "It simply became easier to continue.",
+          "It simply became easier to carry forward.",
         ],
       },
     ],
     ctaLabel: "LECIEN COSMO Wholesale on Faire",
     ctaDescription:
-      "U.S. retailers can order through our official Faire store with New Jersey fulfillment and restocking from Japan.",
+      `U.S. retailers can order through our official [Faire](${FAIRE_STORE_URL}) store with New Jersey fulfillment and restocking from Japan.`,
     cta: {
-      label: "Explore Wholesale",
-      href: "/wholesale",
+      label: "Shop on Faire",
+      href: FAIRE_STORE_URL,
     },
   },
 ];
