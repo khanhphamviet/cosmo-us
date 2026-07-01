@@ -63,6 +63,150 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "cross-stitch",
+    title: "What Is Cross-Stitch?",
+    excerpt:
+      "Cross-stitch turns one simple X-shaped stitch into letters, patterns, and detailed pictures. Here's how counted cross-stitch works, what you need to start, and how COSMO floss and cloth fit in.",
+    publishedAt: "2026-07-01",
+    image: "/images/blog-crossstitch-fuji-20260701.jpg",
+    imageAlt:
+      "Framed cross-stitch of Mount Fuji and cherry blossoms stitched in COSMO floss",
+    heroAspectRatio: "1 / 1",
+    sections: [
+      {
+        paragraphs: [
+          "One of the World's Most Beloved Stitching Crafts",
+          "Cross-stitch is a form of counted embroidery built from a single, simple stitch: two short diagonal stitches that cross to form a small X. Repeat those X's across a gridded fabric and they add up into letters, borders, and surprisingly detailed pictures.",
+          "Because every stitch lands on a regular grid, cross-stitch is famously easy to pick up—relaxing, rhythmic, and hard to put down. It's stitched by absolute beginners and lifelong makers alike, all around the world.",
+        ],
+      },
+      {
+        heading: "How Is Cross-Stitch Different from Other Embroidery?",
+        paragraphs: [
+          "Cross-stitch is actually a type of embroidery—but it works differently from the free, painterly stitching many people picture. Instead of drawing shapes with thread, you count squares and fill them in.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-crossstitch-sea-20260701.jpg",
+            alt: "Framed cross-stitch of sea creatures—turtle, fish, and coral—worked in COSMO floss",
+            caption: "Cross-stitch",
+          },
+          {
+            src: "/images/blog-sashiko-compare-embroidery-floral-20260628b.jpg",
+            alt: "Colorful floral surface embroidery with satin and stem stitches on cream fabric",
+            caption: "Surface embroidery",
+          },
+        ],
+        galleryVariant: "comparison",
+        table: {
+          headers: ["Cross-Stitch", "Surface Embroidery"],
+          rows: [
+            ["Counted onto a fabric grid", "Stitched freely onto the fabric"],
+            ["Built from one X-shaped stitch", "Uses many different stitches"],
+            ["Worked from a chart", "Worked from a drawn design or freehand"],
+            ["Even-weave (Aida) cloth", "Almost any fabric"],
+            ["Crisp, geometric, pixel-like", "Fluid, painterly shapes"],
+          ],
+        },
+      },
+      {
+        heading: "How It Works: Counting the Grid",
+        paragraphs: [
+          "The secret to cross-stitch is the fabric. It's woven as an even-weave—the same number of threads running each way—so the surface forms a tidy grid of little squares.",
+          "You follow a chart, where each colored square tells you which color to stitch in the matching square on the cloth. Count the squares, place your X's, and the design appears one stitch at a time. Outlines and small details are often added afterward with backstitch or French knots.",
+          "Fabric is measured by its \u201ccount\u201d—the number of squares (or threads) per inch. A higher count means smaller squares and finer detail; a lower count means bigger, faster stitches. The very same chart comes out larger on a low-count cloth and smaller on a high-count one.",
+        ],
+        figure: {
+          src: "/images/blog-crossstitch-aida-20260701.jpg",
+          alt: "Hands cross-stitching a sampler on cream Aida cloth with COSMO floss",
+          caption:
+            "Each X is counted onto the fabric's grid; backstitch and French knots add the finishing details.",
+        },
+      },
+      {
+        heading: "Floss, Fabric, and a Blunt Needle",
+        paragraphs: [
+          "One of cross-stitch's quiet joys is how little you need to begin. At heart it's just floss, cloth, and a blunt-tipped needle.",
+          "COSMO No. 25 embroidery floss is a six-strand cotton thread: you gently separate the strands and use as many as your fabric count calls for—often two for everyday Aida. A long-established COSMO embroidery floss line developed in Japan, it comes in over 500 solid colors, plus variegated multi-color shades that shift softly from one tone to the next as you stitch.",
+          "Cotton floss is the everyday choice, but cross-stitch welcomes other threads too—variegated cotton for gentle color shifts, thicker pearl (perlé) cotton for texture, and metallic threads such as COSMO Nishikiito, used for decorative accents.",
+          "For the cloth, COSMO offers even-weave embroidery fabrics, including Java cloth-type fabrics, in several counts, so you can choose bold and quick or fine and detailed.",
+        ],
+        figure: {
+          src: "/images/floss-cosmo-20260610.jpg",
+          alt: "Colorful skeins of COSMO No. 25 six-strand embroidery floss",
+          caption:
+            "COSMO No. 25 floss—over 500 solid colors of Japanese-made cotton, plus variegated multi-color shades.",
+        },
+      },
+      {
+        heading: "A Craft with Global Roots",
+        paragraphs: [
+          "Unlike some regional needlework, cross-stitch belongs to the whole world. Simple counted crosses appear in folk textiles across Europe, the Middle East, and Asia—worked onto clothing, linens, and household cloths.",
+          "For centuries it was also a teaching craft. Young stitchers made \u201csamplers\u201d—rows of letters, numbers, and motifs—to practice their skills and record patterns, many of which survive in museums today.",
+          "Cross-stitch has faded and returned with fashion over the years, and it's thriving again now—part of a wider love of slow, screen-free, mindful making.",
+        ],
+        timeline: [
+          { period: "Ancient–1500s", title: "Folk Origins Worldwide" },
+          { period: "1600s–1700s", title: "The Age of Samplers" },
+          { period: "1800s–1900s", title: "A Household Craft" },
+          { period: "Today", title: "Modern Revival" },
+        ],
+      },
+      {
+        heading: "From Simple Samplers to Detailed Scenes",
+        paragraphs: [
+          "With enough little X's, cross-stitch can capture landscapes, seasons, and stories. COSMO's own Sparkling Japanese Seasons kits show just how much detail—and shimmer—counted stitching can hold.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-crossstitch-summer-20260701.jpg",
+            alt: "Framed cross-stitch of goldfish and water ripples worked in COSMO floss",
+            caption: "Goldfish in summer water.",
+          },
+          {
+            src: "/images/blog-crossstitch-kyoto-20260701.jpg",
+            alt: "Framed cross-stitch of a figure in kimono on a red bridge among autumn leaves",
+            caption: "Autumn in Kyoto.",
+          },
+          {
+            src: "/images/blog-crossstitch-winter-20260701.jpg",
+            alt: "Framed cross-stitch of a festive holiday wreath with ornaments",
+            caption: "A winter holiday wreath.",
+          },
+        ],
+        galleryVariant: "patterns",
+      },
+      {
+        heading: "Start Your Cross-Stitch Journey",
+        bulletsLabel: "To begin, you only need a few things",
+        mediaPosition: "top",
+        figure: {
+          src: "/images/blog-crossstitch-supplies-20260701.jpg",
+          alt: "Embroidery hoop, stork scissors, and COSMO floss skeins on a white surface",
+          caption:
+            "A hoop, a blunt needle, scissors, and COSMO floss—simple tools to begin.",
+        },
+        bullets: [
+          "Six-strand cotton floss (COSMO No. 25)",
+          "Even-weave or Aida cloth",
+          "A blunt tapestry needle",
+          "A chart or pattern to follow",
+          "An embroidery hoop (optional, but handy)",
+        ],
+        paragraphs: [
+          "Pick a small chart, thread your needle, and place your first X. From there it's simply one stitch at a time—an easy, absorbing rhythm that turns a blank grid into something you made by hand.",
+        ],
+      },
+    ],
+    ctaLabel: "Start Your Cross-Stitch Journey",
+    ctaDescription:
+      "Explore COSMO® embroidery floss, even-weave cloth, and cross-stitch kits to begin your own stitching journey.",
+    cta: {
+      label: "Explore COSMO Floss",
+      href: "/floss",
+    },
+  },
+  {
     slug: "hidamari-sashiko-thread",
     title: "COSMO® hidamari® Sashiko Thread: A Sunlit Take on a Timeless Craft",
     excerpt:
