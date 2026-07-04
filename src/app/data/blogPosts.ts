@@ -9,6 +9,7 @@ export type BlogFigure = {
   src: string;
   alt: string;
   caption?: string;
+  description?: string;
   fit?: "cover" | "contain";
   width?: number;
   height?: number;
@@ -38,7 +39,7 @@ export type BlogSection = {
   figure?: BlogFigure;
   figurePosition?: "below" | "aside";
   gallery?: BlogFigure[];
-  galleryVariant?: "row" | "comparison" | "patterns" | "aside";
+  galleryVariant?: "row" | "comparison" | "patterns" | "aside" | "hero" | "pillars";
   galleryPosition?: "below" | "aside";
   mediaPosition?: "top" | "bottom";
   timeline?: BlogTimelineStep[];
@@ -65,6 +66,146 @@ export type BlogPost = {
 };
 
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "embroidery-floss-qualities",
+    title: "The Qualities Behind Every Thread: COSMO® Embroidery Floss",
+    excerpt:
+      "What lies behind every skein of Made in Japan COSMO® No. 25 Embroidery Floss—from extra-long staple cotton and silk-like luster to a palette of more than 500 colors, designed in Kyoto since 1924.",
+    publishedAt: "2026-07-03",
+    image: "/images/brand-hero-floss.png",
+    imageAlt:
+      "Close-up of a deep red COSMO embroidery floss skein against a soft pink background",
+    heroAspectRatio: "2.1 / 1",
+    sections: [
+      {
+        paragraphs: [
+          "Embroidery thread may appear simple.",
+          "Yet every skein reflects countless decisions—from selecting the cotton to spinning, dyeing, finishing, and quality control. Those decisions influence not only how the thread looks, but also how it behaves in the needle, through the fabric, and throughout an entire project.",
+          "The best embroidery thread does not draw attention to itself. It simply allows every stitch to feel natural.",
+          "For more than a century, COSMO® has refined those details to create embroidery threads that combine Japanese craftsmanship with an enjoyable stitching experience.",
+        ],
+      },
+      {
+        heading: "Designed in Kyoto, Crafted with Care in Japan",
+        paragraphs: [
+          "COSMO®'s embroidery heritage began in 1924.",
+          "Designed in Kyoto and crafted with care in Japan—Made in Japan embroidery floss rooted in Kyoto—COSMO® Embroidery Floss has continued to evolve while remaining rooted in the belief that beautiful embroidery begins with beautiful materials.",
+          "That philosophy continues today in every skein.",
+        ],
+      },
+      {
+        heading: "The Qualities Behind Every Thread",
+        paragraphs: [
+          "Three qualities define COSMO® No. 25 Embroidery Floss.",
+        ],
+        bullets: [
+          "Premium Cotton",
+          "Silk-like Luster",
+          "Lasting Color",
+        ],
+      },
+      {
+        paragraphs: [
+          "Together, they influence how the thread feels in the hand, catches the light, and brings embroidery to life.",
+        ],
+        gallery: [
+          {
+            src: "/images/pillar-premium-cotton.jpg",
+            alt: "Close-up of extra-long staple cotton fibers",
+            caption: "Premium Cotton",
+            description:
+              "Made from carefully selected extra-long staple cotton, chosen for strength, softness, and consistency.",
+          },
+          {
+            src: "/images/pillar-silk-luster.jpg",
+            alt: "COSMO embroidery floss with a silky sheen",
+            caption: "Silk-like Luster",
+            description:
+              "A refined sheen enhances every stitch and brings depth to every color.",
+          },
+          {
+            src: "/images/pillar-color-bouquet.png",
+            alt: "Multicolored bouquet of COSMO embroidery floss skeins",
+            caption: "Lasting Color",
+            description:
+              "Advanced dyeing techniques create vibrant colors that remain beautiful over time.",
+          },
+        ],
+        galleryVariant: "pillars",
+      },
+      {
+        heading: "Carefully Selected Extra-Long Staple Cotton",
+        paragraphs: [
+          "Everything begins with the fiber.",
+          "COSMO® Embroidery Floss is made from carefully selected extra-long staple cotton, valued for its strength, softness, and naturally even surface.",
+          "LECIEN carefully blends selected cotton fibers to achieve the balance embroidery requires: strength for repeated stitching, flexibility for manageable handling, and consistency from skein to skein.",
+          "Because longer fibers create a smoother strand with fewer short fiber ends at the surface, the thread passes more evenly through both fabric and needle during extended stitching sessions.",
+          "The result is a thread designed to stay consistent from the first stitch to the last.",
+        ],
+      },
+      {
+        heading: "Smooth Construction for Comfortable Stitching",
+        paragraphs: [
+          "Comfort depends on more than the cotton itself.",
+          "Spinning, strand consistency, finishing, and careful inspection all contribute to how embroidery thread behaves during stitching.",
+          "COSMO® No. 25 Embroidery Floss consists of six easily separable strands, allowing stitchers to adjust coverage for different fabrics and techniques.",
+          "When the thread is consistently constructed, the strands separate cleanly, remain manageable during stitching, and move through fabric with less unnecessary resistance.",
+          "Good embroidery thread should not constantly demand your attention. It should separate cleanly. Pass evenly through fabric. And allow the stitcher to focus on creativity rather than the thread itself.",
+        ],
+      },
+      {
+        heading: "A Natural Silk-Like Luster",
+        paragraphs: [
+          "Beautiful embroidery begins long before the first stitch.",
+          "The naturally even surface of extra-long staple cotton, combined with careful finishing, gives COSMO® Embroidery Floss its characteristic silk-like luster.",
+          "Rather than producing an overly glossy appearance, this refined sheen adds depth and dimension while allowing the embroidery itself to remain the focal point.",
+          "Whether filling large satin-stitched areas or adding delicate outline details, the thread enhances the work without overpowering it.",
+        ],
+      },
+      {
+        heading: "Colors Designed for Creative Expression",
+        paragraphs: [
+          "Color does more than decorate. It creates depth, texture, light, and shadow.",
+          "Introduced with 195 colors around 1950, the COSMO® palette has grown to include more than 500 embroidery floss colors, offering stitchers the freedom to create subtle transitions and expressive combinations across a wide variety of embroidery styles.",
+          "From botanical embroidery and landscapes to portraits, traditional motifs, and counted cross-stitch, closely related shades help create natural-looking gradations that bring designs to life.",
+          "The goal is not simply to offer more colors. It is to help makers find the right color when inspiration strikes.",
+        ],
+      },
+      {
+        heading: "Color That Remains Consistent",
+        paragraphs: [
+          "Embroidery projects are often completed over days, weeks, or even months.",
+          "Carefully controlled dyeing and quality control help maintain consistent color from skein to skein, making it easier to continue a project with confidence.",
+          "That consistency becomes especially valuable when replacing a skein, expanding an existing project, or returning to work after time away.",
+        ],
+      },
+      {
+        heading: "Where Thread Character Makes a Difference",
+        paragraphs: [
+          "Different embroidery techniques ask different things of a thread.",
+          "In surface embroidery, evenly spun strands help stitches lie neatly across the fabric.",
+          "In long-and-short shading, closely related colors create gradual transitions between light and shadow.",
+          "In counted cross-stitch, the ability to separate the six strands allows stitchers to adjust coverage for different fabric counts and desired effects.",
+          "Rather than requiring special handling, the thread is designed to support the technique—and allow the maker to concentrate on the work itself.",
+        ],
+      },
+      {
+        heading: "More Than Color",
+        paragraphs: [
+          "A skein of embroidery floss carries more than color.",
+          "It carries generations of Japanese craftsmanship, thoughtful material selection, and continuous refinement.",
+          "Every embroidery project begins with an idea. The thread should never stand in its way.",
+        ],
+      },
+    ],
+    ctaLabel: "Explore COSMO® Embroidery Floss",
+    ctaDescription:
+      "Discover more than 500 solid colors and the full COSMO® No. 25 Embroidery Floss collection.",
+    cta: {
+      label: "Shop Embroidery Floss",
+      href: "/floss/cosmo",
+    },
+  },
   {
     slug: "nishikiito-metallic-thread",
     title: "COSMO® Nishikiito®: A Little Sparkle, Made in Japan",

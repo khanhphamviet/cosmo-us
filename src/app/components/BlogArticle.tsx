@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import type {
   BlogFigure,
   BlogPost,
@@ -117,6 +117,8 @@ function BlogGalleryBlock({
         variant === "comparison" ? "blog-article-gallery--comparison" : "",
         variant === "row" ? "blog-article-gallery--row" : "",
         variant === "patterns" ? "blog-article-gallery--patterns" : "",
+        variant === "hero" ? "blog-article-gallery--hero" : "",
+        variant === "pillars" ? "blog-article-gallery--pillars" : "",
         isAside ? "blog-article-gallery--aside" : "",
       ]
         .filter(Boolean)
@@ -135,6 +137,7 @@ function BlogGalleryBlock({
                 isAside && item.fit === "contain"
                   ? "blog-article-gallery-media--aside-fill"
                   : "",
+                variant === "pillars" ? "blog-article-gallery-media--pillars-fill" : "",
               ]
                 .filter(Boolean)
                 .join(" ")}
@@ -147,6 +150,20 @@ function BlogGalleryBlock({
                   quality={90}
                   sizes="(max-width: 640px) 45vw, 180px"
                   className="blog-article-gallery-img"
+                />
+              ) : variant === "hero" || variant === "pillars" ? (
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  fill
+                  quality={90}
+                  sizes={
+                    variant === "pillars"
+                      ? "(max-width: 640px) 80vw, 220px"
+                      : "(max-width: 720px) 100vw, 720px"
+                  }
+                  className="blog-article-gallery-img"
+                  style={{ objectFit: "cover" }}
                 />
               ) : (
                 <Image
@@ -166,7 +183,20 @@ function BlogGalleryBlock({
             </div>
             {item.caption ? (
               <figcaption className="blog-article-gallery-caption">
-                {item.caption}
+                {variant === "pillars" ? (
+                  <>
+                    <span className="blog-article-gallery-caption-title">
+                      {item.caption}
+                    </span>
+                    {item.description ? (
+                      <span className="blog-article-gallery-caption-body">
+                        {item.description}
+                      </span>
+                    ) : null}
+                  </>
+                ) : (
+                  item.caption
+                )}
               </figcaption>
             ) : null}
           </figure>
@@ -263,6 +293,18 @@ function Section({
     </>
   );
 
+  const bulletList = section.bullets?.length ? (
+    <ul className="blog-article-bullets">
+      {section.bullets.map((item) => (
+        <li key={item}>
+          <BlogRichText text={item} />
+        </li>
+      ))}
+    </ul>
+  ) : null;
+
+  const bulletsBeforeGallery = section.galleryVariant === "hero";
+
   return (
     <section className={sectionClass}>
       {section.heading ? <h2>{section.heading}</h2> : null}
@@ -314,16 +356,9 @@ function Section({
       ) : (
         paragraphs
       )}
+      {bulletsBeforeGallery ? bulletList : null}
       {section.mediaPosition !== "top" ? mediaBlocks : null}
-      {section.bullets?.length ? (
-        <ul className="blog-article-bullets">
-          {section.bullets.map((item) => (
-            <li key={item}>
-              <BlogRichText text={item} />
-            </li>
-          ))}
-        </ul>
-      ) : null}
+      {!bulletsBeforeGallery ? bulletList : null}
       {section.table ? <BlogTableBlock table={section.table} /> : null}
       {section.timeline?.length ? (
         <BlogTimelineBlock steps={section.timeline} />
@@ -337,7 +372,14 @@ function Section({
 
 export default function BlogArticle({ post }: Props) {
   return (
-    <article className="blog-article">
+    <article
+      className="blog-article"
+      style={
+        post.heroAspectRatio
+          ? ({ "--blog-hero-aspect": post.heroAspectRatio } as CSSProperties)
+          : undefined
+      }
+    >
       <div
         className={[
           "blog-article-hero",

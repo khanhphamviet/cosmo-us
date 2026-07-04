@@ -831,6 +831,47 @@ img { display: block; max-width: 100%; height: auto; }
 .blog-article-gallery--patterns {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+.blog-article-gallery--hero {
+  grid-template-columns: 1fr;
+  gap: clamp(20px, 3vw, 28px);
+}
+.blog-article-gallery--pillars {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(20px, 3vw, 32px);
+  align-items: start;
+}
+.blog-article-gallery--pillars .blog-article-gallery-item {
+  text-align: center;
+  padding: 0 clamp(6px, 1vw, 12px);
+}
+.blog-article-gallery--pillars .blog-article-gallery-media {
+  aspect-ratio: auto;
+  height: clamp(148px, 13.5vw, 202px);
+  margin: 0 auto 12px;
+  background: var(--background);
+}
+.blog-article-gallery--pillars .blog-article-gallery-caption {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  text-align: center;
+}
+.blog-article-gallery-caption-title {
+  font-family: var(--brand-serif);
+  font-size: clamp(1.0625rem, 0.6vw + 0.85rem, 1.25rem);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: var(--foreground);
+  line-height: 1.35;
+}
+.blog-article-gallery-caption-body {
+  font-family: var(--brand-sans);
+  font-size: clamp(0.8125rem, 0.35vw + 0.72rem, 0.875rem);
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  color: #555;
+}
 .blog-article-gallery-item {
   margin: 0;
 }
@@ -844,6 +885,9 @@ img { display: block; max-width: 100%; height: auto; }
 .blog-article-gallery--comparison .blog-article-gallery-media {
   aspect-ratio: 4 / 5;
 }
+.blog-article-gallery--hero .blog-article-gallery-media {
+  aspect-ratio: var(--blog-hero-aspect, 16 / 9);
+}
 .blog-article-gallery-img {
   width: 100%;
   height: 100%;
@@ -856,7 +900,8 @@ img { display: block; max-width: 100%; height: auto; }
   color: var(--gray);
   text-align: center;
 }
-.blog-article-gallery--comparison .blog-article-gallery-caption {
+.blog-article-gallery--comparison .blog-article-gallery-caption,
+.blog-article-gallery--hero .blog-article-gallery-caption {
   font-family: var(--brand-sans);
   font-size: clamp(0.875rem, 0.2vw + 0.8rem, 0.9375rem);
   font-weight: 500;
@@ -993,8 +1038,14 @@ img { display: block; max-width: 100%; height: auto; }
 @media (max-width: 640px) {
   .blog-article-gallery--comparison,
   .blog-article-gallery--row,
-  .blog-article-gallery--patterns {
+  .blog-article-gallery--patterns,
+  .blog-article-gallery--pillars {
     grid-template-columns: 1fr;
+    max-width: 420px;
+    margin-inline: auto;
+  }
+  .blog-article-gallery--pillars .blog-article-gallery-media {
+    height: clamp(160px, 32vw, 210px);
   }
   .blog-article-gallery--comparison .blog-article-gallery-media {
     aspect-ratio: 16 / 10;
