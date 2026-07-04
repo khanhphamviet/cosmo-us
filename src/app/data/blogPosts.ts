@@ -66,6 +66,109 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "nishikiito-metallic-thread",
+    title: "COSMO® Nishikiito®: A Little Sparkle, Made in Japan",
+    excerpt:
+      "Meet Nishikiito—COSMO's Japanese-made metallic thread, inspired by Kyoto's gold-thread tradition. Five shimmering finishes and 48 colors to add light and luster to your stitching.",
+    publishedAt: "2026-07-02",
+    image: "/images/nishikiito-20260610.jpg",
+    imageAlt:
+      "A scattered arrangement of colorful COSMO Nishikiito metallic thread spools in gold, magenta, teal, and green",
+    heroAspectRatio: "1 / 1",
+    sections: [
+      {
+        paragraphs: [
+          "Some threads are made to blend in. Nishikiito is made to catch the light.",
+          "COSMO® Nishikiito® is a Japanese-made metallic thread inspired by the gold-thread (kinshi) traditions long associated with Kyoto's kimono craft. That spirit carries into a thread built for modern hand embroidery—one that adds shimmer, depth, and a little sense of occasion to whatever you stitch.",
+        ],
+      },
+      {
+        heading: "What Is Nishikiito?",
+        paragraphs: [
+          "Nishikiito (にしきいと) takes its name from nishiki, the luxurious brocade woven with gold and silver threads in traditional Japanese dress. COSMO reimagined that centuries-old sparkle as an easy-to-use embroidery thread, made in Japan and neatly wound on compact spools.",
+          "It's a specialty accent thread rather than an everyday floss—often just a few stitches are all it takes to lift a whole design.",
+        ],
+        bulletsLabel: "What makes it special",
+        bullets: [
+          "Metallic shine inspired by Kyoto's traditional gold-thread craft",
+          "Five distinct finishes, each catching the light in its own way",
+          "48 colors across the finishes—from soft pastels to bold neons and rich jewel tones",
+          "Wound on tidy spools (about 20 m each) that are easy to store and unspool",
+          "Made in Japan",
+        ],
+      },
+      {
+        heading: "Five Finishes, Five Kinds of Shine",
+        paragraphs: [
+          "The heart of Nishikiito is its five finishes. Each one is twisted and blended differently, so they reflect light in their own way—from a quiet, refined glow to a bright, mirror-like flash.",
+        ],
+        figure: {
+          src: "/images/nishikiito-finishes-hd-20260701.jpg",
+          alt: "Five spools of COSMO Nishikiito metallic thread in green, red, pink, and gold on a cream background",
+          caption:
+            "Nishikiito's metallic sheen, up close—each finish reflects light a little differently.",
+        },
+        bullets: [
+          "Nishiki (round twist) — a calm, refined luster with a bit of body; often used for tatting lace and tassels. 18 colors.",
+          "Kagami — a strong, mirror-bright brilliance that really stands out; great for cross-stitch and free-form stitching. 6 colors.",
+          "Opali — a film-like, opal-esque shimmer that shifts through many colors, with a hint of translucency. 12 colors.",
+          "Champagni — a fine, champagne-bubble sparkle scattered over soft pastels; smooth and gentle in the hand. 6 colors.",
+          "Neoni — vivid, fluorescent shades with real impact even in small doses; extra-fine, so you can combine strands to taste. 6 colors.",
+        ],
+      },
+      {
+        heading: "A Little Sparkle Goes a Long Way",
+        paragraphs: [
+          "Because Nishikiito shines so readily, you rarely need much of it. Use it as an accent—the twinkle in a star, the frost on a snowflake, the shimmer of a party dress, or the flourish on decorative lettering and holiday motifs.",
+          "It plays beautifully with cross-stitch and surface (free) embroidery, layered alongside your cotton floss wherever you want a highlight. And because several finishes are very fine, you can separate the ply and combine just the number of strands you need.",
+          "COSMO's own Sparkling Japanese Seasons cross-stitch kits show it off beautifully—Nishikiito adds the shimmer to snow, water, gold, and festive details.",
+        ],
+        figure: {
+          src: "/images/nishikiito-inuse-newyear-20260701.jpg",
+          alt: "Framed cross-stitch of Japanese New Year good-luck charms stitched with COSMO threads and gold Nishikiito accents",
+          caption:
+            "Nishikiito at work: a touch of gold shimmer lifts the New Year good-luck charms in this COSMO Sparkling Japanese Seasons design.",
+        },
+        bulletsLabel: "Try it for",
+        bullets: [
+          "Highlights and accents in cross-stitch and freestyle embroidery",
+          "Seasonal and festive motifs—stars, snow, ornaments, holiday designs",
+          "Decorative lettering, monograms, and borders",
+          "Tatting lace and tassels (the Nishiki finish is a good match)",
+        ],
+      },
+      {
+        heading: "Product Specifications",
+        table: {
+          headers: ["", ""],
+          rows: [
+            ["Product", "COSMO® Nishikiito® Metallic Thread"],
+            ["Item No.", "No. 77"],
+            ["Finishes", "Nishiki, Kagami, Opali, Champagni, Neoni (5 types)"],
+            ["Colors", "48 colors across the five finishes"],
+            ["Length", "Approx. 20 m per spool"],
+            ["Material", "Nylon and polyester (varies by finish)"],
+            ["Made in", "Japan"],
+          ],
+        },
+      },
+      {
+        heading: "Add a Little Light",
+        paragraphs: [
+          "Whether you're finishing a keepsake, dressing up a holiday ornament, or simply love the way light moves across a stitch, Nishikiito is a small luxury that makes a big difference.",
+          "Add a thread or two, hold your work up to the light, and watch it come alive.",
+        ],
+      },
+    ],
+    ctaLabel: "Add Some Sparkle",
+    ctaDescription:
+      "Explore COSMO® Nishikiito® metallic thread and the rest of the COSMO thread family to bring light and color to your next project.",
+    cta: {
+      label: "Shop Nishikiito",
+      href: "/floss/nishikiito",
+    },
+  },
+  {
     slug: "cross-stitch",
     title: "What Is Cross-Stitch?",
     excerpt:
