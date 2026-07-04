@@ -33,6 +33,7 @@ export type BlogSection = {
   asideImage?: {
     src: string;
     alt: string;
+    position?: "aside" | "center";
   };
   figure?: BlogFigure;
   figurePosition?: "below" | "aside";
@@ -371,8 +372,9 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         heading: 'Why "COSMO"?',
         asideImage: {
-          src: "/images/cosmo-lecien-logo-cropped.png",
-          alt: "COSMO LECIEN CORPORATION logo",
+          src: "/images/cosmo-wordmark-trimmed-20260703.png",
+          alt: "COSMO wordmark logo",
+          position: "center",
         },
         paragraphs: [
           'The word "COSMO" comes from cosmos—an orderly universe.',

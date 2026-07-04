@@ -66,10 +66,11 @@ img { display: block; max-width: 100%; height: auto; }
   overflow: visible;
 }
 .header-inner {
+  --logo-h: 84px;
   max-width: var(--max-w);
   margin: 0 auto;
   padding: 0 24px;
-  height: 60px;
+  height: var(--logo-h);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,7 +86,7 @@ img { display: block; max-width: 100%; height: auto; }
 .logo-image {
   display: block;
   width: auto;
-  height: 60px;
+  height: var(--logo-h);
   max-width: 100%;
   object-fit: contain;
 }
@@ -659,6 +660,16 @@ img { display: block; max-width: 100%; height: auto; }
   position: sticky;
   top: clamp(16px, 3vw, 24px);
   padding-top: 4px;
+}
+.blog-article-section-logo-center {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 clamp(16px, 3vw, 24px);
+}
+.blog-article-section-logo-center .blog-article-aside-logo {
+  width: auto;
+  max-width: min(320px, 72%);
+  height: auto;
 }
 .blog-article-aside-logo {
   width: 100%;
@@ -3285,12 +3296,14 @@ img { display: block; max-width: 100%; height: auto; }
   :root { --max-w: 100%; }
 
   .header-inner { padding: 0 20px; }
-  .logo { max-width: calc(100% - 400px); }
+  .header-inner {
+    --logo-h: min(84px, max(50px, calc((100vw - 500px) * 107.8 / 288)));
+  }
+  .logo {
+    max-width: calc(100% - 400px);
+  }
   .main-nav { gap: 18px; }
   .main-nav a { font-size: clamp(0.8125rem, 0.25vw + 0.72rem, 0.875rem); } /* 13px→14px */
-  .logo-image {
-    height: min(60px, max(36px, calc((100vw - 500px) * 77 / 288)));
-  }
 
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -3395,10 +3408,11 @@ img { display: block; max-width: 100%; height: auto; }
 
   .header-inner {
     padding: 0 16px;
-    height: 54px;
+    --logo-h: 72px;
   }
-  .logo { max-width: calc(100% - 56px); }
-  .logo-image { height: 54px; }
+  .logo {
+    max-width: calc(100% - 56px);
+  }
 
   /* Hero — font handled by clamp */
   .hero { padding: 48px 16px; }

@@ -224,11 +224,13 @@ function Section({
     Boolean(section.figure) && section.figurePosition === "aside";
   const hasAsideGallery =
     Boolean(section.gallery?.length) && section.galleryPosition === "aside";
+  const isCenterLogo = section.asideImage?.position === "center";
+  const isAsideLogo = Boolean(section.asideImage) && !isCenterLogo;
 
   const sectionClass = [
     "blog-article-section",
     section.bullets?.length ? "blog-article-section--highlight" : "",
-    section.asideImage || hasAsideFigure || hasAsideGallery
+    isAsideLogo || hasAsideFigure || hasAsideGallery
       ? "blog-article-section--with-aside"
       : "",
     hasAsideFigure ? "blog-article-section--figure-aside" : "",
@@ -268,7 +270,18 @@ function Section({
         <p className="blog-article-bullets-label">{section.bulletsLabel}</p>
       ) : null}
       {section.mediaPosition === "top" ? mediaBlocks : null}
-      {section.asideImage ? (
+      {isCenterLogo && section.asideImage ? (
+        <div className="blog-article-section-logo-center">
+          <Image
+            src={section.asideImage.src}
+            alt={section.asideImage.alt}
+            width={974}
+            height={184}
+            className="blog-article-aside-logo"
+          />
+        </div>
+      ) : null}
+      {isAsideLogo && section.asideImage ? (
         <div className="blog-article-section-grid">
           <div className="blog-article-section-copy">{paragraphs}</div>
           <aside className="blog-article-section-aside">

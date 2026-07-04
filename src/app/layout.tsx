@@ -109,12 +109,12 @@ export default function RootLayout({
         {/* ── HEADER ── */}
         <header className="site-header">
           <div className="header-inner">
-            <Link href="/" className="logo" aria-label="COSMO LECIEN CORPORATION — Home">
+            <Link href="/" className="logo" aria-label="COSMO since 1924 — Home">
               <Image
-                src="/images/cosmo-lecien-logo-cropped.png"
-                alt="COSMO LECIEN CORPORATION"
-                width={288}
-                height={77}
+                src="/images/cosmo1924-logo-guideline-20260703.png"
+                alt="COSMO since 1924"
+                width={519}
+                height={216}
                 priority
                 className="logo-image"
               />
