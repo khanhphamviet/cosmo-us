@@ -110,6 +110,42 @@ function BlogGalleryBlock({
 }) {
   const isAside = variant === "aside";
 
+  if (variant === "before-after" && items.length >= 2) {
+    const [before, after] = items;
+
+    return (
+      <div className="ladies100-before-after ladies100-before-after--about blog-article-before-after">
+        <figure className="ladies100-about-panel">
+          <div className="ladies100-about-panel-media">
+            <Image
+              src={before.src}
+              alt={before.alt}
+              fill
+              quality={90}
+              sizes="(max-width: 640px) 100vw, 42vw"
+              className="ladies100-about-panel-img"
+            />
+          </div>
+        </figure>
+        <div className="ladies100-before-after-arrow" aria-hidden="true">
+          →
+        </div>
+        <figure className="ladies100-about-panel">
+          <div className="ladies100-about-panel-media">
+            <Image
+              src={after.src}
+              alt={after.alt}
+              fill
+              quality={90}
+              sizes="(max-width: 640px) 100vw, 42vw"
+              className="ladies100-about-panel-img"
+            />
+          </div>
+        </figure>
+      </div>
+    );
+  }
+
   return (
     <div
       className={[
@@ -416,6 +452,7 @@ export default function BlogArticle({ post }: Props) {
               section.heading ??
               section.paragraphs?.[0] ??
               section.bullets?.[0] ??
+              section.gallery?.[0]?.src ??
               section.table?.headers[0]
             }
             section={section}

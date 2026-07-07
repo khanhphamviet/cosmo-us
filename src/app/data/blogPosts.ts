@@ -39,7 +39,7 @@ export type BlogSection = {
   figure?: BlogFigure;
   figurePosition?: "below" | "aside";
   gallery?: BlogFigure[];
-  galleryVariant?: "row" | "comparison" | "patterns" | "aside" | "hero" | "pillars";
+  galleryVariant?: "row" | "comparison" | "patterns" | "aside" | "hero" | "pillars" | "before-after";
   galleryPosition?: "below" | "aside";
   mediaPosition?: "top" | "bottom";
   timeline?: BlogTimelineStep[];
@@ -200,6 +200,120 @@ export const BLOG_POSTS: BlogPost[] = [
     cta: {
       label: "Shop Embroidery Floss",
       href: "/floss/cosmo",
+    },
+  },
+  {
+    slug: "100-ladies-embroidery-fabric",
+    title: "100 Ladies®: Design Your Own Fashion Story",
+    excerpt:
+      "Like a coloring book—with needle and thread. Discover 100 Ladies®, the COSMO® fabric series where every figure is a blank canvas for embroidery, appliqué, and your own sense of style.",
+    publishedAt: "2026-07-07",
+    image: "/images/blog-100-ladies-story-stitching-flatlay-20260707.jpg",
+    imageAlt:
+      "Hands stitching a 100 Ladies figure in a hoop, surrounded by COSMO embroidery floss, fabric markers, and beads",
+    heroAspectRatio: "16 / 10",
+    sections: [
+      {
+        paragraphs: [
+          "Some embroidery projects guide every stitch.",
+          "100 Ladies® is a printed embroidery fabric designed to let every stitcher become the designer.",
+          "Printed across the fabric are one hundred illustrated figures, each waiting to become someone entirely new.",
+          "Their clothes, colors, and stories are yours to imagine.",
+          "It feels a little like a coloring book—only your pencil is a needle, and your colors are embroidery thread.",
+        ],
+      },
+      {
+        heading: "One Hundred Figures, One Hundred Possibilities",
+        paragraphs: [
+          "100 Ladies® is an embroidery fabric series created in collaboration with textile artist Kazue Nakajima and produced by LECIEN.",
+          "Its name reflects the idea behind the collection: one hundred illustrated ladies, and many ways to bring them to life.",
+          "Look closely and you'll find figures with different poses, hairstyles, and expressions. Each is approximately 5 cm (2 in.) tall—small enough to finish quickly, yet open to endless creativity.",
+          "Rather than prescribing colors or decorative details, the printed outlines leave the creative decisions to the maker.",
+          "Every finished figure becomes uniquely yours.",
+        ],
+      },
+      {
+        gallery: [
+          {
+            src: "/images/ladies100-before-20260617.png",
+            alt: "100 Ladies fabric before stitching, showing uncolored line-drawn figures",
+          },
+          {
+            src: "/images/ladies100-after-20260617.png",
+            alt: "100 Ladies fabric after stitching with colorful embroidered outfits and details",
+          },
+        ],
+        galleryVariant: "before-after",
+      },
+      {
+        heading: "Dress Them Your Way",
+        paragraphs: [
+          "The joy of 100 Ladies® comes from designing each character.",
+          "Choose colors, create patterned clothing, and add appliqué, beads, lace, ribbon, or fabric pens.",
+          "There is no single correct combination.",
+          "Every stitch adds personality.",
+          "Because the printed outlines are simple and open-ended, even basic embroidery stitches can completely transform each figure.",
+        ],
+        figure: {
+          src: "/images/blog-100-ladies-story-dress-them-20260707.jpg",
+          alt: "100 Ladies fabric with embroidered figures in colorful outfits, alongside COSMO embroidery floss skeins",
+          fit: "contain",
+        },
+      },
+      {
+        heading: "Perfect for Beginners—Rewarding for Experienced Stitchers",
+        paragraphs: [
+          "100 Ladies® grows with you.",
+          "Beginners can complete a single figure using only a few basic stitches, while experienced makers can continue exploring new color palettes, textures, and techniques.",
+          "With more than 500 colors available in COSMO® No. 25 Embroidery Floss, subtle differences in clothing, hair, accessories, and shading become part of each character's story.",
+          "The fabric encourages creativity without demanding perfection.",
+        ],
+      },
+      {
+        heading: "From Fabric to Everyday Projects",
+        paragraphs: [
+          "Once your ladies are stitched, the possibilities continue.",
+          "Display the full fabric as wall art, or transform individual figures into charms, gift tags, patches, pouches, bags, notebook covers, and other handmade accessories.",
+          "Project kits and pre-sewn items make it easy to explore the series in different ways—whether creating your first embroidery piece or adding a personal touch to something you use every day.",
+        ],
+        gallery: [
+          {
+            src: "/images/ladies100-gallery-gamaguchi-20260617.png",
+            alt: "100 Ladies gamaguchi pouch with embroidered figures",
+            caption: "Stitched accessories",
+          },
+          {
+            src: "/images/ladies100-gallery-fireworks-20260617.png",
+            alt: "100 Ladies figures in yukata with fireworks embroidery",
+            caption: "Seasonal styling",
+          },
+          {
+            src: "/images/ladies100-gallery-05-20260616.jpg",
+            alt: "Creative styling on 100 Ladies fabric with mixed embroidery techniques",
+            caption: "Creative variations",
+          },
+        ],
+        galleryVariant: "row",
+      },
+      {
+        heading: "A Fabric That Celebrates Individual Creativity",
+        paragraphs: [
+          "Every maker begins with the same fabric.",
+          "Every finished piece becomes one of a kind.",
+          "Like fashion itself, embroidery becomes a form of personal expression.",
+          "One fabric.",
+          "One hundred figures.",
+          "Countless stories.",
+          "Pick up a needle, choose your colors, and begin creating your own.",
+        ],
+      },
+    ],
+    ctaLabel: "Explore 100 Ladies®",
+    ctaDescription:
+      "Discover embroidery fabric, sample kits, charm kits, and project bases—plus curated COSMO® floss to bring every figure to life.",
+    cta: {
+      label: "Explore 100 Ladies",
+      href: "/100-ladies",
     },
   },
   {

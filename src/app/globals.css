@@ -918,6 +918,9 @@ img { display: block; max-width: 100%; height: auto; }
   color: var(--foreground);
   letter-spacing: 0.01em;
 }
+.blog-article-before-after {
+  margin: clamp(20px, 3vw, 32px) 0 0;
+}
 .blog-article-gallery--aside {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
