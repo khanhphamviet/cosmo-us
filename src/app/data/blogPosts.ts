@@ -580,7 +580,7 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     slug: "embroidery-thread-brand-history",
-    title: "The Story Behind COSMO® Embroidery Thread",
+    title: "The Story Behind COSMO®",
     excerpt:
       "For more than a century, COSMO® has stood for color, craftsmanship, and creativity. Discover how Kyoto helped shape the thread trusted by generations of makers.",
     publishedAt: "2026-06-26",
