@@ -97,6 +97,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "The Qualities Behind Every Thread",
         paragraphs: [
           "Three qualities define COSMO® No. 25 Embroidery Floss.",
+          "Together, they influence how the thread feels in the hand, catches the light, and brings embroidery to life.",
         ],
         bullets: [
           "Premium Cotton",
@@ -105,62 +106,55 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
       },
       {
+        heading: "Carefully Selected Extra-Long Staple Cotton",
         paragraphs: [
-          "Together, they influence how the thread feels in the hand, catches the light, and brings embroidery to life.",
+          "Everything begins with the fiber.",
+          "COSMO® Embroidery Floss is made from carefully selected extra-long staple cotton, valued for its strength, softness, and naturally smooth surface.",
+          "LECIEN carefully blends selected cotton fibers to achieve the balance embroidery requires. The longer fibers create a smoother strand that passes comfortably through fabric and needle while maintaining consistency from the first stitch to the last.",
         ],
         gallery: [
           {
             src: "/images/pillar-premium-cotton.jpg",
             alt: "Close-up of extra-long staple cotton fibers",
             caption: "Premium Cotton",
-            description:
-              "Made from carefully selected extra-long staple cotton, chosen for strength, softness, and consistency.",
-          },
-          {
-            src: "/images/pillar-silk-luster.jpg",
-            alt: "COSMO embroidery floss with a silky sheen",
-            caption: "Silk-like Luster",
-            description:
-              "A refined sheen enhances every stitch and brings depth to every color.",
-          },
-          {
-            src: "/images/pillar-color-bouquet.png",
-            alt: "Multicolored bouquet of COSMO embroidery floss skeins",
-            caption: "Lasting Color",
-            description:
-              "Advanced dyeing techniques create vibrant colors that remain beautiful over time.",
           },
         ],
         galleryVariant: "pillars",
-      },
-      {
-        heading: "Carefully Selected Extra-Long Staple Cotton",
-        paragraphs: [
-          "Everything begins with the fiber.",
-          "COSMO® Embroidery Floss is made from carefully selected extra-long staple cotton, valued for its strength, softness, and naturally even surface.",
-          "LECIEN carefully blends selected cotton fibers to achieve the balance embroidery requires: strength for repeated stitching, flexibility for manageable handling, and consistency from skein to skein.",
-          "Because longer fibers create a smoother strand with fewer short fiber ends at the surface, the thread passes more evenly through both fabric and needle during extended stitching sessions.",
-          "The result is a thread designed to stay consistent from the first stitch to the last.",
-        ],
+        galleryPosition: "aside",
       },
       {
         heading: "Smooth Construction for Comfortable Stitching",
         paragraphs: [
           "Comfort depends on more than the cotton itself.",
-          "Spinning, strand consistency, finishing, and careful inspection all contribute to how embroidery thread behaves during stitching.",
-          "COSMO® No. 25 Embroidery Floss consists of six easily separable strands, allowing stitchers to adjust coverage for different fabrics and techniques.",
-          "When the thread is consistently constructed, the strands separate cleanly, remain manageable during stitching, and move through fabric with less unnecessary resistance.",
-          "Good embroidery thread should not constantly demand your attention. It should separate cleanly. Pass evenly through fabric. And allow the stitcher to focus on creativity rather than the thread itself.",
+          "Spinning, strand consistency, finishing, and careful inspection all contribute to how the thread behaves during stitching.",
+          "COSMO® No. 25 Embroidery Floss consists of six easily separable strands that adapt to different fabrics and techniques. They separate cleanly, pass smoothly through fabric, and help stitchers focus on the embroidery rather than the thread.",
         ],
+        gallery: [
+          {
+            src: "/images/blog-embroidery-floss-qualities-construction-20260707-v3.jpg",
+            alt: "COSMO embroidery floss skeins in purple and navy with one strand separated into six plies",
+            caption: "Smooth Construction",
+          },
+        ],
+        galleryVariant: "pillars",
+        galleryPosition: "aside",
       },
       {
         heading: "A Natural Silk-Like Luster",
         paragraphs: [
           "Beautiful embroidery begins long before the first stitch.",
-          "The naturally even surface of extra-long staple cotton, combined with careful finishing, gives COSMO® Embroidery Floss its characteristic silk-like luster.",
-          "Rather than producing an overly glossy appearance, this refined sheen adds depth and dimension while allowing the embroidery itself to remain the focal point.",
-          "Whether filling large satin-stitched areas or adding delicate outline details, the thread enhances the work without overpowering it.",
+          "The naturally smooth surface of extra-long staple cotton, combined with careful finishing, gives COSMO® Embroidery Floss its characteristic silk-like luster.",
+          "Rather than creating an overly glossy appearance, this refined sheen adds depth and dimension while allowing the embroidery itself to remain the focus.",
         ],
+        gallery: [
+          {
+            src: "/images/pillar-silk-luster.jpg",
+            alt: "COSMO embroidery floss with a silky sheen",
+            caption: "Silk-like Luster",
+          },
+        ],
+        galleryVariant: "pillars",
+        galleryPosition: "aside",
       },
       {
         heading: "Colors Designed for Creative Expression",
@@ -170,6 +164,12 @@ export const BLOG_POSTS: BlogPost[] = [
           "From botanical embroidery and landscapes to portraits, traditional motifs, and counted cross-stitch, closely related shades help create natural-looking gradations that bring designs to life.",
           "The goal is not simply to offer more colors. It is to help makers find the right color when inspiration strikes.",
         ],
+        figure: {
+          src: "/images/blog-embroidery-floss-qualities-colors-20260707.jpg",
+          alt: "Rows of COSMO embroidery floss skeins in reds, pinks, purples, blues, greens, and yellows",
+          caption:
+            "More than 500 colors—closely related shades for gradations, contrasts, and every style of embroidery.",
+        },
       },
       {
         heading: "Color That Remains Consistent",
@@ -178,16 +178,12 @@ export const BLOG_POSTS: BlogPost[] = [
           "Carefully controlled dyeing and quality control help maintain consistent color from skein to skein, making it easier to continue a project with confidence.",
           "That consistency becomes especially valuable when replacing a skein, expanding an existing project, or returning to work after time away.",
         ],
-      },
-      {
-        heading: "Where Thread Character Makes a Difference",
-        paragraphs: [
-          "Different embroidery techniques ask different things of a thread.",
-          "In surface embroidery, evenly spun strands help stitches lie neatly across the fabric.",
-          "In long-and-short shading, closely related colors create gradual transitions between light and shadow.",
-          "In counted cross-stitch, the ability to separate the six strands allows stitchers to adjust coverage for different fabric counts and desired effects.",
-          "Rather than requiring special handling, the thread is designed to support the technique—and allow the maker to concentrate on the work itself.",
-        ],
+        figure: {
+          src: "/images/blog-embroidery-floss-qualities-consistency-20260707.jpg",
+          alt: "Autumn leaves embroidered in closely matched COSMO floss shades on sheer fabric in a wooden hoop",
+          caption:
+            "Consistent color from skein to skein—so a project can grow over weeks without losing its balance.",
+        },
       },
       {
         heading: "More Than Color",
