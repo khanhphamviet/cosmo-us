@@ -9,7 +9,9 @@ import type {
   BlogTimelineStep,
 } from "../data/blogPosts";
 import { formatBlogDate } from "../data/blogPosts";
+import type { WholesaleInfoCard } from "../data/wholesale";
 import { BlogTableBlock } from "./BlogTable";
+import { WholesaleInfoIcon } from "./WholesaleInfoIcon";
 
 type Props = {
   post: BlogPost;
@@ -65,33 +67,49 @@ function BlogFigureBlock({ figure }: { figure: BlogFigure }) {
   const height = figure.height ?? 960;
   const isContain = figure.fit === "contain";
 
+  const media = (
+    <div
+      className={[
+        "blog-article-figure-media",
+        isContain ? "blog-article-figure-media--contain" : "",
+      ]
+        .filter(Boolean)
+        .join(" ")}
+    >
+      <Image
+        src={figure.src}
+        alt={figure.alt}
+        width={width}
+        height={height}
+        quality={90}
+        sizes="(max-width: 720px) 100vw, 720px"
+        className="blog-article-figure-img"
+      />
+    </div>
+  );
+
   return (
     <figure
       className={[
         "blog-article-figure",
         isContain ? "blog-article-figure--contain" : "",
+        figure.href ? "blog-article-figure--linked" : "",
       ]
         .filter(Boolean)
         .join(" ")}
     >
-      <div
-        className={[
-          "blog-article-figure-media",
-          isContain ? "blog-article-figure-media--contain" : "",
-        ]
-          .filter(Boolean)
-          .join(" ")}
-      >
-        <Image
-          src={figure.src}
-          alt={figure.alt}
-          width={width}
-          height={height}
-          quality={90}
-          sizes="(max-width: 720px) 100vw, 720px"
-          className="blog-article-figure-img"
-        />
-      </div>
+      {figure.href ? (
+        <a
+          href={figure.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="blog-article-figure-link"
+        >
+          {media}
+        </a>
+      ) : (
+        media
+      )}
       {figure.caption ? (
         <figcaption className="blog-article-figure-caption">
           {figure.caption}
@@ -263,6 +281,24 @@ function BlogTimelineBlock({ steps }: { steps: BlogTimelineStep[] }) {
   );
 }
 
+function BlogInfoCards({ cards }: { cards: WholesaleInfoCard[] }) {
+  return (
+    <div className="blog-article-info-cards wholesale-info" aria-label="Key updates">
+      <div className="wholesale-info-grid">
+        {cards.map((card) => (
+          <article key={card.id} className="wholesale-info-card">
+            <WholesaleInfoIcon id={card.id} />
+            <h3 className="wholesale-info-title">{card.title}</h3>
+            <p className="wholesale-info-body">
+              <BlogRichText text={card.body} />
+            </p>
+          </article>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function Subsection({ subsection }: { subsection: BlogSubsection }) {
   return (
     <div className="blog-article-subsection">
@@ -348,6 +384,9 @@ function Section({
         <p className="blog-article-bullets-label">{section.bulletsLabel}</p>
       ) : null}
       {section.mediaPosition === "top" ? mediaBlocks : null}
+      {section.infoCards?.length && section.infoCardsPosition === "top" ? (
+        <BlogInfoCards cards={section.infoCards} />
+      ) : null}
       {isCenterLogo && section.asideImage ? (
         <div className="blog-article-section-logo-center">
           <Image
@@ -398,6 +437,30 @@ function Section({
       {section.table ? <BlogTableBlock table={section.table} /> : null}
       {section.timeline?.length ? (
         <BlogTimelineBlock steps={section.timeline} />
+      ) : null}
+      {section.infoCards?.length && section.infoCardsPosition !== "top" ? (
+        <BlogInfoCards cards={section.infoCards} />
+      ) : null}
+      {section.linkCta ? (
+        section.linkCta.href.startsWith("http") ? (
+          <a
+            href={section.linkCta.href}
+            className="blog-article-cta blog-article-section-cta"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {section.linkCta.label}
+            <span aria-hidden="true"> →</span>
+          </a>
+        ) : (
+          <Link
+            href={section.linkCta.href}
+            className="blog-article-cta blog-article-section-cta"
+          >
+            {section.linkCta.label}
+            <span aria-hidden="true"> →</span>
+          </Link>
+        )
       ) : null}
       {section.subsections?.map((subsection) => (
         <Subsection key={subsection.heading} subsection={subsection} />

@@ -1,4 +1,5 @@
 import { FAIRE_STORE_URL } from "./site";
+import type { WholesaleInfoCard } from "./wholesale";
 
 export type BlogTable = {
   headers: string[];
@@ -13,6 +14,7 @@ export type BlogFigure = {
   fit?: "cover" | "contain";
   width?: number;
   height?: number;
+  href?: string;
 };
 
 export type BlogTimelineStep = {
@@ -45,6 +47,13 @@ export type BlogSection = {
   timeline?: BlogTimelineStep[];
   table?: BlogTable;
   subsections?: BlogSubsection[];
+  /** Visual info cards (same icons/layout as /wholesale). */
+  infoCards?: WholesaleInfoCard[];
+  infoCardsPosition?: "top" | "bottom";
+  linkCta?: {
+    label: string;
+    href: string;
+  };
 };
 
 export type BlogPost = {
@@ -1336,24 +1345,43 @@ export const BLOG_POSTS: BlogPost[] = [
       },
       {
         heading: "What Changed in 2026",
+        mediaPosition: "top",
+        infoCardsPosition: "top",
+        figure: {
+          src: "/images/blog-cosmo-us-faire-storefront-20260708.jpg",
+          alt: "COSMO Embroidery brand storefront on Faire, showing colorful floss skeins and the Fort Lee, New Jersey wholesale profile",
+          caption: "The official COSMO Embroidery wholesale storefront on Faire.",
+          fit: "contain",
+          width: 1024,
+          height: 517,
+          href: FAIRE_STORE_URL,
+        },
+        infoCards: [
+          {
+            id: "availability",
+            title: "On Faire since May 2026",
+            body: `U.S. retailers can order LECIEN COSMO through our official [Faire](${FAIRE_STORE_URL}) wholesale store.`,
+          },
+          {
+            id: "warehouse",
+            title: "U.S. Warehouse in New Jersey",
+            body: "Selected inventory ships from New Jersey for faster domestic fulfillment.",
+          },
+          {
+            id: "restocking",
+            title: "Restocking from Japan",
+            body: "Out-of-stock items continue to be replenished from Japan on a rolling basis—craftsmanship stays with LECIEN.",
+          },
+        ],
         paragraphs: [
-          `In May 2026, COSMO began shipping from its first official U.S. warehouse in New Jersey, operated by TANAAKK INC., the U.S. Seller of Record. Official wholesale ordering also became available through [Faire](${FAIRE_STORE_URL}).`,
-          "For American retailers and stitchers, this means:",
+          "In May 2026, COSMO opened its first official U.S. warehouse in New Jersey—operated by TANAAKK INC., the U.S. Seller of Record—and began offering wholesale ordering through Faire.",
+          "The warehouse and Faire storefront changed how products move. They did not change what makers receive: Japanese craftsmanship, consistent quality, and the independent retailers and wholesale partners who helped introduce COSMO to North America.",
+          "The goal is simpler access to the same trusted products—for shops that stock them, and for stitchers who rely on them.",
         ],
-        bullets: [
-          "Faster domestic shipping",
-          "Improved inventory availability",
-          `Easier wholesale ordering through [Faire](${FAIRE_STORE_URL})`,
-          "Continued manufacturing by LECIEN in Japan",
-        ],
-        bulletsLabel: "What changed in 2026",
-      },
-      {
-        paragraphs: [
-          "What changed was the supply chain.",
-          "What did not change was COSMO's commitment to Japanese craftsmanship, quality, and the independent retailers and wholesale partners who helped build the brand's presence in North America.",
-          "The goal is simple: to make it easier for American retailers and stitchers to access the same trusted products while preserving the craftsmanship developed in Japan.",
-        ],
+        linkCta: {
+          label: "Shop on Faire",
+          href: FAIRE_STORE_URL,
+        },
       },
       {
         heading: "Supporting Independent Needlework Shops",
