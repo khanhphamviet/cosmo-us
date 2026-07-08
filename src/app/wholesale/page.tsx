@@ -6,12 +6,12 @@ import WholesaleJsonLd from "../components/WholesaleJsonLd";
 export const metadata: Metadata = {
   title: "COSMO Wholesale on Faire | LECIEN COSMO",
   description:
-    "Shop LECIEN COSMO wholesale on Faire. Official COSMO Faire store for U.S. retailers with New Jersey fulfillment and restocking from Japan. Operated by TANAAKK INC.",
+    "Shop LECIEN COSMO wholesale on the official COSMO Embroidery Faire store. Operated by TANAAKK INC., authorized U.S. seller for LECIEN COSMO. Ships from New Jersey; international delivery depends on Faire.",
   alternates: { canonical: "/wholesale" },
   openGraph: {
     title: "COSMO Wholesale on Faire | LECIEN COSMO",
     description:
-      "LECIEN COSMO wholesale on Faire — 50% off your first order, free shipping, and 60-day payment terms for eligible retailers.",
+      "Official LECIEN COSMO wholesale on Faire — operated by TANAAKK INC., authorized U.S. seller for LECIEN COSMO. New Jersey fulfillment and restocking from Japan.",
     url: "/wholesale",
     images: [
       {

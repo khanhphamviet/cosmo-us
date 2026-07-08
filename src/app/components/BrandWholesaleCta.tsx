@@ -11,9 +11,11 @@ export default function BrandWholesaleCta() {
             LECIEN COSMO Wholesale on Faire
           </h2>
           <p className="brand-wholesale-cta-summary">
-            LECIEN COSMO embroidery products for U.S. retailers on our official
-            COSMO Faire store. Available since May 2026 · U.S. warehouse in New
-            Jersey.
+            Official LECIEN COSMO wholesale on Faire · Operated by TANAAKK INC.
+            New Jersey fulfillment · Restocking from Japan
+          </p>
+          <p className="brand-wholesale-cta-authority">
+            Authorized U.S. seller · Official brand store
           </p>
         </div>
         <div className="brand-wholesale-cta-actions">

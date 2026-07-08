@@ -48,6 +48,12 @@ export default function BrandStories() {
           <StoryTile key={post.slug} post={post} />
         ))}
       </div>
+      <div className="brand-categories-more">
+        <Link href="/stories" className="brand-categories-more-link">
+          View all Stories
+          <span aria-hidden="true"> →</span>
+        </Link>
+      </div>
     </section>
   );
 }

@@ -80,8 +80,14 @@ export default function DesktopNav() {
           </Link>
         </li>
         <li>
-          <Link href="/wholesale" className={pathname === "/wholesale" ? "active" : ""}>
+          <Link
+            href="/wholesale"
+            className={`nav-link--with-badge${pathname === "/wholesale" ? " active" : ""}`}
+          >
             Wholesale
+            <span className="nav-new-badge" aria-hidden="true">
+              NEW
+            </span>
           </Link>
         </li>
         <li>

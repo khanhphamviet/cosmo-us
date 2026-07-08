@@ -7,7 +7,7 @@ import { isProductsPath, PRODUCT_NAV } from "../data/productNav";
 
 const UTILITY_LINKS = [
   { href: "/stories", label: "Stories" },
-  { href: "/wholesale", label: "Wholesale" },
+  { href: "/wholesale", label: "Wholesale", badge: "NEW" as const },
   { href: "/company", label: "Company" },
 ];
 
@@ -136,21 +136,32 @@ export default function MobileMenu() {
               </ul>
             )}
           </li>
-          {UTILITY_LINKS.map(({ href, label }) => (
-            <li key={href}>
-              <Link
-                href={href}
-                className={
-                  pathname === href || (href === "/stories" && pathname.startsWith("/stories/"))
-                    ? "active"
-                    : ""
-                }
-                onClick={closeMenu}
-              >
-                {label}
-              </Link>
-            </li>
-          ))}
+          {UTILITY_LINKS.map(({ href, label, badge }) => {
+            const isActive =
+              pathname === href ||
+              (href === "/stories" && pathname.startsWith("/stories/"));
+            return (
+              <li key={href}>
+                <Link
+                  href={href}
+                  className={[
+                    badge ? "nav-link--with-badge" : "",
+                    isActive ? "active" : "",
+                  ]
+                    .filter(Boolean)
+                    .join(" ")}
+                  onClick={closeMenu}
+                >
+                  {label}
+                  {badge ? (
+                    <span className="nav-new-badge" aria-hidden="true">
+                      {badge}
+                    </span>
+                  ) : null}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </>

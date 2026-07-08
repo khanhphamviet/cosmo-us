@@ -21,8 +21,14 @@ export default function WholesaleContent() {
               Unlock our wholesale catalog
             </h1>
             <p className="sashiko-hero-sub wholesale-hero-intro">
-              LECIEN COSMO embroidery products are available for U.S. retailers
-              through our official COSMO Faire wholesale store.
+              LECIEN COSMO wholesale is available through our official COSMO
+              Embroidery brand store on Faire, operated by TANAAKK INC.—the
+              authorized U.S. seller for LECIEN COSMO.
+            </p>
+            <p className="wholesale-hero-fulfillment">
+              This is a U.S.-based store with primary fulfillment from New
+              Jersey. Retailers in other countries can also order on Faire when
+              shipping is available for their destination.
             </p>
             <ul className="wholesale-faire-benefits">
               {FAIRE_BENEFITS.map((item) => (
@@ -42,6 +48,10 @@ export default function WholesaleContent() {
             </a>
             <p className="wholesale-faire-note">
               *Available for retailers who are new to Faire
+            </p>
+            <p className="wholesale-faire-note wholesale-faire-note--secondary">
+              U.S.-based store · Ships from New Jersey · International delivery
+              depends on Faire
             </p>
           </div>
           <figure className="sashiko-hero-media wholesale-hero-media">
@@ -73,9 +83,39 @@ export default function WholesaleContent() {
         </div>
       </section>
 
+      <section className="wholesale-verify" aria-labelledby="wholesale-verify-title">
+        <h2 className="wholesale-verify-title" id="wholesale-verify-title">
+          Before you order
+        </h2>
+        <dl className="wholesale-verify-list">
+          <div className="wholesale-verify-item">
+            <dt>Who operates this Faire store?</dt>
+            <dd>
+              This store is operated by TANAAKK INC., the authorized U.S. seller
+              for LECIEN COSMO.
+            </dd>
+          </div>
+          <div className="wholesale-verify-item">
+            <dt>Who fulfills the order?</dt>
+            <dd>
+              Orders ship primarily from our New Jersey warehouse. Product is
+              made by LECIEN in Japan and restocked from Japan as needed.
+            </dd>
+          </div>
+          <div className="wholesale-verify-item">
+            <dt>Can I order from outside the United States?</dt>
+            <dd>
+              Yes, when Faire offers shipping to your destination. Our store is
+              U.S.-based and fulfills primarily from New Jersey; checkout will
+              show whether delivery is available for your location.
+            </dd>
+          </div>
+        </dl>
+      </section>
+
       <p className="wholesale-footer-note">
-        LECIEN COSMO wholesale on Faire &mdash; Operated by TANAAKK INC., US Seller
-        of Record for LECIEN Corporation
+        LECIEN COSMO wholesale on Faire &mdash; Operated by TANAAKK INC.,
+        Authorized U.S. Seller for LECIEN COSMO
       </p>
     </div>
   );

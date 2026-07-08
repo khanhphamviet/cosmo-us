@@ -1,4 +1,5 @@
 import type { WholesaleInfoIconId } from "../components/WholesaleInfoIcon";
+import { FAIRE_STORE_URL } from "./site";
 
 export type WholesaleInfoCard = {
   id: WholesaleInfoIconId;
@@ -10,20 +11,19 @@ export type WholesaleInfoCard = {
 export const WHOLESALE_INFO_CARDS: WholesaleInfoCard[] = [
   {
     id: "availability",
-    title: "Available on Faire since May 2026",
-    body:
-      "LECIEN COSMO products are available on Faire for U.S. retailers since May 2026.",
+    title: "Official COSMO store on Faire",
+    body: `Shop the official COSMO Embroidery brand store at ${FAIRE_STORE_URL.replace("https://", "")}, operated by TANAAKK INC. Available since May 2026.`,
   },
   {
     id: "warehouse",
-    title: "U.S. Warehouse in New Jersey",
+    title: "Ships from New Jersey",
     body:
-      "Selected inventory ships from our New Jersey warehouse for faster domestic fulfillment.",
+      "Selected inventory ships from our New Jersey warehouse. U.S. orders move quickly; destination availability outside the U.S. follows Faire at checkout.",
   },
   {
     id: "restocking",
-    title: "Restocking from Japan",
+    title: "Made in Japan, restocked from LECIEN",
     body:
-      "Out-of-stock items are replenished from Japan on a rolling basis.",
+      "Out-of-stock items are replenished from Japan on a rolling basis—craftsmanship stays with LECIEN.",
   },
 ];

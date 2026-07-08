@@ -103,7 +103,7 @@ export default function RootLayout({
         <SiteJsonLd />
         {/* ── US OFFICIAL STORE BANNER — required every page (PE compliance) ── */}
         <div className="us-banner">
-          Official US Website by TANAAKK INC.
+          Operated by TANAAKK INC., Authorized U.S. Seller for LECIEN COSMO
         </div>
 
         {/* ── HEADER ── */}

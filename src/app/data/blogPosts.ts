@@ -1350,7 +1350,8 @@ export const BLOG_POSTS: BlogPost[] = [
         figure: {
           src: "/images/blog-cosmo-us-faire-storefront-20260708.jpg",
           alt: "COSMO Embroidery brand storefront on Faire, showing colorful floss skeins and the Fort Lee, New Jersey wholesale profile",
-          caption: "The official COSMO Embroidery wholesale storefront on Faire.",
+          caption:
+            "Official COSMO Embroidery brand storefront on Faire (operated by TANAAKK INC.).",
           fit: "contain",
           width: 1024,
           height: 517,
@@ -1359,22 +1360,22 @@ export const BLOG_POSTS: BlogPost[] = [
         infoCards: [
           {
             id: "availability",
-            title: "On Faire since May 2026",
-            body: `U.S. retailers can order LECIEN COSMO through our official [Faire](${FAIRE_STORE_URL}) wholesale store.`,
+            title: "Official COSMO store on Faire since May 2026",
+            body: `Retailers can order LECIEN COSMO through our official [Faire](${FAIRE_STORE_URL}) brand store—operated by TANAAKK INC., authorized U.S. seller for LECIEN COSMO.`,
           },
           {
             id: "warehouse",
-            title: "U.S. Warehouse in New Jersey",
-            body: "Selected inventory ships from New Jersey for faster domestic fulfillment.",
+            title: "Ships from New Jersey",
+            body: "Selected inventory ships from New Jersey. International delivery depends on Faire destination support at checkout.",
           },
           {
             id: "restocking",
-            title: "Restocking from Japan",
+            title: "Made in Japan, restocked from LECIEN",
             body: "Out-of-stock items continue to be replenished from Japan on a rolling basis—craftsmanship stays with LECIEN.",
           },
         ],
         paragraphs: [
-          "In May 2026, COSMO opened its first official U.S. warehouse in New Jersey—operated by TANAAKK INC., the U.S. Seller of Record—and began offering wholesale ordering through Faire.",
+          "In May 2026, COSMO opened its first official U.S. warehouse in New Jersey—operated by TANAAKK INC., the authorized U.S. seller for LECIEN COSMO—and began offering wholesale ordering through Faire.",
           "The warehouse and Faire storefront changed how products move. They did not change what makers receive: Japanese craftsmanship, consistent quality, and the independent retailers and wholesale partners who helped introduce COSMO to North America.",
           "The goal is simpler access to the same trusted products—for shops that stock them, and for stitchers who rely on them.",
         ],

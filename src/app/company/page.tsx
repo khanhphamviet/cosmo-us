@@ -1,8 +1,8 @@
 /**
  * Company page — two-layer structure per 海外HP運用方針
  *
- * Layer 1: TANAAKK INC  (US Seller of Record)   ← main focus
- * Layer 2: LECIEN Corporation (Brand Owner / Manufacturer)
+ * 1. LECIEN Corporation (Brand Owner / Manufacturer)
+ * 2. TANAAKK INC (US Seller of Record)
  *
  * Source: lecien.co.jp/en/company/profile
  * TODO (Furuya): Update TANAAKK INC section with official US address,
@@ -35,42 +35,7 @@ export default function CompanyPage() {
       </div>
 
       <div className="page-container">
-        {/* ── LAYER 1: TANAAKK INC (US Seller of Record) ── */}
-        <div className="company-block">
-          <h2>About TANAAKK INC (US Seller of Record)</h2>
-          <p
-            style={{
-              fontSize: "14px",
-              color: "#444",
-              lineHeight: 1.8,
-              marginBottom: "24px",
-            }}
-          >
-            TANAAKK INC is the exclusive Seller of Record for COSMO embroidery
-            products sold in the United States. All purchases, sales contracts,
-            and customer relationships in the US are conducted by TANAAKK INC.
-          </p>
-          <table className="company-table">
-            <tbody>
-              <tr>
-                <th>Company Name</th>
-                <td>TANAAKK INC.</td>
-              </tr>
-              <tr>
-                <th>Parent Company</th>
-                <td>TANAAKK K.K.</td>
-              </tr>
-              <tr>
-                <th>Role</th>
-                <td>
-                  Seller of Record for COSMO products sold in the United States
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        {/* ── LAYER 2: LECIEN Corporation (Brand Owner) ── */}
+        {/* ── LECIEN Corporation (Brand Owner) ── */}
         <div className="company-block">
           <h2>About LECIEN Corporation (Brand Owner)</h2>
           <p
@@ -159,6 +124,45 @@ export default function CompanyPage() {
                   Lecien (Cambodia) Corporation
                   <br />
                   Shanghai Lecien Co., Ltd.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        {/* ── TANAAKK INC (US Seller of Record) ── */}
+        <div className="company-block">
+          <h2>About TANAAKK INC (US Seller of Record)</h2>
+          <p
+            style={{
+              fontSize: "14px",
+              color: "#444",
+              lineHeight: 1.8,
+              marginBottom: "24px",
+            }}
+          >
+            TANAAKK INC is the exclusive Seller of Record for COSMO embroidery
+            products sold in the United States. All purchases, sales contracts,
+            and customer relationships in the US are conducted by TANAAKK INC.
+            TANAAKK INC. is the authorized U.S. seller of record for LECIEN COSMO
+            products and operates this website and the official COSMO Embroidery
+            store on Faire.
+          </p>
+          <table className="company-table">
+            <tbody>
+              <tr>
+                <th>Company Name</th>
+                <td>TANAAKK INC.</td>
+              </tr>
+              <tr>
+                <th>Parent Company</th>
+                <td>TANAAKK K.K.</td>
+              </tr>
+              <tr>
+                <th>Role</th>
+                <td>
+                  Authorized U.S. Seller of Record for LECIEN COSMO; operates
+                  this website and the official COSMO Embroidery store on Faire
                 </td>
               </tr>
             </tbody>
