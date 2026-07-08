@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import BrandHero from "./components/BrandHero";
-import BrandPillars from "./components/BrandPillars";
+import BrandNewsBanner from "./components/BrandNewsBanner";
 import BrandCategoryGrid from "./components/BrandCategoryGrid";
 import BrandStories from "./components/BrandStories";
 import BrandWholesaleCta from "./components/BrandWholesaleCta";
@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <>
       <BrandHero />
-      <BrandPillars />
+      <BrandNewsBanner />
       <BrandCategoryGrid />
       <BrandStories />
       <BrandWholesaleCta />

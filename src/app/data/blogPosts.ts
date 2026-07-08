@@ -81,10 +81,11 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       "What lies behind every skein of Made in Japan COSMO® No. 25 Embroidery Floss—from extra-long staple cotton and silk-like luster to a palette of more than 500 colors, designed in Kyoto since 1924.",
     publishedAt: "2026-07-03",
-    image: "/images/brand-hero-floss.png",
+    image:
+      "/images/blog-embroidery-floss-qualities-hero-lce200214-671-20260708.jpg",
     imageAlt:
-      "Close-up of a deep red COSMO embroidery floss skein against a soft pink background",
-    heroAspectRatio: "2.1 / 1",
+      "Close-up of colorful COSMO embroidery floss skeins piled together",
+    heroAspectRatio: "3 / 2",
     sections: [
       {
         paragraphs: [
