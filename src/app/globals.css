@@ -1784,6 +1784,136 @@ img { display: block; max-width: 100%; height: auto; }
   object-position: top center;
 }
 
+/* ── FLOSS INDEX PAGE ── */
+.floss-index-page {
+  margin: 0;
+}
+.floss-index-intro {
+  max-width: 38em;
+  margin: 0 auto clamp(28px, 4vw, 40px);
+  text-align: center;
+}
+.floss-index-title {
+  font-family: var(--brand-serif);
+  font-size: clamp(1.5rem, 2.5vw + 0.75rem, 2.125rem);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin: 0 0 12px;
+  color: var(--foreground);
+}
+.floss-index-lead {
+  font-family: var(--brand-sans);
+  font-size: clamp(0.875rem, 0.4vw + 0.78rem, 0.9375rem);
+  line-height: 1.75;
+  color: #555;
+  margin: 0;
+}
+.floss-index-list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(28px, 4vw, 40px);
+}
+.floss-index-card {
+  margin: 0;
+  border: 1px solid var(--border);
+  background: var(--background);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.floss-index-card:hover {
+  border-color: var(--foreground);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+}
+.floss-index-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+.floss-index-card-link:hover {
+  opacity: 1;
+}
+.floss-index-card-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--bg-light);
+  overflow: hidden;
+  line-height: 0;
+}
+.floss-index-card-img {
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+.floss-index-card-link:hover .floss-index-card-img {
+  transform: scale(1.02);
+}
+.floss-index-card-body {
+  padding: clamp(18px, 3vw, 24px) clamp(18px, 3vw, 28px) clamp(20px, 3vw, 26px);
+}
+.floss-index-card-title {
+  font-family: var(--brand-serif);
+  font-size: clamp(1.125rem, 1.2vw + 0.85rem, 1.5rem);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin: 0 0 10px;
+  color: var(--foreground);
+}
+.floss-index-card-highlights {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.floss-index-card-highlights li {
+  font-family: var(--brand-sans);
+  font-size: clamp(0.8125rem, 0.35vw + 0.72rem, 0.875rem);
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--foreground);
+}
+.floss-index-card-desc {
+  font-family: var(--brand-sans);
+  font-size: clamp(0.8125rem, 0.35vw + 0.72rem, 0.875rem);
+  line-height: 1.7;
+  color: #555;
+  margin: 0 0 14px;
+  max-width: 42em;
+}
+.floss-index-card-cta {
+  font-family: var(--brand-sans);
+  font-size: clamp(0.6875rem, 0.25vw + 0.62rem, 0.75rem);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--foreground);
+}
+
+@media (min-width: 900px) {
+  .floss-index-card-link {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    align-items: stretch;
+  }
+  .floss-index-card-media {
+    aspect-ratio: auto;
+    min-height: clamp(280px, 32vw, 360px);
+    height: 100%;
+  }
+  .floss-index-card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(24px, 3vw, 36px);
+  }
+}
+
+@media (max-width: 899px) {
+  .floss-index-card-media {
+    aspect-ratio: 4 / 3;
+  }
+}
+
 /* ── NISHIKIITO FLOSS PAGE (sashiko layout) ── */
 .page-container--sashiko:has(.floss-nishikiito-page) {
   padding-top: 0;
