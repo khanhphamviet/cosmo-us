@@ -1460,6 +1460,209 @@ img { display: block; max-width: 100%; height: auto; }
   margin: 0 0 32px;
 }
 
+/* ── COSMO NO. 25 FLOSS PAGE (sashiko product layout + color chart) ── */
+.floss-cosmo-page .sashiko-section-intro--center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.floss-cosmo-quality-concepts {
+  align-items: start;
+}
+.floss-cosmo-quality-concept {
+  margin: 0;
+  text-align: center;
+}
+.floss-cosmo-quality-concept-media {
+  position: relative;
+  aspect-ratio: 1;
+  margin: 0 0 12px;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.floss-cosmo-story-footnote {
+  margin-top: clamp(18px, 3vw, 24px);
+  text-align: center;
+}
+.floss-cosmo-story-footnote a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.floss-cosmo-lineup-colors {
+  margin-top: clamp(28px, 4vw, 40px);
+  padding-top: clamp(22px, 3.5vw, 28px);
+  border-top: 1px solid var(--border);
+}
+.floss-cosmo-lineup-colors-title {
+  margin: 0 0 10px;
+  font-family: var(--brand-serif);
+  font-size: clamp(1.0625rem, 0.5vw + 0.92rem, 1.25rem);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--foreground);
+}
+.floss-cosmo-colors-photo {
+  margin: clamp(22px, 3.5vw, 28px) 0 0;
+  width: 100%;
+  max-width: none;
+}
+.floss-cosmo-colors-photo-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+.floss-cosmo-chart {
+  margin: 0 0 clamp(18px, 3vw, 24px);
+}
+.floss-cosmo-chart-trigger {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: zoom-in;
+  text-align: left;
+}
+.floss-cosmo-chart-trigger:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 3px;
+}
+.floss-cosmo-chart-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--border);
+  background: #fff;
+}
+.floss-cosmo-chart-hint {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 5px 8px;
+  border-radius: 3px;
+  background: rgba(26, 26, 26, 0.78);
+  color: #fff;
+  font-family: var(--brand-sans);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1;
+  pointer-events: none;
+}
+.floss-cosmo-chart-caption {
+  margin: 10px 0 0;
+  font-family: var(--brand-sans);
+  font-size: clamp(0.75rem, 0.3vw + 0.68rem, 0.8125rem);
+  font-weight: 500;
+  line-height: 1.55;
+  color: #666;
+}
+.floss-cosmo-chart-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.88);
+  cursor: zoom-out;
+}
+.floss-cosmo-chart-lightbox-panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+.floss-cosmo-chart-lightbox-toolbar {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+  padding: 12px 16px;
+  background: rgba(0, 0, 0, 0.55);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.floss-cosmo-chart-lightbox-hint {
+  margin: 0;
+  font-family: var(--brand-sans);
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+.floss-cosmo-chart-lightbox-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.floss-cosmo-chart-zoom-btn {
+  min-width: 36px;
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-family: var(--brand-sans);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+}
+.floss-cosmo-chart-zoom-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.floss-cosmo-chart-zoom-btn:not(:disabled):hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+.floss-cosmo-chart-zoom-btn--text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.floss-cosmo-chart-zoom-label {
+  min-width: 3.5em;
+  text-align: center;
+  font-family: var(--brand-sans);
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+  color: #fff;
+}
+.floss-cosmo-chart-lightbox-scroller {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  cursor: grab;
+}
+.floss-cosmo-chart-lightbox-scroller:active {
+  cursor: grabbing;
+}
+.floss-cosmo-chart-lightbox-canvas {
+  min-height: 100%;
+  padding: 16px;
+  box-sizing: content-box;
+}
+.floss-cosmo-chart-lightbox-img {
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  display: block;
+  background: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+}
+
 /* ── SEASONS FLOSS PAGE ── */
 .floss-seasons-page {
   margin-bottom: 32px;

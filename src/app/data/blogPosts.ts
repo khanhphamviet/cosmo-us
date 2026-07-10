@@ -210,7 +210,7 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: "embroidery-floss-qualities",
     title: "The Qualities Behind Every Thread: COSMO® Embroidery Floss",
     excerpt:
-      "What lies behind every skein of Made in Japan COSMO® No. 25 Embroidery Floss—from extra-long staple cotton and silk-like luster to a palette of more than 500 colors, designed in Kyoto since 1924.",
+      "What lies behind every skein of Made in Japan COSMO® No. 25 Embroidery Floss—from extra-long staple cotton and silk-like luster to a palette of 500 colors, designed in Kyoto since 1924.",
     publishedAt: "2026-07-03",
     image:
       "/images/blog-embroidery-floss-qualities-hero-lce200214-671-20260708.jpg",
@@ -301,7 +301,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Colors Designed for Creative Expression",
         paragraphs: [
           "Color does more than decorate. It creates depth, texture, light, and shadow.",
-          "Introduced with 195 colors around 1950, the COSMO® palette has grown to include more than 500 embroidery floss colors, offering stitchers the freedom to create subtle transitions and expressive combinations across a wide variety of embroidery styles.",
+          "Introduced with 195 colors around 1950, the COSMO® palette has grown to include 500 embroidery floss colors, offering stitchers the freedom to create subtle transitions and expressive combinations across a wide variety of embroidery styles.",
           "From botanical embroidery and landscapes to portraits, traditional motifs, and counted cross-stitch, closely related shades help create natural-looking gradations that bring designs to life.",
           "The goal is not simply to offer more colors. It is to help makers find the right color when inspiration strikes.",
         ],
@@ -309,7 +309,7 @@ export const BLOG_POSTS: BlogPost[] = [
           src: "/images/blog-embroidery-floss-qualities-colors-20260707.jpg",
           alt: "Rows of COSMO embroidery floss skeins in reds, pinks, purples, blues, greens, and yellows",
           caption:
-            "More than 500 colors—closely related shades for gradations, contrasts, and every style of embroidery.",
+            "500 colors—closely related shades for gradations, contrasts, and every style of embroidery.",
         },
       },
       {
@@ -337,7 +337,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     ctaLabel: "Explore COSMO® Embroidery Floss",
     ctaDescription:
-      "Discover more than 500 solid colors and the full COSMO® No. 25 Embroidery Floss collection.",
+      "Discover 500 solid colors and the full COSMO® No. 25 Embroidery Floss collection.",
     cta: {
       label: "Shop Embroidery Floss",
       href: "/floss/cosmo",
@@ -406,7 +406,7 @@ export const BLOG_POSTS: BlogPost[] = [
         paragraphs: [
           "100 Ladies® grows with you.",
           "Beginners can complete a single figure using only a few basic stitches, while experienced makers can continue exploring new color palettes, textures, and techniques.",
-          "With more than 500 colors available in COSMO® No. 25 Embroidery Floss, subtle differences in clothing, hair, accessories, and shading become part of each character's story.",
+          "With 500 colors available in COSMO® No. 25 Embroidery Floss, subtle differences in clothing, hair, accessories, and shading become part of each character's story.",
           "The fabric encourages creativity without demanding perfection.",
         ],
       },
@@ -625,7 +625,7 @@ export const BLOG_POSTS: BlogPost[] = [
         heading: "Floss, Fabric, and a Blunt Needle",
         paragraphs: [
           "One of cross-stitch's quiet joys is how little you need to begin. At heart it's just floss, cloth, and a blunt-tipped needle.",
-          "COSMO No. 25 embroidery floss is a six-strand cotton thread: you gently separate the strands and use as many as your fabric count calls for—often two for everyday Aida. A long-established COSMO embroidery floss line developed in Japan, it comes in over 500 solid colors, plus variegated multi-color shades that shift softly from one tone to the next as you stitch.",
+          "COSMO No. 25 embroidery floss is a six-strand cotton thread: you gently separate the strands and use as many as your fabric count calls for—often two for everyday Aida. A long-established COSMO embroidery floss line developed in Japan, it comes in 500 solid colors, plus variegated multi-color shades that shift softly from one tone to the next as you stitch.",
           "Cotton floss is the everyday choice, but cross-stitch welcomes other threads too—variegated cotton for gentle color shifts, thicker pearl (perlé) cotton for texture, and metallic threads such as COSMO Nishikiito, used for decorative accents.",
           "For the cloth, COSMO offers even-weave embroidery fabrics, including Java cloth-type fabrics, in several counts, so you can choose bold and quick or fine and detailed.",
         ],
@@ -633,7 +633,7 @@ export const BLOG_POSTS: BlogPost[] = [
           src: "/images/floss-cosmo-20260610.jpg",
           alt: "Colorful skeins of COSMO No. 25 six-strand embroidery floss",
           caption:
-            "COSMO No. 25 floss—over 500 solid colors of Japanese-made cotton, plus variegated multi-color shades.",
+            "COSMO No. 25 floss—500 solid colors of Japanese-made cotton, plus variegated multi-color shades.",
         },
       },
       {
@@ -898,7 +898,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     ctaLabel: "Explore COSMO® Embroidery Floss",
     ctaDescription:
-      "Discover over 500 beautifully balanced colors, premium cotton embroidery floss, and accessories designed to inspire every project.",
+      "Discover 500 beautifully balanced colors, premium cotton embroidery floss, and accessories designed to inspire every project.",
     cta: {
       label: "Shop Embroidery Floss",
       href: "/floss/cosmo",
@@ -1449,7 +1449,7 @@ export const BLOG_POSTS: BlogPost[] = [
           "COSMO's embroidery story began in 1924, laying the foundation for more than a century of embroidery heritage.",
           "LECIEN was founded in Kyoto in 1933, bringing together European textile traditions and Japanese craftsmanship to create products for generations of makers.",
           "COSMO's connection with America also reaches back to 1950. According to LECIEN's company history, the company's handmade division began by importing American quilt products into Japan. That early exchange reflects a longstanding relationship between American quilting culture and Japanese needlework—one that continues today.",
-          "Around the same time, COSMO Embroidery Floss was introduced with an assortment of 195 colors. Over the decades, the collection expanded to include embroidery fabrics, needles, tools, and today more than 500 embroidery floss colors.",
+          "Around the same time, COSMO Embroidery Floss was introduced with an assortment of 195 colors. Over the decades, the collection expanded to include embroidery fabrics, needles, tools, and today 500 embroidery floss colors.",
           "Today, COSMO products are available to makers throughout North America, Europe, Asia, Australia, and Japan.",
         ],
         timeline: [
@@ -1459,7 +1459,7 @@ export const BLOG_POSTS: BlogPost[] = [
             period: "1950",
             title: "American quilt imports and COSMO Embroidery Floss (195 colors)",
           },
-          { period: "Today", title: "500+ floss colors and a global maker community" },
+          { period: "Today", title: "500 floss colors and a global maker community" },
         ],
       },
       {

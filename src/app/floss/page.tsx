@@ -22,7 +22,7 @@ const FLOSSES = [
     id: "cosmo",
     title: "No. 25 Floss",
     img: "/images/floss-cosmo-20260610.jpg",
-    desc: "One of our basic COSMO Embroidery flosses. Size 25 is made exclusively out of Extra-long staple cotton of top quality. Size 5 is best suited for embroidering, quilting, and making TEMARI (Japanese traditional handballs).",
+    desc: "COSMO® No. 25 Embroidery Floss—extra-long staple cotton, silk-like luster, lasting color, and 500 solid colors. Made in Japan, designed in Kyoto.",
   },
   {
     id: "seasons",

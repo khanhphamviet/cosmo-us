@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import CosmoFlossContent from "../../components/CosmoFlossContent";
 import SeasonsFlossContent from "../../components/SeasonsFlossContent";
 import NishikiitoFlossContent from "../../components/NishikiitoFlossContent";
 
@@ -9,42 +10,16 @@ import NishikiitoFlossContent from "../../components/NishikiitoFlossContent";
 
 const FLOSS_DATA = {
   cosmo: {
-    title: "No. 25 Floss",
-    img: "/images/floss-cosmo-20260610.jpg",
+    title: "COSMO No. 25 Embroidery Floss",
+    img: "/images/floss-cosmo-500-color-chart-tight-20260710.jpg",
     intro:
-      "In 1950, COSMO Embroidery Floss was launched with a wide assortment of 195 colors. Since then, our collection has been expanded to 500 beautiful colors. COSMO products are renowned and beloved in Japan and all over the world including North America, Asia, Europe and Australia.",
-    sections: [
-      {
-        heading: "COSMO Size 25 Floss",
-        body: "One of our basic COSMO Embroidery flosses, Size 25 is made exclusively out of Extra-long staple cotton of top quality.",
-        specs: [
-          { label: "Material",       value: "100% Cotton" },
-          { label: "Length",         value: "8.75 yard / 8 meter" },
-          { label: "Colors",         value: "500 solid colors" },
-          { label: "Per box",        value: "6 skeins" },
-          { label: "Strands",        value: "6" },
-          { label: "Yarn count",     value: "30 cotton, 2 ply" },
-        ],
-      },
-    ],
-    features: [
-      {
-        heading: "① Quality Cotton",
-        body: "We use only the highest quality Extra-long staple cotton — just 1.8% of global cotton production — blended in our own original ratio for the best quality texture and resilience.",
-      },
-      {
-        heading: "② Elegant Luster",
-        body: "The vivid silky shine of COSMO Embroidery Floss brings out brighter and eye-catching color in every stitch.",
-      },
-      {
-        heading: "③ Long-lasting Colors",
-        body: "Our 500 colors all resist fading and discoloring due to the advanced craftsmanship of our special processing techniques.",
-      },
-      {
-        heading: "④ Quality You Can Trust",
-        body: "Through our strict inspection and testing processes, our customers are guaranteed consistently high quality products.",
-      },
-    ],
+      "COSMO® No. 25 Embroidery Floss—Made in Japan, designed in Kyoto. Extra-long staple cotton, silk-like luster, lasting color, and a palette of 500 solid colors.",
+    sections: [] as {
+      heading: string;
+      body: string;
+      specs: { label: string; value: string }[];
+    }[],
+    features: [] as { heading: string; body: string }[],
   },
 
   seasons: {
@@ -81,11 +56,17 @@ export async function generateMetadata({
   const data = FLOSS_DATA[slug as Slug];
   if (!data) return {};
   return {
-    title: data.title,
+    title:
+      slug === "cosmo"
+        ? "COSMO No. 25 Embroidery Floss | 500 Colors"
+        : data.title,
     description: data.intro,
     alternates: { canonical: `/floss/${slug}` },
     openGraph: {
-      title: `${data.title} | COSMO Embroidery US`,
+      title:
+        slug === "cosmo"
+          ? "COSMO No. 25 Embroidery Floss | 500 Colors"
+          : `${data.title} | COSMO Embroidery US`,
       description: data.intro,
       url: `/floss/${slug}`,
       images: [{ url: data.img, alt: data.title }],
@@ -123,6 +104,26 @@ export default async function FlossDetailPage({
 
   return (
     <>
+      {slug === "cosmo" ? (
+        <>
+          <div className="page-hero page-hero--compact page-hero--sashiko">
+            <div className="breadcrumb">
+              <Link href="/">HOME</Link> / <Link href="/floss">Floss</Link> /{" "}
+              No. 25 Floss
+            </div>
+          </div>
+
+          <div className="page-container page-container--sashiko">
+            <CosmoFlossContent />
+            <div className="sashiko-page-footer">
+              <Link href="/floss" className="btn-outline">
+                ← Back to Floss
+              </Link>
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
       <div className="page-hero">
         <div className="breadcrumb">
           <Link href="/">HOME</Link> / <Link href="/floss">Floss</Link> / {data.title}
@@ -175,7 +176,7 @@ export default async function FlossDetailPage({
         {data.features.length > 0 && (
           <div style={{ marginBottom: "56px" }}>
             <h2 style={{ fontSize: "1.1rem", fontWeight: 400, letterSpacing: ".08em", marginBottom: "28px", paddingBottom: "14px", borderBottom: "2px solid #1a1a1a" }}>
-              {slug === "cosmo" ? "Secrets of Success" : "Features"}
+              Features
             </h2>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "28px" }}>
               {data.features.map((f) => (
@@ -196,6 +197,8 @@ export default async function FlossDetailPage({
         )}
 
       </div>
+        </>
+      )}
     </>
   );
 }
