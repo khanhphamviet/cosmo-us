@@ -1,4 +1,4 @@
-import { Cormorant_Garamond, Source_Sans_3 } from "next/font/google";
+import { Cormorant_Garamond, Inter } from "next/font/google";
 
 export const brandSerif = Cormorant_Garamond({
   subsets: ["latin"],
@@ -8,7 +8,7 @@ export const brandSerif = Cormorant_Garamond({
   display: "swap",
 });
 
-export const brandSans = Source_Sans_3({
+export const brandSans = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
   variable: "--font-brand-sans",

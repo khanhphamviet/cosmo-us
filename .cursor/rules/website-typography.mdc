@@ -12,42 +12,60 @@ alwaysApply: true
 
 | Role | Implementation | Use for |
 |------|----------------|---------|
-| **Serif** | `Cormorant Garamond` → `--font-brand-serif` → `var(--brand-serif)` | Page titles, section headings, editorial leads, brand hero lines |
-| **Sans** | `Source Sans 3` → `--font-brand-sans` → `var(--brand-sans)` | Body copy, UI, nav, tables, FAQ subheads, bullets, captions |
+| **Serif** | `Cormorant Garamond` → `--font-brand-serif` → `var(--brand-serif)` | Hero titles, section headings, display lines |
+| **Sans** | `Inter` → `--font-brand-sans` → `var(--brand-sans)` | Body copy, UI, nav, buttons, product names, captions |
 
 - Load fonts only via `next/font/google` in `src/app/fonts.ts` (`display: "swap"`, `subsets: ["latin"]`).
 - Apply variables on `<html>` in `layout.tsx` — never add `<link>` tags for Google Fonts.
 - Do **not** hardcode `Georgia`, `Helvetica Neue`, `Arial`, or other families in new CSS/inline styles.
 
-## Role rules
+## Role rules (site-wide)
+
+| Role | Font | Weight |
+|------|------|--------|
+| Hero Title | Cormorant Garamond | 600 |
+| Section Title | Cormorant Garamond | 400 |
+| Body | Inter | 400 |
+| Button | Inter | 500 |
+| Product Name | Inter | 500 |
+| Caption | Inter | 400 |
+
+Global selectors live in `globals.css` under `/* SITE-WIDE TYPOGRAPHY ROLES */`. Extend that block — do not add per-page font wrappers.
 
 ```css
-/* ✅ Serif — display / editorial */
+/* ✅ Serif — hero display */
 font-family: var(--brand-serif);
-font-weight: 500;   /* headings, leads */
+font-weight: 600;
+
+/* ✅ Serif — section headings */
+font-family: var(--brand-serif);
+font-weight: 400;
 
 /* ✅ Sans — reading / UI */
 font-family: var(--brand-sans);
-font-weight: 400;   /* body */
-font-weight: 500;   /* labels, timeline steps, gallery captions */
-font-weight: 600;   /* h3, table headers, emphasis */
+font-weight: 400;   /* body, captions */
+font-weight: 500;   /* buttons, product names, nav CTAs */
+font-weight: 600;   /* table headers, emphasis labels */
 ```
 
 - **Long-form body** (Stories, product copy): always sans, `line-height` 1.7–1.75, max-width ~38em.
-- **Headings h1–h2**: serif weight 500. **h3 / FAQ / UI labels**: sans weight 600.
 - **Tables**: `font-variant-numeric: tabular-nums` for spec/number columns.
 - **Do not** mix a third font family without explicit user approval.
 
-## Stories (`blog-article-*`)
+## Stories (`blog-article-*`, `blog-card-*`)
 
-Extend typography in `globals.css` under `.blog-article` — reuse `--blog-title`, `--blog-body`, `--blog-h2`, etc. Do not add per-article font overrides in `blogPosts.ts` or components.
+**Exception:** Stories are **not** covered by the site-wide role block. Keep typography scoped under `.blog-article` / `.blog-card` in `globals.css` — do not add blog selectors to `SITE-WIDE TYPOGRAPHY ROLES`.
 
 | Element | Font | Weight |
 |---------|------|--------|
-| Title, lead, h2, closing | serif | 500 |
-| Body, bullets, CTA desc | sans | 400 |
+| Title, lead, h2, closing, card title, CTA link | serif | 500 |
+| Body, bullets, CTA desc, card excerpt | sans | 400 |
 | h3 (FAQ), bullets-label | sans | 600 |
 | Comparison captions | sans | 500 |
+| Gallery caption title | serif | 400 |
+| Card read link | serif | (inherit 500) |
+
+Stories index `page-hero h1` stays sans 400 (not site-wide hero serif 600).
 
 ## When adding new pages or components
 
@@ -59,6 +77,6 @@ Extend typography in `globals.css` under `.blog-article` — reuse `--blog-title
 ## Checklist
 
 - [ ] Uses `var(--brand-serif)` or `var(--brand-sans)` — no new font families
-- [ ] Body/long copy is sans; display headings are serif
+- [ ] Body/long copy is sans; hero h1 is serif 600; section h2 is serif 400
 - [ ] New fonts (if ever needed) go in `fonts.ts` + `layout.tsx` + `:root` only
 - [ ] Stories follow `blog-article-*` scale, not one-off sizes

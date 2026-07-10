@@ -11,7 +11,7 @@
   --accent:      #c8a882;
   --brand-muted: #8f4f4f;
   --brand-serif: var(--font-brand-serif), Georgia, "Times New Roman", serif;
-  --brand-sans: var(--font-brand-sans), "Helvetica Neue", Arial, sans-serif;
+  --brand-sans: var(--font-brand-sans), system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --max-w:       1080px;
 }
 
@@ -216,7 +216,6 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .page-hero h1 {
   font-size: clamp(1.25rem, 2vw + 0.75rem, 1.75rem); /* 20px→28px */
-  font-weight: 400;
   letter-spacing: .12em;
   margin: 0 0 6px;
 }
@@ -249,14 +248,13 @@ img { display: block; max-width: 100%; height: auto; }
   padding: 72px 24px;
   text-align: center;
 }
-.hero h1 { font-size: clamp(1.5rem, 3.5vw + 0.5rem, 2.5rem); font-weight: 400; letter-spacing: .16em; margin: 0 0 10px; } /* 24px→40px */
+.hero h1 { font-size: clamp(1.5rem, 3.5vw + 0.5rem, 2.5rem); letter-spacing: .16em; margin: 0 0 10px; } /* 24px→40px */
 .hero p  { font-size: clamp(0.8125rem, 0.4vw + 0.7rem, 0.875rem); color: var(--gray); letter-spacing: .04em; margin: 0; } /* 13px→14px */
 
 /* ── BRAND STORY (TOP) ── */
 .brand-heading {
   font-family: var(--brand-serif);
   font-size: clamp(1.625rem, 2.8vw + 0.75rem, 2.625rem);
-  font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: var(--foreground);
@@ -330,7 +328,6 @@ img { display: block; max-width: 100%; height: auto; }
 .brand-hero-title {
   font-family: var(--brand-serif);
   font-size: clamp(1.5rem, 2.2vw + 0.85rem, 2.125rem);
-  font-weight: 400;
   line-height: 1.32;
   letter-spacing: 0.01em;
   color: var(--foreground);
@@ -410,9 +407,7 @@ img { display: block; max-width: 100%; height: auto; }
   overflow: hidden;
 }
 .brand-pillar-title {
-  font-family: var(--brand-serif);
   font-size: clamp(1.0625rem, 0.6vw + 0.85rem, 1.25rem);
-  font-weight: 400;
   letter-spacing: 0.01em;
   color: var(--foreground);
   margin: 0 0 8px;
@@ -467,9 +462,7 @@ img { display: block; max-width: 100%; height: auto; }
   padding: clamp(10px, 1.4vw, 13px) clamp(12px, 1.6vw, 16px);
 }
 .brand-category-title {
-  font-family: var(--brand-serif);
   font-size: clamp(0.9375rem, 0.5vw + 0.78rem, 1.0625rem);
-  font-weight: 400;
   letter-spacing: 0.02em;
   margin: 0;
   line-height: 1.35;
@@ -497,9 +490,7 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .brand-categories-more-link {
   display: inline-block;
-  font-family: var(--brand-serif);
   font-size: clamp(0.9375rem, 0.4vw + 0.85rem, 1.0625rem);
-  font-weight: 400;
   letter-spacing: 0.02em;
   color: var(--foreground);
   text-decoration: none;
@@ -650,12 +641,14 @@ img { display: block; max-width: 100%; height: auto; }
 .blog-article-section--closing p {
   font-family: var(--brand-serif);
   font-size: var(--blog-lead);
+  font-weight: 500;
   line-height: 1.55;
   color: var(--foreground);
   max-width: 36em;
 }
 .blog-article-bullets-label {
   font-size: var(--blog-meta);
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--gray);
@@ -1474,7 +1467,6 @@ img { display: block; max-width: 100%; height: auto; }
 .section-inner { max-width: var(--max-w); margin: 0 auto; }
 .section-title {
   font-size: clamp(1.125rem, 1.5vw + 0.65rem, 1.5rem); /* 18px→24px */
-  font-weight: 400;
   letter-spacing: .1em;
   text-align: center;
   margin: 0 0 32px;
@@ -1519,7 +1511,6 @@ img { display: block; max-width: 100%; height: auto; }
   margin: 0 0 10px;
   font-family: var(--brand-serif);
   font-size: clamp(1.0625rem, 0.5vw + 0.92rem, 1.25rem);
-  font-weight: 500;
   letter-spacing: 0.01em;
   color: var(--foreground);
 }
@@ -1796,7 +1787,6 @@ img { display: block; max-width: 100%; height: auto; }
 .floss-index-title {
   font-family: var(--brand-serif);
   font-size: clamp(1.5rem, 2.5vw + 0.75rem, 2.125rem);
-  font-weight: 500;
   letter-spacing: 0.02em;
   margin: 0 0 12px;
   color: var(--foreground);
@@ -1850,9 +1840,7 @@ img { display: block; max-width: 100%; height: auto; }
   padding: clamp(18px, 3vw, 24px) clamp(18px, 3vw, 28px) clamp(20px, 3vw, 26px);
 }
 .floss-index-card-title {
-  font-family: var(--brand-serif);
   font-size: clamp(1.125rem, 1.2vw + 0.85rem, 1.5rem);
-  font-weight: 500;
   letter-spacing: 0.02em;
   margin: 0 0 10px;
   color: var(--foreground);
@@ -1881,9 +1869,7 @@ img { display: block; max-width: 100%; height: auto; }
   max-width: 42em;
 }
 .floss-index-card-cta {
-  font-family: var(--brand-sans);
   font-size: clamp(0.6875rem, 0.25vw + 0.62rem, 0.75rem);
-  font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--foreground);
@@ -2344,7 +2330,6 @@ img { display: block; max-width: 100%; height: auto; }
 .sashiko-hero-title {
   font-family: var(--brand-serif);
   font-size: clamp(1.875rem, 2.8vw + 0.9rem, 2.75rem);
-  font-weight: 400;
   line-height: 1.15;
   letter-spacing: 0.02em;
   margin: 0 0 14px;
@@ -2560,7 +2545,6 @@ img { display: block; max-width: 100%; height: auto; }
 .sashiko-section-title {
   font-family: var(--brand-serif);
   font-size: clamp(1rem, 0.6vw + 0.88rem, 1.1875rem);
-  font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 1.35;
   margin: 0 0 clamp(8px, 1.5vw, 12px);
@@ -2699,9 +2683,7 @@ img { display: block; max-width: 100%; height: auto; }
   height: 28px;
 }
 .sashiko-concept-title {
-  font-family: var(--brand-serif);
   font-size: clamp(0.9375rem, 0.5vw + 0.82rem, 1.0625rem);
-  font-weight: 400;
   letter-spacing: 0.04em;
   margin: 0 0 10px;
   padding-bottom: 8px;
@@ -2991,12 +2973,94 @@ img { display: block; max-width: 100%; height: auto; }
 .ladies100-hero-title::after {
   display: block;
 }
+
+/* ── SITE-WIDE TYPOGRAPHY ROLES (Cormorant display + Inter UI) ── */
+
+/* Hero titles — serif 600 */
+.sashiko-hero-title,
+.ladies100-hero-title,
+.page-hero h1,
+.hero h1,
+.brand-heading,
+.brand-hero-title,
+.floss-index-title {
+  font-family: var(--brand-serif);
+  font-weight: 600;
+}
+
+/* Stories index hero — keep traditional sans page header */
+.page-hero:has(+ .page-container--blog) h1 {
+  font-family: var(--brand-sans);
+  font-weight: 400;
+}
+
+/* Section titles — serif 400 */
+.sashiko-section-title,
+.sashiko-gallery-title,
+.section-title,
+.cloth-section-title,
+.wholesale-section-title,
+.company-block h2,
+.wholesale-box h2,
+.brand-pillars-heading,
+.brand-categories-heading,
+.brand-wholesale-cta-title,
+.floss-cosmo-lineup-colors-title {
+  font-family: var(--brand-serif);
+  font-weight: 400;
+}
+
+/* Buttons — sans 500 */
+.btn-outline,
+.btn-solid,
+.btn-solid--outline,
+.ladies100-hero-btn,
+.brand-wholesale-cta-btn,
+.floss-index-card-cta,
+.brand-categories-more-link {
+  font-family: var(--brand-sans);
+  font-weight: 500;
+}
+
+/* Product / feature names — sans 500 */
+.sashiko-lineup-title,
+.ladies100-concept-title,
+.floss-index-card-title,
+.sashiko-concept-title,
+.sashiko-feature-title,
+.sashiko-subsection-title,
+.card h3,
+.brand-category-title,
+.brand-pillar-title,
+.wholesale-info-title,
+.wholesale-about-heading {
+  font-family: var(--brand-sans);
+  font-weight: 500;
+}
+
+/* Captions & meta — sans 400 (inherits body; explicit for clarity) */
+.breadcrumb,
+.sashiko-section-footnote,
+.sashiko-section-note,
+.sashiko-lineup-caption,
+.card p,
+.floss-index-card-desc,
+.company-note,
+.wholesale-faire-note {
+  font-family: var(--brand-sans);
+  font-weight: 400;
+}
+
+.ladies100-hero-tagline,
+.tools-supplies-hero-tagline {
+  font-family: var(--brand-sans);
+  font-weight: 400;
+}
+
 .ladies100-hero-tagline {
   margin: 0 0 14px;
   max-width: 22em;
-  font-family: var(--brand-serif);
   font-size: clamp(1.125rem, 1.2vw + 0.95rem, 1.5rem);
-  font-weight: 400;
   line-height: 1.35;
   letter-spacing: 0.02em;
   color: #1e3348;
@@ -3043,16 +3107,13 @@ img { display: block; max-width: 100%; height: auto; }
 .ladies100-concept-title {
   margin: 0 0 8px;
   font-size: clamp(0.875rem, 0.4vw + 0.78rem, 0.9375rem);
-  font-weight: 600;
   letter-spacing: 0.02em;
   color: var(--foreground);
 }
 .tools-supplies-hero-tagline {
   margin: 0 0 14px;
   max-width: 22em;
-  font-family: var(--brand-serif);
   font-size: clamp(1.125rem, 1.2vw + 0.95rem, 1.5rem);
-  font-weight: 400;
   line-height: 1.35;
   letter-spacing: 0.02em;
   color: #1e3348;
@@ -3453,7 +3514,7 @@ img { display: block; max-width: 100%; height: auto; }
   aspect-ratio: 1;           /* square for pattern cards */
 }
 .card-thumb img { width: 100%; height: 100%; object-fit: cover; }
-.card h3 { font-size: clamp(0.8125rem, 0.6vw + 0.65rem, 0.9375rem); font-weight: 400; letter-spacing: .07em; margin: 0 0 6px; } /* 13px→15px */
+.card h3 { font-size: clamp(0.8125rem, 0.6vw + 0.65rem, 0.9375rem); letter-spacing: .07em; margin: 0 0 6px; } /* 13px→15px */
 .card p  { font-size: clamp(0.6875rem, 0.3vw + 0.6rem, 0.75rem); color: var(--gray); margin: 0; line-height: 1.6; } /* 11px→12px */
 
 /* ── VIEW MORE BUTTON ── */
@@ -3576,7 +3637,6 @@ img { display: block; max-width: 100%; height: auto; }
 .wholesale-info-title {
   margin: 0 0 10px;
   font-size: clamp(0.9375rem, 0.45vw + 0.8rem, 1.0625rem);
-  font-weight: 500;
   letter-spacing: 0.03em;
   color: #c45c4a;
 }
@@ -3590,8 +3650,8 @@ img { display: block; max-width: 100%; height: auto; }
   margin-bottom: clamp(40px, 6vw, 56px);
 }
 .wholesale-section-title {
+  font-family: var(--brand-serif);
   font-size: clamp(1.25rem, 1vw + 0.95rem, 1.5rem);
-  font-weight: 400;
   letter-spacing: 0.06em;
   margin: 0 0 clamp(16px, 2.5vw, 22px);
   color: var(--foreground);
@@ -3767,7 +3827,6 @@ img { display: block; max-width: 100%; height: auto; }
 .wholesale-about-heading {
   margin: 0 0 12px;
   font-size: clamp(1rem, 0.6vw + 0.85rem, 1.125rem);
-  font-weight: 500;
   letter-spacing: 0.04em;
   color: var(--foreground);
 }
@@ -3790,7 +3849,7 @@ img { display: block; max-width: 100%; height: auto; }
   max-width: 480px;
   margin: 0 auto;
 }
-.wholesale-box h2 { font-size: clamp(1.1rem, 0.8vw + 0.8rem, 1.25rem); font-weight: 400; letter-spacing: .08em; margin: 0 0 14px; } /* 18px→20px */
+.wholesale-box h2 { font-size: clamp(1.1rem, 0.8vw + 0.8rem, 1.25rem); letter-spacing: .08em; margin: 0 0 14px; } /* 18px→20px */
 .wholesale-box p  { font-size: clamp(0.8125rem, 0.4vw + 0.7rem, 0.875rem); color: var(--gray); margin: 0 0 24px; } /* 13px→14px */
 
 /* ── Faire card widget (Wholesale page) ── */
@@ -3835,7 +3894,6 @@ img { display: block; max-width: 100%; height: auto; }
 .company-block { margin-bottom: 56px; }
 .company-block h2 {
   font-size: clamp(1.1rem, 0.8vw + 0.8rem, 1.25rem); /* 18px→20px */
-  font-weight: 400;
   letter-spacing: .07em;
   margin: 0 0 20px;
   padding-bottom: 14px;
