@@ -1,72 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
+import NishikiitoAccentGallery from "./NishikiitoAccentGallery";
+import NishikiitoSeriesBlock from "./NishikiitoSeriesBlock";
 
-const INTRO =
-  "nishikiito is a Japanese-made metallic embroidery thread, carefully crafted using the gold-thread techniques once used for kimono in Kyoto.";
-
-const SUBINTRO =
-  "Five thread types with distinct luster qualities add accents to a wide range of embroidery and needlework.";
-
-const OVERVIEW_SPECS = [
-  { label: "Colors", value: "48" },
-  { label: "Country of Origin", value: "Japan" },
-];
-
-const STYLES = [
-  {
-    heading: "Nishiki",
-    twist: "round twist",
-    body:
-      "Known for its subdued luster and resistance to friction. Ideal for tatting lace and tassels. Strands can be separated one at a time from the 4-ply twist.",
-    length: "Approx. 20 m (22 yd) per spool",
-    thickness: "Equivalent to No. 5–6 thread size (approx.)",
-    material: "Nylon / Polyester (varies by color)",
-    img: "/images/nishikiito-nishiki-lecien.jpg",
-    alt: "Nishiki metallic embroidery thread — round twist",
-  },
-  {
-    heading: "Kagami",
-    twist: "tasuki twist",
-    body:
-      "A bold sparkle from the twist structure and generous metallic content. Soft hand ideal for cross-stitch and free-motion stitching.",
-    length: "Approx. 20 m (22 yd) per spool",
-    thickness: "Equivalent to No. 14 thread size (approx.)",
-    material: "100% Nylon",
-    img: "/images/nishikiito-kagami-lecien.jpg",
-    alt: "Kagami metallic embroidery thread — tasuki twist",
-  },
-  {
-    heading: "Opali",
-    twist: "tasuki twist",
-    body:
-      "Film-like texture with opalescent, multicolor reflections. A semi-transparent finish lets light pass through faintly for a look unlike any other thread.",
-    length: "Approx. 20 m (22 yd) per spool",
-    thickness: "Equivalent to No. 11 thread size (approx.)",
-    material: "100% Polyester",
-    img: "/images/nishikiito-opali-lecien.jpg",
-    alt: "Opali metallic embroidery thread — tasuki twist",
-  },
-  {
-    heading: "Champagni",
-    twist: "tasuki twist",
-    body:
-      "Pastel tones with gentle sparkles like champagne bubbles. Soft, smooth texture for comfortable extended stitching.",
-    length: "Approx. 20 m (22 yd) per spool",
-    thickness: "Equivalent to No. 10 thread size (approx.)",
-    material: "81% Cupro, 19% Polyester",
-    img: "/images/nishikiito-champagni-lecien.jpg",
-    alt: "Champagni metallic embroidery thread — tasuki twist",
-  },
-  {
-    heading: "Neoni",
-    twist: "tasuki twist",
-    body:
-      "Vivid fluorescent colors with dramatic impact even in small amounts. Extra-fine strands — use as many plies as your project needs.",
-    length: "Approx. 50 m (54 yd) per spool",
-    thickness: "Equivalent to No. 25 thread size (approx.)",
-    material: "100% Polyester",
-    img: "/images/nishikiito-neoni-lecien.jpg",
-    alt: "Neoni metallic embroidery thread — tasuki twist",
-  },
+const PRODUCT_SPECS = [
+  { label: "Product", value: "COSMO® Nishikiito® Metallic Thread (No. 77)" },
+  { label: "Finishes", value: "Nishiki, Mirror, Iridescent, Champagni, Neoni (5 types)" },
+  { label: "Colors", value: "48 colors" },
+  { label: "Order unit", value: "3" },
+  { label: "Length", value: "Approx. 22 yd (20 m) per spool (Neoni: 54 yd / 50 m)" },
+  { label: "Made in", value: "Japan" },
 ];
 
 function SpecTable({ specs }: { specs: { label: string; value: string }[] }) {
@@ -86,76 +29,108 @@ function SpecTable({ specs }: { specs: { label: string; value: string }[] }) {
 
 export default function NishikiitoFlossContent() {
   return (
-    <div className="floss-nishikiito-page">
-      <div className="floss-nishikiito-banner">
+    <div className="sashiko-page floss-nishikiito-page">
+      <div className="floss-nishikiito-hero-wordmark">
         <Image
-          src="/images/nishikiito-title-lecien.jpg"
-          alt="Nishikiito Metallic Thread"
-          width={750}
-          height={300}
-          sizes="(max-width:750px) 100vw, 750px"
-          className="floss-nishikiito-banner-img"
+          src="/images/floss-nishikiito-wordmark-catalog-20260710-v2.jpg"
+          alt="Nishikiito"
+          width={1400}
+          height={360}
+          sizes="(max-width:640px) 50vw, 180px"
+          className="floss-nishikiito-hero-wordmark-img"
           priority
         />
       </div>
 
-      <div className="floss-nishikiito-intro-block">
-        <div className="floss-nishikiito-logo-row">
-          <div className="floss-nishikiito-logo">
-            <Image
-              src="/images/nishikiito-logo-lecien.jpg"
-              alt="nishikiito"
-              width={330}
-              height={90}
-              className="floss-nishikiito-logo-img"
-            />
+      <section
+        className="sashiko-hero"
+        aria-labelledby="floss-nishikiito-hero-title"
+      >
+        <div className="sashiko-hero-split">
+          <div className="sashiko-hero-copy">
+            <h1 className="sashiko-hero-title" id="floss-nishikiito-hero-title">
+              Nishikiito Metallic Thread
+            </h1>
+            <p className="sashiko-hero-sub">
+              Japanese-made metallic thread.
+              <br />
+              Five finishes, 48 colors.
+              <br />
+              Crafted with Kyoto kimono gold-thread technique.
+            </p>
           </div>
-          <p className="floss-nishikiito-intro-text">{INTRO}</p>
+          <figure className="sashiko-hero-media">
+            <Image
+              src="/images/floss-nishikiito-hero-catalog-20260710-v2.jpg"
+              alt="Colorful COSMO Nishikiito metallic thread spools"
+              fill
+              sizes="(max-width:900px) 100vw, 58vw"
+              className="sashiko-hero-img"
+              style={{ objectPosition: "50% 45%" }}
+              priority
+            />
+          </figure>
         </div>
+      </section>
 
-        <SpecTable specs={OVERVIEW_SPECS} />
-      </div>
+      <section
+        id="about"
+        className="sashiko-section"
+        aria-labelledby="floss-nishikiito-about-title"
+      >
+        <h2
+          className="sashiko-section-title sashiko-section-title--center"
+          id="floss-nishikiito-about-title"
+        >
+          What is Nishikiito?
+        </h2>
+        <p className="sashiko-section-intro sashiko-section-intro--tight sashiko-section-intro--center">
+          This Japanese-made metallic thread for hand embroidery is carefully
+          crafted using the gold-thread technique used for kimono in Kyoto. There
+          are five types of threads with different luster, which can be used for
+          various embroidery accents.
+        </p>
+        <p className="sashiko-section-intro sashiko-section-intro--tight sashiko-section-intro--center">
+          Nishikiito (にしきいと) is a specialty accent thread rather than an
+          everyday floss—often just a few stitches are all it takes to lift a
+          whole design.
+        </p>
+        <NishikiitoAccentGallery />
+        <p className="sashiko-section-footnote floss-nishikiito-story-footnote">
+          Read the full story in{" "}
+          <Link href="/stories/nishikiito-metallic-thread">
+            A Little Sparkle, Made in Japan
+          </Link>
+          .
+        </p>
+      </section>
 
-      <div className="floss-nishikiito-styles-section">
-        <p className="floss-nishikiito-subintro">{SUBINTRO}</p>
+      <section
+        id="finishes"
+        className="sashiko-section"
+        aria-labelledby="floss-nishikiito-finishes-title"
+      >
+        <h2 className="sashiko-section-title" id="floss-nishikiito-finishes-title">
+          Five finishes, five kinds of luster
+        </h2>
+        <p className="sashiko-section-intro sashiko-section-intro--tight">
+          Nishiki (round twist), Mirror, Iridescent, Champagni, and Neoni (Tasuki
+          Twisted)—each finish is twisted and blended differently, so they
+          reflect light in their own way.
+        </p>
+        <NishikiitoSeriesBlock />
+      </section>
 
-        <ul className="floss-nishikiito-style-list">
-          {STYLES.map((item) => (
-            <li key={item.heading} className="floss-nishikiito-style-item">
-              <div className="floss-nishikiito-style-media">
-                <Image
-                  src={item.img}
-                  alt={item.alt}
-                  fill
-                  sizes="(max-width:640px) 100vw, 240px"
-                  style={{ objectFit: "cover", objectPosition: "center 42%" }}
-                />
-              </div>
-              <div className="floss-nishikiito-style-body">
-                <h2 className="floss-nishikiito-style-title">
-                  {item.heading}
-                  <span className="floss-nishikiito-style-twist"> ({item.twist})</span>
-                </h2>
-                <p className="floss-nishikiito-style-text">{item.body}</p>
-                <dl className="floss-nishikiito-style-specs">
-                  <div>
-                    <dt>Length</dt>
-                    <dd>{item.length}</dd>
-                  </div>
-                  <div>
-                    <dt>Thickness</dt>
-                    <dd>{item.thickness}</dd>
-                  </div>
-                  <div>
-                    <dt>Material</dt>
-                    <dd>{item.material}</dd>
-                  </div>
-                </dl>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <section
+        id="specs"
+        className="sashiko-section sashiko-section--last"
+        aria-labelledby="floss-nishikiito-specs-title"
+      >
+        <h2 className="sashiko-section-title" id="floss-nishikiito-specs-title">
+          Product specifications
+        </h2>
+        <SpecTable specs={PRODUCT_SPECS} />
+      </section>
     </div>
   );
 }

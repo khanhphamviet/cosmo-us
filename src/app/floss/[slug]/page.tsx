@@ -33,9 +33,9 @@ const FLOSS_DATA = {
 
   nishikiito: {
     title: "Nishikiito Metallic Thread",
-    img: "/images/nishikiito-20260610.jpg",
+    img: "/images/floss-nishikiito-hero-catalog-20260710-v2.jpg",
     intro:
-      "Japanese-made metallic embroidery thread crafted with gold-thread techniques from Kyoto. Five styles with distinct luster for embroidery accents.",
+      "Japanese-made metallic thread for hand embroidery, crafted with Kyoto kimono gold-thread technique. Five finishes—Nishiki, Mirror, Iridescent, Champagni, and Neoni—with 48 colors for embroidery accents.",
     sections: [],
     features: [],
   },
@@ -61,7 +61,9 @@ export async function generateMetadata({
         ? "COSMO No. 25 Embroidery Floss | 500 Colors"
         : slug === "seasons"
           ? "Seasons Variegated Floss | 140 Colors"
-          : data.title,
+          : slug === "nishikiito"
+            ? "Nishikiito Metallic Thread | 48 Colors"
+            : data.title,
     description: data.intro,
     alternates: { canonical: `/floss/${slug}` },
     openGraph: {
@@ -70,7 +72,9 @@ export async function generateMetadata({
           ? "COSMO No. 25 Embroidery Floss | 500 Colors"
           : slug === "seasons"
             ? "Seasons Variegated Floss | 140 Colors"
-            : `${data.title} | COSMO Embroidery US`,
+            : slug === "nishikiito"
+              ? "Nishikiito Metallic Thread | 48 Colors"
+              : `${data.title} | COSMO Embroidery US`,
       description: data.intro,
       url: `/floss/${slug}`,
       images: [{ url: data.img, alt: data.title }],
@@ -108,17 +112,27 @@ export default async function FlossDetailPage({
 
   return (
     <>
-      {slug === "cosmo" || slug === "seasons" ? (
+      {slug === "cosmo" || slug === "seasons" || slug === "nishikiito" ? (
         <>
           <div className="page-hero page-hero--compact page-hero--sashiko">
             <div className="breadcrumb">
               <Link href="/">HOME</Link> / <Link href="/floss">Floss</Link> /{" "}
-              {slug === "cosmo" ? "No. 25 Floss" : "Seasons"}
+              {slug === "cosmo"
+                ? "No. 25 Floss"
+                : slug === "seasons"
+                  ? "Seasons"
+                  : "Nishikiito"}
             </div>
           </div>
 
           <div className="page-container page-container--sashiko">
-            {slug === "cosmo" ? <CosmoFlossContent /> : <SeasonsFlossContent />}
+            {slug === "cosmo" ? (
+              <CosmoFlossContent />
+            ) : slug === "seasons" ? (
+              <SeasonsFlossContent />
+            ) : (
+              <NishikiitoFlossContent />
+            )}
             <div className="sashiko-page-footer">
               <Link href="/floss" className="btn-outline">
                 ← Back to Floss
@@ -136,16 +150,6 @@ export default async function FlossDetailPage({
       </div>
 
       <div className="page-container">
-
-        {slug === "nishikiito" ? (
-          <>
-            <NishikiitoFlossContent />
-            <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", borderTop: "1px solid var(--border)", paddingTop: "40px" }}>
-              <Link href="/floss" className="btn-outline">← Back to Floss</Link>
-            </div>
-          </>
-        ) : (
-          <>
         {/* Hero image + intro */}
         <div style={{ display: "flex", gap: "40px", flexWrap: "wrap", marginBottom: "56px", alignItems: "flex-start" }}>
           <div style={{ position: "relative", width: "100%", maxWidth: "420px", aspectRatio: "4/3", flexShrink: 0, background: "var(--bg-light)", border: "1px solid var(--border)", overflow: "hidden" }}>
@@ -190,8 +194,6 @@ export default async function FlossDetailPage({
         <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", borderTop: "1px solid var(--border)", paddingTop: "40px" }}>
           <Link href="/floss" className="btn-outline">← Back to Floss</Link>
         </div>
-          </>
-        )}
 
       </div>
         </>
