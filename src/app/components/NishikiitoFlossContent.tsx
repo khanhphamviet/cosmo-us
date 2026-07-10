@@ -32,11 +32,11 @@ export default function NishikiitoFlossContent() {
     <div className="sashiko-page floss-nishikiito-page">
       <div className="floss-nishikiito-hero-wordmark">
         <Image
-          src="/images/floss-nishikiito-wordmark-catalog-20260710-v2.jpg"
+          src="/images/floss-nishikiito-wordmark-catalog-20260710-v4.jpg"
           alt="Nishikiito"
-          width={1400}
-          height={360}
-          sizes="(max-width:640px) 50vw, 180px"
+          width={560}
+          height={161}
+          sizes="(max-width:640px) 70vw, 280px"
           className="floss-nishikiito-hero-wordmark-img"
           priority
         />
