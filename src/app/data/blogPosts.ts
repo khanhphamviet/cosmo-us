@@ -76,6 +76,137 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "seasons-variegated-floss",
+    title: "COSMO® Seasons: Variegated Floss That Shades as You Stitch",
+    excerpt:
+      "One length of thread, many tones. COSMO Seasons is a 100% cotton variegated floss that shifts color on its own—three series, each with a different rhythm of change.",
+    publishedAt: "2026-07-10",
+    image: "/images/floss-seasons-20260610.jpg",
+    imageAlt:
+      "Close-up of COSMO Seasons variegated embroidery floss skeins in soft pink and white gradations",
+    heroAspectRatio: "1 / 1",
+    sections: [
+      {
+        paragraphs: [
+          "Most embroidery floss holds a single, steady color. Seasons does something different—it changes as you stitch.",
+          "COSMO® Seasons is a variegated embroidery floss whose color shifts gently along the strand, moving through a range of related tones. With one thread you can suggest a fading sky, a bank of blossoms, or the turn of autumn leaves—no swapping colors, no re-threading.",
+        ],
+      },
+      {
+        heading: "What Is Variegated Floss?",
+        paragraphs: [
+          "Variegated—or self-shading—floss is dyed so its color changes at intervals along the thread. Instead of one flat shade, a single strand travels through several tones: light to dark, or one hue into the next.",
+          "That built-in gradation does a lot of work for you. Rows of simple stitches take on depth and movement on their own, and you get smooth transitions that would otherwise mean stopping to change threads again and again.",
+        ],
+      },
+      {
+        heading: "Meet COSMO Seasons",
+        paragraphs: [
+          "Seasons is COSMO's variegated take on its signature No. 25 embroidery floss. It shares the same foundation—six separable strands of 100% cotton, made in Japan—so it stitches with the same smooth hand and soft luster COSMO is known for.",
+          "The palette is designed to sit alongside COSMO's solid No. 25 colors, so you can blend self-shading and solid threads in the same piece and trust that they'll feel like a family.",
+        ],
+        bulletsLabel: "What makes it special",
+        bullets: [
+          "Six separable strands of 100% cotton—use one strand or several",
+          "Gentle, self-shading color that changes along the thread",
+          "Designed to complement COSMO's solid No. 25 palette",
+          "A wide range of variegated colors across three series",
+          "Made in Japan",
+        ],
+      },
+      {
+        heading: "Three Series, Three Ways to Shade",
+        paragraphs: [
+          "Seasons comes in three series that differ by how quickly the color changes. That rhythm of change is what makes each one suited to a different job.",
+        ],
+        figure: {
+          src: "/images/floss-seasons-color-change-lecien-20260710.jpg",
+          alt: "Chart comparing color-change length for Seasons 5000, 8000, and 9000",
+          caption:
+            "Difference in length of color change across the three Seasons series.",
+        },
+        gallery: [
+          {
+            src: "/images/floss-seasons-5000-lecien.jpg",
+            alt: "COSMO Seasons 5000 variegated embroidery floss skeins in cool blues, greens, and purples",
+            caption: "Seasons 5000 — even color changes about every 8 cm (3.1 in).",
+            fit: "contain",
+            width: 400,
+            height: 339,
+          },
+          {
+            src: "/images/floss-seasons-8000-lecien.jpg",
+            alt: "COSMO Seasons 8000 variegated embroidery floss skeins in yellows and greens",
+            caption: "Seasons 8000 — long, gradual changes about every 30 cm (11.8 in).",
+            fit: "contain",
+            width: 400,
+            height: 339,
+          },
+          {
+            src: "/images/floss-seasons-9000-lecien.jpg",
+            alt: "COSMO Seasons 9000 variegated embroidery floss skeins in vivid multi-color mixes",
+            caption: "Seasons 9000 — short, random changes for dynamic accents.",
+            fit: "contain",
+            width: 400,
+            height: 339,
+          },
+        ],
+        galleryVariant: "row",
+        bullets: [
+          "Seasons 5000 — color changes at even intervals, about every 8 cm (3.1 in). An easy, versatile pitch that's enjoyable for everyday embroidery and creative thread play.",
+          "Seasons 8000 — long, gradual changes, roughly every 30 cm (11.8 in). Ideal for large motifs and full, solid stitching, with rich pinks and greens well suited to landscapes and scenery.",
+          "Seasons 9000 — short, random changes. Dynamic gradation even in small motifs, with vivid colors made for accents and one-point stitching.",
+        ],
+      },
+      {
+        heading: "Ways to Use It",
+        paragraphs: [
+          "Because the shading is already in the thread, Seasons shines anywhere you want gentle color movement without the fuss of switching floss.",
+        ],
+        bulletsLabel: "Try it for",
+        bullets: [
+          "Skies, water, and sunsets that fade from one tone to the next",
+          "Flowers, foliage, and landscapes with natural color variation",
+          "Ombré borders, lettering, and lines that shift as they travel",
+          "Simple stitches—running, back, and cross-stitch—given instant depth",
+        ],
+      },
+      {
+        heading: "Pairs Beautifully with Solid No. 25",
+        paragraphs: [
+          "Seasons and COSMO's solid No. 25 floss share the same weight, fiber, and finish, so they mix effortlessly. Use a solid color for steady areas and a Seasons thread where you want the color to breathe—together they open up a fuller palette than either could alone.",
+        ],
+      },
+      {
+        heading: "Product Specifications",
+        table: {
+          headers: ["", ""],
+          rows: [
+            ["Product", "COSMO® Seasons Variegated Embroidery Floss"],
+            ["Type", "Variegated No. 25 floss — six separable strands, 100% cotton"],
+            ["Series", "Seasons 5000, Seasons 8000, Seasons 9000"],
+            ["Color change", "5000: about 8 cm (3.1 in), even · 8000: about 30 cm (11.8 in), gradual · 9000: short, random"],
+            ["Colors", "140 variegated colors"],
+            ["Made in", "Japan"],
+          ],
+        },
+      },
+      {
+        heading: "Let Your Color Move",
+        paragraphs: [
+          "If you've ever wished a row of stitches could carry a little more life, Seasons is a simple way to get there. Pick a series, thread your needle, and let the color do the rest.",
+        ],
+      },
+    ],
+    ctaLabel: "Explore Seasons",
+    ctaDescription:
+      "Discover COSMO® Seasons variegated floss and the rest of the COSMO thread family to bring color and movement to your next project.",
+    cta: {
+      label: "Shop Seasons",
+      href: "/floss/seasons",
+    },
+  },
+  {
     slug: "embroidery-floss-qualities",
     title: "The Qualities Behind Every Thread: COSMO® Embroidery Floss",
     excerpt:

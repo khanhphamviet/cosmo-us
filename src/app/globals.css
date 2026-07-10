@@ -1015,6 +1015,13 @@ img { display: block; max-width: 100%; height: auto; }
 .blog-article-gallery--aside .blog-article-gallery-media--aside-fill {
   position: relative;
 }
+.blog-article-gallery-media--contain {
+  aspect-ratio: auto;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .blog-article-gallery-media--contain .blog-article-gallery-img {
   width: auto;
   max-width: 100%;
