@@ -1,91 +1,80 @@
 import Image from "next/image";
-
-const INTRO_LINES = [
-  "Beautiful gradation No. 25 embroidery thread.",
-  "A color range designed to complement 462 solid No. 25 embroidery thread colors.",
-  "Three series with different color-change lengths enable even richer expression.",
-];
-
-const SERIES = [
-  {
-    heading: "Seasons 5000",
-    body:
-      "Changes color at even intervals about every 8 cm (3.14 in). With an easy-to-use color-change pitch, it is enjoyable for embroidery as well as creative thread play.",
-    img: "/images/floss-seasons-5000-lecien.jpg",
-    alt: "Seasons 5000 variegated embroidery floss",
-  },
-  {
-    heading: "Seasons 8000",
-    body:
-      "Colors change about every 30 cm (11.81 in). Ideal for large motifs and firm, full stitching. A rich variety of pinks and greens — colors often used to depict landscapes and scenery.",
-    img: "/images/floss-seasons-8000-lecien-20260627.jpg",
-    alt: "Seasons 8000 variegated embroidery floss",
-  },
-  {
-    heading: "Seasons 9000",
-    body:
-      "A series with short, random color-change pitches. Enjoy dynamic gradation even in small motifs. Vivid, memorable colors suited to accent and one-point stitching.",
-    img: "/images/floss-seasons-9000-lecien.jpg",
-    alt: "Seasons 9000 variegated embroidery floss",
-  },
-];
+import SeasonsColorChart from "./SeasonsColorChart";
+import SeasonsSeriesBlock from "./SeasonsSeriesBlock";
 
 export default function SeasonsFlossContent() {
   return (
-    <div className="floss-seasons-page">
-      <div className="floss-seasons-intro-block">
-        <div className="floss-seasons-logo-row">
-          <div className="floss-seasons-logo">
+    <div className="sashiko-page floss-seasons-page">
+      <div className="floss-seasons-hero-wordmark">
+        <Image
+          src="/images/floss-seasons-wordmark-trimmed-20260710-v2.jpg"
+          alt="Seasons"
+          width={800}
+          height={168}
+          sizes="(max-width:640px) 50vw, 180px"
+          className="floss-seasons-hero-wordmark-img"
+          priority
+        />
+      </div>
+      <section className="sashiko-hero" aria-labelledby="floss-seasons-hero-title">
+        <div className="sashiko-hero-split">
+          <div className="sashiko-hero-copy">
+            <h1 className="sashiko-hero-title" id="floss-seasons-hero-title">
+              Seasons Variegated Floss
+            </h1>
+            <p className="sashiko-hero-sub">
+              One length of thread, many tones.
+              <br />
+              140 variegated colors.
+              <br />
+              Made in Japan.
+            </p>
+          </div>
+          <figure className="sashiko-hero-media">
             <Image
-              src="/images/floss-seasons-logo-lecien.jpg"
-              alt="Seasons"
-              width={304}
-              height={57}
-              className="floss-seasons-logo-img"
+              src="/images/floss-seasons-20260610.jpg"
+              alt="Close-up of COSMO Seasons variegated embroidery floss skeins in soft pink and white gradations"
+              fill
+              sizes="(max-width:900px) 100vw, 58vw"
+              className="sashiko-hero-img"
               priority
             />
-          </div>
-          <div className="floss-seasons-intro-text">
-            {INTRO_LINES.map((line) => (
-              <p key={line}>{line}</p>
-            ))}
-          </div>
+          </figure>
         </div>
+      </section>
 
-        <div className="floss-seasons-sub-banner">
-          <Image
-            src="/images/floss-seasons-color-change-chart.jpg"
-            alt="Difference in length of color change — Seasons 5000, 8000, and 9000"
-            width={750}
-            height={288}
-            sizes="(max-width:750px) 100vw, 750px"
-            className="floss-seasons-sub-banner-img"
-          />
-        </div>
-      </div>
+      <section
+        id="series"
+        className="sashiko-section"
+        aria-labelledby="floss-seasons-series-title"
+      >
+        <h2 className="sashiko-section-title" id="floss-seasons-series-title">
+          Three series, three rhythms
+        </h2>
+        <p className="sashiko-section-intro sashiko-section-intro--tight">
+          Seasons comes in three series that differ by how quickly the color
+          changes. That rhythm of change is what makes each one suited to a
+          different kind of stitching.
+        </p>
+        <SeasonsSeriesBlock />
+      </section>
 
-      <div className="floss-seasons-compare">
-        <h2 className="floss-seasons-compare-title">The three series</h2>
-        <div className="floss-seasons-card-grid">
-          {SERIES.map((item) => (
-            <article key={item.heading} className="floss-seasons-card">
-              <div className="floss-seasons-card-media">
-                <Image
-                  src={item.img}
-                  alt={item.alt}
-                  fill
-                  sizes="(max-width:640px) 100vw, (max-width:900px) 50vw, 33vw"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="floss-seasons-card-body">
-                <h3 className="floss-seasons-card-title">{item.heading}</h3>
-                <p className="floss-seasons-card-text">{item.body}</p>
-              </div>
-            </article>
-          ))}
-        </div>
-      </div>
+      <section
+        id="colors"
+        className="sashiko-section sashiko-section--last"
+        aria-labelledby="floss-seasons-colors-title"
+      >
+        <h2 className="sashiko-section-title" id="floss-seasons-colors-title">
+          Explore 140 variegated colors
+        </h2>
+        <p className="sashiko-section-intro sashiko-section-intro--tight">
+          The official Seasons color chart organizes every variegated shade by
+          series—5000 for even gradations about every 8 cm, 8000 for long,
+          gradual changes about every 30 cm, and 9000 for short, random shifts.
+          Click the chart to enlarge and zoom.
+        </p>
+        <SeasonsColorChart />
+      </section>
     </div>
   );
 }

@@ -11,7 +11,9 @@ import type {
 import { formatBlogDate } from "../data/blogPosts";
 import type { WholesaleInfoCard } from "../data/wholesale";
 import { BlogTableBlock } from "./BlogTable";
+import BlogArticleGallery from "./BlogArticleGallery";
 import { WholesaleInfoIcon } from "./WholesaleInfoIcon";
+import SeasonsSeriesBlock from "./SeasonsSeriesBlock";
 
 type Props = {
   post: BlogPost;
@@ -119,147 +121,6 @@ function BlogFigureBlock({ figure }: { figure: BlogFigure }) {
   );
 }
 
-function BlogGalleryBlock({
-  items,
-  variant = "row",
-}: {
-  items: BlogFigure[];
-  variant?: BlogSection["galleryVariant"];
-}) {
-  const isAside = variant === "aside";
-
-  if (variant === "before-after" && items.length >= 2) {
-    const [before, after] = items;
-
-    return (
-      <div className="ladies100-before-after ladies100-before-after--about blog-article-before-after">
-        <figure className="ladies100-about-panel">
-          <div className="ladies100-about-panel-media">
-            <Image
-              src={before.src}
-              alt={before.alt}
-              fill
-              quality={90}
-              sizes="(max-width: 640px) 100vw, 42vw"
-              className="ladies100-about-panel-img"
-            />
-          </div>
-        </figure>
-        <div className="ladies100-before-after-arrow" aria-hidden="true">
-          →
-        </div>
-        <figure className="ladies100-about-panel">
-          <div className="ladies100-about-panel-media">
-            <Image
-              src={after.src}
-              alt={after.alt}
-              fill
-              quality={90}
-              sizes="(max-width: 640px) 100vw, 42vw"
-              className="ladies100-about-panel-img"
-            />
-          </div>
-        </figure>
-      </div>
-    );
-  }
-
-  return (
-    <div
-      className={[
-        "blog-article-gallery",
-        variant === "comparison" ? "blog-article-gallery--comparison" : "",
-        variant === "row" ? "blog-article-gallery--row" : "",
-        variant === "patterns" ? "blog-article-gallery--patterns" : "",
-        variant === "hero" ? "blog-article-gallery--hero" : "",
-        variant === "pillars" ? "blog-article-gallery--pillars" : "",
-        isAside ? "blog-article-gallery--aside" : "",
-      ]
-        .filter(Boolean)
-        .join(" ")}
-    >
-      {items.map((item) => {
-        const width = item.width ?? 900;
-        const height = item.height ?? 900;
-
-        return (
-          <figure key={`${item.src}-${item.caption ?? item.alt}`} className="blog-article-gallery-item">
-            <div
-              className={[
-                "blog-article-gallery-media",
-                item.fit === "contain" ? "blog-article-gallery-media--contain" : "",
-                isAside && item.fit === "contain"
-                  ? "blog-article-gallery-media--aside-fill"
-                  : "",
-                variant === "pillars" ? "blog-article-gallery-media--pillars-fill" : "",
-              ]
-                .filter(Boolean)
-                .join(" ")}
-            >
-              {isAside && item.fit === "contain" ? (
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  fill
-                  quality={90}
-                  sizes="(max-width: 640px) 45vw, 180px"
-                  className="blog-article-gallery-img"
-                />
-              ) : variant === "hero" || variant === "pillars" ? (
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  fill
-                  quality={90}
-                  sizes={
-                    variant === "pillars"
-                      ? "(max-width: 640px) 80vw, 220px"
-                      : "(max-width: 720px) 100vw, 720px"
-                  }
-                  className="blog-article-gallery-img"
-                  style={{ objectFit: "cover" }}
-                />
-              ) : (
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  width={width}
-                  height={height}
-                  quality={90}
-                  sizes={
-                    variant === "comparison"
-                      ? "(max-width: 640px) 100vw, 50vw"
-                      : "(max-width: 640px) 100vw, 33vw"
-                  }
-                  className="blog-article-gallery-img"
-                />
-              )}
-            </div>
-            {item.caption ? (
-              <figcaption className="blog-article-gallery-caption">
-                {variant === "pillars" ? (
-                  <>
-                    <span className="blog-article-gallery-caption-title">
-                      {item.caption}
-                    </span>
-                    {item.description ? (
-                      <span className="blog-article-gallery-caption-body">
-                        {item.description}
-                      </span>
-                    ) : null}
-                  </>
-                ) : (
-                  item.caption
-                )}
-              </figcaption>
-            ) : null}
-          </figure>
-        );
-      })}
-    </div>
-  );
-}
-
 function BlogTimelineBlock({ steps }: { steps: BlogTimelineStep[] }) {
   return (
     <ol className="blog-article-timeline">
@@ -297,6 +158,13 @@ function BlogInfoCards({ cards }: { cards: WholesaleInfoCard[] }) {
       </div>
     </div>
   );
+}
+
+function BlogEmbedBlock({ embed }: { embed: NonNullable<BlogSection["embed"]> }) {
+  if (embed === "seasons-series") {
+    return <SeasonsSeriesBlock />;
+  }
+  return null;
 }
 
 function Subsection({ subsection }: { subsection: BlogSubsection }) {
@@ -357,11 +225,13 @@ function Section({
         <BlogFigureBlock figure={section.figure} />
       ) : null}
       {section.gallery?.length && section.galleryPosition !== "aside" ? (
-        <BlogGalleryBlock
+        <BlogArticleGallery
           items={section.gallery}
           variant={section.galleryVariant}
+          zoomable={section.galleryZoom}
         />
       ) : null}
+      {section.embed ? <BlogEmbedBlock embed={section.embed} /> : null}
     </>
   );
 
@@ -422,9 +292,10 @@ function Section({
         <div className="blog-article-section-grid">
           <div className="blog-article-section-copy">{paragraphs}</div>
           <aside className="blog-article-section-aside">
-            <BlogGalleryBlock
+            <BlogArticleGallery
               items={section.gallery}
               variant={section.galleryVariant ?? "aside"}
+              zoomable={section.galleryZoom}
             />
           </aside>
         </div>

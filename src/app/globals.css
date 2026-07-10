@@ -944,6 +944,26 @@ img { display: block; max-width: 100%; height: auto; }
 .blog-article-gallery-item {
   margin: 0;
 }
+.blog-article-gallery-item--zoomable .blog-article-gallery-trigger {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: zoom-in;
+  text-align: left;
+}
+.blog-article-gallery-item--zoomable .blog-article-gallery-trigger:hover .blog-article-gallery-media {
+  border-color: var(--foreground);
+}
+.blog-article-gallery-item--zoomable .blog-article-gallery-trigger:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 3px;
+}
+.blog-article-gallery-item--zoomable .blog-article-gallery-img {
+  pointer-events: none;
+}
 .blog-article-gallery-media {
   position: relative;
   width: 100%;
@@ -1663,103 +1683,105 @@ img { display: block; max-width: 100%; height: auto; }
   pointer-events: none;
 }
 
-/* ── SEASONS FLOSS PAGE ── */
+/* ── SEASONS FLOSS PAGE (sashiko product layout + color chart) ── */
+.page-container--sashiko:has(.floss-seasons-page) {
+  padding-top: 0;
+}
 .floss-seasons-page {
-  margin-bottom: 32px;
+  margin-top: -8px;
 }
-.floss-seasons-intro-block {
-  max-width: 750px;
-  margin: 0 auto clamp(36px, 5vw, 48px);
+.floss-seasons-hero-wordmark {
+  margin: clamp(8px, 1.5vw, 12px) auto clamp(8px, 1.5vw, 12px);
+  text-align: center;
+  line-height: 0;
 }
-.floss-seasons-logo-row {
-  display: flex;
-  gap: clamp(16px, 3vw, 28px);
-  align-items: flex-start;
-  margin-bottom: clamp(20px, 3vw, 28px);
+.floss-seasons-page > .sashiko-hero {
+  margin-top: 0;
 }
-.floss-seasons-logo {
-  flex-shrink: 0;
-}
-.floss-seasons-logo-img {
+.floss-seasons-hero-wordmark-img {
   width: auto;
   height: auto;
-  max-width: 160px;
-  display: block;
+  max-width: min(180px, 50vw);
+  display: inline-block;
 }
-.floss-seasons-intro-text p {
-  font-size: clamp(0.875rem, 0.4vw + 0.78rem, 0.9375rem);
-  line-height: 1.85;
-  color: #444;
-  margin: 0 0 10px;
+.floss-seasons-page .sashiko-section-intro--center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
-.floss-seasons-intro-text p:last-child {
-  margin-bottom: 0;
+.floss-seasons-series-block {
+  margin: 0;
 }
-.floss-seasons-sub-banner-img {
+.blog-article-section .floss-seasons-series-block {
+  margin-top: clamp(12px, 2vw, 16px);
+  max-width: none;
+}
+.floss-seasons-series-grid {
+  align-items: start;
+}
+.floss-seasons-series-card {
+  margin: 0;
+  text-align: center;
+}
+.floss-seasons-series-media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  margin: 0 0 12px;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.floss-seasons-change-chart {
+  margin: clamp(14px, 2.5vw, 20px) 0 0;
+}
+.floss-seasons-change-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(8px, 1.5vw, 12px);
+}
+.floss-seasons-change-panel {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(4px, 1vw, 6px);
+}
+.floss-seasons-change-label {
+  margin: 0;
+  font-family: var(--brand-sans);
+  font-size: clamp(0.6875rem, 0.25vw + 0.62rem, 0.75rem);
+  font-weight: 600;
+  line-height: 1.3;
+  color: #333;
+}
+.floss-seasons-change-strip {
+  background: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  line-height: 0;
+}
+.floss-seasons-change-strip-img {
   width: 100%;
   height: auto;
   display: block;
 }
-.floss-seasons-compare {
-  max-width: var(--max-w);
-  margin: 0 auto;
-}
-.floss-seasons-compare-title {
-  font-size: clamp(0.9375rem, 0.5vw + 0.82rem, 1.0625rem);
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin: 0 0 clamp(16px, 2.5vw, 20px);
-  color: var(--foreground);
-}
-.floss-seasons-card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: clamp(12px, 2vw, 20px);
-}
-.floss-seasons-card {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid var(--border);
-  background: var(--background);
-}
-.floss-seasons-card-media {
-  position: relative;
-  aspect-ratio: 4 / 3;
-  background: var(--bg-light);
-  overflow: hidden;
-}
-.floss-seasons-card-body {
-  padding: clamp(12px, 2vw, 16px);
-  flex: 1;
-}
-.floss-seasons-card-title {
-  font-size: clamp(0.9375rem, 0.45vw + 0.8rem, 1.0625rem);
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  margin: 0 0 8px;
-  color: var(--foreground);
-}
-.floss-seasons-card-text {
-  font-size: clamp(0.8125rem, 0.3vw + 0.72rem, 0.875rem);
-  line-height: 1.7;
-  color: #444;
+.floss-seasons-change-note {
   margin: 0;
+  font-family: var(--brand-sans);
+  font-size: clamp(0.625rem, 0.2vw + 0.58rem, 0.6875rem);
+  font-weight: 400;
+  line-height: 1.4;
+  color: #777;
 }
-
-@media (max-width: 900px) {
-  .floss-seasons-card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.floss-seasons-change-caption {
+  margin: clamp(8px, 1.5vw, 10px) 0 0;
+  font-family: var(--brand-sans);
+  font-size: clamp(0.6875rem, 0.25vw + 0.62rem, 0.75rem);
+  font-weight: 400;
+  line-height: 1.5;
+  color: #888;
+  text-align: center;
 }
-
-@media (max-width: 640px) {
-  .floss-seasons-logo-row {
-    flex-direction: column;
-  }
-  .floss-seasons-card-grid {
-    grid-template-columns: 1fr;
-  }
+.floss-seasons-chart .floss-cosmo-chart-img {
+  object-fit: contain;
+  object-position: top center;
 }
 
 /* ── NISHIKIITO FLOSS PAGE (lecien nishikiito layout) ── */

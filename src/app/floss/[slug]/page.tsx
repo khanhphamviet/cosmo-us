@@ -24,9 +24,9 @@ const FLOSS_DATA = {
 
   seasons: {
     title: "Seasons Variegated Floss",
-    img: "/images/floss-seasons-5000-lecien.jpg",
+    img: "/images/floss-seasons-20260610.jpg",
     intro:
-      "Beautiful gradation No. 25 embroidery thread. A color range designed to complement 462 solid No. 25 embroidery thread colors. Three series with different color-change lengths enable even richer expression.",
+      "Beautiful gradation No. 25 embroidery thread. A color range designed to complement 500 solid No. 25 embroidery thread colors. Three series with different color-change lengths enable even richer expression.",
     sections: [],
     features: [],
   },
@@ -59,14 +59,18 @@ export async function generateMetadata({
     title:
       slug === "cosmo"
         ? "COSMO No. 25 Embroidery Floss | 500 Colors"
-        : data.title,
+        : slug === "seasons"
+          ? "Seasons Variegated Floss | 140 Colors"
+          : data.title,
     description: data.intro,
     alternates: { canonical: `/floss/${slug}` },
     openGraph: {
       title:
         slug === "cosmo"
           ? "COSMO No. 25 Embroidery Floss | 500 Colors"
-          : `${data.title} | COSMO Embroidery US`,
+          : slug === "seasons"
+            ? "Seasons Variegated Floss | 140 Colors"
+            : `${data.title} | COSMO Embroidery US`,
       description: data.intro,
       url: `/floss/${slug}`,
       images: [{ url: data.img, alt: data.title }],
@@ -104,17 +108,17 @@ export default async function FlossDetailPage({
 
   return (
     <>
-      {slug === "cosmo" ? (
+      {slug === "cosmo" || slug === "seasons" ? (
         <>
           <div className="page-hero page-hero--compact page-hero--sashiko">
             <div className="breadcrumb">
               <Link href="/">HOME</Link> / <Link href="/floss">Floss</Link> /{" "}
-              No. 25 Floss
+              {slug === "cosmo" ? "No. 25 Floss" : "Seasons"}
             </div>
           </div>
 
           <div className="page-container page-container--sashiko">
-            <CosmoFlossContent />
+            {slug === "cosmo" ? <CosmoFlossContent /> : <SeasonsFlossContent />}
             <div className="sashiko-page-footer">
               <Link href="/floss" className="btn-outline">
                 ← Back to Floss
@@ -133,14 +137,7 @@ export default async function FlossDetailPage({
 
       <div className="page-container">
 
-        {slug === "seasons" ? (
-          <>
-            <SeasonsFlossContent />
-            <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", borderTop: "1px solid var(--border)", paddingTop: "40px" }}>
-              <Link href="/floss" className="btn-outline">← Back to Floss</Link>
-            </div>
-          </>
-        ) : slug === "nishikiito" ? (
+        {slug === "nishikiito" ? (
           <>
             <NishikiitoFlossContent />
             <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", borderTop: "1px solid var(--border)", paddingTop: "40px" }}>
