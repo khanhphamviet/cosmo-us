@@ -1245,7 +1245,7 @@ img { display: block; max-width: 100%; height: auto; }
 .brand-news-banner-inner {
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: clamp(10px, 1.6vw, 14px) 24px;
+  padding: clamp(14px, 2vw, 18px) 24px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1257,12 +1257,12 @@ img { display: block; max-width: 100%; height: auto; }
   flex: 0 0 auto;
   display: inline-flex;
   align-items: center;
-  padding: 3px 7px;
+  padding: 4px 9px;
   border-radius: 3px;
   background: var(--brand-muted);
   color: #fff;
   font-family: var(--brand-sans);
-  font-size: 0.625rem;
+  font-size: clamp(0.6875rem, 0.2vw + 0.64rem, 0.75rem);
   font-weight: 600;
   letter-spacing: 0.12em;
   line-height: 1;
@@ -1272,9 +1272,9 @@ img { display: block; max-width: 100%; height: auto; }
   margin: 0;
   flex: 1 1 16rem;
   font-family: var(--brand-sans);
-  font-size: clamp(0.75rem, 0.35vw + 0.65rem, 0.8125rem);
-  line-height: 1.5;
-  color: #444;
+  font-size: clamp(0.875rem, 0.45vw + 0.75rem, 1rem);
+  line-height: 1.55;
+  color: var(--foreground);
 }
 .brand-news-banner-lead {
   font-weight: 500;
@@ -1282,15 +1282,17 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .brand-news-banner-sep {
   margin: 0 0.35em;
-  color: #aaa;
+  color: #999;
 }
 .brand-news-banner-detail {
-  color: #666;
+  font-weight: 400;
+  color: #555;
 }
 .brand-news-banner-link {
-  margin-left: 0.5em;
+  margin-left: 0.55em;
   color: #c45c4a;
-  font-weight: 600;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   text-decoration: none;
   white-space: nowrap;
 }
