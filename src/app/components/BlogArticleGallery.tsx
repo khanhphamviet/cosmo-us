@@ -8,34 +8,39 @@ type Props = {
   items: BlogFigure[];
   variant?: BlogSection["galleryVariant"];
   zoomable?: boolean;
+  compact?: boolean;
 };
 
 function GalleryMedia({
   item,
   variant,
   isAside,
+  compact,
 }: {
   item: BlogFigure;
   variant?: BlogSection["galleryVariant"];
   isAside: boolean;
+  compact?: boolean;
 }) {
   const width = item.width ?? 900;
   const height = item.height ?? 900;
+  const isContain = item.fit === "contain";
 
   return (
     <div
       className={[
         "blog-article-gallery-media",
-        item.fit === "contain" ? "blog-article-gallery-media--contain" : "",
-        isAside && item.fit === "contain"
+        isContain ? "blog-article-gallery-media--contain" : "",
+        isAside && isContain
           ? "blog-article-gallery-media--aside-fill"
           : "",
         variant === "pillars" ? "blog-article-gallery-media--pillars-fill" : "",
+        compact ? "blog-article-gallery-media--compact" : "",
       ]
         .filter(Boolean)
         .join(" ")}
     >
-      {isAside && item.fit === "contain" ? (
+      {isAside && isContain ? (
         <Image
           src={item.src}
           alt={item.alt}
@@ -66,11 +71,14 @@ function GalleryMedia({
           height={height}
           quality={90}
           sizes={
-            variant === "comparison"
-              ? "(max-width: 640px) 100vw, 50vw"
-              : "(max-width: 640px) 100vw, 33vw"
+            compact
+              ? "(max-width: 640px) 45vw, 200px"
+              : variant === "comparison"
+                ? "(max-width: 640px) 100vw, 50vw"
+                : "(max-width: 640px) 100vw, 33vw"
           }
           className="blog-article-gallery-img"
+          style={isContain ? { objectFit: "contain", height: "auto" } : undefined}
         />
       )}
     </div>
@@ -81,6 +89,7 @@ export default function BlogArticleGallery({
   items,
   variant = "row",
   zoomable = false,
+  compact = false,
 }: Props) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const isAside = variant === "aside";
@@ -151,6 +160,7 @@ export default function BlogArticleGallery({
           variant === "hero" ? "blog-article-gallery--hero" : "",
           variant === "pillars" ? "blog-article-gallery--pillars" : "",
           isAside ? "blog-article-gallery--aside" : "",
+          compact ? "blog-article-gallery--compact" : "",
           zoomable ? "blog-article-gallery--zoomable" : "",
         ]
           .filter(Boolean)
@@ -158,7 +168,12 @@ export default function BlogArticleGallery({
       >
         {items.map((item, index) => {
           const media = (
-            <GalleryMedia item={item} variant={variant} isAside={isAside} />
+            <GalleryMedia
+              item={item}
+              variant={variant}
+              isAside={isAside}
+              compact={compact}
+            />
           );
 
           return (

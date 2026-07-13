@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 const INTRO_LEAD =
-  "Japanese-made embroidery cloth with smooth needle passage — from counted even-weave to specialty surfaces.";
+  "Japanese-made embroidery fabrics with smooth needle passage — from Aida and evenweave to specialty surfaces.";
 
 const INTRO = [
   "Choosing the right fabric is essential to any embroidery project.",
   "Color, texture, and fiber all shape how your stitching looks and feels.",
-  "COSMO cloth is tightly woven for durability and consistency, stitch after stitch.",
+  "COSMO fabrics are tightly woven for durability and consistency, stitch after stitch.",
 ];
 
 type ClothItem = {
@@ -17,6 +17,8 @@ type ClothItem = {
   alt: string;
   /** Keep Lecien thumbnail framing — no crop (369×241) */
   preserveImage?: boolean;
+  /** Show low-res/detail swatches smaller, without upscaling to full card width */
+  compactImage?: boolean;
   imagePosition?: string;
 };
 
@@ -36,76 +38,76 @@ const SECTIONS: ClothSection[] = [
     navLabel: "Cross Stitch",
     title: "Cross Stitch · Counted Stitch · Surface Embroidery",
     intro: [
-      "Even-weave fabrics for cross stitch, counted stitch, and other techniques worked by counting fabric threads.",
+      "Aida and evenweave fabrics for cross stitch, counted stitch, and other techniques worked by counting fabric threads.",
       "Finished size varies with fabric count even when using the same pattern — see the sample photos (stitched on 35 mm covered buttons).",
     ],
     note:
-      "In the descriptions below, “X strands” indicates how many strands of No. 25 embroidery floss were used; “X ct” is the fabric count (threads per inch).",
+      "In the descriptions below, “X strands” indicates how many strands of No. 25 embroidery floss were used; “X ct” is the fabric count (threads or stitch blocks per inch).",
     video: {
-      label: "Watch the Embroidery Cloth introduction video",
+      label: "Watch the COSMO Aida Fabric introduction video",
       href: "https://www.youtube.com/watch?v=CXrvucg3asQ",
     },
     items: [
       {
-        title: "Embroidery Cloth 16 ct",
+        title: "COSMO Aida Fabric – 16 ct",
         description:
-          "The finest count in the COSMO Embroidery Cloth range — ideal for delicate detail.",
+          "The finest count in the COSMO Aida range — ideal for delicate detail.",
         sample: "2 strands",
         img: "/images/cloth-java-65-lecien-20260611.jpg",
-        alt: "Embroidery Cloth 16 ct",
+        alt: "COSMO Aida Fabric – 16 ct",
         preserveImage: true,
       },
       {
-        title: "Embroidery Cloth 14 ct",
+        title: "COSMO Aida Fabric – 14 ct",
         description:
           "A long-time favorite among stitchers, available in a wide range of colors.",
         sample: "3 strands",
         img: "/images/cloth-java-55-lecien-20260611.jpg",
-        alt: "Embroidery Cloth 14 ct",
+        alt: "COSMO Aida Fabric – 14 ct",
         preserveImage: true,
       },
       {
-        title: "Embroidery Cloth 11 ct",
+        title: "COSMO Aida Fabric – 11 ct",
         description:
-          "An easy-to-see weave that makes stitching straightforward — great for beginners.",
+          "An easy-to-see weave that makes stitching straightforward — great for beginners. Also offered as COSMO Precut Aida Fabric – 11 ct.",
         sample: "4 strands",
         img: "/images/cloth-java-45-lecien-20260611.jpg",
-        alt: "Embroidery Cloth 11 ct",
+        alt: "COSMO Aida Fabric – 11 ct",
         preserveImage: true,
       },
       {
-        title: "Embroidery Cloth 9 ct",
+        title: "COSMO Aida Fabric – 9 ct",
         description:
           "Works well with heavier thread for bold stitching — ideal for beginners and children.",
         sample: "6 strands",
         img: "/images/cloth-java-35-lecien-20260611.jpg",
-        alt: "Embroidery Cloth 9 ct",
+        alt: "COSMO Aida Fabric – 9 ct",
         preserveImage: true,
       },
       {
-        title: "Embroidery Cloth 6 ct",
+        title: "COSMO Aida Fabric – 6 ct",
         description:
-          "Our coarsest Embroidery Cloth count — enjoy relaxed, textured stitching.",
+          "Our coarsest Aida count — enjoy relaxed, textured stitching.",
         sample: "8 strands",
         img: "/images/cloth-java-25-lecien-20260611.jpg",
-        alt: "Embroidery Cloth 6 ct",
+        alt: "COSMO Aida Fabric – 6 ct",
         preserveImage: true,
       },
       {
-        title: "Indian Cloth",
+        title: "COSMO Cotton Evenweave Fabric – 13 ct",
         description:
-          "A distinct weave from Embroidery Cloth, suited to the same counted techniques.",
+          "Cotton evenweave with a distinct hand from Aida, suited to the same counted techniques.",
         sample: "3 strands · 13 ct",
-        img: "/images/cloth-indian-cross-lecien-20260611.jpg",
-        alt: "Indian Cloth",
+        img: "/images/cloth-cotton-evenweave-13ct-20260713.jpg",
+        alt: "COSMO Cotton Evenweave Fabric – 13 ct",
         preserveImage: true,
       },
       {
-        title: "Lame Cloth 14 ct",
+        title: "COSMO Lamé Aida Fabric – 14 ct",
         description:
           "Metallic thread is woven into the weft for a soft hand with an elegant sparkle.",
         img: "/images/cloth-lame-14ct-20260616.jpg",
-        alt: "Lame Cloth 14 ct",
+        alt: "COSMO Lamé Aida Fabric – 14 ct",
         preserveImage: true,
       },
     ],
@@ -115,16 +117,16 @@ const SECTIONS: ClothSection[] = [
     navLabel: "Kogin",
     title: "Kogin",
     intro: [
-      "Even-weave fabrics for kogin stitch, Hardanger, and other counted thread techniques.",
+      "Firm counted fabrics for kogin stitch, Hardanger, and other counted thread techniques.",
     ],
     items: [
       {
-        title: "Congress 70",
+        title: "COSMO Congress Cloth – 18 ct",
         description:
-          "Medium-weight Japanese cotton with an easy-to-count weave.",
+          "Medium-weight Japanese cotton with a firm, easy-to-count grid — also recommended for kogin.",
         sample: "6 strands (No. 25 floss)",
-        img: "/images/cloth-congress-70-lecien-20260611.jpg",
-        alt: "Congress 70 embroidery fabric",
+        img: "/images/cloth-congress-70-cosmo-floss-20260713.jpg",
+        alt: "COSMO Congress Cloth – 18 ct with COSMO embroidery floss",
       },
     ],
   },
@@ -133,21 +135,21 @@ const SECTIONS: ClothSection[] = [
     navLabel: "Free Stitch",
     title: "Free-Stitch & Surface Embroidery",
     intro: [
-      "Embroidery cloth with excellent needle glide. Also suitable for cutwork and sashiko.",
+      "Surface embroidery fabrics with excellent needle glide. Also suitable for cutwork and sashiko.",
     ],
     items: [
       {
-        title: "Cotton Cross for Free Stitch",
+        title: "COSMO Cotton Surface Embroidery Fabric",
         description: "100% cotton with smooth needle passage — ideal for surface embroidery.",
         img: "/images/cloth-free-cotton-lecien-20260611.jpg",
-        alt: "Cotton Cross for Free Stitch",
+        alt: "COSMO Cotton Surface Embroidery Fabric",
       },
       {
-        title: "Linen Classy",
+        title: "COSMO Linen Classy Fabric for Surface Embroidery",
         description:
-          "A classic teaching cloth with the weight and body suited to embroidery.",
+          "A classic teaching cloth with the weight and body suited to freehand embroidery.",
         img: "/images/cloth-linen-classy-lecien-20260611.jpg",
-        alt: "Linen Classy embroidery fabric",
+        alt: "COSMO Linen Classy Fabric for Surface Embroidery",
       },
     ],
   },
@@ -157,32 +159,34 @@ const SECTIONS: ClothSection[] = [
     title: "Other Fabrics",
     items: [
       {
-        title: "Cotton Oxford",
+        title: "COSMO Cotton Oxford Evenweave Fabric – 23 ct",
         description:
-          "For counted stitch as well as freehand embroidery without counting threads.",
+          "Oxford-weave evenweave for counted stitch as well as freehand embroidery.",
         img: "/images/cloth-cotton-oxford-lecien-20260611.jpg",
-        alt: "Cotton Oxford embroidery fabric",
+        alt: "COSMO Cotton Oxford Evenweave Fabric – 23 ct",
       },
       {
-        title: "Linen Oxford",
+        title: "COSMO Linen Oxford Evenweave Fabric – 22 ct",
         description:
-          "For counted stitch as well as freehand embroidery without counting threads.",
+          "Oxford-weave evenweave for counted stitch as well as freehand embroidery.",
         img: "/images/cloth-linen-oxford-lecien-20260611.jpg",
-        alt: "Linen Oxford embroidery fabric",
+        alt: "COSMO Linen Oxford Evenweave Fabric – 22 ct",
       },
       {
-        title: "Swedish Cross",
+        title: "COSMO Huck Fabric for Swedish Weaving – 15 × 11 Count",
         description:
-          "Cotton fabric for Swedish embroidery worked by withdrawing vertical threads.",
-        img: "/images/cloth-swedish-cross-lecien-20260611.jpg",
-        alt: "Swedish Cross embroidery fabric",
+          "Huck fabric with surface floats for Swedish weaving (15 × 11 count per inch; directions are not interchangeable).",
+        img: "/images/cloth-huck-swedish-weaving-6000-20260713.jpg",
+        alt: "COSMO Huck Fabric for Swedish Weaving – 15 × 11 Count",
+        preserveImage: true,
+        compactImage: true,
       },
       {
-        title: "Comb",
+        title: "COSMO Linen Evenweave Fabric – 34 ct",
         description:
-          "Even-weave fabric for cross stitch, counted stitch, and other counted techniques.",
+          "Fine linen evenweave for cross stitch, counted stitch, and other detailed counted techniques.",
         img: "/images/cloth-comb-lecien-20260611.jpg",
-        alt: "Comb embroidery fabric",
+        alt: "COSMO Linen Evenweave Fabric – 34 ct",
       },
     ],
   },
@@ -220,22 +224,44 @@ const SECTIONS: ClothSection[] = [
 
 function ClothCard({ item }: { item: ClothItem }) {
   const preserve = item.preserveImage ?? false;
+  const compact = item.compactImage ?? false;
 
   return (
     <article className="cloth-card">
       <div
-        className={`cloth-card-media${preserve ? " cloth-card-media--preserve" : ""}`}
+        className={[
+          "cloth-card-media",
+          preserve ? "cloth-card-media--preserve" : "",
+          compact ? "cloth-card-media--compact" : "",
+        ]
+          .filter(Boolean)
+          .join(" ")}
       >
-        <Image
-          src={item.img}
-          alt={item.alt}
-          fill
-          sizes="(max-width:640px) 100vw, (max-width:900px) 50vw, 33vw"
-          style={{
-            objectFit: preserve ? "contain" : "cover",
-            objectPosition: item.imagePosition ?? "center center",
-          }}
-        />
+        {compact ? (
+          <Image
+            src={item.img}
+            alt={item.alt}
+            width={180}
+            height={180}
+            sizes="180px"
+            className="cloth-card-img--compact"
+            style={{
+              objectFit: "contain",
+              objectPosition: item.imagePosition ?? "center center",
+            }}
+          />
+        ) : (
+          <Image
+            src={item.img}
+            alt={item.alt}
+            fill
+            sizes="(max-width:640px) 100vw, (max-width:900px) 50vw, 33vw"
+            style={{
+              objectFit: preserve ? "contain" : "cover",
+              objectPosition: item.imagePosition ?? "center center",
+            }}
+          />
+        )}
       </div>
       <div className="cloth-card-body">
         <h3 className="cloth-card-title">{item.title}</h3>

@@ -68,12 +68,14 @@ function BlogFigureBlock({ figure }: { figure: BlogFigure }) {
   const width = figure.width ?? 1440;
   const height = figure.height ?? 960;
   const isContain = figure.fit === "contain";
+  const isCompact = isContain && width <= 400;
 
   const media = (
     <div
       className={[
         "blog-article-figure-media",
         isContain ? "blog-article-figure-media--contain" : "",
+        isCompact ? "blog-article-figure-media--compact" : "",
       ]
         .filter(Boolean)
         .join(" ")}
@@ -84,7 +86,11 @@ function BlogFigureBlock({ figure }: { figure: BlogFigure }) {
         width={width}
         height={height}
         quality={90}
-        sizes="(max-width: 720px) 100vw, 720px"
+        sizes={
+          isCompact
+            ? "220px"
+            : "(max-width: 720px) 100vw, 720px"
+        }
         className="blog-article-figure-img"
       />
     </div>
@@ -95,6 +101,7 @@ function BlogFigureBlock({ figure }: { figure: BlogFigure }) {
       className={[
         "blog-article-figure",
         isContain ? "blog-article-figure--contain" : "",
+        isCompact ? "blog-article-figure--compact" : "",
         figure.href ? "blog-article-figure--linked" : "",
       ]
         .filter(Boolean)
@@ -229,6 +236,7 @@ function Section({
           items={section.gallery}
           variant={section.galleryVariant}
           zoomable={section.galleryZoom}
+          compact={section.galleryCompact}
         />
       ) : null}
       {section.embed ? <BlogEmbedBlock embed={section.embed} /> : null}
@@ -296,6 +304,7 @@ function Section({
               items={section.gallery}
               variant={section.galleryVariant ?? "aside"}
               zoomable={section.galleryZoom}
+              compact={section.galleryCompact}
             />
           </aside>
         </div>

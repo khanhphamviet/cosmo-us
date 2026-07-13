@@ -5,19 +5,19 @@ import ClothContent from "../components/ClothContent";
 export const metadata: Metadata = {
   title: "Embroidery Cloth",
   description:
-    "COSMO embroidery cloth — even-weave Aida and specialty fabrics for cross stitch, kogin, and surface embroidery. Embroidery Cloth, Lame Cloth, Congress 70, and more. Made in Japan.",
+    "COSMO embroidery fabrics — Aida, evenweave, Congress cloth, huck, and surface embroidery grounds for cross stitch, kogin, and freehand work. Made in Japan.",
   alternates: { canonical: "/cloth" },
   openGraph: {
     title: "Embroidery Cloth | COSMO Embroidery US",
     description:
-      "Explore COSMO embroidery cloth: counted even-weave, free-stitch cotton, kogin fabrics, and tape. Japanese-made quality for every technique.",
+      "Explore COSMO Aida, evenweave, Congress cloth, huck for Swedish weaving, and surface embroidery fabrics. Japanese-made quality for every technique.",
     url: "/cloth",
     images: [
       {
         url: "/images/category-jp-cloth-20260610.jpg",
         width: 800,
         height: 800,
-        alt: "COSMO embroidery cloth",
+        alt: "COSMO embroidery fabrics",
       },
     ],
   },
@@ -32,7 +32,7 @@ export default function ClothPage() {
         </div>
         <h1>Cloth</h1>
         <p className="page-hero-sub">
-          Even-weave, specialty surfaces, and tape — made in Japan
+          Aida, evenweave, specialty surfaces, and tape — made in Japan
         </p>
       </div>
 

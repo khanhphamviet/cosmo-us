@@ -44,6 +44,8 @@ export type BlogSection = {
   galleryVariant?: "row" | "comparison" | "patterns" | "aside" | "hero" | "pillars" | "before-after";
   galleryPosition?: "below" | "aside";
   galleryZoom?: boolean;
+  /** Keep low-resolution gallery images smaller on the page */
+  galleryCompact?: boolean;
   mediaPosition?: "top" | "bottom";
   timeline?: BlogTimelineStep[];
   table?: BlogTable;
@@ -78,6 +80,229 @@ export type BlogPost = {
 };
 
 export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "embroidery-fabric-types",
+    title: "Aida, Evenweave, and Beyond: How Embroidery Fabrics Differ",
+    excerpt:
+      "Count, weave, and fiber shape every stitch. Learn how Aida, evenweave, Congress cloth, huck, and surface fabrics differ—and how to match cloth to technique.",
+    publishedAt: "2026-07-13",
+    image: "/images/blog-embroidery-fabrics-hero-count-20260713.jpg",
+    imageAlt:
+      "The same floral cross-stitch motif worked on six embroidery cloth counts, shown on covered buttons",
+    heroAspectRatio: "16 / 10",
+    sections: [
+      {
+        paragraphs: [
+          "The same pattern can look delicate on one fabric and bold on another.",
+          "That difference begins long before the first stitch. It begins with the cloth.",
+          "Embroidery fabrics are designed to support different stitching techniques. Some provide an easy-to-read grid for counted embroidery. Others offer a smooth surface for freehand work. Still others are woven specifically for traditional techniques.",
+          "Once you understand how embroidery fabrics differ, choosing the right cloth becomes less about guesswork—and more about matching the fabric to the way you want to stitch.",
+        ],
+      },
+      {
+        heading: "A Practical Way to Compare Embroidery Fabrics",
+        paragraphs: [
+          "For practical comparison, it helps to think about embroidery fabric from three perspectives.",
+        ],
+        bulletsLabel: "Three perspectives",
+        bullets: [
+          "Fiber — What is the fabric made from? Cotton, linen, or a blend.",
+          "Weave structure — How are the yarns woven together? Plain weave, Oxford weave, huck weave, and other fabric structures each create a different surface.",
+          "Embroidery category — What stitching technique is the fabric designed to support? Aida, evenweave, Congress cloth, huck fabric, or surface embroidery fabric.",
+        ],
+      },
+      {
+        paragraphs: [
+          "These three perspectives work together. Fiber influences softness and texture. Weave determines the appearance and feel of the cloth. The embroidery category tells stitchers how the fabric is intended to be used.",
+          "The same fiber can appear in more than one category—cotton may be woven as Aida or as evenweave. An Oxford weave may still be classified as evenweave for counted work. Keeping these three perspectives separate makes comparisons clearer.",
+        ],
+      },
+      {
+        heading: "Counted Embroidery: Working with a Grid",
+        paragraphs: [
+          "Counted embroidery depends on a consistent grid. Instead of drawing freely onto fabric, stitchers count either visible openings or the fabric threads themselves to place each stitch accurately.",
+          "In cross-stitch retail and everyday stitching language, Aida and non-Aida evenweave are usually treated as separate categories—even though both support counted work.",
+          "Aida uses a grouped-thread structure that creates clearly defined stitch blocks and openings. Evenweave is counted by the individual threads of a more uniform weave, usually without those larger, pre-formed blocks.",
+        ],
+      },
+      {
+        heading: "Aida: Clear Holes for Easy Counting",
+        paragraphs: [
+          "Aida’s grouped-thread structure forms regularly spaced openings that make an easy-to-read stitching grid. Each opening naturally guides the needle, which is why Aida is often the first counted fabric many stitchers use when learning cross stitch.",
+          "On Aida, count refers to the number of stitch blocks per inch. Higher counts produce smaller stitches and finer finished designs, while lower counts create larger, more open motifs.",
+          "COSMO® also offers Lamé Aida, which keeps the same easy-to-count grid while metallic threads add a soft sparkle—bringing extra brilliance without changing how you stitch.",
+          "The sample below shows the same motif stitched on different fabric counts. The design remains identical; only the scale changes.",
+        ],
+        figure: {
+          src: "/images/blog-embroidery-fabrics-count-comparison-labeled-20260713-v4.jpg",
+          alt: "Same red flower motif on 6 ct, 9 ct, 11 ct, 14 ct, and 16 ct Aida, and on 13 ct cotton evenweave, each labeled",
+          caption:
+            "The same pattern stitched on different counts. Higher counts create smaller, finer designs.",
+          width: 1024,
+          height: 620,
+        },
+      },
+      {
+        heading: "Evenweave: Smooth Surface, Flexible Technique",
+        paragraphs: [
+          "Evenweave fabrics are woven with evenly spaced threads in both directions. Rather than stitching into visible Aida blocks, stitchers usually count the fabric threads themselves—often working over two threads for each cross stitch.",
+          "Because the surface is smoother than traditional Aida, evenweave supports many counted techniques, including cross stitch, blackwork, pulled-thread work, and drawn-thread embroidery.",
+          "On evenweave, count refers to individual fabric threads per inch—not stitch blocks. As a general guide, stitching over two threads on 28-count evenweave produces approximately the same finished design size as stitching over one block on 14-count Aida.",
+          "Within the COSMO® range, 13-count cotton evenweave offers an open, graphic appearance, while 22–23 count Oxford evenweave fabrics support finer counted work and can also be used for freehand embroidery. The 34-count linen evenweave is suited to highly detailed counted stitching.",
+          "Some COSMO® counted fabrics use a basket-like Oxford weave that adds subtle texture while maintaining a regular grid for counted stitching.",
+        ],
+        gallery: [
+          {
+            src: "/images/cloth-cotton-evenweave-13ct-20260713.jpg",
+            alt: "COSMO Cotton Evenweave Fabric – 13 ct",
+            caption: "Cotton evenweave",
+            width: 354,
+            height: 354,
+          },
+          {
+            src: "/images/cloth-cotton-oxford-lecien-20260611.jpg",
+            alt: "COSMO Cotton Oxford Evenweave Fabric – 23 ct",
+            caption: "Cotton Oxford evenweave",
+            width: 369,
+            height: 241,
+          },
+          {
+            src: "/images/cloth-comb-lecien-20260611.jpg",
+            alt: "COSMO Linen Evenweave Fabric – 34 ct",
+            caption: "Linen evenweave",
+            width: 369,
+            height: 241,
+          },
+        ],
+        galleryVariant: "row",
+      },
+      {
+        heading: "Congress Cloth: A Stable Ground for Dense Counted Work",
+        paragraphs: [
+          "Congress cloth is a firm, fine counted ground commonly used for detailed needlepoint and other dense counted work. It is not simply a finer version of evenweave. Its firmness and the way it supports dense stitching give it its own character.",
+          "COSMO® Congress Cloth is offered in an 18-count version with a firm, regular grid. Its stable structure supports needlepoint and other dense counted techniques, and COSMO® also recommends it for kogin embroidery.",
+        ],
+        figure: {
+          src: "/images/cloth-congress-70-cosmo-floss-20260713.jpg",
+          alt: "COSMO Congress Cloth – 18 ct with COSMO embroidery floss",
+          caption:
+            "COSMO® Congress Cloth (18 ct)—a firm grid for dense counted work, including kogin.",
+          width: 1024,
+          height: 768,
+        },
+      },
+      {
+        heading: "Surface Embroidery Fabrics",
+        paragraphs: [
+          "Not every embroidery project begins by counting. Surface embroidery follows a transferred design or freehand drawing, and makers may choose many different stable fabrics depending on the project.",
+          "Cotton and linen remain among the most popular choices because they provide dependable foundations for decorative stitching. COSMO® surface embroidery fabrics are designed for free stitch, traditional embroidery, cutwork, and related techniques.",
+          "When a pattern depends on a counted grid, however, Aida or evenweave is the more appropriate choice.",
+        ],
+        gallery: [
+          {
+            src: "/images/cloth-free-cotton-lecien-20260611.jpg",
+            alt: "COSMO Cotton Surface Embroidery Fabric",
+            caption: "Cotton surface embroidery fabric",
+            width: 369,
+            height: 241,
+            fit: "contain",
+          },
+          {
+            src: "/images/cloth-linen-classy-lecien-20260611.jpg",
+            alt: "COSMO Linen Classy Fabric for Surface Embroidery",
+            caption: "Linen Classy",
+            width: 369,
+            height: 241,
+            fit: "contain",
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryCompact: true,
+      },
+      {
+        heading: "Choosing the Right Fabric",
+        paragraphs: [
+          "A simple way to begin is to choose your stitching technique first, then select a fabric commonly used for that style of embroidery.",
+        ],
+        table: {
+          headers: ["Technique", "Common fabric choices"],
+          rows: [
+            ["Counted cross stitch", "Aida, evenweave, or linen"],
+            ["Blackwork & fine counted work", "Evenweave or linen"],
+            ["Needlepoint / canvaswork", "Needlepoint canvas or Congress cloth"],
+            ["Kogin", "Kogin cloth or another suitable evenly woven fabric"],
+            ["Swedish weaving", "Huck fabric"],
+            [
+              "Surface embroidery",
+              "Stable cotton, linen, or another suitable ground",
+            ],
+            ["Cutwork & whitework", "Firm, evenly woven cotton or linen"],
+          ],
+        },
+      },
+      {
+        heading: "How COSMO Names Its Embroidery Fabrics",
+        paragraphs: [
+          "On the COSMO US website, fabrics are introduced using the names English-speaking stitchers already search for—Aida, evenweave, Congress cloth, huck fabric, and surface embroidery fabric—followed by fiber and count where they matter.",
+          "Many of these fabrics have long histories in Japan under names such as Java Cloth, Indian Cloth, Oxford, Comb, Congress 70, and Swedish Cloth. Those names remain part of COSMO®’s heritage, while the English descriptions help stitchers quickly choose the fabric best suited to their projects.",
+        ],
+        table: {
+          headers: ["English name", "Category", "Traditional Japanese name"],
+          rows: [
+            ["COSMO Aida Fabric – 6 / 9 / 11 / 14 / 16 ct", "Aida", "Java Cloth"],
+            ["COSMO Lamé Aida Fabric – 14 ct", "Aida", "Lamé Java Cloth"],
+            [
+              "COSMO Cotton Evenweave Fabric – 13 ct",
+              "Evenweave",
+              "Indian Cloth",
+            ],
+            [
+              "COSMO Cotton Oxford Evenweave Fabric – 23 ct",
+              "Evenweave (Oxford)",
+              "Cotton Oxford",
+            ],
+            [
+              "COSMO Linen Oxford Evenweave Fabric – 22 ct",
+              "Evenweave (Oxford)",
+              "Linen Oxford",
+            ],
+            [
+              "COSMO Linen Evenweave Fabric – 34 ct",
+              "Evenweave",
+              "Comb",
+            ],
+            ["COSMO Congress Cloth – 18 ct", "Congress cloth", "Congress 70"],
+            [
+              "COSMO Cotton Surface Embroidery Fabric",
+              "Surface",
+              "Cotton for free stitch",
+            ],
+            [
+              "COSMO Linen Classy Fabric for Surface Embroidery",
+              "Surface",
+              "Linen Classy",
+            ],
+          ],
+        },
+      },
+      {
+        heading: "Let the Fabric Guide the Stitch",
+        paragraphs: [
+          "Beautiful embroidery begins before the first stitch.",
+          "When fabric, thread, needle, and technique work together, stitching becomes more comfortable, designs stay true to scale, and every stitch feels more natural.",
+          "Choose Aida when you want an easy-to-read grid. Choose evenweave when you prefer a smoother counted surface. Choose a firm counted ground when the work is dense. Choose huck fabric when the design depends on surface floats. Choose a stable cotton or linen ground when you want the freedom of freehand embroidery.",
+          "The right fabric does not draw attention to itself. It simply helps every stitch find its place.",
+        ],
+      },
+    ],
+    ctaLabel: "Explore COSMO® Embroidery Fabrics",
+    ctaDescription:
+      "Discover Japanese-made embroidery fabrics for counted cross stitch, surface embroidery, Swedish weaving, and more—and find the cloth that matches the way you love to stitch.",
+    cta: {
+      label: "View Embroidery Cloth",
+      href: "/cloth",
+    },
+  },
   {
     slug: "seasons-variegated-floss",
     title: "COSMO® Seasons: Variegated Floss That Shades as You Stitch",
