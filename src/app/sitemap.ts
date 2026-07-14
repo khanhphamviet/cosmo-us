@@ -38,7 +38,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/tools-supplies`,        lastModified: new Date(), changeFrequency: "yearly",  priority: 0.8 },
 
     // ── Legal pages ──
-    { url: `${SITE_URL}/terms`,               lastModified: new Date(), changeFrequency: "yearly",  priority: 0.3 },
     { url: `${SITE_URL}/privacy`,             lastModified: new Date(), changeFrequency: "yearly",  priority: 0.3 },
 
     // ── Stories ──

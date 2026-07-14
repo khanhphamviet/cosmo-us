@@ -166,7 +166,6 @@ export default function RootLayout({
                 <div className="footer-col">
                   <h3>Legal</h3>
                   <ul>
-                    <li><Link href="/terms">Terms &amp; Conditions</Link></li>
                     <li><Link href="/privacy">Privacy Policy</Link></li>
                   </ul>
                 </div>
@@ -193,7 +192,6 @@ export default function RootLayout({
                 The seller of record for products sold in the United States is TANAAKK INC.
               </p>
               <nav style={{display:"flex",justifyContent:"center",gap:"20px",flexWrap:"wrap",marginBottom:"16px"}}>
-                <Link href="/terms"   style={{fontSize:"11px",color:"#666",letterSpacing:".04em"}}>Terms &amp; Conditions</Link>
                 <Link href="/privacy" style={{fontSize:"11px",color:"#666",letterSpacing:".04em"}}>Privacy Policy</Link>
               </nav>
               <p className="footer-copy">

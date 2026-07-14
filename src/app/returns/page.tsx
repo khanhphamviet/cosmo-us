@@ -116,9 +116,6 @@ export default function ReturnsPage() {
             For all return inquiries, please contact TANAAKK INC.:<br />
             <a href="mailto:support@lecien.com">support@lecien.com</a>
           </p>
-          <p style={{ marginTop: "16px" }}>
-            See also: <Link href="/terms" style={{ textDecoration: "underline" }}>Terms &amp; Conditions</Link>
-          </p>
         </div>
       </div>
     </>

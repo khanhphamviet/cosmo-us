@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",
@@ -8,9 +9,14 @@ export const metadata: Metadata = {
   alternates: { canonical: "/terms" },
 };
 
+/** Flip to true when Shopify / DTC checkout goes live. */
+const TERMS_PUBLISHED = false;
+
 const EFFECTIVE_DATE = "June 1, 2026";
 
 export default function TermsPage() {
+  if (!TERMS_PUBLISHED) notFound();
+
   return (
     <>
       <div className="page-hero">
