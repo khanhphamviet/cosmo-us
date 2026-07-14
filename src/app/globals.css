@@ -1066,7 +1066,7 @@ img { display: block; max-width: 100%; height: auto; }
   width: auto;
   max-width: 100%;
   height: auto;
-  max-height: 400px;
+  max-height: min(560px, 70vw);
   margin: 0 auto;
   display: block;
   object-fit: contain;

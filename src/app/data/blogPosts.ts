@@ -81,6 +81,158 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "crochet-with-floss",
+    title: "Crochet with Floss: Lace and Color from a Single Skein",
+    excerpt:
+      "Six strands of cotton, one small hook. Discover how COSMO® No. 25 floss becomes fine thread crochet—delicate lace, motifs, and miniatures drawn from a line of over 500 solid colors.",
+    publishedAt: "2026-07-14",
+    image: "/images/blog-crochet-with-floss-hero-20260714.jpg",
+    imageAlt:
+      "Six food-themed mini pouches crocheted with COSMO embroidery floss, arranged in pink boxes on vintage books",
+    heroAspectRatio: "1 / 1",
+    sections: [
+      {
+        paragraphs: [
+          "Most people meet crochet as a yarn craft—blankets, hats, chunky stitches on a large hook. But long before acrylic yarn, crocheters worked in thread: fine cotton on a slim steel hook, turning a single strand into lace, edgings, and motifs no wider than a coin.",
+          "That tradition is very much alive, and it starts with something you may already have in your basket—a skein of COSMO® embroidery floss.",
+        ],
+      },
+      {
+        heading: "What \"Crochet with Floss\" Means",
+        paragraphs: [
+          "Thread crochet uses the same stitches as regular crochet—chain, single, double, treble—worked at a much finer scale. Instead of a plump yarn, you work with embroidery floss and a small steel crochet hook (the kind sized in numbers, where a higher number means a finer hook).",
+          "The result is delicate, detailed, and surprisingly sturdy: lacy motifs, appliqués, jewelry, bookmarks, and tiny pouches and amigurumi.",
+          "Full COSMO® No. 25 skeins are six-strand cotton threads, which can be separated to adjust thickness. Work with all six strands for a fuller, quicker stitch, or crochet with three or two for finer, more delicate work. One skein, several possible gauges.",
+          "COSMO No. 25 floss offers over 500 solid colors across the full line; each Crochet with Floss kit includes a selection of these colors appropriate for the project. Each skein in the kit contains enough floss to complete the project.",
+        ],
+        figure: {
+          src: "/images/blog-crochet-with-floss-hands-fruit-20260714.jpg",
+          alt: "Tomato, orange, and chocolate pouches crocheted with COSMO embroidery floss, held in cupped hands",
+          caption:
+            "Palm-sized work with COSMO No. 25 floss—the same six-strand cotton used for embroidery, worked on a small hook.",
+          fit: "contain",
+          width: 1440,
+          height: 1440,
+        },
+      },
+      {
+        heading: "Why COSMO Floss Works Beautifully with a Hook",
+        paragraphs: [
+          "The qualities that make COSMO floss a pleasure to stitch translate directly to the hook.",
+        ],
+        bullets: [
+          "Extra-long staple cotton gives the thread strength and a smooth surface, so it glides through loops instead of catching—important when every stitch is small.",
+          "A natural silk-like luster means finished motifs catch the light the way fine threadwork should.",
+          "Over 500 solid colors across the full No. 25 line—designed in Kyoto with roots going back to 1924—so you can shade petals, blend a gradient, match floss from another project, or expand beyond the colors in a kit.",
+        ],
+        figure: {
+          src: "/images/blog-crochet-with-floss-palette-20260714.jpg",
+          alt: "A wide arrangement of COSMO No. 25 embroidery floss skeins across over 500 solid colors",
+          caption:
+            "Over 500 solid colors across the full line—made in Japan, ready for needle or hook.",
+          fit: "contain",
+          width: 2400,
+          height: 1597,
+        },
+      },
+      {
+        heading: "What You Can Make",
+        paragraphs: [
+          "Thread crochet rewards small, finished objects. COSMO's own Crochet with Floss kits lean into playful miniatures—food and animal pouches you can wear, gift, or rearrange into brooches and bag charms.",
+          "The same approach also opens up classic thread-crochet projects: lace motifs and snowflakes, appliqué flowers, jewelry, and fine edgings for linens.",
+        ],
+        bulletsLabel: "Ideas to try",
+        bullets: [
+          "Tiny pouches and amigurumi-style motifs (food, animals, and more)",
+          "Appliqués and flowers to sew onto embroidery, clothing, or bags",
+          "Accessories—brooches, bag charms, and beaded or tasseled jewelry",
+          "Lace motifs, snowflakes, and fine edgings for handkerchiefs and hems",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-crochet-with-floss-hands-dessert-20260714.jpg",
+            alt: "Cake, macaron, and hamburger pouches crocheted with COSMO embroidery floss, stacked on an open palm",
+            caption: "Cake, macaron, and hamburger",
+            fit: "contain",
+            width: 1212,
+            height: 1212,
+          },
+          {
+            src: "/images/blog-crochet-with-floss-cake-open-20260714.jpg",
+            alt: "Open strawberry-cake pouch crocheted with COSMO embroidery floss, pink lining and red zipper visible",
+            caption: "Cake pouch, open",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+          {
+            src: "/images/blog-crochet-with-floss-orange-open-20260714.jpg",
+            alt: "Open orange pouch crocheted with COSMO embroidery floss, segment lining and zipper visible",
+            caption: "Orange pouch, open",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+        ],
+        galleryVariant: "row",
+        galleryZoom: true,
+      },
+      {
+        heading: "Getting Started",
+        paragraphs: [
+          "You need very little: floss, a steel crochet hook, and a pattern or motif to follow. COSMO Crochet with Floss kits include step-by-step instructions plus a project-ready selection of No. 25 colors—each skein in the kit contains enough floss to complete the project.",
+        ],
+        bulletsLabel: "A few tips for your first piece",
+        bullets: [
+          "Start gently on difficulty. Try all six strands and a mid-size steel hook for your first motif; separate strands for a finer gauge once the rhythm is there.",
+          "Keep tension relaxed. Thread crochet tightens fast; loose loops are easier to work into.",
+          "Work in good light. Small stitches reward it, and floss's luster makes stitches easier to read.",
+        ],
+      },
+      {
+        heading: "Wear It, Gift It, Rearrange It",
+        paragraphs: [
+          "Finished pouches aren't only for display. Add a pin back for a brooch, clip one to a bag with a ball chain, or rearrange motifs into jewelry—small projects that travel well and show off COSMO color.",
+          "Change floss colors on the same pattern for a completely different look—cake to chocolate, bear to a new colorway—drawing from the full No. 25 line of over 500 solid colors.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-crochet-with-floss-cake-20260714.jpg",
+            alt: "Cake pouch crocheted with COSMO embroidery floss",
+            caption: "Cake pouch",
+            fit: "contain",
+            width: 1400,
+            height: 1400,
+          },
+          {
+            src: "/images/blog-crochet-with-floss-bear-20260714.jpg",
+            alt: "Bear pouch crocheted with COSMO embroidery floss",
+            caption: "Bear pouch",
+            fit: "contain",
+            width: 1400,
+            height: 1400,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+      },
+      {
+        heading: "From Needle to Hook",
+        paragraphs: [
+          "If you already embroider with COSMO, you're closer to thread crochet than you think—same thread, same colors, just a hook instead of a needle.",
+          "Crochet with floss sits naturally alongside the rest of the COSMO family: the same No. 25 skeins you reach for in cross-stitch and surface embroidery, put to a different, equally old use. It's a small, portable, endlessly colorful way to make something finished—one hook, one skein, and over 500 solid colors across the full line to choose from.",
+        ],
+      },
+    ],
+    ctaLabel: "Explore Crochet with Floss",
+    ctaDescription:
+      "See COSMO® Crochet with Floss kits—project-ready color selections—and the full No. 25 embroidery floss range of over 500 solid colors.",
+    cta: {
+      label: "Shop Crochet with Floss",
+      href: "/crochet",
+    },
+  },
+  {
     slug: "embroidery-fabric-types",
     title: "Aida, Evenweave, and Beyond: How Embroidery Fabrics Differ",
     excerpt:
