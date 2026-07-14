@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+const TOOLS_SUPPLIES_CATALOGUE_PDF =
+  "/pdfs/tools-supplies-catalogue-20260714.pdf";
+
 type LineupItem = {
   title: string;
   body: string;
@@ -149,6 +152,17 @@ export default function ToolsSuppliesContent() {
         <p className="sashiko-section-intro sashiko-section-intro--tight">
           Essential embroidery tools and ready-to-stitch bases from LECIEN — designed
           to pair with COSMO floss, sashiko thread, and cloth.
+        </p>
+        <p className="sashiko-lineup-catalog">
+          <a
+            href={TOOLS_SUPPLIES_CATALOGUE_PDF}
+            className="btn-outline sashiko-lineup-catalog-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View product catalogue (PDF)
+            <span aria-hidden="true"> ↗</span>
+          </a>
         </p>
         <div className="sashiko-lineup-grid">
           {LINEUP.map((item) => (
