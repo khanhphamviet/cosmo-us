@@ -34,11 +34,6 @@ export default function SashikoPage() {
 
       <div className="page-container page-container--sashiko">
         <HidamariSashikoContent />
-        <div className="sashiko-page-footer">
-          <Link href="/floss" className="btn-outline">
-            ← Back to Floss
-          </Link>
-        </div>
       </div>
     </>
   );

@@ -1,5 +1,9 @@
 import Image from "next/image";
 import SashikoIntroGallery from "./SashikoIntroGallery";
+import HidamariColorLineup from "./HidamariColorLineup";
+import { SASHIKO_PRODUCTS } from "../data/sashikoProducts";
+
+const SASHIKO_CATALOGUE_PDF = "/pdfs/sashiko-catalogue-20260714.pdf";
 
 const GALLERY = [
   {
@@ -52,44 +56,6 @@ const CONCEPTS = [
     title: "Today",
     subtitle: "Art, Fashion & Home Decor",
     body: "Now enjoyed worldwide as a form of creative expression, fashion, and decor.",
-  },
-];
-
-const LINEUP = [
-  {
-    title: "Hidamari Sashiko Thread",
-    body:
-      "Smooth, low-fuzz Japanese cotton for sashiko — and for sewing, knitting, decorating, and tying. 60 colors including solids, speckle, melange, multicolor, and gradation. Approx. 30 m (32.8 yd) per spool.",
-    img: "/images/sashiko-display-overview-20260610.jpg",
-    alt: "hidamari sashiko thread display",
-  },
-  {
-    title: "Sashiko Pair Coasters Kit",
-    body:
-      "Complete kit with pre-printed fabric, hidamari thread, finishing thread, cotton tape, sashiko and sewing needles, threader, and English instructions. Finished size approx. 10 × 10 cm.",
-    img: "/images/sashiko-lineup-pair-coasters-20260616.png",
-    alt: "Finished sashiko pair coasters with glass of water",
-  },
-  {
-    title: "Sashiko Fabric for Coasters",
-    body:
-      "Pre-printed 100% cotton fabric to make four coasters. Wash-away pattern and English instructions included. Thread and needles not included. Finished size approx. 10 × 10 cm.",
-    img: "/images/sashiko-about-coasters-20260611.jpg",
-    alt: "Sashiko fabric for coasters",
-  },
-  {
-    title: "Sashiko Fabric",
-    body:
-      "Cotton/linen fabric with wash-away printed patterns in circle, kasuri, cross, and chevron designs. Finished size approx. 32 × 32 cm. English instructions included; thread and needle not included.",
-    img: "/images/sashiko-lineup-sashiko-fabric-20260616.png",
-    alt: "Sashiko-stitched cotton-linen fabric with geometric pattern",
-  },
-  {
-    title: "Celebratory Sashiko Fabric",
-    body:
-      "Hand-drawn designs by sashiko artist chiebaa, hand-printed in Japan. Stitch auspicious motifs and sew celebratory wishes into the fabric. English instructions included.",
-    img: "/images/sashiko-lineup-celebratory-fabric-20260616.png",
-    alt: "Celebratory sashiko fabric wall hangings with auspicious motifs",
   },
 ];
 
@@ -194,6 +160,22 @@ export default function HidamariSashikoContent() {
       </div>
 
       <section
+        id="color-lineup"
+        className="sashiko-section"
+        aria-labelledby="sashiko-color-lineup-title"
+      >
+        <h2 className="sashiko-section-title" id="sashiko-color-lineup-title">
+          Color Lineup
+        </h2>
+        <p className="sashiko-section-intro sashiko-section-intro--tight">
+          The official color chart is split into three sections that match the
+          retail display boards left to right: solids 1–20, solids 21–40, and
+          variegated colors 101–405.
+        </p>
+        <HidamariColorLineup />
+      </section>
+
+      <section
         id="lineup"
         className="sashiko-section sashiko-section--last"
         aria-labelledby="sashiko-lineup-title"
@@ -206,9 +188,22 @@ export default function HidamariSashikoContent() {
           thread with smooth, low-fuzz performance. Beyond sashiko, enjoy it for
           sewing, knitting, embellishing, and knotwork.
         </p>
+        <p className="sashiko-lineup-catalog">
+          <a
+            href={SASHIKO_CATALOGUE_PDF}
+            className="btn-outline sashiko-lineup-catalog-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View product catalogue (PDF)
+            <span aria-hidden="true"> ↗</span>
+          </a>
+        </p>
         <div className="sashiko-lineup-grid">
-          {LINEUP.map((item) => (
-            <article key={item.title} className="sashiko-lineup-card">
+          {SASHIKO_PRODUCTS.filter(
+            (item) => item.slug !== "hidamari-thread"
+          ).map((item) => (
+            <article key={item.slug} className="sashiko-lineup-card">
               <div className="sashiko-lineup-media">
                 <Image
                   src={item.img}
@@ -220,7 +215,7 @@ export default function HidamariSashikoContent() {
               </div>
               <div className="sashiko-lineup-body">
                 <h3 className="sashiko-lineup-title">{item.title}</h3>
-                <p className="sashiko-lineup-text">{item.body}</p>
+                <p className="sashiko-lineup-text">{item.cardBody}</p>
               </div>
             </article>
           ))}

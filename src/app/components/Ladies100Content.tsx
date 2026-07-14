@@ -1,6 +1,8 @@
 import Image from "next/image";
 import SashikoIntroGallery from "./SashikoIntroGallery";
 
+const LADIES100_CATALOGUE_PDF = "/pdfs/100-ladies-catalogue-20260714.pdf";
+
 const GALLERY = [
   {
     img: "/images/ladies100-gallery-gamaguchi-20260617.png",
@@ -189,6 +191,17 @@ export default function Ladies100Content() {
           enough for experienced stitchers. Use COSMO embroidery floss, mix
           stitches freely, and turn finished figures into charms, patches, bags,
           and more.
+        </p>
+        <p className="sashiko-lineup-catalog">
+          <a
+            href={LADIES100_CATALOGUE_PDF}
+            className="btn-outline sashiko-lineup-catalog-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View product catalogue (PDF)
+            <span aria-hidden="true"> ↗</span>
+          </a>
         </p>
         <div className="sashiko-lineup-grid">
           {LINEUP.map((item) => (

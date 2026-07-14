@@ -1,12 +1,20 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "./data/site";
 import { BLOG_POSTS } from "./data/blogPosts";
+import { getSashikoProductSlugs } from "./data/sashikoProducts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const blogPosts = BLOG_POSTS.map((post) => ({
     url: `${SITE_URL}/stories/${post.slug}`,
     lastModified: new Date(post.publishedAt),
     changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  const sashikoProducts = getSashikoProductSlugs().map((slug) => ({
+    url: `${SITE_URL}/sashiko/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "yearly" as const,
     priority: 0.7,
   }));
 
@@ -24,6 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/floss/seasons`,       lastModified: new Date(), changeFrequency: "yearly",  priority: 0.7 },
     { url: `${SITE_URL}/floss/nishikiito`,    lastModified: new Date(), changeFrequency: "yearly",  priority: 0.7 },
     { url: `${SITE_URL}/sashiko`,               lastModified: new Date(), changeFrequency: "yearly",  priority: 0.8 },
+    ...sashikoProducts,
     { url: `${SITE_URL}/100-ladies`,            lastModified: new Date(), changeFrequency: "yearly",  priority: 0.8 },
     { url: `${SITE_URL}/crochet`,               lastModified: new Date(), changeFrequency: "yearly",  priority: 0.8 },
     { url: `${SITE_URL}/tools-supplies`,        lastModified: new Date(), changeFrequency: "yearly",  priority: 0.8 },

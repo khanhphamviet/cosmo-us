@@ -2916,17 +2916,51 @@ img { display: block; max-width: 100%; height: auto; }
   color: #555;
   margin: 0;
 }
+.sashiko-lineup-catalog {
+  margin: 0 0 clamp(12px, 2vw, 16px);
+}
+.sashiko-lineup-catalog-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+}
 .sashiko-lineup-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr));
   gap: clamp(12px, 2vw, 18px);
-  margin-top: clamp(12px, 2vw, 16px);
+  margin-top: 0;
 }
 .sashiko-lineup-card {
   display: flex;
   flex-direction: column;
   border: 1px solid var(--border);
   background: var(--background);
+}
+.sashiko-lineup-card-link {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+}
+.sashiko-lineup-card-link:hover .sashiko-lineup-cta,
+.sashiko-lineup-card-link:focus-visible .sashiko-lineup-cta {
+  opacity: 1;
+}
+.sashiko-lineup-card-link:hover .sashiko-lineup-img,
+.sashiko-lineup-card-link:focus-visible .sashiko-lineup-img {
+  transform: scale(1.02);
+}
+.sashiko-lineup-cta {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: var(--brand-sans);
+  font-size: clamp(0.75rem, 0.25vw + 0.68rem, 0.8125rem);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--foreground);
+  opacity: 0.75;
 }
 .sashiko-lineup-media {
   position: relative;
@@ -2944,6 +2978,7 @@ img { display: block; max-width: 100%; height: auto; }
 .sashiko-lineup-img {
   object-fit: cover;
   object-position: center center;
+  transition: transform 0.35s ease;
 }
 .sashiko-lineup-media--portrait .sashiko-lineup-img {
   object-position: center top;
@@ -3007,6 +3042,268 @@ img { display: block; max-width: 100%; height: auto; }
   flex-wrap: wrap;
   border-top: 1px solid var(--border);
   padding-top: clamp(20px, 3vw, 28px);
+}
+
+.sashiko-product-page {
+  margin-bottom: clamp(8px, 1.5vw, 16px);
+}
+.sashiko-product-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(20px, 4vw, 40px);
+  align-items: center;
+  margin-bottom: clamp(28px, 4vw, 40px);
+}
+.sashiko-product-eyebrow {
+  margin: 0 0 8px;
+  font-family: var(--brand-sans);
+  font-size: clamp(0.75rem, 0.2vw + 0.68rem, 0.8125rem);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+.sashiko-product-title {
+  margin: 0 0 12px;
+  font-family: var(--brand-serif);
+  font-weight: 600;
+  font-size: clamp(1.75rem, 1.2vw + 1.4rem, 2.35rem);
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  color: var(--foreground);
+}
+.sashiko-product-lead {
+  margin: 0;
+  font-family: var(--brand-sans);
+  font-size: clamp(0.9375rem, 0.35vw + 0.84rem, 1.0625rem);
+  line-height: 1.7;
+  color: #444;
+  max-width: 34em;
+}
+.sashiko-product-hero-media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  margin: 0;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.sashiko-product-hero-img {
+  object-fit: cover;
+}
+.sashiko-product-section {
+  margin-top: clamp(28px, 4vw, 40px);
+}
+.sashiko-product-section--related {
+  margin-top: clamp(40px, 5vw, 56px);
+  padding-top: clamp(24px, 3vw, 32px);
+  border-top: 1px solid var(--border);
+}
+.sashiko-product-body {
+  margin: 0 0 14px;
+  font-family: var(--brand-sans);
+  font-size: clamp(0.9375rem, 0.3vw + 0.84rem, 1rem);
+  line-height: 1.75;
+  color: #444;
+  max-width: 40em;
+}
+.sashiko-product-body:last-child {
+  margin-bottom: 0;
+}
+.sashiko-product-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(16px, 2.5vw, 24px);
+  margin-top: clamp(12px, 2vw, 16px);
+}
+.sashiko-product-highlight {
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+}
+.sashiko-product-highlight-title {
+  margin: 0 0 8px;
+  font-family: var(--brand-sans);
+  font-size: clamp(0.875rem, 0.3vw + 0.78rem, 0.9375rem);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--foreground);
+}
+.sashiko-product-highlight-body {
+  margin: 0;
+  font-family: var(--brand-sans);
+  font-size: clamp(0.8125rem, 0.25vw + 0.72rem, 0.875rem);
+  line-height: 1.7;
+  color: #555;
+}
+.sashiko-product-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(12px, 2vw, 18px);
+  margin-top: clamp(12px, 2vw, 16px);
+}
+.sashiko-product-gallery--lineup {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+}
+.sashiko-product-gallery-item {
+  margin: 0;
+}
+.sashiko-product-gallery-media {
+  position: relative;
+  aspect-ratio: 1;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.sashiko-product-gallery-media--portrait {
+  aspect-ratio: 683 / 1024;
+  background: #fff;
+}
+.sashiko-product-gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sashiko-product-gallery-media--portrait .sashiko-product-gallery-img {
+  object-fit: contain;
+}
+.sashiko-product-gallery-caption {
+  margin: 8px 0 0;
+  font-family: var(--brand-sans);
+  font-size: clamp(0.8125rem, 0.25vw + 0.72rem, 0.875rem);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--foreground);
+  text-align: center;
+}
+.sashiko-product-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: clamp(28px, 4vw, 36px);
+}
+.hidamari-color-lineup {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(28px, 4vw, 40px);
+  margin-top: clamp(16px, 2.5vw, 24px);
+}
+.hidamari-color-pair-title {
+  margin: 0 0 8px;
+  font-family: var(--brand-sans);
+  font-size: clamp(1rem, 0.35vw + 0.9rem, 1.125rem);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--foreground);
+}
+.hidamari-color-pair-text {
+  margin: 0 0 clamp(12px, 2vw, 16px);
+  font-family: var(--brand-sans);
+  font-size: clamp(0.875rem, 0.25vw + 0.78rem, 0.9375rem);
+  line-height: 1.65;
+  color: #555;
+  max-width: 42em;
+}
+.hidamari-color-pair-stacks {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(16px, 2.5vw, 24px);
+}
+.hidamari-color-pair-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.35fr);
+  gap: clamp(14px, 2.5vw, 22px);
+  align-items: start;
+}
+.hidamari-color-pair-figure {
+  margin: 0;
+  min-width: 0;
+}
+.hidamari-color-pair-trigger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: clamp(280px, 36vw, 400px);
+  padding: 10px;
+  border: 1px solid var(--border);
+  background: #fff;
+  cursor: zoom-in;
+  text-align: center;
+  overflow: hidden;
+}
+.hidamari-color-pair-trigger:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 3px;
+}
+.hidamari-color-pair-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.hidamari-color-pair-hint {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  z-index: 1;
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.92);
+  font-family: var(--brand-sans);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--foreground);
+  line-height: 1;
+  pointer-events: none;
+}
+.hidamari-color-pair-caption {
+  margin: 8px 0 0;
+  font-family: var(--brand-sans);
+  font-size: clamp(0.75rem, 0.2vw + 0.68rem, 0.8125rem);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--gray);
+}
+.hidamari-color-lightbox-canvas {
+  width: min(96vw, 1100px);
+  margin: 0 auto;
+}
+.hidamari-color-lightbox-canvas--portrait {
+  width: min(92vw, 560px);
+}
+
+@media (max-width: 900px) {
+  .hidamari-color-pair-grid {
+    grid-template-columns: 1fr;
+  }
+  .hidamari-color-pair-trigger {
+    height: clamp(240px, 58vw, 360px);
+  }
+}
+.sashiko-product-related-grid {
+  margin-top: clamp(12px, 2vw, 16px);
+}
+
+@media (max-width: 900px) {
+  .sashiko-product-hero {
+    grid-template-columns: 1fr;
+  }
+  .sashiko-product-highlights,
+  .sashiko-product-gallery,
+  .sashiko-product-gallery--lineup {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .sashiko-product-gallery--lineup {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 .ladies100-hero-title {

@@ -37,6 +37,7 @@ export function isProductsPath(pathname: string) {
     pathname.startsWith("/floss/") ||
     pathname === "/cloth" ||
     pathname === "/sashiko" ||
+    pathname.startsWith("/sashiko/") ||
     pathname === "/100-ladies" ||
     pathname === "/crochet" ||
     pathname === "/tools-supplies"
