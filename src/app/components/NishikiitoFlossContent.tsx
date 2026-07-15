@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import NishikiitoAccentGallery from "./NishikiitoAccentGallery";
 import NishikiitoSeriesBlock from "./NishikiitoSeriesBlock";
 
 
@@ -30,11 +28,17 @@ export default function NishikiitoFlossContent() {
             </h1>
             <p className="sashiko-hero-sub">
               Japanese-made metallic embroidery thread.
+            </p>
+            <p className="sashiko-hero-sub">
+              Five distinctive finishes.
               <br />
-              Five distinctive finishes. Forty-eight colors.
-              <br />
-              Inspired by Kyoto&rsquo;s gold-thread craftsmanship.
-              <br />
+              48 colors.
+            </p>
+            <p className="sashiko-hero-sub">
+              Crafted using techniques inspired by Kyoto&rsquo;s kimono
+              gold-thread craftsmanship.
+            </p>
+            <p className="sashiko-hero-sub sashiko-hero-sub--tagline">
               Sometimes only a few stitches are enough to transform an entire
               design.
             </p>
@@ -53,26 +57,6 @@ export default function NishikiitoFlossContent() {
         </div>
       </section>
 
-      <section
-        id="about"
-        className="sashiko-section"
-        aria-labelledby="floss-nishikiito-about-title"
-      >
-        <h2
-          className="sashiko-section-title sashiko-section-title--center"
-          id="floss-nishikiito-about-title"
-        >
-          Nishikiito in Embroidery
-        </h2>
-        <NishikiitoAccentGallery />
-        <p className="sashiko-section-footnote floss-nishikiito-story-footnote">
-          Read the full story in{" "}
-          <Link href="/stories/nishikiito-metallic-thread">
-            A Little Sparkle, Made in Japan
-          </Link>
-          .
-        </p>
-      </section>
 
       <section
         id="finishes"
@@ -80,15 +64,19 @@ export default function NishikiitoFlossContent() {
         aria-labelledby="floss-nishikiito-finishes-title"
       >
         <h2 className="sashiko-section-title" id="floss-nishikiito-finishes-title">
-          Five finishes, five kinds of luster
+          Five Finishes, Five Distinctive Expressions
         </h2>
         <p className="sashiko-section-intro sashiko-section-intro--tight">
-          Metallic embroidery thread is not simply brighter than ordinary
-          thread. Different constructions reflect light in different
-          ways—from refined metallic sheen to brilliant sparkle, subtle
-          iridescence, and vivid fluorescent color. Understanding these
-          differences makes it easier to choose the finish that best suits
-          your project.
+          Every metallic finish reflects light differently.
+        </p>
+        <p className="sashiko-section-intro sashiko-section-intro--tight">
+          Nishikiito is available in five distinctive finishes, each designed
+          to create a unique visual effect—from refined metallic sheen and
+          brilliant sparkle to subtle iridescence, soft pastel shimmer, and
+          vivid fluorescent color.
+        </p>
+        <p className="sashiko-section-intro sashiko-section-intro--tight">
+          Choose the finish that best complements your embroidery.
         </p>
         <NishikiitoSeriesBlock />
         <div className="floss-nishikiito-closing">

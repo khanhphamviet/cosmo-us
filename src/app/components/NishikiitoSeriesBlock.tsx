@@ -6,46 +6,45 @@ import Image from "next/image";
 const FINISHES = [
   {
     heading: "Nishiki",
-    subtitle: "round twist · approx. 5–6 count · 18 colors",
+    subtitle: "Round Twist · Approx. 5–6 Count · 18 Colors",
     hero: "The most traditional metallic finish in the collection.",
     body:
-      "Metallic film wound tightly around the core produces a **refined, understated shine** with controlled reflection—ideal when the thread itself is meant to remain visible. A vacuum-steam straightening process ensures kink-free handling. Colors 2–4 use genuine silver film; colors 18–23 feature genuine silver laminated with Mino washi for lasting strength.",
-    recommendedLead: "Refined elegance in every stitch",
+      "Metallic film is tightly wound around the core to create a **refined, understated sheen** with controlled reflection. A vacuum-steam straightening process helps maintain smooth handling during stitching.\n\nSelected colors feature genuine silver film, while colors 18–23 combine genuine silver with laminated Mino washi for added durability.",
+    recommendedLead: "",
     recommended: [
       "Decorative embroidery",
       "Tatting",
-      "Kumihimo",
       "Tassels",
     ],
     img: "/images/floss-nishikiito-nishiki-spools-20260715.jpg",
     width: 1024,
     height: 768,
     alt: "Nishiki round-twist metallic embroidery thread spools",
-    material: "Nylon / polyester / metallic film",
+    material: "Nylon / Polyester / Metallic Film",
     brightness: 1.12,
     workImg: "/images/floss-nishikiito-work-nishiki-tatting-20260715.png",
     workWidth: 565,
     workHeight: 390,
     workAlt: "Tatting lace snowflake made with Nishiki metallic thread in color 06 Asagi",
-    workCaption: "Tatting lace — 06 Asagi",
+    workCaption: "Tatting lace",
   },
   {
     heading: "Mirror",
-    subtitle: "tasuki twisted · approx. 14 count · 6 colors",
+    subtitle: "Tasuki Twisted · Approx. 14 Count · 6 Colors",
     hero: "The brightest, most reflective finish in the collection.",
     body:
-      "Crossing two metallic threads produces a **brilliant, high-impact sparkle** while keeping the surface slippery enough to pull through fabric repeatedly—perfect for projects with many stitches.",
-    recommendedLead: "Maximum brilliance where it counts",
+      "Two metallic threads are twisted together to create crisp, **high-impact brilliance** while remaining smooth enough to glide repeatedly through fabric. Ideal when bold metallic highlights are an essential part of the design.",
+    recommendedLead: "",
     recommended: [
-      "Cross-stitch",
+      "Cross stitch",
       "Dense embroidery",
-      "Crisp metallic highlights",
+      "Metallic accents",
     ],
     img: "/images/floss-nishikiito-mirror-spools-20260715.jpg",
     width: 1024,
     height: 768,
     alt: "Mirror Tasuki Twisted metallic embroidery thread spools",
-    material: "100% nylon",
+    material: "100% Nylon",
     brightness: 1.0,
     workImg: "/images/floss-nishikiito-work-mirror-xstitch-detail-20260715.png",
     workWidth: 332,
@@ -55,21 +54,21 @@ const FINISHES = [
   },
   {
     heading: "Iridescent",
-    subtitle: "tasuki twisted · approx. 11 count · 12 colors",
-    hero: "Creates soft color shifts that change with the viewing angle.",
+    subtitle: "Tasuki Twisted · Approx. 11 Count · 12 Colors",
+    hero: "Soft color that shifts with the light.",
     body:
-      "Semi-transparent film produces **opal-like multi-color reflections** rather than direct sparkle—adding a delicate, ever-shifting nuance that no solid-color metallic can replicate.",
-    recommendedLead: "Subtle iridescence for changing light",
+      "A semi-transparent metallic film creates delicate, **opal-like reflections** that change with the viewing angle. Instead of strong sparkle, it adds subtle depth and movement that evolve as the light changes.",
+    recommendedLead: "",
     recommended: [
-      "Color-shifting accents",
       "Floral embroidery",
+      "Decorative accents",
       "Delicate motifs",
     ],
     img: "/images/floss-nishikiito-iridescent-spools-20260715.jpg",
     width: 1024,
     height: 767,
     alt: "Iridescent Tasuki Twisted metallic embroidery thread spools",
-    material: "100% polyester",
+    material: "100% Polyester",
     brightness: 1.0,
     workImg: "/images/floss-nishikiito-work-iridescent-ornament-20260715.png",
     workWidth: 1000,
@@ -79,21 +78,21 @@ const FINISHES = [
   },
   {
     heading: "Champagni",
-    subtitle: "tasuki twisted · approx. 10 count · 6 colors",
-    hero: "Gentle metallic accents in pastel tones.",
+    subtitle: "Tasuki Twisted · Approx. 10 Count · 6 Colors",
+    hero: "Gentle metallic sparkle in pastel tones.",
     body:
-      "Fine sparkles scattered through soft pastels like champagne bubbles, adding **quiet elegance without overpowering** the surrounding embroidery. The cupro-blend hand feels silky, making extended stitching effortless.",
-    recommendedLead: "Softness that enhances without competing",
+      "Inspired by the fine bubbles of champagne, this finish scatters **delicate metallic highlights** through soft pastel colors. Its cupro blend provides a silky hand for smooth, comfortable stitching during extended projects.",
+    recommendedLead: "",
     recommended: [
       "Botanical embroidery",
-      "Pastel-palette designs",
+      "Pastel designs",
       "Everyday accessories",
     ],
     img: "/images/floss-nishikiito-champagni-spools-20260715.jpg",
     width: 1024,
     height: 768,
     alt: "Champagni Tasuki Twisted metallic embroidery thread spools in pastel tones",
-    material: "81% cupro, 19% polyester",
+    material: "81% Cupro / 19% Polyester",
     brightness: 1.02,
     workImg: "/images/floss-nishikiito-work-champagni-pincushions-20260715.png",
     workWidth: 380,
@@ -103,11 +102,11 @@ const FINISHES = [
   },
   {
     heading: "Neoni",
-    subtitle: "tasuki twisted · approx. 25 count · 6 colors",
+    subtitle: "Tasuki Twisted · Approx. 25 Count · 6 Colors",
     hero: "Maximum visibility with fluorescent color.",
     body:
-      "Designed to **stand out immediately**, even in small amounts. Ultra-fine fluorescent strands deliver dramatic impact—combine as many plies as you like for custom weight and intensity.",
-    recommendedLead: "Bold color that demands attention",
+      "Designed to **stand out immediately**, even in small amounts. Ultra-fine fluorescent strands create vivid accents, while multiple strands can be combined to adjust both thickness and visual impact.",
+    recommendedLead: "",
     recommended: [
       "Contemporary embroidery",
       "High-contrast accents",
@@ -117,7 +116,7 @@ const FINISHES = [
     width: 1024,
     height: 768,
     alt: "Neoni Tasuki Twisted metallic embroidery thread in vivid fluorescent shades",
-    material: "100% polyester",
+    material: "100% Polyester",
     brightness: 1.08,
     workImg: "/images/floss-nishikiito-work-neoni-buttons-20260715.png",
     workWidth: 580,
@@ -176,21 +175,19 @@ export default function NishikiitoSeriesBlock() {
               <h3 className="floss-nishikiito-series-heading">{item.heading}</h3>
               <p className="floss-nishikiito-series-subtitle">{item.subtitle}</p>
               <p className="floss-nishikiito-series-hero">{item.hero}</p>
-              <p
+              <div
                 className="floss-nishikiito-series-body"
                 dangerouslySetInnerHTML={{
-                  __html: item.body.replace(
-                    /\*\*(.+?)\*\*/g,
-                    "<strong>$1</strong>"
-                  ),
+                  __html: item.body
+                    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+                    .split("\n\n")
+                    .map((p) => `<p>${p}</p>`)
+                    .join(""),
                 }}
               />
               <div className="floss-nishikiito-series-recommended">
                 <span className="floss-nishikiito-series-recommended-label">
-                  Recommended for
-                </span>
-                <span className="floss-nishikiito-series-recommended-lead">
-                  {item.recommendedLead}
+                  Best for
                 </span>
                 <ul className="floss-nishikiito-series-recommended-list">
                   {item.recommended.map((use) => (

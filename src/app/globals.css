@@ -2599,6 +2599,13 @@ img { display: block; max-width: 100%; height: auto; }
   color: #555;
   margin: 0;
 }
+.sashiko-hero-sub + .sashiko-hero-sub {
+  margin-top: 0.6em;
+}
+.sashiko-hero-sub--tagline {
+  font-style: italic;
+  color: #777;
+}
 .sashiko-hero-media {
   position: relative;
   margin: 0 0 0 clamp(-48px, -4vw, -20px);
