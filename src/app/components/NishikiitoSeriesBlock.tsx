@@ -6,77 +6,124 @@ import Image from "next/image";
 const FINISHES = [
   {
     heading: "Nishiki",
-    subtitle: "round twist · 18 colors",
+    subtitle: "round twist · approx. 5–6 count · 18 colors",
+    hero: "The most traditional metallic finish in the collection.",
     body:
-      "Known for its subdued luster and resistance to friction—the finish often used on kimono obi.",
-    recommended:
-      "Tatting lace and tassels; strands can be separated one at a time from the 4-strand twist.",
+      "Metallic film wound tightly around the core produces a **refined, understated shine** with controlled reflection—ideal when the thread itself is meant to remain visible. A vacuum-steam straightening process ensures kink-free handling throughout.",
+    recommended: [
+      "Elegant decorative work",
+      "Tatting",
+      "Kumihimo",
+      "Tassels",
+    ],
     img: "/images/floss-nishikiito-nishiki-spools-20260715.jpg",
     width: 1024,
     height: 768,
     alt: "Nishiki round-twist metallic embroidery thread spools",
-    length: "Approx. 22 yd (20 m) per spool",
-    thickness: "5 to 6 count (approx.)",
     material:
-      "Colors 2–4: 59% nylon, 41% polyester · Colors 5–16: 62% nylon, 38% polyester · Colors 18–23: 57% polyester, 43% nylon",
+      "Nylon/polyester blend with metallic film — engineered for durability and friction resistance. Colors 2–4 use genuine silver; colors 18–23 feature genuine silver laminated with Mino washi.",
+    brightness: 1.12,
+    workImg: "/images/floss-nishikiito-work-nishiki-tatting-20260715.png",
+    workWidth: 565,
+    workHeight: 390,
+    workAlt: "Tatting lace snowflake made with Nishiki metallic thread in color 06 Asagi",
+    workCaption: "Tatting lace — color 06 Asagi",
   },
   {
     heading: "Mirror",
-    subtitle: "Tasuki Twisted · 6 colors",
+    subtitle: "tasuki twisted · approx. 14 count · 6 colors",
+    hero: "The brightest, most reflective finish in the collection.",
     body:
-      "The twist structure and generous metallic content create a strong sparkle and a striking, high-impact finish with a soft hand.",
-    recommended: "Cross-stitch and free-stitch embroidery.",
+      "Crossing two metallic threads produces a **brilliant, high-impact sparkle** while keeping the surface slippery enough to pull through fabric repeatedly—perfect for projects with many stitches.",
+    recommended: [
+      "Cross-stitch",
+      "Dense embroidery",
+      "Crisp metallic highlights",
+    ],
     img: "/images/floss-nishikiito-mirror-spools-20260715.jpg",
     width: 1024,
     height: 768,
     alt: "Mirror Tasuki Twisted metallic embroidery thread spools",
-    length: "Approx. 22 yd (20 m) per spool",
-    thickness: "14 count (approx.)",
-    material: "100% nylon",
+    material:
+      "100% nylon — provides strength and allows the thread to glide smoothly through repeated stitching.",
+    brightness: 1.0,
+    workImg: "/images/floss-nishikiito-work-mirror-xstitch-detail-20260715.png",
+    workWidth: 332,
+    workHeight: 249,
+    workAlt: "Cross-stitch Christmas wreath detail showing Mirror thread accent on ribbon and bells",
+    workCaption: "Cross-stitch accent — paired with No. 25 floss",
   },
   {
     heading: "Iridescent",
-    subtitle: "Tasuki Twisted · 12 colors",
+    subtitle: "tasuki twisted · approx. 11 count · 12 colors",
+    hero: "Creates soft color shifts that change with the viewing angle.",
     body:
-      "Film-like texture with opalescent, multicolor reflections. Semi-transparent, allowing light to pass through faintly for a nuance unlike any other thread.",
-    recommended:
-      "Accent embroidery and decorative highlights where you want iridescent color shift.",
+      "Semi-transparent film produces **opal-like multi-color reflections** rather than direct sparkle—adding a delicate, ever-shifting nuance that no solid-color metallic can replicate.",
+    recommended: [
+      "Color-shifting accents",
+      "Floral embroidery",
+      "Delicate motifs",
+    ],
     img: "/images/floss-nishikiito-iridescent-spools-20260715.jpg",
     width: 1024,
     height: 767,
     alt: "Iridescent Tasuki Twisted metallic embroidery thread spools",
-    length: "Approx. 22 yd (20 m) per spool",
-    thickness: "11 count (approx.)",
-    material: "100% polyester",
+    material:
+      "100% polyester — chosen for its translucent quality that allows light to pass through the film.",
+    brightness: 1.0,
+    workImg: "/images/floss-nishikiito-work-iridescent-ornament-20260715.png",
+    workWidth: 1000,
+    workHeight: 1000,
+    workAlt: "Heart-shaped ornament with bullion-stitch flowers embroidered using Iridescent metallic thread",
+    workCaption: "Ornament — bullion-stitch flowers with metallic cord and tassel",
   },
   {
     heading: "Champagni",
-    subtitle: "Tasuki Twisted · 6 colors",
+    subtitle: "tasuki twisted · approx. 10 count · 6 colors",
+    hero: "Gentle metallic accents in pastel tones.",
     body:
-      "Pastel tones with gentle sparkles like champagne bubbles. Soft and smooth in the hand for comfortable, extended stitching.",
-    recommended: "Smooth hand embroidery and flowing pastel accent work.",
+      "Fine sparkles scattered through soft pastels like champagne bubbles, adding **quiet elegance without overpowering** the surrounding embroidery. The cupro-blend hand feels silky, making extended stitching effortless.",
+    recommended: [
+      "Botanical embroidery",
+      "Pastel-palette designs",
+      "Everyday accessories",
+    ],
     img: "/images/floss-nishikiito-champagni-spools-20260715.jpg",
     width: 1024,
     height: 768,
     alt: "Champagni Tasuki Twisted metallic embroidery thread spools in pastel tones",
-    length: "Approx. 22 yd (20 m) per spool",
-    thickness: "10 count (approx.)",
-    material: "81% cupro, 19% polyester",
+    material:
+      "81% cupro, 19% polyester — the cupro blend produces a softer hand and more understated sparkle than pure synthetics.",
+    brightness: 1.02,
+    workImg: "/images/floss-nishikiito-work-champagni-pincushions-20260715.png",
+    workWidth: 380,
+    workHeight: 380,
+    workAlt: "Six pastel pin cushions embroidered with Champagni metallic thread in various stitch patterns",
+    workCaption: "Pin cushions — pastel sparkle in dots, stripes, and plaid",
   },
   {
     heading: "Neoni",
-    subtitle: "Tasuki Twisted · 6 colors",
+    subtitle: "tasuki twisted · approx. 25 count · 6 colors",
+    hero: "Maximum visibility with fluorescent color.",
     body:
-      "Eye-catching fluorescent colors with dramatic impact even in small amounts. Extra-fine strands for precise control.",
-    recommended:
-      "Bold accents and high-impact highlights; divide to the ply count you prefer.",
+      "Designed to **stand out immediately**, even in small amounts. Ultra-fine fluorescent strands deliver dramatic impact—combine as many plies as you like for custom weight and intensity.",
+    recommended: [
+      "Contemporary embroidery",
+      "High-contrast accents",
+      "Children\u2019s projects",
+    ],
     img: "/images/floss-nishikiito-neoni-spools-20260715.jpg",
     width: 1024,
     height: 768,
     alt: "Neoni Tasuki Twisted metallic embroidery thread in vivid fluorescent shades",
-    length: "Approx. 54 yd (50 m) per spool",
-    thickness: "25 count (approx.)",
-    material: "100% polyester",
+    material:
+      "100% polyester — retains vivid fluorescent color and resists fading over time.",
+    brightness: 1.08,
+    workImg: "/images/floss-nishikiito-work-neoni-buttons-20260715.png",
+    workWidth: 580,
+    workHeight: 580,
+    workAlt: "Four covered buttons with fluorescent cross-stitch patterns in pink, purple, green, and orange Neoni thread",
+    workCaption: "Covered buttons — a few stitches for maximum pop",
   },
 ] as const;
 
@@ -105,52 +152,71 @@ export default function NishikiitoSeriesBlock() {
   return (
     <>
       <div className="floss-nishikiito-series-block">
-        <div className="sashiko-concepts floss-nishikiito-series-grid">
-          {FINISHES.map((item, index) => (
-            <article key={item.heading} className="floss-nishikiito-series-card">
-              <button
-                type="button"
-                className="floss-nishikiito-series-trigger"
-                onClick={() => setActiveIndex(index)}
-                aria-label={`View larger: ${item.alt}`}
-              >
-                <div className="floss-nishikiito-series-media">
-                  <Image
-                    src={item.img}
-                    alt={item.alt}
-                    width={item.width}
-                    height={item.height}
-                    sizes="(max-width:640px) 100vw, (max-width:900px) 50vw, 20vw"
-                    className="floss-nishikiito-series-img"
-                  />
-                </div>
-              </button>
-              <h3 className="sashiko-concept-title">{item.heading}</h3>
-              <p className="sashiko-concept-subtitle">{item.subtitle}</p>
-              <p className="sashiko-concept-body">{item.body}</p>
-              <p className="floss-nishikiito-series-recommended">
+        {FINISHES.map((item, index) => (
+          <article key={item.heading} className="floss-nishikiito-series-row">
+            <button
+              type="button"
+              className="floss-nishikiito-series-trigger"
+              onClick={() => setActiveIndex(index)}
+              aria-label={`View larger: ${item.alt}`}
+            >
+              <div className="floss-nishikiito-series-media">
+                <Image
+                  src={item.img}
+                  alt={item.alt}
+                  width={item.width}
+                  height={item.height}
+                  sizes="(max-width:640px) 100vw, 280px"
+                  className="floss-nishikiito-series-img"
+                  style={item.brightness !== 1.0 ? { filter: `brightness(${item.brightness})` } : undefined}
+                />
+              </div>
+            </button>
+            <div className="floss-nishikiito-series-text">
+              <h3 className="floss-nishikiito-series-heading">{item.heading}</h3>
+              <p className="floss-nishikiito-series-subtitle">{item.subtitle}</p>
+              <p className="floss-nishikiito-series-hero">{item.hero}</p>
+              <p
+                className="floss-nishikiito-series-body"
+                dangerouslySetInnerHTML={{
+                  __html: item.body.replace(
+                    /\*\*(.+?)\*\*/g,
+                    "<strong>$1</strong>"
+                  ),
+                }}
+              />
+              <div className="floss-nishikiito-series-recommended">
                 <span className="floss-nishikiito-series-recommended-label">
                   Recommended for
-                </span>{" "}
-                {item.recommended}
-              </p>
-              <dl className="floss-nishikiito-series-specs">
-                <div>
-                  <dt>Length</dt>
-                  <dd>{item.length}</dd>
-                </div>
-                <div>
-                  <dt>Thickness</dt>
-                  <dd>{item.thickness}</dd>
-                </div>
-                <div>
-                  <dt>Material</dt>
-                  <dd>{item.material}</dd>
-                </div>
+                </span>
+                <ul className="floss-nishikiito-series-recommended-list">
+                  {item.recommended.map((use) => (
+                    <li key={use}>{use}</li>
+                  ))}
+                </ul>
+              </div>
+              <dl className="floss-nishikiito-series-specs-dl">
+                <dt>Material</dt>
+                <dd>{item.material}</dd>
               </dl>
-            </article>
-          ))}
-        </div>
+            </div>
+            {item.workImg ? (
+              <figure className="floss-nishikiito-series-work">
+                <Image
+                  src={item.workImg}
+                  alt={item.workAlt}
+                  width={item.workWidth}
+                  height={item.workHeight}
+                  sizes="(max-width:640px) 50vw, 180px"
+                  className="floss-nishikiito-series-work-img"
+                />
+                <figcaption className="floss-nishikiito-series-work-caption">
+                  {item.workCaption}
+                </figcaption>
+              </figure>
+            ) : null}
+          </article>
+        ))}
       </div>
 
       {activeItem ? (

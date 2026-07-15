@@ -34,6 +34,9 @@ export default function NishikiitoFlossContent() {
               Five finishes, 48 colors.
               <br />
               Crafted with Kyoto kimono gold-thread technique.
+              <br />
+              A specialty accent thread—often just a few stitches are all it
+              takes to lift a whole design.
             </p>
           </div>
           <figure className="sashiko-hero-media">
@@ -55,23 +58,6 @@ export default function NishikiitoFlossContent() {
         className="sashiko-section"
         aria-labelledby="floss-nishikiito-about-title"
       >
-        <h2
-          className="sashiko-section-title sashiko-section-title--center"
-          id="floss-nishikiito-about-title"
-        >
-          What is Nishikiito?
-        </h2>
-        <p className="sashiko-section-intro sashiko-section-intro--tight sashiko-section-intro--center">
-          This Japanese-made metallic thread for hand embroidery is carefully
-          crafted using the gold-thread technique used for kimono in Kyoto. There
-          are five types of threads with different luster, which can be used for
-          various embroidery accents.
-        </p>
-        <p className="sashiko-section-intro sashiko-section-intro--tight sashiko-section-intro--center">
-          Nishikiito (にしきいと) is a specialty accent thread rather than an
-          everyday floss—often just a few stitches are all it takes to lift a
-          whole design.
-        </p>
         <NishikiitoAccentGallery />
         <p className="sashiko-section-footnote floss-nishikiito-story-footnote">
           Read the full story in{" "}
@@ -91,11 +77,19 @@ export default function NishikiitoFlossContent() {
           Five finishes, five kinds of luster
         </h2>
         <p className="sashiko-section-intro sashiko-section-intro--tight">
-          Nishiki (round twist), Mirror, Iridescent, Champagni, and Neoni (Tasuki
-          Twisted)—each finish is twisted and blended differently, so they
-          reflect light in their own way.
+          Metallic embroidery thread is not simply brighter than ordinary
+          thread. Different constructions reflect light in different
+          ways—from refined metallic sheen to brilliant sparkle, subtle
+          iridescence, and vivid fluorescent color. Understanding these
+          differences makes it easier to choose the finish that best suits
+          your project.
         </p>
         <NishikiitoSeriesBlock />
+        <p className="floss-nishikiito-catalogue-link">
+          <a href="/pdfs/nishikiito-catalogue-20260715.pdf" target="_blank" rel="noopener noreferrer">
+            View the full Nishikiito catalogue (PDF)
+          </a>
+        </p>
       </section>
 
     </div>
