@@ -1998,8 +1998,21 @@ img { display: block; max-width: 100%; height: auto; }
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+.floss-nishikiito-closing {
+  margin: clamp(40px, 5vw, 64px) 0 0;
+  text-align: center;
+}
+.floss-nishikiito-closing-text {
+  font-family: var(--brand-serif);
+  font-size: clamp(1rem, 0.4vw + 0.9rem, 1.125rem);
+  font-weight: 400;
+  line-height: 1.7;
+  color: #444;
+  max-width: 36em;
+  margin: 0 auto clamp(20px, 3vw, 32px);
+}
 .floss-nishikiito-catalogue-link {
-  margin: clamp(32px, 4vw, 56px) 0 0;
+  margin: 0;
   text-align: center;
   font-family: var(--brand-sans);
   font-size: clamp(0.875rem, 0.2vw + 0.8rem, 0.9375rem);
@@ -2165,6 +2178,14 @@ img { display: block; max-width: 100%; height: auto; }
   color: var(--foreground);
   display: block;
   margin: 0 0 5px;
+}
+.floss-nishikiito-series-recommended-lead {
+  display: block;
+  font-family: var(--brand-sans);
+  font-size: clamp(0.8125rem, 0.2vw + 0.75rem, 0.875rem);
+  font-style: italic;
+  color: #666;
+  margin: 0 0 4px;
 }
 .floss-nishikiito-series-recommended-list {
   list-style: none;

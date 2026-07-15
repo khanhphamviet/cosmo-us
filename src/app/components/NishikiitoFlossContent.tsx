@@ -29,14 +29,14 @@ export default function NishikiitoFlossContent() {
               Nishikiito Metallic Thread
             </h1>
             <p className="sashiko-hero-sub">
-              Japanese-made metallic thread.
+              Japanese-made metallic embroidery thread.
               <br />
-              Five finishes, 48 colors.
+              Five distinctive finishes. Forty-eight colors.
               <br />
-              Crafted with Kyoto kimono gold-thread technique.
+              Inspired by Kyoto&rsquo;s gold-thread craftsmanship.
               <br />
-              A specialty accent thread—often just a few stitches are all it
-              takes to lift a whole design.
+              Sometimes only a few stitches are enough to transform an entire
+              design.
             </p>
           </div>
           <figure className="sashiko-hero-media">
@@ -58,6 +58,12 @@ export default function NishikiitoFlossContent() {
         className="sashiko-section"
         aria-labelledby="floss-nishikiito-about-title"
       >
+        <h2
+          className="sashiko-section-title sashiko-section-title--center"
+          id="floss-nishikiito-about-title"
+        >
+          Nishikiito in Embroidery
+        </h2>
         <NishikiitoAccentGallery />
         <p className="sashiko-section-footnote floss-nishikiito-story-footnote">
           Read the full story in{" "}
@@ -85,11 +91,18 @@ export default function NishikiitoFlossContent() {
           your project.
         </p>
         <NishikiitoSeriesBlock />
-        <p className="floss-nishikiito-catalogue-link">
-          <a href="/pdfs/nishikiito-catalogue-20260715.pdf" target="_blank" rel="noopener noreferrer">
-            View the full Nishikiito catalogue (PDF)
-          </a>
-        </p>
+        <div className="floss-nishikiito-closing">
+          <p className="floss-nishikiito-closing-text">
+            Every metallic finish reflects light differently. Explore the
+            Nishikiito collection and discover the finish that best complements
+            your next embroidery project.
+          </p>
+          <p className="floss-nishikiito-catalogue-link">
+            <a href="/pdfs/nishikiito-catalogue-20260715.pdf" target="_blank" rel="noopener noreferrer">
+              Browse the Full Nishikiito Catalogue
+            </a>
+          </p>
+        </div>
       </section>
 
     </div>

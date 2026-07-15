@@ -9,9 +9,10 @@ const FINISHES = [
     subtitle: "round twist · approx. 5–6 count · 18 colors",
     hero: "The most traditional metallic finish in the collection.",
     body:
-      "Metallic film wound tightly around the core produces a **refined, understated shine** with controlled reflection—ideal when the thread itself is meant to remain visible. A vacuum-steam straightening process ensures kink-free handling throughout.",
+      "Metallic film wound tightly around the core produces a **refined, understated shine** with controlled reflection—ideal when the thread itself is meant to remain visible. A vacuum-steam straightening process ensures kink-free handling. Colors 2–4 use genuine silver film; colors 18–23 feature genuine silver laminated with Mino washi for lasting strength.",
+    recommendedLead: "Refined elegance in every stitch",
     recommended: [
-      "Elegant decorative work",
+      "Decorative embroidery",
       "Tatting",
       "Kumihimo",
       "Tassels",
@@ -20,14 +21,13 @@ const FINISHES = [
     width: 1024,
     height: 768,
     alt: "Nishiki round-twist metallic embroidery thread spools",
-    material:
-      "Nylon/polyester blend with metallic film — engineered for durability and friction resistance. Colors 2–4 use genuine silver; colors 18–23 feature genuine silver laminated with Mino washi.",
+    material: "Nylon / polyester / metallic film",
     brightness: 1.12,
     workImg: "/images/floss-nishikiito-work-nishiki-tatting-20260715.png",
     workWidth: 565,
     workHeight: 390,
     workAlt: "Tatting lace snowflake made with Nishiki metallic thread in color 06 Asagi",
-    workCaption: "Tatting lace — color 06 Asagi",
+    workCaption: "Tatting lace — 06 Asagi",
   },
   {
     heading: "Mirror",
@@ -35,6 +35,7 @@ const FINISHES = [
     hero: "The brightest, most reflective finish in the collection.",
     body:
       "Crossing two metallic threads produces a **brilliant, high-impact sparkle** while keeping the surface slippery enough to pull through fabric repeatedly—perfect for projects with many stitches.",
+    recommendedLead: "Maximum brilliance where it counts",
     recommended: [
       "Cross-stitch",
       "Dense embroidery",
@@ -44,14 +45,13 @@ const FINISHES = [
     width: 1024,
     height: 768,
     alt: "Mirror Tasuki Twisted metallic embroidery thread spools",
-    material:
-      "100% nylon — provides strength and allows the thread to glide smoothly through repeated stitching.",
+    material: "100% nylon",
     brightness: 1.0,
     workImg: "/images/floss-nishikiito-work-mirror-xstitch-detail-20260715.png",
     workWidth: 332,
     workHeight: 249,
     workAlt: "Cross-stitch Christmas wreath detail showing Mirror thread accent on ribbon and bells",
-    workCaption: "Cross-stitch accent — paired with No. 25 floss",
+    workCaption: "Paired with COSMO No. 25",
   },
   {
     heading: "Iridescent",
@@ -59,6 +59,7 @@ const FINISHES = [
     hero: "Creates soft color shifts that change with the viewing angle.",
     body:
       "Semi-transparent film produces **opal-like multi-color reflections** rather than direct sparkle—adding a delicate, ever-shifting nuance that no solid-color metallic can replicate.",
+    recommendedLead: "Subtle iridescence for changing light",
     recommended: [
       "Color-shifting accents",
       "Floral embroidery",
@@ -68,14 +69,13 @@ const FINISHES = [
     width: 1024,
     height: 767,
     alt: "Iridescent Tasuki Twisted metallic embroidery thread spools",
-    material:
-      "100% polyester — chosen for its translucent quality that allows light to pass through the film.",
+    material: "100% polyester",
     brightness: 1.0,
     workImg: "/images/floss-nishikiito-work-iridescent-ornament-20260715.png",
     workWidth: 1000,
     workHeight: 1000,
     workAlt: "Heart-shaped ornament with bullion-stitch flowers embroidered using Iridescent metallic thread",
-    workCaption: "Ornament — bullion-stitch flowers with metallic cord and tassel",
+    workCaption: "Bullion-stitch ornament",
   },
   {
     heading: "Champagni",
@@ -83,6 +83,7 @@ const FINISHES = [
     hero: "Gentle metallic accents in pastel tones.",
     body:
       "Fine sparkles scattered through soft pastels like champagne bubbles, adding **quiet elegance without overpowering** the surrounding embroidery. The cupro-blend hand feels silky, making extended stitching effortless.",
+    recommendedLead: "Softness that enhances without competing",
     recommended: [
       "Botanical embroidery",
       "Pastel-palette designs",
@@ -92,14 +93,13 @@ const FINISHES = [
     width: 1024,
     height: 768,
     alt: "Champagni Tasuki Twisted metallic embroidery thread spools in pastel tones",
-    material:
-      "81% cupro, 19% polyester — the cupro blend produces a softer hand and more understated sparkle than pure synthetics.",
+    material: "81% cupro, 19% polyester",
     brightness: 1.02,
     workImg: "/images/floss-nishikiito-work-champagni-pincushions-20260715.png",
     workWidth: 380,
     workHeight: 380,
     workAlt: "Six pastel pin cushions embroidered with Champagni metallic thread in various stitch patterns",
-    workCaption: "Pin cushions — pastel sparkle in dots, stripes, and plaid",
+    workCaption: "Pastel pin cushions",
   },
   {
     heading: "Neoni",
@@ -107,6 +107,7 @@ const FINISHES = [
     hero: "Maximum visibility with fluorescent color.",
     body:
       "Designed to **stand out immediately**, even in small amounts. Ultra-fine fluorescent strands deliver dramatic impact—combine as many plies as you like for custom weight and intensity.",
+    recommendedLead: "Bold color that demands attention",
     recommended: [
       "Contemporary embroidery",
       "High-contrast accents",
@@ -116,14 +117,13 @@ const FINISHES = [
     width: 1024,
     height: 768,
     alt: "Neoni Tasuki Twisted metallic embroidery thread in vivid fluorescent shades",
-    material:
-      "100% polyester — retains vivid fluorescent color and resists fading over time.",
+    material: "100% polyester",
     brightness: 1.08,
     workImg: "/images/floss-nishikiito-work-neoni-buttons-20260715.png",
     workWidth: 580,
     workHeight: 580,
     workAlt: "Four covered buttons with fluorescent cross-stitch patterns in pink, purple, green, and orange Neoni thread",
-    workCaption: "Covered buttons — a few stitches for maximum pop",
+    workCaption: "Fluorescent covered buttons",
   },
 ] as const;
 
@@ -188,6 +188,9 @@ export default function NishikiitoSeriesBlock() {
               <div className="floss-nishikiito-series-recommended">
                 <span className="floss-nishikiito-series-recommended-label">
                   Recommended for
+                </span>
+                <span className="floss-nishikiito-series-recommended-lead">
+                  {item.recommendedLead}
                 </span>
                 <ul className="floss-nishikiito-series-recommended-list">
                   {item.recommended.map((use) => (
