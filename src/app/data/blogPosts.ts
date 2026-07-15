@@ -81,6 +81,246 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "seasonal-projects",
+    title: "Seasonal Projects: Bringing COSMO Threads to Life",
+    excerpt:
+      "Each season carries its own palette and mood. Discover how COSMO® No. 25, Seasons, Nishikiito®, and hidamari® help you stitch spring blossoms, summer light, autumn warmth, and winter sparkle.",
+    publishedAt: "2026-07-16",
+    image: "/images/blog-seasonal-projects-hero-v3-20260716.jpg",
+    imageAlt:
+      "Framed COSMO embroidery of cherry blossoms and a bridge over water in spring",
+    heroAspectRatio: "1 / 1",
+    sections: [
+      {
+        paragraphs: [
+          "Color, Texture, and Tradition in Every Stitch",
+          "Each season carries its own palette, mood, and inspiration. From spring blossoms to winter frost, COSMO threads let you translate the look of the year into handmade projects—cross-stitch, surface embroidery, sashiko, and small crochet accents alike.",
+          "Whether you're stitching a delicate floral, working a sashiko square, or adding shine to a festive motif, the right thread brings a seasonal vision into the work.",
+        ],
+      },
+      {
+        heading: "Threads that Celebrate the Seasons",
+        paragraphs: [
+          "COSMO threads give you different kinds of seasonal expression—solid color, self-shading variegation, metallic light, and sashiko-weight cotton—each made in Japan and designed to play well together.",
+        ],
+        bullets: [
+          "COSMO® No. 25 cotton floss — 500 solid colors for petals, foliage, summer skies, fruit, frost, and everything in between.",
+          "COSMO® Seasons variegated floss — 140 self-shading colors whose gentle shifts suggest changing leaves, dawn skies, water, and soft gradients.",
+          "COSMO® Nishikiito® metallic thread — 48 colors across five finishes for snow highlights, stars, lettering, and festive sparkle.",
+          "COSMO® hidamari® Sashiko thread — 60 colors of soft, smooth cotton on cones for sashiko texture, coasters, and warm or bright seasonal accents.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-seasonal-projects-floss-chart-v3-20260716.jpg",
+            alt: "Hands holding a bouquet-like bundle of multicolor COSMO embroidery floss skeins",
+            caption: "No. 25 — a full-year palette in your hands",
+            fit: "contain",
+            width: 987,
+            height: 987,
+          },
+          {
+            src: "/images/blog-seasonal-projects-seasons-v3-20260716.jpg",
+            alt: "COSMO botanical embroidery kits with solid and variegated floss skeins on cream and tan fabric",
+            caption: "Seasons — variegation beside solid No. 25",
+            fit: "contain",
+            width: 1080,
+            height: 1350,
+          },
+          {
+            src: "/images/blog-seasonal-projects-nishikiito-v3-20260716.jpg",
+            alt: "Crocheted sakura blossom earrings with green beads and gold findings",
+            caption: "Small accents — sakura in thread",
+            fit: "contain",
+            width: 1224,
+            height: 1530,
+          },
+        ],
+        galleryVariant: "row",
+        galleryZoom: true,
+      },
+      {
+        paragraphs: [
+          "Each thread works on its own. Layered together—solid floss with Seasons, a touch of Nishikiito, or hidamari for sashiko weight—they add depth, texture, and seasonal flair.",
+        ],
+        figure: {
+          src: "/images/blog-seasonal-projects-hidamari-v3-20260716.jpg",
+          alt: "Small linen gift wrap embroidered with yellow mimosa and tied with a brown cord bow",
+          caption:
+            "Finished seasonal pieces—small gifts and accessories that carry color through the year.",
+          fit: "contain",
+          width: 1454,
+          height: 1818,
+        },
+      },
+      {
+        heading: "Spring: Blooming Gardens",
+        paragraphs: [
+          "Bring flowers and greenery forward with fresh pinks, soft greens, and a little variegation. Solid No. 25 defines petals and leaves; Seasons adds gentle color transitions; Nishikiito sparks centers, dew, and script accents; hidamari can carry sashiko texture beside floral work.",
+        ],
+        bulletsLabel: "Try pairing",
+        bullets: [
+          "No. 25 floss for petals, stems, and leaves",
+          "Seasons variegated floss for soft blossom-to-bud transitions",
+          "Nishikiito for metallic centers or shimmer on lettering",
+          "hidamari for sashiko texture behind or beside floral work",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-seasonal-projects-spring-a-v3-20260716.jpg",
+            alt: "Close-up cross-stitch of cherry blossoms on a branch against a bright blue sky",
+            caption: "Spring blossoms — sakura detail in No. 25",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+          {
+            src: "/images/blog-seasonal-projects-spring-b-v3-20260716.jpg",
+            alt: "Framed embroidery of a girl stitching pansies among garden flowers and birds on navy fabric",
+            caption: "Garden frame — spring story on the wall",
+            fit: "contain",
+            width: 1638,
+            height: 2048,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+      },
+      {
+        heading: "Summer: Sun, Sky, and Sea",
+        paragraphs: [
+          "Summer asks for clearer, brighter color—wildflowers, sunflowers, open skies, and garden light. Reach for vivid No. 25 solids and Seasons blues and greens for water or cloud shading.",
+        ],
+        bulletsLabel: "Project ideas",
+        bullets: [
+          "Bright floral embroidery and summer garden motifs",
+          "Alpine and meadow color stories in solid No. 25",
+          "Sunflower frames and high-summer florals",
+          "Sea- and sky-inspired shading with Seasons",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-seasonal-projects-summer-a-v3-20260716.jpg",
+            alt: "Landscape embroidery of alpine wildflowers under open summer sky",
+            caption: "Summer light — wildflowers and open air",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+          {
+            src: "/images/blog-seasonal-projects-summer-b-v3-20260716.jpg",
+            alt: "Framed cross-stitch bouquet of bright yellow sunflowers with purple accents",
+            caption: "Sunflower frame — high summer color",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+      },
+      {
+        heading: "Autumn: Falling Leaves and Cozy Warmth",
+        paragraphs: [
+          "Autumn is depth—maple reds, pumpkin orange, and landscapes that lean into gold and rust. Start from a warm No. 25 palette; Seasons variegated floss is especially useful for leaf shading that turns as you stitch.",
+        ],
+        bulletsLabel: "Project ideas",
+        bullets: [
+          "Warm autumn floss palettes for maple and harvest motifs",
+          "Landscape embroidery with turning leaves",
+          "Variegated leaf shading with Seasons",
+          "Gift-tag and packaging embellishments",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-seasonal-projects-autumn-a-v3-20260716.jpg",
+            alt: "COSMO No. 25 floss skeins in yellow through burgundy arranged with maple leaves and a pumpkin",
+            caption: "Autumn palette — gold to burgundy in No. 25",
+            fit: "contain",
+            width: 1638,
+            height: 2047,
+          },
+          {
+            src: "/images/blog-seasonal-projects-autumn-b-v3-20260716.jpg",
+            alt: "Framed cross-stitch of Mount Fuji with red maple leaves against a pale blue sky",
+            caption: "Maple over Fuji — autumn landscape stitching",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+      },
+      {
+        heading: "Winter: Frost, Snow, and Festivities",
+        paragraphs: [
+          "Winter invites festive reds, evergreen greens, and ornament- or tree-scale embroidery you can hang or gift. Outline stitch captures detail; Nishikiito adds optional sparkle on lettering or snow accents.",
+        ],
+        bulletsLabel: "Project ideas",
+        bullets: [
+          "Holiday ornament embroidery for gifts and trees",
+          "Christmas-tree wall hangings and festive frames",
+          "Festive metallic accents on cotton floss",
+          "Small frames and ornaments for cold-season color",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-seasonal-projects-winter-a-v3-20260716.jpg",
+            alt: "Two embroidered holiday ornaments hanging from a small evergreen beside metallic thread",
+            caption: "Winter ornaments — festive figures on linen",
+            fit: "contain",
+            width: 960,
+            height: 960,
+          },
+          {
+            src: "/images/blog-seasonal-projects-winter-b-v3-20260716.jpg",
+            alt: "Cross-stitch Christmas tree wall hanging above books, milk, and fairy lights",
+            caption: "Tree hanging — festive color for the wall",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+      },
+      {
+        heading: "Tips for Seasonal Success",
+        paragraphs: [
+          "A few habits make seasonal stitching look intentional—without turning the palette into a puzzle.",
+        ],
+        figure: {
+          src: "/images/blog-seasonal-projects-supplies-v3-20260716.jpg",
+          alt: "COSMO embroidery floss cards with figures and a threaded needle",
+          caption: "Start simple: thread, needle, and a small seasonal motif.",
+          fit: "contain",
+          width: 721,
+          height: 716,
+        },
+        bullets: [
+          "Combine threads: solid No. 25 for structure, Seasons for movement, Nishikiito for light, hidamari when you want sashiko weight and texture.",
+          "Use complementary palettes: Seasons is designed to sit beside COSMO solid No. 25, and Nishikiito is meant as an accent alongside cotton floss.",
+          "Vary stitch types: cross-stitch for detail, running stitch or sashiko for texture, and small thread-crochet accents when you want dimension.",
+          "Start from a kit when you want a curated path: COSMO Flower's Calendar kits, Sparkling Japanese Seasons cross-stitch kits, and hidamari sashiko kits package colors and instructions for finished seasonal pieces.",
+        ],
+      },
+      {
+        heading: "Bring the Seasons to Your Hands",
+        paragraphs: [
+          "Every COSMO thread can help capture the feeling of a season in your work. Pick a palette, choose your stitches, and make pieces that celebrate the colors, light, and textures of the year—one season at a time, or all four on the wall.",
+        ],
+      },
+    ],
+    ctaLabel: "Explore COSMO Threads",
+    ctaDescription:
+      "Shop COSMO® No. 25 floss, Seasons variegated colors, Nishikiito metallic thread, hidamari sashiko cotton, and project kits for seasonal stitching.",
+    cta: {
+      label: "Shop COSMO Floss",
+      href: "/floss",
+    },
+  },
+
+  {
     slug: "crochet-with-floss",
     title: "Crochet with Floss: Lace and Color from a Single Skein",
     excerpt:
