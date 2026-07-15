@@ -136,7 +136,7 @@ export default function RootLayout({
             <div className="footer-top">
               <div className="footer-brand">
                 <h2>COSMO</h2>
-                <p>Embroidery by LECIEN Corporation</p>
+                <p>Embroidery by <a href="https://www.lecien.co.jp/embroidery" target="_blank" rel="noopener noreferrer">LECIEN Corporation</a></p>
               </div>
               <nav className="footer-nav">
                 <div className="footer-col">
