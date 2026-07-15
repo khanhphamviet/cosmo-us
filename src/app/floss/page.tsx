@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import FlossIndexContent from "../components/FlossIndexContent";
+import BreadcrumbJsonLd from "../components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Embroidery Floss",
@@ -27,6 +28,12 @@ export const metadata: Metadata = {
 export default function FlossPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Floss" },
+        ]}
+      />
       <div className="page-hero page-hero--compact page-hero--sashiko">
         <div className="breadcrumb">
           <Link href="/">HOME</Link> / Floss

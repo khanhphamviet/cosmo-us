@@ -4,6 +4,8 @@ import BrandNewsBanner from "./components/BrandNewsBanner";
 import BrandCategoryGrid from "./components/BrandCategoryGrid";
 import BrandStories from "./components/BrandStories";
 import BrandWholesaleCta from "./components/BrandWholesaleCta";
+import BrandAbout from "./components/BrandAbout";
+import BreadcrumbJsonLd from "./components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "LECIEN COSMO Embroidery | US Official Website",
@@ -29,11 +31,13 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <BreadcrumbJsonLd items={[{ name: "Home" }]} />
       <BrandHero />
       <BrandNewsBanner />
       <BrandCategoryGrid />
       <BrandStories />
       <BrandWholesaleCta />
+      <BrandAbout />
     </>
   );
 }

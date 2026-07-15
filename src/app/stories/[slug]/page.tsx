@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import BlogArticle from "../../components/BlogArticle";
+import BreadcrumbJsonLd from "../../components/BreadcrumbJsonLd";
 import { BLOG_POSTS, getBlogPost } from "../../data/blogPosts";
 import { SITE_URL } from "../../data/site";
 
@@ -56,11 +57,43 @@ export default async function StoryPostPage({ params }: Props) {
     mainEntityOfPage: `${SITE_URL}/stories/${post.slug}`,
   };
 
+  const faqSection = post.sections?.find(
+    (s) => s.heading?.toLowerCase().includes("frequently asked")
+  );
+  const faqJsonLd =
+    faqSection?.subsections?.length
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqSection.subsections.map((sub) => ({
+            "@type": "Question",
+            name: sub.heading,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: sub.paragraphs.join(" "),
+            },
+          })),
+        }
+      : null;
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      {faqJsonLd ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      ) : null}
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Stories", href: "/stories" },
+          { name: post.title },
+        ]}
       />
       <div className="page-hero page-hero--compact">
         <div className="breadcrumb">

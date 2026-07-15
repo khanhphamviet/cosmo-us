@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import HidamariSashikoContent from "../components/HidamariSashikoContent";
+import BreadcrumbJsonLd from "../components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Hidamari Sashiko Thread",
@@ -26,6 +27,12 @@ export const metadata: Metadata = {
 export default function SashikoPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Sashiko" },
+        ]}
+      />
       <div className="page-hero page-hero--compact page-hero--sashiko">
         <div className="breadcrumb">
           <Link href="/">HOME</Link> / <Link href="/">Embroidery</Link> / Sashiko

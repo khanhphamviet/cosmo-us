@@ -3,29 +3,6 @@ import Link from "next/link";
 import NishikiitoAccentGallery from "./NishikiitoAccentGallery";
 import NishikiitoSeriesBlock from "./NishikiitoSeriesBlock";
 
-const PRODUCT_SPECS = [
-  { label: "Product", value: "COSMO® Nishikiito® Metallic Thread (No. 77)" },
-  { label: "Finishes", value: "Nishiki, Mirror, Iridescent, Champagni, Neoni (5 types)" },
-  { label: "Colors", value: "48 colors" },
-  { label: "Order unit", value: "3" },
-  { label: "Length", value: "Approx. 22 yd (20 m) per spool (Neoni: 54 yd / 50 m)" },
-  { label: "Made in", value: "Japan" },
-];
-
-function SpecTable({ specs }: { specs: { label: string; value: string }[] }) {
-  return (
-    <table className="company-table floss-nishikiito-spec-table">
-      <tbody>
-        {specs.map((s) => (
-          <tr key={s.label}>
-            <th>{s.label}</th>
-            <td>{s.value}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
 
 export default function NishikiitoFlossContent() {
   return (
@@ -121,16 +98,6 @@ export default function NishikiitoFlossContent() {
         <NishikiitoSeriesBlock />
       </section>
 
-      <section
-        id="specs"
-        className="sashiko-section sashiko-section--last"
-        aria-labelledby="floss-nishikiito-specs-title"
-      >
-        <h2 className="sashiko-section-title" id="floss-nishikiito-specs-title">
-          Product specifications
-        </h2>
-        <SpecTable specs={PRODUCT_SPECS} />
-      </section>
     </div>
   );
 }
