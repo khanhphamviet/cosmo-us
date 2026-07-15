@@ -2033,6 +2033,22 @@ img { display: block; max-width: 100%; height: auto; }
   border-color: var(--foreground);
   background: var(--bg-light);
 }
+.floss-nishikiito-story-link {
+  margin: 12px 0 0;
+  text-align: center;
+  font-family: var(--brand-serif);
+  font-size: clamp(0.875rem, 0.2vw + 0.8rem, 0.9375rem);
+  font-weight: 500;
+}
+.floss-nishikiito-story-link a {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity 0.2s;
+}
+.floss-nishikiito-story-link a:hover {
+  opacity: 0.7;
+}
 .floss-nishikiito-accent-gallery {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

@@ -30,16 +30,17 @@ const FLOSS_LINES = [
     id: "nishikiito",
     title: "Nishikiito Metallic Thread",
     highlights: [
-      "Japanese-made metallic thread",
       "Five finishes, 48 colors",
-      "Kyoto kimono gold-thread technique",
+      "Inspired by Kyoto's kimono gold-thread craft",
+      "Made in Japan",
     ],
-    desc: "Japanese-made metallic thread for hand embroidery, crafted with Kyoto kimono gold-thread technique. Five finishes—Nishiki, Mirror, Iridescent, Champagni, and Neoni—for embroidery accents.",
+    desc: "Metallic embroidery thread crafted using techniques inspired by Kyoto's kimono gold-thread tradition. Five finishes—Nishiki, Mirror, Iridescent, Champagni, and Neoni—for embroidery accents. Made in Japan.",
     img: "/images/floss-nishikiito-hero-catalog-20260710-v2.jpg",
     width: 3337,
     height: 5000,
     alt: "Colorful COSMO Nishikiito metallic thread spools",
-    objectPosition: "50% 45%",
+    objectPosition: "50% 40%",
+    scale: 1.3,
     cta: "Explore Nishikiito",
   },
 ] as const;
@@ -67,7 +68,10 @@ export default function FlossIndexContent() {
                   fill
                   sizes="(max-width:900px) 100vw, 1080px"
                   className="floss-index-card-img"
-                  style={{ objectPosition: line.objectPosition }}
+                  style={{
+                    objectPosition: line.objectPosition,
+                    transform: "scale" in line && line.scale ? `scale(${line.scale})` : undefined,
+                  }}
                 />
               </div>
               <div className="floss-index-card-body">
