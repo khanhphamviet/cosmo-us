@@ -81,6 +81,259 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "thread-care",
+    title: "Thread Care: Keeping Your COSMO Threads Beautiful",
+    excerpt:
+      "Preserve color, strength, and shine in every skein. Simple habits for storing, handling, and protecting COSMO® No. 25, Seasons, Nishikiito®, and hidamari® so they stay ready for your next project.",
+    publishedAt: "2026-07-17",
+    image: "/images/blog-thread-care-hero-v2-20260717.jpg",
+    imageAlt:
+      "Hands stitching a mimosa embroidery with yellow French knots, scissors, and botanical pieces nearby",
+    heroAspectRatio: "1038 / 1297",
+    sections: [
+      {
+        paragraphs: [
+          "Preserve Color, Strength, and Shine in Every Skein",
+          "Embroidery and thread projects are made to last, but even the finest thread needs care. COSMO threads—No. 25 cotton, variegated Seasons, Nishikiito metallic, and hidamari® Sashiko—are crafted in Japan for longevity and beauty. With proper storage, handling, and maintenance, your threads can stay vibrant, tangle-free, and ready for your next creative project.",
+        ],
+      },
+      {
+        heading: "Why Thread Care Matters",
+        paragraphs: [
+          "Threads can suffer from fading, fraying, tangles, and the quiet wear of dust or moisture. A few thoughtful habits keep every skein, cone, and metallic spool as beautiful as the day it came out of the box—so finished pieces can stay bright on the wall for years.",
+        ],
+        bullets: [
+          "Fading or color change from sunlight or improper storage",
+          "Fraying or splitting during stitching, especially with fine strands",
+          "Tangles and knots that slow stitching and damage fibers",
+          "Dust or moisture that affects sheen and hand feel",
+        ],
+        figure: {
+          src: "/images/blog-thread-care-why-care-v3-20260717.jpg",
+          alt: "Gallery wall of framed botanical embroideries including daisy, helleborus, viola, clover, and poppy",
+          caption:
+            "Well-kept threads keep color true—so finished work stays vivid long after the last stitch.",
+          fit: "contain",
+          width: 1500,
+          height: 1875,
+        },
+      },
+      {
+        heading: "Organizing and Storing Threads",
+        paragraphs: [
+          "COSMO threads come in a variety of formats—skeins, pre-cut lengths, cones, and metallic spools. Each deserves a slightly different approach.",
+        ],
+      },
+      {
+        heading: "No. 25 Floss",
+        paragraphs: [
+          "Solid No. 25 is the workhorse of most stitch baskets. Keep it sorted, labeled, and protected from light so color families stay clear and skeins stay neat.",
+        ],
+        bulletsLabel: "Care tips",
+        bullets: [
+          "Storage: Wind skeins onto bobbins or keep in original packaging.",
+          "Organization: Use a floss box or labeled divider for easy selection.",
+          "Tip: Keep skeins separated by color family to avoid tangling and color confusion.",
+        ],
+        figure: {
+          src: "/images/blog-thread-care-no25-v2-20260717.jpg",
+          alt: "COSMO No. 25 embroidery floss color chart showing rows of solid colors",
+          caption: "No. 25 — bobbins, boxes, and clear color groups keep solids ready to stitch.",
+          fit: "contain",
+          width: 4000,
+          height: 1463,
+        },
+      },
+      {
+        heading: "COSMO Seasons Variegated Floss",
+        paragraphs: [
+          "Subtle color gradations are part of what makes Seasons special. Avoid tightly compressing skeins so the strand stays smooth and the shading easy to read.",
+        ],
+        bulletsLabel: "Care tips",
+        bullets: [
+          "Storage: Because subtle color gradations matter, avoid tightly compressing skeins.",
+          "Tip: Store flat or loosely coiled to prevent flattening and preserve smooth shading.",
+        ],
+        figure: {
+          src: "/images/blog-thread-care-seasons-20260717.jpg",
+          alt: "COSMO Seasons variegated embroidery floss skeins showing soft color shifts",
+          caption:
+            "Seasons — store flat or loosely coiled so variegation stays clear and uncompressed.",
+          fit: "contain",
+          width: 1000,
+          height: 1000,
+        },
+      },
+      {
+        heading: "Nishikiito Metallic Thread",
+        paragraphs: [
+          "Metallic finishes love gentle handling. Keep spools secure, away from rough edges, and use only the strands you need.",
+        ],
+        bulletsLabel: "Care tips",
+        bullets: [
+          "Storage: Spools should remain in original packaging or thread holders to prevent unravelling.",
+          "Tip: Metallic finishes can snag; always keep away from rough surfaces or abrasive containers.",
+          "Strand handling: Some finishes are fine and delicate—use only the number of strands needed and handle gently.",
+        ],
+        figure: {
+          src: "/images/blog-thread-care-nishikiito-v2-20260717.jpg",
+          alt: "COSMO Nishikiito metallic embroidery thread spools in a full product arrangement",
+          caption:
+            "Nishikiito — protect spools from snags so metallic shine stays clean and bright.",
+          fit: "contain",
+          width: 3337,
+          height: 5000,
+        },
+      },
+      {
+        heading: "hidamari® Sashiko Thread",
+        paragraphs: [
+          "Cone-wound sashiko cotton wants steady tension and upright storage so the soft matte finish stays intact from the first yard to the last.",
+        ],
+        bulletsLabel: "Care tips",
+        bullets: [
+          "Storage: Cones are best stored vertically or in small bins to keep threads from unwinding.",
+          "Tip: Avoid pulling too aggressively; smooth, steady tension preserves the soft matte finish.",
+        ],
+        figure: {
+          src: "/images/blog-thread-care-hidamari-v2-20260717.jpg",
+          alt: "COSMO hidamari sashiko thread cards in pink shades on white retail packaging",
+          caption:
+            "hidamari — keep cones upright and pull with steady tension to protect the matte hand.",
+          fit: "contain",
+          width: 1440,
+          height: 1800,
+        },
+      },
+      {
+        heading: "Maintaining Threads During Use",
+        paragraphs: [
+          "How you handle thread at the needle matters as much as how you store it on the shelf.",
+        ],
+        figure: {
+          src: "/images/blog-thread-care-handling-v2-20260717.jpg",
+          alt: "Finished floral embroidery boards and a work-in-progress with a loop of variegated thread on a wooden table",
+          caption:
+            "Clean hands, gentle tension, and short working lengths keep fibers smooth while you stitch.",
+          fit: "contain",
+          width: 1080,
+          height: 1350,
+        },
+        bulletsLabel: "Handling tips",
+        bullets: [
+          "Wash hands before stitching to prevent oils or dirt transferring to threads.",
+          "Avoid pulling threads too hard—this can stretch or distort fibers.",
+          "For metallic threads (Nishikiito), consider threading a needle through a threader to reduce friction.",
+        ],
+      },
+      {
+        heading: "Preventing Tangling",
+        paragraphs: [
+          "Most tangles start with too much length or too much twist. Keep working lengths short and strands calm.",
+        ],
+        bullets: [
+          "Pull only the length needed for each project.",
+          "For long threads, gently loop or coil before use.",
+          "Keep threads separated and avoid twisting multiple strands together unnecessarily.",
+        ],
+      },
+      {
+        heading: "Preserving Color and Luster",
+        paragraphs: [
+          "Light, moisture, and dust are the quiet enemies of color and shine. A cool, dry, dark home for your stash does most of the work.",
+        ],
+        bullets: [
+          "Store threads in a cool, dry, dark place away from direct sunlight.",
+          "Avoid exposure to moisture or high humidity, especially for cotton threads.",
+          "Metallic threads benefit from storage in dust-free containers to maintain shine.",
+        ],
+        figure: {
+          src: "/images/blog-thread-care-preserve-v2-20260717.jpg",
+          alt: "Framed botanical embroidery of pansy, viola, asperula, and hesperis with small stitched bees",
+          caption:
+            "Protect color from light and humidity so fine detail—and soft sheen—stay true over time.",
+          fit: "contain",
+          width: 1471,
+          height: 1839,
+        },
+      },
+      {
+        heading: "Advanced Tips for Multi-Thread Projects",
+        paragraphs: [
+          "Layering No. 25, Seasons, Nishikiito, and hidamari opens texture and depth—if each thread is handled on its own terms until it meets the needle.",
+        ],
+        bullets: [
+          "Layer No. 25 cotton, Seasons variegated, and Nishikiito metallic to create texture, depth, and shimmer.",
+          "When combining threads, keep metallic strands separate until ready to stitch, to avoid fraying.",
+          "Use hidamari® behind or beneath other threads for subtle texture in sashiko or large motifs.",
+        ],
+      },
+      {
+        heading: "Practical Storage Solutions",
+        paragraphs: [
+          "The best storage is the setup you’ll actually use—clear labels, separated finishes, and a place for every format.",
+        ],
+        bullets: [
+          "Floss boxes and dividers: perfect for organizing multiple skeins.",
+          "Thread cone bins: vertical storage to keep cones upright.",
+          "Spool racks: ideal for Nishikiito and other metallic threads.",
+          "Zip pouches or small containers: convenient for kits or project-specific thread sets.",
+        ],
+        figure: {
+          src: "/images/blog-thread-care-storage-v3-20260717.jpg",
+          alt: "Framed embroidery of a wildflower bouquet in a stitched pitcher outline with a small bee",
+          caption:
+            "Label by color, finish, and type—it speeds setup and keeps every project ready to stitch.",
+          fit: "contain",
+          width: 1239,
+          height: 1549,
+        },
+      },
+      {
+        heading: "Preserve Your Threads, Enhance Your Work",
+        paragraphs: [
+          "Every COSMO thread is designed to last—but thoughtful care and organization ensure that the thread you love today will still stitch beautifully tomorrow. By storing properly, handling gently, and protecting from light, moisture, and tangling, you maintain the vibrant color, soft texture, and smooth stitching experience COSMO threads are known for.",
+        ],
+      },
+      {
+        heading: "Product Recommendations",
+        paragraphs: [
+          "Build a stash that is easy to care for—and easy to reach when you are ready to stitch.",
+        ],
+        bullets: [
+          "COSMO® No. 25 Cotton Floss — over 500 colors, ideal for cross-stitch, surface embroidery, and thread crochet.",
+          "COSMO® Seasons Variegated Floss — 140 shades for subtle color shifts and shading effects.",
+          "COSMO® Nishikiito® Metallic Thread — 48 colors across five finishes for sparkle and highlights.",
+          "COSMO® hidamari® Sashiko Thread — 60 colors on cones for texture and sashiko applications.",
+          "Storage accessories — floss boxes, bobbins, thread racks, and zip pouches for organized stitching.",
+        ],
+        figure: {
+          src: "/images/blog-thread-care-products-v2-20260717.jpg",
+          alt: "Small crocheted bunny in a woven nest with flowers, made with fine COSMO thread",
+          caption:
+            "From embroidery to thread crochet—cared-for COSMO cotton stays soft, strong, and ready to stitch.",
+          fit: "contain",
+          width: 1639,
+          height: 2048,
+        },
+      },
+      {
+        heading: "Final Note",
+        paragraphs: [
+          "Caring for your threads is more than a habit—it’s part of the artistry. Threads that are well-maintained allow your projects to shine, create less frustration, and last for years. With COSMO threads, every skein, cone, and spool is an opportunity to make something beautiful—and keep it beautiful.",
+        ],
+      },
+    ],
+    ctaLabel: "Explore COSMO Threads",
+    ctaDescription:
+      "Shop COSMO® No. 25 floss, Seasons variegated colors, Nishikiito metallic thread, hidamari sashiko cotton, and the tools that help you keep every skein ready to stitch.",
+    cta: {
+      label: "Shop COSMO Floss",
+      href: "/floss",
+    },
+  },
+
+  {
     slug: "seasonal-projects",
     title: "Seasonal Projects: Bringing COSMO Threads to Life",
     excerpt:

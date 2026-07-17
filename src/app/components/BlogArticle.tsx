@@ -69,28 +69,41 @@ function BlogFigureBlock({ figure }: { figure: BlogFigure }) {
   const height = figure.height ?? 960;
   const isContain = figure.fit === "contain";
   const isCompact = isContain && width <= 400;
+  const isPortrait = isContain && height > width;
 
-  const media = (
-    <div
-      className={[
-        "blog-article-figure-media",
-        isContain ? "blog-article-figure-media--contain" : "",
-        isCompact ? "blog-article-figure-media--compact" : "",
-      ]
-        .filter(Boolean)
-        .join(" ")}
-    >
+  // Contain figures: plain <img> so portrait photos keep natural aspect (no cover crop).
+  const media = isContain ? (
+    <img
+      src={figure.src}
+      alt={figure.alt}
+      width={width}
+      height={height}
+      loading="lazy"
+      decoding="async"
+      className="blog-article-figure-img--natural"
+      style={
+        isPortrait
+          ? {
+              width: "auto",
+              height: "auto",
+              maxWidth: "100%",
+              maxHeight: "min(85vh, 920px)",
+            }
+          : {
+              width: "100%",
+              height: "auto",
+            }
+      }
+    />
+  ) : (
+    <div className="blog-article-figure-media">
       <Image
         src={figure.src}
         alt={figure.alt}
         width={width}
         height={height}
         quality={90}
-        sizes={
-          isCompact
-            ? "220px"
-            : "(max-width: 720px) 100vw, 720px"
-        }
+        sizes="(max-width: 720px) 100vw, 720px"
         className="blog-article-figure-img"
       />
     </div>
@@ -101,6 +114,7 @@ function BlogFigureBlock({ figure }: { figure: BlogFigure }) {
       className={[
         "blog-article-figure",
         isContain ? "blog-article-figure--contain" : "",
+        isPortrait ? "blog-article-figure--portrait" : "",
         isCompact ? "blog-article-figure--compact" : "",
         figure.href ? "blog-article-figure--linked" : "",
       ]
