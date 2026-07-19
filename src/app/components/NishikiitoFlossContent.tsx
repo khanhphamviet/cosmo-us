@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import NishikiitoSeriesBlock from "./NishikiitoSeriesBlock";
+import ProductStoryLink from "./ProductStoryLink";
 
 
 export default function NishikiitoFlossContent() {
@@ -91,12 +91,10 @@ export default function NishikiitoFlossContent() {
               Browse the Full Nishikiito Catalogue
             </a>
           </p>
-          <p className="floss-nishikiito-story-link">
-            <Link href="/stories/nishikiito-metallic-thread">
-              Read the story: A Little Sparkle, Made in Japan
-              <span aria-hidden="true"> →</span>
-            </Link>
-          </p>
+          <ProductStoryLink
+            href="/stories/nishikiito-metallic-thread"
+            title="A Little Sparkle, Made in Japan"
+          />
         </div>
       </section>
 

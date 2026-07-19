@@ -38,6 +38,11 @@ const nextConfig: NextConfig = {
         destination: "/sashiko",
         permanent: true,
       },
+      {
+        source: "/cloth",
+        destination: "/fabric",
+        permanent: true,
+      },
     ];
   },
 };

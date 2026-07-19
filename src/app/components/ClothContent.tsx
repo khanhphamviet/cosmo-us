@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ProductStoryLink from "./ProductStoryLink";
 
 const INTRO_LEAD =
   "Japanese-made embroidery fabrics with smooth needle passage — from Aida and evenweave to specialty surfaces.";
@@ -343,6 +344,11 @@ export default function ClothContent() {
           </div>
         </section>
       ))}
+
+      <ProductStoryLink
+        href="/stories/embroidery-fabric-types"
+        title="Aida, Evenweave, and Beyond: How Embroidery Fabrics Differ"
+      />
     </div>
   );
 }

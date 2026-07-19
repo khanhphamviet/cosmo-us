@@ -944,8 +944,8 @@ export const BLOG_POSTS: BlogPost[] = [
     ctaDescription:
       "Discover Japanese-made embroidery fabrics for counted cross stitch, surface embroidery, Swedish weaving, and more—and find the cloth that matches the way you love to stitch.",
     cta: {
-      label: "View Embroidery Cloth",
-      href: "/cloth",
+      label: "View Embroidery Fabric",
+      href: "/fabric",
     },
   },
   {

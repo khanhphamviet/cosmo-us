@@ -10,7 +10,7 @@ export default function BrandAbout() {
           1924, now crafted by LECIEN Corporation in Kyoto. The lineup includes
           over 500 colors of six-strand embroidery floss, Seasons variegated
           floss, Nishikiito metallic floss, hidamari sashiko thread, embroidery
-          cloth, and a full range of needles, kits, and tools — all made in
+          fabric, and a full range of needles, kits, and tools — all made in
           Japan.
         </p>
         <p className="brand-about-text">

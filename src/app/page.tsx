@@ -8,14 +8,16 @@ import BrandAbout from "./components/BrandAbout";
 import BreadcrumbJsonLd from "./components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
-  title: "LECIEN COSMO Embroidery | US Official Website",
+  title: {
+    absolute: "COSMO Embroidery Floss | Official US Site by LECIEN",
+  },
   description:
-    "Discover LECIEN COSMO embroidery floss, sashiko thread, fabric, kits, and tools. Official US website with COSMO wholesale on Faire for retailers.",
+    "Japanese-made COSMO embroidery floss, sashiko thread, and kits — 500+ colors with roots dating back to 1924. Official U.S. website for LECIEN COSMO.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "LECIEN COSMO Embroidery | US Official Website",
+    title: "COSMO Embroidery Floss | Official US Site by LECIEN",
     description:
-      "Official US website for LECIEN COSMO embroidery products and COSMO Faire wholesale.",
+      "Japanese-made COSMO embroidery floss, sashiko thread, and kits — 500+ colors. Official U.S. website for LECIEN COSMO.",
     url: "/",
     images: [
       {

@@ -5,14 +5,16 @@ import FlossIndexContent from "../components/FlossIndexContent";
 import BreadcrumbJsonLd from "../components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
-  title: "Embroidery Floss",
+  title: {
+    absolute: "COSMO Embroidery Floss | No. 25, Seasons & Nishikiito",
+  },
   description:
-    "COSMO No. 25 embroidery floss (500 colors), Seasons variegated thread (140 colors), and Nishikiito metallic thread (48 colors). Made in Japan.",
+    "Explore COSMO No. 25 (500 colors), Seasons variegated floss, and Nishikiito metallic thread. Made in Japan — official U.S. site.",
   alternates: { canonical: "/floss" },
   openGraph: {
-    title: "Embroidery Floss | COSMO Embroidery US",
+    title: "COSMO Embroidery Floss | No. 25, Seasons & Nishikiito",
     description:
-      "Explore COSMO No. 25, Seasons variegated, and Nishikiito metallic thread—made in Japan since 1924.",
+      "Explore COSMO No. 25 (500 colors), Seasons variegated floss, and Nishikiito metallic thread. Made in Japan.",
     url: "/floss",
     images: [
       {

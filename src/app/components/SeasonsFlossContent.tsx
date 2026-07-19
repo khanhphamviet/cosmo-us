@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SeasonsColorChart from "./SeasonsColorChart";
 import SeasonsSeriesBlock from "./SeasonsSeriesBlock";
+import ProductStoryLink from "./ProductStoryLink";
 
 export default function SeasonsFlossContent() {
   return (
@@ -74,6 +75,10 @@ export default function SeasonsFlossContent() {
           Click the chart to enlarge and zoom.
         </p>
         <SeasonsColorChart />
+        <ProductStoryLink
+          href="/stories/seasons-variegated-floss"
+          title="COSMO® Seasons: Variegated Floss That Shades as You Stitch"
+        />
       </section>
     </div>
   );

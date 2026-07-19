@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/company`,             lastModified: new Date(), changeFrequency: "yearly",  priority: 0.5 },
 
     // ── Floss detail pages ──
-    { url: `${SITE_URL}/cloth`,                lastModified: new Date(), changeFrequency: "yearly",  priority: 0.7 },
+    { url: `${SITE_URL}/fabric`,               lastModified: new Date(), changeFrequency: "yearly",  priority: 0.7 },
     { url: `${SITE_URL}/floss/cosmo`,         lastModified: new Date(), changeFrequency: "yearly",  priority: 0.7 },
     { url: `${SITE_URL}/floss/seasons`,       lastModified: new Date(), changeFrequency: "yearly",  priority: 0.7 },
     { url: `${SITE_URL}/floss/nishikiito`,    lastModified: new Date(), changeFrequency: "yearly",  priority: 0.7 },

@@ -15,11 +15,11 @@ const bingVerification = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION;
 export const metadata: Metadata = {
   /* ── Base ── */
   title: {
-    default: "LECIEN COSMO Embroidery | US Official Website",
+    default: "COSMO Embroidery Floss | Official US Site by LECIEN",
     template: "%s | COSMO Embroidery US",
   },
   description:
-    "Official US website for LECIEN COSMO embroidery floss, sashiko thread, kits, and tools. COSMO wholesale for retailers on Faire. Operated by TANAAKK INC.",
+    "Japanese-made COSMO embroidery floss, sashiko thread, and kits — 500+ colors with roots dating back to 1924. Official U.S. website for LECIEN COSMO.",
   keywords: [
     "LECIEN COSMO",
     "COSMO Faire",
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: "LECIEN COSMO Embroidery | US Official Website",
+    title: "COSMO Embroidery Floss | Official US Site by LECIEN",
     description:
-      "Official US website for LECIEN COSMO embroidery floss, sashiko, and kits. COSMO wholesale on Faire for U.S. retailers.",
+      "Japanese-made COSMO embroidery floss, sashiko thread, and kits — 500+ colors. Official U.S. website for LECIEN COSMO.",
     images: [
       {
         url: "/opengraph-image.jpg",
@@ -60,9 +60,9 @@ export const metadata: Metadata = {
   /* ── Twitter / X ── */
   twitter: {
     card: "summary_large_image",
-    title: "LECIEN COSMO Embroidery | US Official Website",
+    title: "COSMO Embroidery Floss | Official US Site by LECIEN",
     description:
-      "Official US website for LECIEN COSMO embroidery floss, sashiko, and kits.",
+      "Japanese-made COSMO embroidery floss, sashiko thread, and kits — 500+ colors. Official U.S. site.",
     images: ["/opengraph-image.jpg"],
   },
 

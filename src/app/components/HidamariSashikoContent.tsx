@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SashikoIntroGallery from "./SashikoIntroGallery";
 import HidamariColorLineup from "./HidamariColorLineup";
+import ProductStoryLink from "./ProductStoryLink";
 import { SASHIKO_PRODUCTS } from "../data/sashikoProducts";
 
 const SASHIKO_CATALOGUE_PDF = "/pdfs/sashiko-catalogue-20260714.pdf";
@@ -220,6 +221,19 @@ export default function HidamariSashikoContent() {
             </article>
           ))}
         </div>
+        <ProductStoryLink
+          stories={[
+            {
+              href: "/stories/sashiko",
+              title: "What Is Sashiko?",
+            },
+            {
+              href: "/stories/hidamari-sashiko-thread",
+              title:
+                "COSMO® hidamari® Sashiko Thread: A Sunlit Take on a Timeless Craft",
+            },
+          ]}
+        />
       </section>
     </div>
   );

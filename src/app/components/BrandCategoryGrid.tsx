@@ -18,10 +18,10 @@ const CATEGORIES: Category[] = [
     href: "/floss",
   },
   {
-    title: "Cloth",
+    title: "Fabric",
     image: "/images/category-jp-cloth-20260610.jpg",
-    alt: "Embroidery cloth and Aida fabric",
-    href: "/cloth",
+    alt: "Embroidery fabrics and Aida cloth",
+    href: "/fabric",
   },
   {
     title: "Sashiko",

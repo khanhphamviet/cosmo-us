@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SashikoIntroGallery from "./SashikoIntroGallery";
+import ProductStoryLink from "./ProductStoryLink";
 
 const GALLERY = [
   {
@@ -241,6 +242,10 @@ export default function CrochetContent() {
           Arrange projects shown for inspiration. Step-by-step recipes for
           arrange works are not included in the kits.
         </p>
+        <ProductStoryLink
+          href="/stories/crochet-with-floss"
+          title="Crochet with Floss: Lace and Color from a Single Skein"
+        />
       </div>
     </div>
   );

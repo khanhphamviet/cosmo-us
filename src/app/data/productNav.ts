@@ -10,8 +10,8 @@ export const PRODUCT_NAV: ProductNavItem[] = [
     href: "/floss",
   },
   {
-    label: "Cloth",
-    href: "/cloth",
+    label: "Fabric",
+    href: "/fabric",
   },
   {
     label: "Sashiko",
@@ -35,7 +35,7 @@ export function isProductsPath(pathname: string) {
   return (
     pathname === "/floss" ||
     pathname.startsWith("/floss/") ||
-    pathname === "/cloth" ||
+    pathname === "/fabric" ||
     pathname === "/sashiko" ||
     pathname.startsWith("/sashiko/") ||
     pathname === "/100-ladies" ||

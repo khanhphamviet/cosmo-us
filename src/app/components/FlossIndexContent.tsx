@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import ProductStoryLink from "./ProductStoryLink";
 
 const FLOSS_LINES = [
   {
@@ -88,6 +89,11 @@ export default function FlossIndexContent() {
           </article>
         ))}
       </div>
+
+      <ProductStoryLink
+        href="/stories/embroidery-floss-qualities"
+        title="The Qualities Behind Every Thread: COSMO® Embroidery Floss"
+      />
     </div>
   );
 }

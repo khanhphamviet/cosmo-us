@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import CosmoColorChart from "./CosmoColorChart";
+import ProductStoryLink from "./ProductStoryLink";
 
 const QUALITIES = [
   {
@@ -86,13 +86,10 @@ export default function CosmoFlossContent() {
             </article>
           ))}
         </div>
-        <p className="sashiko-section-footnote floss-cosmo-story-footnote">
-          Go deeper into cotton, dyeing, and color consistency in{" "}
-          <Link href="/stories/embroidery-floss-qualities">
-            The Qualities Behind Every Thread
-          </Link>
-          .
-        </p>
+        <ProductStoryLink
+          href="/stories/embroidery-floss-qualities"
+          title="The Qualities Behind Every Thread: COSMO® Embroidery Floss"
+        />
       </section>
 
       <section

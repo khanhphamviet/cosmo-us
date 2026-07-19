@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SashikoIntroGallery from "./SashikoIntroGallery";
+import ProductStoryLink from "./ProductStoryLink";
 
 const LADIES100_CATALOGUE_PDF = "/pdfs/100-ladies-catalogue-20260714.pdf";
 
@@ -90,7 +91,7 @@ const LINEUP = [
     img: "/images/ladies100-lineup-pouch-20260616.jpg",
     alt: "Pre-sewn 100 Ladies zip pouch kit",
   },
-];
+] as const;
 
 export default function Ladies100Content() {
   return (
@@ -234,6 +235,10 @@ export default function Ladies100Content() {
           </a>
           .
         </p>
+        <ProductStoryLink
+          href="/stories/100-ladies-embroidery-fabric"
+          title="100 Ladies®: Design Your Own Fashion Story"
+        />
       </section>
     </div>
   );
