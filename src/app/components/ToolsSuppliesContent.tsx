@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const TOOLS_SUPPLIES_CATALOGUE_PDF =
-  "/pdfs/tools-supplies-catalogue-20260714.pdf";
+  "/pdfs/tools-supplies-catalogue-20260719.pdf";
 
 type LineupItem = {
   title: string;
