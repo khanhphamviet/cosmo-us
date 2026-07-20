@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     url: "/tools-supplies",
     images: [
       {
-        url: "/images/tools-hero-20260610.jpg",
-        width: 1200,
-        height: 800,
-        alt: "COSMO embroidery tools and supplies",
+        url: "/images/blog-sashiko-hero-20260611.jpg",
+        width: 2098,
+        height: 2622,
+        alt: "COSMO sashiko tools and supplies on a wooden work surface",
       },
     ],
   },

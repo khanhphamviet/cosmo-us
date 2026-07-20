@@ -108,12 +108,12 @@ export default function ToolsSuppliesContent() {
           </div>
           <figure className="sashiko-hero-media">
             <Image
-              src="/images/tools-hero-20260610.jpg"
-              alt="COSMO embroidery hoop and stitching supplies"
+              src="/images/blog-sashiko-hero-20260611.jpg"
+              alt="Sashiko tools and supplies on a wooden work surface — template, needles, thread, and indigo stitching"
               fill
               sizes="(max-width:900px) 100vw, 58vw"
               className="sashiko-hero-img"
-              style={{ objectPosition: "center center" }}
+              style={{ objectPosition: "center 42%" }}
               priority
             />
           </figure>
