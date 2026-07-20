@@ -1,0 +1,86 @@
+# COSMO Stories — Instagram photo library
+
+Local source bank for future Stories. Prefer unused `available` posts before reusing published ones.
+
+**Root:** `uploads/instagram-library/`  
+**Also keep originals in:** `~/Downloads/instagram_*` (synced here Jul 2026)
+
+When publishing, copy chosen files into `public/images/` with a dated `blog-<slug>-…` name and wire in `blogPosts.ts`. Use `fit: "contain"` for portrait photos.
+
+---
+
+## Batch 2026-07-20
+
+| ID | Slides | Aspect | Status / subject |
+|----|-------:|--------|------------------|
+| Bg9m6byAsTa | 1 | square | **used** Patterns from the Past (blackwork project) — geometric mandala hoop |
+| BhFcD0XABZa | 1 | square | available — Heart floral “LOVE” hoop with Seasons floss + scissors |
+| BhUzczsAe1p | 1 | portrait | available — Diagonal Seasons skeins, pink→red gradient |
+| BhW9pToD5iK | 1 | portrait | **used** Patterns from the Past (pairing) — Seasons on floral fabrics |
+| BqiV0EDnziC | 1 | square | **used** Patterns from the Past (tapestry) — floral wreath hoop |
+| BrgS_3uHqqz | 1 | square | **used** Patterns from the Past (Europe) — folk village bag |
+| Bvp0Xz8nWOe | 1 | portrait | **used** Patterns from the Past (products) — retail floss bins |
+| CrnDGOlJNvZ | 5 | square | **used** Patterns from the Past (hero + modern) — rose/bee + wildflower sampler |
+| C4HpCG2xVKN | 4 | square | available — Kazue Nakajima linen totes/pouch |
+| C7DJGl8vNQs | 5 | mix | available — Sashiko on denim; hidamari variegated cards |
+| C8Djbi6vTT7 | 7 | mix | **used** Patterns from the Past (sashiko project) — sashiko coasters |
+| DF_rdAtBKIC | 2 | mix | available — Pink/green sashiko envelope pouch with tassel |
+| DLy6F2fRNy- | 4 | portrait | **used** Patterns from the Past (Middle East) — geometric diamond bag |
+| DRl68Mhkcka | 3 | square | available — Blue sashiko coasters with teapot styling |
+| DLgPt-9BplE | 4 | mix | **used** Patterns from the Past (Hardanger-inspired project) — botanical zip pouch |
+| DWGFfnfkXOC | 6 | square | **used** Patterns from the Past (Japan) — sashiko wall hangings |
+| DML7cBqR2ms | 4 | portrait | available — Denim shirt with white sashiko |
+| DPijR52kaa5 | 3 | square | available — Round gray floral pincushion |
+| DYGqv7KFZ8H | 11 | portrait | available — COSMO floss rack; fashion-figure tote |
+| DXqpmUdETEg | 7 | portrait | available — Mustard sashiko pillow on woven chair |
+
+---
+
+## Earlier Downloads (still in library)
+
+| ID | Status | Subject |
+|----|--------|---------|
+| C1Qu2Zwvgpm | available | Framed Christmas tree cross-stitch with milk/cookies styling |
+| C1bboaYiOVD | available | Person holding bouquet-shaped bundle of multicolor skeins |
+| C4hXA6rJPUr | available | Floral/fern hoop on matching purple embroidered bag |
+| C5PgzfVINLp | available | Framed cherry-tree landscape cross-stitch |
+| C5SVypCPrRk | **used** Seasonal Projects | Framed pink/peach rose bouquet cross-stitch |
+| C5p2x6zy4NK | available | Sage linen drawstring pouch with white flower embroidery |
+| Cu5q6YuPsh0 | **used** Seasonal Projects (summer) | Sunflower embroidery gallery (hoops + frames) |
+| Cy5ZMAIPOyt | available | Framed Mount Fuji + autumn maple cross-stitch |
+| DBvhvdQqMe6 | available | COSMO illustrated thread cards in a glass jar |
+| DKrHQEQRqZd | available | Framed mountain + wildflower meadow needlework |
+| DMty6k7ISGV | **used** Seasonal Projects (spring) | Framed girl sewing pansies (birds, cat, tools) |
+| DQGCXfpjeh7 | available | Herbarium-style labeled botanical embroideries |
+| DQYk1G-jGk3 | available | Autumn Seasons floss flat lay with maple + pumpkin |
+| DSZWbnaD9GR | **used** Seasonal Projects (winter) | Oval linen Christmas ornaments with metallic thread |
+| DVm4sTmCuGk | available | Mimosa embroidery sachet with real mimosa flowers |
+| DWY6ZQEGNYJ | **used** Seasonal Projects (Nishikiito gallery) | Crocheted pale-pink cherry-blossom earrings on kraft card |
+| DXisjdLGGCf | **used** Patterns from the Past (jewelry project) | Hoop line-art girl + crochet daisy in wooden pot |
+| DW80ykAAayN | **used** Thread Care (products) | Crochet bunny in basket with yellow flowers |
+| DWkheYgjw-R | **used** Thread Care (hidamari) | Pink hidamari sashiko thread cards |
+| DZwpsbhD7K8 | **used** Thread Care (hero + several sections) | Mimosa stitching + botanical gallery / pitcher frames |
+
+---
+
+## Unused copies already under `public/images/` (not wired in posts)
+
+- `blog-thread-care-ig-extra-*` (hidamari detail, notebooks, pitcher frame)
+- `blog-seasonal-projects-ig-extra-*` (meadow detail, ornament, pouch-b)
+- Older `blog-thread-care-*-20260717.jpg` v1/v2 duplicates (superseded by v2/v3 wired files)
+- `public/images/ig-seasonal-temp/grid_01–12.jpg` (synced to `_ig-seasonal-temp/`)
+
+Mirrored under `_unused-from-public/` and `_ig-seasonal-temp/` in this library.
+
+## Earlier shared drop (Jul 14) — still unused
+
+Path: `uploads/photo-library-20260714/shared-downloads/`
+
+| File | Status | Subject |
+|------|--------|---------|
+| shared-0.jpeg | available | Shop floor: Soak cartons, hidamari cards, patterns on wire grid |
+| shared-1.jpeg | available | Retail rack: hidamari cards + Celebratory Sashiko Fabric packs |
+| shared-2.jpeg | available | Full COSMO/hidamari display: kits, templates, hoops, thread wall |
+| shared-3.jpeg | available | Wire grid: hidamari fabric/coaster packs, templates, water canvas |
+| shared-4.jpeg | available | Wide booth shot: starter kits, templates, hoops, thread wall |
+| shared-5.jpeg | available | Close-up hidamari cards + OOS tag for sashiko needles No. 4345 |

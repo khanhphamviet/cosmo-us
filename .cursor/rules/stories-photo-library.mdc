@@ -1,0 +1,37 @@
+---
+description: Local Instagram photo bank for COSMO Stories — prefer unused library assets before new downloads
+globs: src/app/data/blogPosts.ts, src/app/stories/**, src/app/components/Blog*.tsx
+alwaysApply: false
+---
+
+# Stories photo library
+
+When choosing or replacing Stories images, **check the local bank first** before asking for new downloads.
+
+## Where files live
+
+| Location | Purpose |
+|----------|---------|
+| `uploads/instagram-library/` | Canonical local bank (40 IG posts synced Jul 2026) |
+| `uploads/instagram-library/INDEX.md` | Subject index, slide counts, used vs available |
+| `~/Downloads/instagram_*` | User drop folder (same posts; library is the working copy) |
+
+## Rules
+
+1. Prefer **`available`** posts in `INDEX.md`. Avoid reusing **`used`** posts unless the user asks.
+2. Copy chosen files into `public/images/` as dated `blog-<slug>-…` names; do not hotlink Downloads.
+3. Portrait photos: set `fit: "contain"` (+ real `width`/`height`) so they are not 16:10-cropped.
+4. After publishing, mark the IG short id as used in `INDEX.md` (which story/slot).
+5. New user uploads of `instagram_*` folders → rsync into `uploads/instagram-library/` and append `INDEX.md`.
+
+## Quick themes in the bank
+
+- **Floss / Seasons / retail:** BhUzczsAe1p, BhW9pToD5iK, Bvp0Xz8nWOe, DQYk1G-jGk3, C1bboaYiOVD, DYGqv7KFZ8H, DBvhvdQqMe6
+- **Sashiko / hidamari:** C7DJGl8vNQs, C8Djbi6vTT7, DF_rdAtBKIC, DRl68Mhkcka, DWGFfnfkXOC, DML7cBqR2ms, DXqpmUdETEg
+- **Bags / pouches / fashion embroidery:** BrgS_3uHqqz, C4HpCG2xVKN, DLy6F2fRNy-, DLgPt-9BplE, C5p2x6zy4NK
+- **Botanical / framed / seasonal:** CrnDGOlJNvZ, C5PgzfVINLp, C5SVypCPrRk, Cy5ZMAIPOyt, Cu5q6YuPsh0, DQGCXfpjeh7, DKrHQEQRqZd, DVm4sTmCuGk, DSZWbnaD9GR
+- **Crochet / mixed media:** DWY6ZQEGNYJ, DXisjdLGGCf, DPijR52kaa5
+- **Hoop / surface embroidery:** Bg9m6byAsTa, BhFcD0XABZa, BqiV0EDnziC, C4hXA6rJPUr, DMty6k7ISGV
+- **Trade-show / retail booth (Jul 14 shared):** `uploads/photo-library-20260714/shared-downloads/shared-0…5.jpeg`
+
+Full one-line subjects: `uploads/instagram-library/INDEX.md`.

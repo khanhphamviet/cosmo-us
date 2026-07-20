@@ -81,6 +81,244 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "patterns-from-the-past",
+    title:
+      "Patterns from the Past: Historical Embroidery Traditions That Inspire Today",
+    excerpt:
+      "From sashiko and Hardanger to Tatreez and folk cross-stitch—explore how historical techniques still shape modern stitching, and how COSMO® threads help you reinterpret them today.",
+    publishedAt: "2026-07-20",
+    image: "/images/blog-patterns-past-hero-20260720.jpg",
+    imageAlt:
+      "Framed wildflower embroidery sampler grid with botanical motifs on a gallery wall",
+    heroAspectRatio: "1 / 1",
+    sections: [
+      {
+        paragraphs: [
+          "Timeless Techniques, Modern Threads",
+          "Embroidery is a thread through history—literally. Across continents and centuries, stitchers have developed unique techniques, patterns, and motifs that express culture, skill, and creativity. Today, COSMO threads let you bring these historical traditions into your own projects, blending ancient inspiration with modern color, texture, and materials.",
+          "Whether you’re exploring counted stitches, decorative motifs, or sashiko-style running stitches, the threads you choose can bring centuries of craftsmanship alive in your hands.",
+        ],
+      },
+      {
+        heading: "A Global Tapestry of Stitch Traditions",
+        paragraphs: [
+          "From Japan to Northern and Eastern Europe to the Middle East, traditional embroidery styles vary widely—but all share one thing: the love of thread, texture, and storytelling.",
+        ],
+        figure: {
+          src: "/images/blog-patterns-past-tapestry-20260720.jpg",
+          alt: "Circular floral wreath embroidery with pink and purple blooms in a wooden hoop",
+          caption:
+            "Across cultures, stitch traditions turn thread into story—on cloth meant to be lived with, mended, and passed on.",
+          fit: "contain",
+          width: 1080,
+          height: 1080,
+        },
+      },
+      {
+        heading: "Japan — Sashiko and Hitomezashi",
+        paragraphs: [
+          "Thick, matte cotton running stitches create geometric patterns on cotton or linen. Often used for mending or decoration, sashiko emphasizes repetition and rhythm.",
+        ],
+        figure: {
+          src: "/images/blog-patterns-past-japan-20260720.jpg",
+          alt: "Pair of sashiko wall hangings with crane, fan, and geometric motifs",
+          caption:
+            "Sashiko’s beauty is in the beat of the stitch—geometry born from patience, not haste.",
+          fit: "contain",
+          width: 815,
+          height: 815,
+        },
+        bulletsLabel: "In practice",
+        bullets: [
+          "Use COSMO® hidamari® Sashiko Thread—40 soft, matte colors on mini cones—for classic geometric textures.",
+          "Keep tension steady so the matte cotton line stays even across the cloth.",
+          "Let repetition do the work: rhythm matters more than speed.",
+        ],
+      },
+      {
+        heading: "Northern & Eastern Europe — Hardanger and Folk Cross-Stitch",
+        paragraphs: [
+          "Norwegian Hardanger (Northern Europe / Scandinavia) features geometric cutwork and pulled-thread motifs, while Hungarian and Slavic traditions are famous for bold, repeated folk cross-stitch patterns.",
+        ],
+        figure: {
+          src: "/images/blog-patterns-past-europe-20260720.jpg",
+          alt: "Quilted patchwork shoulder bag with embroidered village scene, birds, and floral wreath",
+          caption:
+            "Folk embroidery thrives on story and repetition—motifs that feel like memory made visible.",
+          fit: "contain",
+          width: 1080,
+          height: 1080,
+        },
+        bulletsLabel: "In practice",
+        bullets: [
+          "Reach for COSMO® No. 25 Floss when counted solids need clear color blocks.",
+          "Add Nishikiito® Metallic Thread sparingly for shimmer once reserved for gilded borders.",
+          "Keep Hardanger geometry crisp; let folk repeats stay bold and readable.",
+        ],
+      },
+      {
+        heading: "Middle East — Counted Motifs and Metallic Couching",
+        paragraphs: [
+          "Traditional Middle Eastern embroidery, such as Palestinian Tatreez, relies on symbolic geometric motifs and rich threadwork—ornament and language in the same stitch.",
+        ],
+        figure: {
+          src: "/images/blog-patterns-past-middle-east-20260720.jpg",
+          alt: "Beige drawstring bag with black diamond geometric embroidery worn over a blue dress",
+          caption:
+            "Counted geometry—diamonds, grids, and repeats—carries meaning the way Tatreez motifs do on cloth.",
+          fit: "contain",
+          width: 1080,
+          height: 1350,
+        },
+        bulletsLabel: "In practice",
+        bullets: [
+          "COSMO® Seasons Variegated Floss can suggest the organic color shifts of historically dyed threads.",
+          "Nishikiito® Metallic Threads add gold-couched elegance on borders, lettering, or central motifs.",
+          "Let placement carry meaning—color and shape are part of the story.",
+        ],
+      },
+      {
+        heading: "Bringing Historical Patterns into Modern Projects",
+        paragraphs: [
+          "Using COSMO threads, historical stitches can be adapted for contemporary work—walls, linens, and small wearable pieces alike.",
+        ],
+        figure: {
+          src: "/images/blog-patterns-past-modern-20260720.jpg",
+          alt: "Raised botanical rose and bee embroidery on a yellow wall",
+          caption:
+            "Old techniques, new settings—motifs that once lived in samplers can inhabit rooms and everyday objects.",
+          fit: "contain",
+          width: 1440,
+          height: 1440,
+        },
+        bulletsLabel: "Try this",
+        bullets: [
+          "Sampler walls: Combine motifs from different traditions—Blackwork florals beside Hardanger-inspired geometry—using coordinating COSMO colors.",
+          "Home décor accents: Apply Tatreez-inspired or Hardanger-inspired techniques on table linens, pillow covers, or wall hangings with hidamari® or Seasons.",
+          "Mini motifs & jewelry: Tiny cross-stitch or surface embroidery can become pendants, brooches, or charms, with Nishikiito® for historical sparkle.",
+        ],
+      },
+      {
+        heading: "Thread Pairing Tips",
+        paragraphs: [
+          "Historical textures often came from mixing finishes—matte cotton beside a glint of metal, solid color beside a soft shift in dye.",
+        ],
+        figure: {
+          src: "/images/blog-patterns-past-pairing-20260720.jpg",
+          alt: "Six COSMO Seasons variegated floss skeins on floral print fabrics",
+          caption:
+            "Solids for structure, variegation for breath—pair finishes the way historical cloth paired dye and light.",
+          fit: "contain",
+          width: 1080,
+          height: 1349,
+        },
+        bulletsLabel: "Pairing tips",
+        bullets: [
+          "Layer No. 25 solids with Seasons variegated for depth in geometric or floral motifs.",
+          "Use Nishikiito® metallic threads sparingly to highlight borders, lettering, or central motifs.",
+          "Add hidamari® behind or beneath patterns for texture reminiscent of traditional sashiko, or as a subtle background fill.",
+        ],
+      },
+      {
+        heading: "Project Ideas",
+        paragraphs: [
+          "Start small when a tradition is new to your hands. These four directions keep the learning clear—and the finished piece useful.",
+        ],
+        bulletsLabel: "Project ideas",
+        bullets: [
+          "Japanese sashiko coaster set — hidamari® on small linens with repeating geometry.",
+          "Blackwork-inspired sampler bookmark — a small motif in vibrant No. 25 for a modern twist.",
+          "Hardanger-inspired table runner — pulled-thread-inspired structure with Seasons shading and metallic light.",
+          "Jewelry and miniatures — amulet-scale embroidery with Nishikiito® accents.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-patterns-past-project-sashiko-20260720.jpg",
+            alt: "Hand-stitched sashiko fabric coasters with geometric motifs",
+            caption: "Sashiko coasters — hidamari® geometry",
+            fit: "contain",
+            width: 720,
+            height: 720,
+          },
+          {
+            src: "/images/blog-patterns-past-project-blackwork-20260720.jpg",
+            alt: "Multicolor geometric mandala embroidery in a hoop",
+            caption: "Sampler motif — counted clarity in No. 25",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+          {
+            src: "/images/blog-patterns-past-project-hardanger-20260720.jpg",
+            alt: "Gray zippered pouch with white botanical vine embroidery",
+            caption: "Linen accent — décor-scale historical texture",
+            fit: "contain",
+            width: 600,
+            height: 600,
+          },
+          {
+            src: "/images/blog-patterns-past-project-jewelry-20260720.jpg",
+            alt: "Embroidery hoop with line-art girl holding a crochet flower beside a crochet daisy in a wooden pot",
+            caption: "Wearable & mini scale — small motifs with historic sparkle",
+            fit: "contain",
+            width: 1638,
+            height: 2048,
+          },
+        ],
+        galleryVariant: "row",
+        galleryZoom: true,
+      },
+      {
+        heading: "Practical Advice",
+        paragraphs: [
+          "New techniques reward patience more than perfection. A few habits keep historical styles readable—and enjoyable—on modern cloth.",
+        ],
+        bullets: [
+          "Start with a small motif if you are exploring a new historical technique.",
+          "Use even-weave or Aida fabric for counted styles to maintain accuracy.",
+          "Separate metallic strands for fine details to prevent snagging.",
+          "Keep threads organized by color and finish—COSMO storage solutions help when you mix traditions.",
+        ],
+      },
+      {
+        heading: "Product Recommendations",
+        paragraphs: [
+          "When tradition meets a modern stash, clarity of finish matters as much as color.",
+        ],
+        figure: {
+          src: "/images/blog-patterns-past-products-20260720.jpg",
+          alt: "Retail bins filled with color-sorted COSMO embroidery floss skeins",
+          caption:
+            "A clear palette—solids, variegated, metallic, sashiko—makes historical mixing feel intentional.",
+          fit: "contain",
+          width: 1080,
+          height: 1350,
+        },
+        bullets: [
+          "COSMO® No. 25 Cotton Floss — 500+ solid colors for counted stitches and sampler work.",
+          "COSMO® Seasons Variegated Floss — 140 subtle color shifts for gradient and shading effects.",
+          "COSMO® Nishikiito® Metallic Thread — 33 specialty colors across five finishes for historical sparkle and quiet accents.",
+          "COSMO® hidamari® Sashiko Thread — 40 soft, matte colors (solids and variegated) on mini cones for traditional Japanese geometric textures.",
+          "Storage accessories — bobbins, boxes, and cone-friendly organizers to keep mixed traditions tidy.",
+        ],
+      },
+      {
+        heading: "Final Note",
+        paragraphs: [
+          "Historical embroidery traditions are more than patterns; they are stories woven into thread and cloth. COSMO threads allow you to recreate, reinterpret, and modernize these techniques, bringing centuries of craft into contemporary projects. One thread, one stitch, one motif at a time—the past can live again in your hands.",
+        ],
+      },
+    ],
+    ctaLabel: "Explore COSMO Threads",
+    ctaDescription:
+      "Shop COSMO® No. 25 floss, Seasons variegated colors, Nishikiito® metallic thread, and hidamari® sashiko cotton—tools for bringing historical stitch languages into modern work.",
+    cta: {
+      label: "Shop COSMO Floss",
+      href: "/floss",
+    },
+  },
+
+  {
     slug: "thread-care",
     title: "Thread Care: Keeping Your COSMO Threads Beautiful",
     excerpt:
