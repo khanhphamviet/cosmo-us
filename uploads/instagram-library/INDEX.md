@@ -21,18 +21,18 @@ When publishing, copy chosen files into `public/images/` with a dated `blog-<slu
 | BrgS_3uHqqz | 1 | square | **used** Patterns from the Past (Europe) — folk village bag |
 | Bvp0Xz8nWOe | 1 | portrait | **used** Patterns from the Past (products) — retail floss bins |
 | CrnDGOlJNvZ | 5 | square | **used** Patterns from the Past (hero + modern) — rose/bee + wildflower sampler |
-| C4HpCG2xVKN | 4 | square | available — Kazue Nakajima linen totes/pouch |
-| C7DJGl8vNQs | 5 | mix | available — Sashiko on denim; hidamari variegated cards |
+| C4HpCG2xVKN | 4 | square | **used** Wearable Art & Home Décor (hero/totes) — Kazue Nakajima linen totes/pouch |
+| C7DJGl8vNQs | 5 | mix | **used** Wearable Art & Home Décor (threads) — hidamari variegated cards (_03); denim slides still free |
 | C8Djbi6vTT7 | 7 | mix | **used** Patterns from the Past (sashiko project) — sashiko coasters |
-| DF_rdAtBKIC | 2 | mix | available — Pink/green sashiko envelope pouch with tassel |
+| DF_rdAtBKIC | 2 | mix | **used** Wearable Art & Home Décor (pouch) — Pink/green sashiko envelope pouch with tassel |
 | DLy6F2fRNy- | 4 | portrait | **used** Patterns from the Past (Middle East) — geometric diamond bag |
-| DRl68Mhkcka | 3 | square | available — Blue sashiko coasters with teapot styling |
+| DRl68Mhkcka | 3 | square | **used** Wearable Art & Home Décor (coasters) — Blue sashiko coasters with teapot styling |
 | DLgPt-9BplE | 4 | mix | **used** Patterns from the Past (Hardanger-inspired project) — botanical zip pouch |
 | DWGFfnfkXOC | 6 | square | **used** Patterns from the Past (Japan) — sashiko wall hangings |
-| DML7cBqR2ms | 4 | portrait | available — Denim shirt with white sashiko |
+| DML7cBqR2ms | 4 | portrait | **used** Wearable Art & Home Décor (denim) — Denim shirt with white sashiko |
 | DPijR52kaa5 | 3 | square | available — Round gray floral pincushion |
-| DYGqv7KFZ8H | 11 | portrait | available — COSMO floss rack; fashion-figure tote |
-| DXqpmUdETEg | 7 | portrait | available — Mustard sashiko pillow on woven chair |
+| DYGqv7KFZ8H | 11 | portrait | **used** Wearable Art & Home Décor (products _01) — COSMO floss rack; other slides still free |
+| DXqpmUdETEg | 7 | portrait | **used** Wearable Art & Home Décor (pillow) — Mustard sashiko pillow on woven chair |
 
 ---
 
@@ -42,10 +42,10 @@ When publishing, copy chosen files into `public/images/` with a dated `blog-<slu
 |----|--------|---------|
 | C1Qu2Zwvgpm | available | Framed Christmas tree cross-stitch with milk/cookies styling |
 | C1bboaYiOVD | available | Person holding bouquet-shaped bundle of multicolor skeins |
-| C4hXA6rJPUr | available | Floral/fern hoop on matching purple embroidered bag |
+| C4hXA6rJPUr | **used** Wearable Art & Home Décor (bag & hoop) | Floral/fern hoop on matching purple embroidered bag |
 | C5PgzfVINLp | available | Framed cherry-tree landscape cross-stitch |
 | C5SVypCPrRk | **used** Seasonal Projects | Framed pink/peach rose bouquet cross-stitch |
-| C5p2x6zy4NK | available | Sage linen drawstring pouch with white flower embroidery |
+| C5p2x6zy4NK | **used** Wearable Art & Home Décor (project pouch) | Sage linen drawstring pouch with white flower embroidery |
 | Cu5q6YuPsh0 | **used** Seasonal Projects (summer) | Sunflower embroidery gallery (hoops + frames) |
 | Cy5ZMAIPOyt | available | Framed Mount Fuji + autumn maple cross-stitch |
 | DBvhvdQqMe6 | available | COSMO illustrated thread cards in a glass jar |

@@ -81,6 +81,289 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "wearable-art-home-decor",
+    title: "Wearable Art & Home Décor: Bringing COSMO Threads into Everyday Life",
+    excerpt:
+      "Move embroidery beyond the frame—tote bags, denim sashiko, pillows, coasters, and small accessories stitched with COSMO® No. 25, Seasons, Nishikiito®, and hidamari®.",
+    publishedAt: "2026-07-21",
+    image: "/images/blog-wearable-decor-hero-20260721.jpg",
+    imageAlt:
+      "Linen tote bags and a zip pouch with black-line fashion embroidery and small accent stitches",
+    heroAspectRatio: "1 / 1",
+    sections: [
+      {
+        paragraphs: [
+          "Thread, Texture, and Style Beyond the Frame",
+          "Embroidery is no longer just for samplers or framed art. With COSMO threads, you can transform everyday items—fashion accessories, home accents, and functional décor—into personal, hand-stitched statements. From denim sashiko shirts to coasters and tote bags, every thread carries texture, depth, and a touch of artistry into daily life.",
+          "Whether you’re adding delicate motifs, bold surface embroidery, or metallic highlights, the right threads can make ordinary objects extraordinary.",
+        ],
+      },
+      {
+        heading: "Everyday Projects, Elevated",
+        paragraphs: [
+          "COSMO threads are made for pieces you wear, use, and live with—not only pieces you hang. A few directions open the door:",
+        ],
+        figure: {
+          src: "/images/blog-wearable-decor-totes-20260721.jpg",
+          alt: "Embroidered linen tote with fashion-line motif and small floral accents",
+          caption:
+            "Functional cloth, finished with intention—embroidery that leaves the wall and enters the day.",
+          fit: "contain",
+          width: 1440,
+          height: 1440,
+        },
+        bulletsLabel: "Start here",
+        bullets: [
+          "Fashion totes — floral, geometric, or playful motifs on cotton or linen bags.",
+          "Denim sashiko — matte hidamari® running stitches on collars, cuffs, or yokes.",
+          "Pillows & cushions — geometric or natural motifs with tactile depth.",
+          "Coasters, pouches & small accessories — quick projects that still see everyday use.",
+        ],
+      },
+      {
+        heading: "Fashion Totes",
+        paragraphs: [
+          "Durable cotton or linen bags become wearable canvases. Solid shapes stay clear in No. 25; Seasons adds soft shading; Nishikiito® sparks a highlight where light should catch.",
+        ],
+        figure: {
+          src: "/images/blog-wearable-decor-project-tote-20260721.jpg",
+          alt: "Close view of embroidered fashion-figure tote with accent stitching",
+          caption:
+            "Layer solids for structure, variegation for breath, and metallic only where the eye should land.",
+          fit: "contain",
+          width: 1440,
+          height: 1440,
+        },
+        bulletsLabel: "Try pairing",
+        bullets: [
+          "No. 25 for outlines, petals, and defined motifs",
+          "Seasons variegated floss for gentle shading across larger shapes",
+          "Nishikiito® for dew-like dots, lettering, or small sparkle accents",
+        ],
+      },
+      {
+        heading: "Denim Sashiko Shirts",
+        paragraphs: [
+          "Thick, matte hidamari® Sashiko thread lays traditional running-stitch rhythm across denim. Bold lines on collars, cuffs, or yokes add pattern and contemporary flair without losing the calm of sashiko’s beat.",
+        ],
+        figure: {
+          src: "/images/blog-wearable-decor-denim-20260721.jpg",
+          alt: "Denim shirt shoulder with white sashiko geometric embroidery beside blue thread spools",
+          caption:
+            "Sashiko on denim—geometry you can wear, stitched for rhythm as much as for look.",
+          fit: "contain",
+          width: 1000,
+          height: 1250,
+        },
+        bulletsLabel: "In practice",
+        bullets: [
+          "Use hidamari® for soft, matte running stitches that read clearly on indigo.",
+          "Keep tension slightly relaxed on heavy cloth so the fabric stays flat after washing.",
+          "Optional: a whisper of Nishikiito® for evening shimmer on a cuff or yoke line.",
+        ],
+      },
+      {
+        heading: "Pillows & Cushions",
+        paragraphs: [
+          "Home décor asks for texture you can feel. Geometric sashiko grounds or surface motifs in No. 25 and Seasons turn a pillow into a small landscape of stitch.",
+        ],
+        figure: {
+          src: "/images/blog-wearable-decor-pillow-20260721.jpg",
+          alt: "Mustard-yellow pillow with white sashiko fan and geometric motifs on a woven chair",
+          caption:
+            "Background rhythm in hidamari®, motifs in solids or Seasons—depth you sit with every day.",
+          fit: "contain",
+          width: 800,
+          height: 1000,
+        },
+        bulletsLabel: "Try pairing",
+        bullets: [
+          "hidamari® for sashiko-style background texture",
+          "No. 25 solids for clear main motifs",
+          "Seasons for soft gradients across larger filled areas",
+        ],
+      },
+      {
+        heading: "Coasters, Pouches & Small Accessories",
+        paragraphs: [
+          "Quick, functional projects let you explore color and technique while making things that leave the project bag. Coasters, mini pouches, and small sets are ideal for gifts—or for testing a palette before a larger piece.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-wearable-decor-coasters-20260721.jpg",
+            alt: "Blue fabric coasters with white sashiko grid and circle patterns beside a teapot",
+            caption: "Sashiko coasters — everyday geometry",
+            fit: "contain",
+            width: 825,
+            height: 825,
+          },
+          {
+            src: "/images/blog-wearable-decor-pouch-20260721.jpg",
+            alt: "Pink and green sashiko-stitched fabric envelope pouch with tassel",
+            caption: "Mini pouch — stitched and carried",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+        bulletsLabel: "Why they work",
+        bullets: [
+          "Small scale = faster finish and clearer learning",
+          "Functional use keeps color and tension honest",
+          "Perfect for gifting or for sampling a new thread finish",
+        ],
+      },
+      {
+        heading: "Bag & Hoop Sets",
+        paragraphs: [
+          "Display a motif on a small hoop for hanging, then echo it on a matching bag—so the same stitch story lives on the wall and on the shoulder.",
+        ],
+        figure: {
+          src: "/images/blog-wearable-decor-bag-hoop-20260721.jpg",
+          alt: "Floral and fern embroidery in a hoop resting on a matching purple embroidered bag",
+          caption:
+            "One motif, two lives—hoop for display, bag for daily use.",
+          fit: "contain",
+          width: 720,
+          height: 1280,
+        },
+      },
+      {
+        heading: "Threads that Make Functional Pieces Shine",
+        paragraphs: [
+          "Each COSMO finish plays a different role when cloth has to move, wash, and work hard:",
+        ],
+        figure: {
+          src: "/images/blog-wearable-decor-threads-20260721.jpg",
+          alt: "Hidamari sashiko variegated thread cards scattered with colorful stitching samples",
+          caption:
+            "Solids for clarity, variegation for breath, sashiko weight for rhythm, metallic for a single spark.",
+          fit: "contain",
+          width: 1440,
+          height: 1440,
+        },
+        bulletsLabel: "What each finish does",
+        bullets: [
+          "COSMO® No. 25 Cotton Floss — 500+ solid colors for clear outlines and defined motifs.",
+          "COSMO® Seasons Variegated Floss — 140 self-shading colors for soft transitions and natural gradients.",
+          "COSMO® Nishikiito® Metallic Thread — 33 specialty colors across five finishes for accents on lettering or highlights.",
+          "COSMO® hidamari® Sashiko Thread — 40 soft, matte colors on mini cones for running-stitch geometry and texture.",
+        ],
+      },
+      {
+        heading: "Project Inspiration",
+        paragraphs: [
+          "Four directions keep the learning clear—and the finished piece useful.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-wearable-decor-project-tote-20260721.jpg",
+            alt: "Embroidered fashion tote with line-art motif",
+            caption: "1. Tote with floral or fashion motifs",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+          {
+            src: "/images/blog-wearable-decor-project-denim-20260721.jpg",
+            alt: "Detail of white sashiko stitching on a denim shirt",
+            caption: "2. Denim sashiko shirt",
+            fit: "contain",
+            width: 1000,
+            height: 1250,
+          },
+          {
+            src: "/images/blog-wearable-decor-project-pillow-20260721.jpg",
+            alt: "Mustard sashiko pillow with geometric motifs",
+            caption: "3. Sashiko pillow",
+            fit: "contain",
+            width: 600,
+            height: 750,
+          },
+          {
+            src: "/images/blog-wearable-decor-project-pouch-20260721.jpg",
+            alt: "Sage linen drawstring pouch with circular white-flower embroidery",
+            caption: "4. Coaster, pouch, or small set",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+        ],
+        galleryVariant: "row",
+        galleryZoom: true,
+        bulletsLabel: "Project ideas",
+        bullets: [
+          "Tote bags — No. 25 petals with Seasons shading and Nishikiito® light.",
+          "Denim sashiko — bold hidamari® lines on yokes or cuffs.",
+          "Pillows — hidamari® ground with No. 25 or Seasons motifs.",
+          "Coasters & mini pouches — small, giftable, technique-friendly.",
+        ],
+      },
+      {
+        heading: "Tips for Success",
+        paragraphs: [
+          "Wearable and home pieces ask for a little more planning than a hoop you never wash.",
+        ],
+        bullets: [
+          "Plan your palette: keep No. 25 solids, Seasons gradients, hidamari® textures, and Nishikiito® accents in one cohesive scheme.",
+          "Secure the back: on clothing and totes, a lightweight fusible interfacing can protect thread tails and keep the reverse comfortable against skin.",
+          "Mind the heat: press finished pieces from the back on low heat with a cloth to protect Nishikiito® shine.",
+          "Tension on heavy fabrics: keep sashiko stitches slightly relaxed on denim or canvas so the cloth stays flat after laundering.",
+        ],
+      },
+      {
+        heading: "Practical Storage & Tools",
+        paragraphs: [
+          "Keep finishes separated so wearable and home projects stay easy to pick up again.",
+        ],
+        bullets: [
+          "Floss boxes or bobbins for No. 25 and Seasons",
+          "Mini cones or small bins for hidamari® Sashiko thread",
+          "Spool racks for Nishikiito® metallic threads",
+          "Zip pouches for project-specific threads or small accessories",
+        ],
+      },
+      {
+        heading: "Product Recommendations",
+        paragraphs: [
+          "A clear stash makes everyday stitching easier to start—and easier to finish.",
+        ],
+        figure: {
+          src: "/images/blog-wearable-decor-products-20260721.jpg",
+          alt: "COSMO embroidery floss in a clear retail rack showing red and orange shades",
+          caption:
+            "Solids, variegated, metallic, and sashiko cotton—finishes ready for cloth you live with.",
+          fit: "contain",
+          width: 1080,
+          height: 1440,
+        },
+        bullets: [
+          "COSMO® No. 25 Cotton Floss — 500+ solid colors for clear motifs on bags, linens, and apparel.",
+          "COSMO® Seasons Variegated Floss — 140 subtle color shifts for gradient and shading effects.",
+          "COSMO® Nishikiito® Metallic Thread — 33 specialty colors across five finishes for quiet sparkle on wearable accents.",
+          "COSMO® hidamari® Sashiko Thread — 40 soft, matte colors on mini cones for denim, pillows, and geometric texture.",
+          "Storage accessories — bobbins, boxes, and cone-friendly organizers for mixed-finish projects.",
+        ],
+      },
+      {
+        heading: "Final Note",
+        paragraphs: [
+          "Every stitch is an opportunity to turn the ordinary into something personal. With COSMO threads, you can create functional, beautiful items that carry color, texture, and artistry into daily life—whether on your shoulder, at your table, or displayed in your home. Threads that are used, loved, and seen: that is wearable art and practical beauty in one.",
+        ],
+      },
+    ],
+    ctaLabel: "Explore COSMO Threads",
+    ctaDescription:
+      "Shop COSMO® No. 25 floss, Seasons variegated colors, Nishikiito® metallic thread, and hidamari® sashiko cotton—for pieces you wear, use, and live with.",
+    cta: {
+      label: "Shop COSMO Floss",
+      href: "/floss",
+    },
+  },
+
+  {
     slug: "patterns-from-the-past",
     title:
       "Patterns from the Past: Historical Embroidery Traditions That Inspire Today",
