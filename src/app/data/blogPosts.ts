@@ -81,6 +81,260 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "japanese-festival-stitching",
+    title:
+      "Japanese Festival Stitching (四季の祝い): Celebrating the Seasons with COSMO Threads",
+    excerpt:
+      "From Hina Matsuri and Children’s Day to Tanabata and Tsukimi—stitch Japan’s festival calendar with COSMO® No. 25, Seasons, Nishikiito®, and hidamari®.",
+    publishedAt: "2026-07-23",
+    image: "/images/blog-festival-stitching-hero-20260723.jpg",
+    imageAlt:
+      "Four Japanese festival embroidery hangings—Hina dolls, Tanabata bamboo, Tsukimi moon rabbits, and koinobori—with floss and gold scissors on a wooden table",
+    heroAspectRatio: "640 / 547",
+    imageFit: "contain",
+    sections: [
+      {
+        paragraphs: [
+          "Thread, Tradition, and the Rhythm of the Festivals",
+          "Japan’s festivals are as much a celebration of color, pattern, and craft as they are of culture and community. From spring peach blossoms to summer stars, autumn moonlight, and carp streamers in the May breeze, each season carries its own symbols—and COSMO threads let you bring those traditions into embroidery you can hang, gift, or live with.",
+          "Whether you’re stitching a Hina doll motif for Girls’ Day, capturing koinobori in motion, wishing under Tanabata bamboo, or marking Tsukimi’s full moon, the right finishes make every festival feel vibrant, textured, and meaningful.",
+        ],
+      },
+      {
+        heading: "A Year of Festival Motifs",
+        paragraphs: [
+          "One cohesive set can hold the whole calendar: Hina Matsuri, Tanabata, Tsukimi (moon viewing), and Children’s Day—four hangings, four seasons, one thread story.",
+        ],
+        figure: {
+          src: "/images/blog-festival-stitching-hero-20260723.jpg",
+          alt: "Four festival wall hangings displayed together with embroidery supplies",
+          caption:
+            "Hina, Tanabata, Tsukimi, and koinobori—seasonal symbols stitched to hang as a set or one festival at a time.",
+          fit: "contain",
+          width: 640,
+          height: 547,
+        },
+        bulletsLabel: "The festivals in this story",
+        bullets: [
+          "Hina Matsuri (Girls’ Day — March 3) — dolls, peach blossoms, spring pastels",
+          "Children’s Day (May 5) — koinobori carp streamers and iris",
+          "Tanabata (Star Festival — July 7) — bamboo, tanzaku wishes, night sky",
+          "Tsukimi (moon viewing) — full moon, rabbits, autumn grasses",
+        ],
+      },
+      {
+        heading: "Spring: Hina Matsuri (Girls’ Day)",
+        paragraphs: [
+          "Celebrate the blossoming of spring with delicate Hina dolls and peach blossoms. Pastels stay soft; outlines stay clear—so the courtly pair reads from across the room.",
+        ],
+        figure: {
+          src: "/images/blog-festival-stitching-hina-20260723.jpg",
+          alt: "Cross-stitch Hina dolls wall hanging with peach blossoms beside a real blossom branch",
+          caption:
+            "March 3—emperor and empress, lanterns, and peach blossom air in cotton and a touch of light.",
+          fit: "contain",
+          width: 1440,
+          height: 1440,
+        },
+        bulletsLabel: "Try pairing",
+        bullets: [
+          "COSMO® No. 25 — crisp shapes for dolls, faces, and petal edges",
+          "COSMO® Seasons — gentle color transitions across blossoms and kimono folds",
+          "COSMO® Nishikiito® — highlights on hair ornaments, miniature crowns, or floral centers",
+          "Optional hidamari® — soft running-stitch texture for a quiet background fill",
+        ],
+      },
+      {
+        heading: "Late Spring: Children’s Day (Koinobori)",
+        paragraphs: [
+          "Children’s Day (May 5) celebrates growth and vitality with carp streamers—koinobori—that seem to swim through the sky. Stitch for movement: bold scales, clear outlines, and a little light where water or sun would catch.",
+        ],
+        figure: {
+          src: "/images/blog-festival-stitching-koinobori-20260723.jpg",
+          alt: "Cross-stitch Children’s Day hanging with colorful koinobori carp streamers and iris",
+          caption:
+            "Carp in the May breeze—saturated color for scales, softer shifts for sky and cloth.",
+          fit: "contain",
+          width: 1440,
+          height: 1440,
+        },
+        bulletsLabel: "Try pairing",
+        bullets: [
+          "No. 25 — bold, saturated scales and streamer outlines",
+          "Seasons — subtle body transitions along each carp",
+          "Nishikiito® — small accents for water glints or sunlight on fins",
+          "Project ideas — mini wall hangings, coasters, or tote panels inspired by the festival",
+        ],
+      },
+      {
+        heading: "Summer: Tanabata (Star Festival)",
+        paragraphs: [
+          "On July 7, Tanabata remembers the reunion of Orihime and Hikoboshi—bamboo hung with tanzaku wish strips under a sky of stars. Deep night shades, bright paper wishes, and a sparing metallic glimmer bring Amanogawa (the Milky Way) into cloth.",
+        ],
+        figure: {
+          src: "/images/blog-festival-stitching-tanabata-20260723.jpg",
+          alt: "Cross-stitch Tanabata hanging with bamboo, colorful tanzaku wish strips, and stars on blue cloth",
+          caption:
+            "Bamboo, wishes, and starlight—layer solids for structure, variegation for sky, metallic for a few bright points.",
+          fit: "contain",
+          width: 1440,
+          height: 1440,
+        },
+        bulletsLabel: "Try pairing",
+        bullets: [
+          "No. 25 — night-sky shades, bamboo outlines, and crisp tanzaku edges",
+          "Seasons — soft gradients through sky or leaf",
+          "Nishikiito® — glimmering stars and Milky Way highlights (use sparingly)",
+          "Optional hidamari® — running-stitch texture on banners or sky pattern bands",
+        ],
+      },
+      {
+        heading: "Autumn Light: Tsukimi & Festival Nightscapes",
+        paragraphs: [
+          "Tsukimi (moon viewing) turns the calendar toward autumn—full moon, rabbits, and pampas grass. Pair that quiet glow with deeper night scenes: lanterns, canals, and windows lit from within.",
+        ],
+        figure: {
+          src: "/images/blog-festival-stitching-nightscape-20260723.jpg",
+          alt: "Framed nightscape cross-stitch of a snowy canal with glowing lamps and terracotta buildings",
+          caption:
+            "Season of light—deep night tones, then a few warm points where illumination belongs.",
+          fit: "contain",
+          width: 1440,
+          height: 1440,
+        },
+        bulletsLabel: "For moon and night",
+        bullets: [
+          "No. 25 — moon discs, silhouettes, and architectural lines",
+          "Seasons — soft shifts in sky, water, or autumn grasses",
+          "Nishikiito® — lantern glow, frost, or a single star over the canal",
+        ],
+      },
+      {
+        heading: "Sashiko & Lucky Motifs",
+        paragraphs: [
+          "Beyond dated festivals, sashiko and folk textiles carry prosperity into the year—fans, geometry, and Shichifukujin (Seven Lucky Gods) motifs stitched in matte rhythm.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-festival-stitching-sashiko-20260723.jpg",
+            alt: "White cloth with red sashiko fan motif and hanging red thread",
+            caption: "Fan geometry in hidamari®",
+            fit: "contain",
+            width: 709,
+            height: 886,
+          },
+          {
+            src: "/images/blog-festival-stitching-sashiko-detail-20260723.jpg",
+            alt: "Detail of indigo sashiko cloth with traditional lucky motifs",
+            caption: "Lucky motifs on indigo",
+            fit: "contain",
+            width: 800,
+            height: 1000,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+        bulletsLabel: "In practice",
+        bullets: [
+          "hidamari® for running-stitch backgrounds and clear geometric beats",
+          "Nishikiito® only where a motif needs a quiet metallic highlight",
+          "Ideal for wall cloths, small hangings, or festival-adjacent home décor",
+        ],
+      },
+      {
+        heading: "Temari & Thread as Celebration",
+        paragraphs: [
+          "Temari balls and carefully chosen palettes make festival color tangible—radial geometry, layered gradients, and skeins that already feel like a season.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-festival-stitching-temari-20260723.jpg",
+            alt: "Colorful temari ball nestled in a wooden masu box",
+            caption: "Temari — geometry you can hold",
+            fit: "contain",
+            width: 1638,
+            height: 2048,
+          },
+          {
+            src: "/images/blog-festival-stitching-temari-floss-20260723.jpg",
+            alt: "COSMO floss skeins beside a temari ball in a wooden box",
+            caption: "Palette beside the finished sphere",
+            fit: "contain",
+            width: 1638,
+            height: 2048,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+        bulletsLabel: "Try pairing",
+        bullets: [
+          "No. 25 and Seasons for subtle color shifts across wraps and motifs",
+          "Nishikiito® to accentuate edges or a single highlight ring",
+        ],
+      },
+      {
+        heading: "Practical Project Ideas",
+        paragraphs: [
+          "Start with one festival hanging—or stitch the year as a set.",
+        ],
+        bullets: [
+          "Mini wall hangings for Hina, Children’s Day, Tanabata, and Tsukimi",
+          "Functional décor — tote panels, pillows, or coasters with a single festival motif",
+          "Gift sets — small hangings, bookmarks, or pouches tied to a date on the calendar",
+          "Sashiko cloths and lucky-motif panels for year-round display",
+        ],
+      },
+      {
+        heading: "Tips for Festival Stitching",
+        paragraphs: [
+          "Display pieces and small gifts ask for calm planning—especially when metallic light and sashiko rhythm share the same season.",
+        ],
+        bullets: [
+          "Plan your palette: keep No. 25 solids, Seasons gradients, hidamari® textures, and Nishikiito® accents in one cohesive festival scheme.",
+          "Hang with care: magnetic hangers and even tension keep Aida panels flat on the wall.",
+          "Mind the heat: press from the back on low heat with a cloth to protect Nishikiito® shine.",
+          "Metallic sparingly: one or two glints read as starlight or crown light; too many compete with the motif.",
+          "Sashiko tension: keep running stitches slightly relaxed on denser cloth so the fabric stays smooth.",
+        ],
+      },
+      {
+        heading: "Product Recommendations",
+        paragraphs: [
+          "A clear stash makes it easier to answer each festival as it arrives.",
+        ],
+        figure: {
+          src: "/images/blog-festival-stitching-products-20260723.jpg",
+          alt: "COSMO embroidery floss with cotton cloth stacks, gold scissors, and flowers on a wooden table",
+          caption:
+            "Solids, variegated color, metallic light, and sashiko weight—finishes for a full festival year.",
+          fit: "contain",
+          width: 1080,
+          height: 1350,
+        },
+        bullets: [
+          "COSMO® No. 25 Cotton Floss — 500+ solid colors for clear motifs and outlines.",
+          "COSMO® Seasons Variegated Floss — 140 colors for soft gradients across sky, blossom, and scale.",
+          "COSMO® Nishikiito® Metallic Thread — 33 specialty colors across five finishes for stars, crowns, and quiet sparkle.",
+          "COSMO® hidamari® Sashiko Thread — 40 soft, matte colors on mini cones for geometric texture and lucky motifs.",
+        ],
+      },
+      {
+        heading: "Final Note",
+        paragraphs: [
+          "Japanese festivals are a celebration of color, movement, and tradition. With COSMO threads, you can capture the spirit of each season in hangings, gifts, and home pieces—one festival, one motif, one stitch at a time. Bring the rhythm of the four seasons into your hands.",
+        ],
+      },
+    ],
+    ctaLabel: "Explore COSMO Threads",
+    ctaDescription:
+      "Shop COSMO® No. 25 floss, Seasons variegated colors, Nishikiito® metallic thread, and hidamari® sashiko cotton—for festival motifs through the year.",
+    cta: {
+      label: "Shop COSMO Floss",
+      href: "/floss",
+    },
+  },
+
+  {
     slug: "wearable-art-home-decor",
     title: "Wearable Art & Home Décor: Bringing COSMO Threads into Everyday Life",
     excerpt:

@@ -9,6 +9,24 @@ When publishing, copy chosen files into `public/images/` with a dated `blog-<slu
 
 ---
 
+## Batch 2026-07-23 (festival story + new Downloads drop)
+
+| ID | Slides | Status / subject |
+|----|-------:|------------------|
+| C0scJgXPtuV | 2 | **used** Japanese Festival Stitching (hero) — four festival hangings |
+| C0tH7vcP0Ft | 2 | **used** Japanese Festival Stitching (Hina) — Girls’ Day dolls |
+| C0vre0Npw0n | 2 | **used** Japanese Festival Stitching (koinobori) — Children’s Day |
+| C0xt_yYvufE | 2 | **used** Japanese Festival Stitching (Tanabata) — bamboo + tanzaku |
+| DWQKqfYjzVs | 8 | **used** Japanese Festival Stitching (sashiko) — fan + lucky motifs |
+| DLG-NOVPxZt | 2 | **used** Japanese Festival Stitching (temari) — ball + floss |
+| DE1xYO5P9je | 1 | **used** Japanese Festival Stitching (nightscape) — canal night |
+| DYWYwtpDwxo | 4 | **used** Japanese Festival Stitching (products _01) — floss + cotton cloth; other slides free |
+| DFml4Jzp8XK | 5 | available — Hina hanging (**near-dup** of C0tH7vcP0Ft; skip if Hina already used) |
+
+Remaining Jul 23 Downloads (~60 posts) not yet indexed line-by-line — still in `~/Downloads/instagram_*`; rsync into this library when drafting next Story.
+
+---
+
 ## Batch 2026-07-20
 
 | ID | Slides | Aspect | Status / subject |
