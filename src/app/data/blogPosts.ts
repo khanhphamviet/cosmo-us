@@ -81,6 +81,263 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "framed-botanical-gallery",
+    title:
+      "Framed Botanical Gallery: Bringing Flowers to Your Walls with COSMO Threads",
+    excerpt:
+      "Turn floral embroidery into wall décor—wreaths, single blooms, herbarium labels, and landscape florals framed with COSMO® No. 25, Seasons, Nishikiito®, and hidamari®.",
+    publishedAt: "2026-07-24",
+    image: "/images/blog-botanical-gallery-hero-20260723.jpg",
+    imageAlt:
+      "Twelve wood-framed floral embroidery pieces arranged as a gallery wall of wreaths and bouquets",
+    heroAspectRatio: "1 / 1",
+    sections: [
+      {
+        paragraphs: [
+          "Nature, Color, and Threaded Artistry",
+          "Flowers don’t just bloom in gardens—with COSMO threads, they can thrive on your walls all year. A framed botanical gallery turns petals, herbs, and seasonal blooms into enduring artwork you can hang, rotate, and live with.",
+          "From individual stems to lush wreaths and a full-season wall, the right finishes capture color, texture, and botanical detail in stitches meant to be seen.",
+        ],
+      },
+      {
+        heading: "A Gallery Wall of Blooms",
+        paragraphs: [
+          "Twelve frames, one idea: floral embroidery as décor. Matching wood and a calm wall let thread color and stitch texture do the talking.",
+        ],
+        figure: {
+          src: "/images/blog-botanical-gallery-hero-20260723.jpg",
+          alt: "Gallery wall of twelve matching wood-framed floral embroideries",
+          caption:
+            "Wreaths and bouquets in concert—solids for structure, variegation for breath, metallic only where light would catch.",
+          fit: "contain",
+          width: 1440,
+          height: 1440,
+        },
+        bulletsLabel: "What a botanical wall can hold",
+        bullets: [
+          "Seasonal wreaths — spring roses through winter poinsettia",
+          "Bouquet sets — carnations, sunflowers, morning glories, and more",
+          "Single blooms — desktop frames, shelf clusters, or small gifts",
+          "Herbarium & landscapes — labeled plants and floral scenery",
+        ],
+      },
+      {
+        heading: "Seasonal & Wreath Sets",
+        paragraphs: [
+          "Wreaths read clearly from across a room. Group a few by season—or hang a full spring-to-winter set—so the wall keeps a quiet calendar of color.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-botanical-gallery-wreaths-20260723.jpg",
+            alt: "Four framed floral wreaths including roses, harvest fruit, daisies, and poinsettia",
+            caption: "Season wreaths — one palette per frame",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+          {
+            src: "/images/blog-botanical-gallery-bouquets-20260723.jpg",
+            alt: "Four framed floral bouquet embroideries including carnations, roses, sunflowers, and morning glories",
+            caption: "Bouquet set — fuller stems, same wall language",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+          {
+            src: "/images/blog-botanical-gallery-winter-20260723.jpg",
+            alt: "Framed winter poinsettia and pinecone wreath on a shelf with dried botanicals",
+            caption: "Winter accent — poinsettia and evergreen weight",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+        ],
+        galleryVariant: "row",
+        galleryZoom: true,
+        bulletsLabel: "Try pairing",
+        bullets: [
+          "COSMO® No. 25 — crisp petal and leaf outlines",
+          "COSMO® Seasons — soft shading across petals, berries, or leaves",
+          "COSMO® Nishikiito® — subtle highlights for pollen, dew, or light",
+          "Optional hidamari® — coarser texture for background lattice or foliage fills",
+          "Display tip — neutral mats and even spacing let thread texture pop across the set",
+        ],
+      },
+      {
+        heading: "Single Blooms",
+        paragraphs: [
+          "One flower, one frame: ideal for a desk, a tight wall cluster, or a gift that still feels complete.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-botanical-gallery-roses-20260723.jpg",
+            alt: "Framed pink and yellow rose bouquet embroidery in a pale wood frame",
+            caption: "Roses — clear solids with soft Seasons breath",
+            fit: "contain",
+            width: 1639,
+            height: 2048,
+          },
+          {
+            src: "/images/blog-botanical-gallery-daisies-20260723.jpg",
+            alt: "Framed white daisy and blue forget-me-not bouquet on blue-grey cloth",
+            caption: "Daisies & forget-me-nots — fine stems, open air",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+        bulletsLabel: "Try pairing",
+        bullets: [
+          "No. 25 (often 2–3 strands) — fine veins, stems, and outlines",
+          "Seasons — natural transitions across petals",
+          "Nishikiito® — a glimmer on pollen or dew only where the eye should land",
+          "Rotate singles seasonally, or mix them into a wreath wall for rhythm",
+        ],
+      },
+      {
+        heading: "Herbarium & Landscape Embroidery",
+        paragraphs: [
+          "Labeled herbs, meadows, and scenic florals turn a gallery into a small garden of places—structure in solids, shading in Seasons, sparkle held back for sky or frost.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-botanical-gallery-herbarium-20260723.jpg",
+            alt: "Herbarium-style embroidery with Japanese plant name labels",
+            caption: "Herbarium — named plants, quiet study",
+            fit: "contain",
+            width: 1080,
+            height: 1350,
+          },
+          {
+            src: "/images/blog-botanical-gallery-sakura-20260723.jpg",
+            alt: "Framed cherry blossom landscape embroidery with arched bridge",
+            caption: "Sakura landscape — bloom as place",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+          {
+            src: "/images/blog-botanical-gallery-fuji-20260723.jpg",
+            alt: "Framed Mount Fuji and autumn maple landscape cross-stitch",
+            caption: "Fuji & maple — floral scenery at landscape scale",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+          {
+            src: "/images/blog-botanical-gallery-meadow-20260723.jpg",
+            alt: "Framed wildflower meadow with mountains under a cloudy sky",
+            caption: "Meadow — wild color under open sky",
+            fit: "contain",
+            width: 641,
+            height: 641,
+          },
+        ],
+        galleryVariant: "row",
+        galleryZoom: true,
+        bulletsLabel: "Stems, scale & cloth",
+        bullets: [
+          "No. 25 (2–3 strands) for delicate leaf veins and fine stems",
+          "hidamari® on medium-to-heavy linen or cotton canvas for woody branches or textured fills—pair with a larger needle so the cloth stays smooth",
+          "Seasons for meadow and sky gradients; Nishikiito® only for a single light point if needed",
+        ],
+      },
+      {
+        heading: "Framing & Display Best Practices",
+        paragraphs: [
+          "How you mount the cloth matters as much as how you stitch it—especially when glass, light, and time share the wall.",
+        ],
+        bullets: [
+          "Mount with care: stretch finished embroidery over acid-free foam board (lacing keeps tension even and avoids adhesive on stitches).",
+          "Give stitches room: use a mat or frame spacers so glass does not press the thread—texture stays intact and air can move.",
+          "Choose protective glass: UV-filtering glazing helps colors hold under indoor light.",
+          "Place thoughtfully: keep pieces out of direct sun; rotate seasonal frames if a wall gets strong light for part of the year.",
+        ],
+      },
+      {
+        heading: "Tips for Botanical Wall Décor",
+        paragraphs: [
+          "A calm palette and matched thread weight keep a multi-frame wall reading as one composition.",
+        ],
+        bullets: [
+          "Plan the palette: No. 25 for structure, Seasons for shading, Nishikiito® for rare highlights.",
+          "Layer thoughtfully: hidamari® behind florals for lattice or foliage texture—not in every petal.",
+          "Match scale to cloth: finer strands on tight weaves; heavier sashiko weight on more open grounds.",
+          "Protect metallic: handle Nishikiito® gently; press from the back on low heat with a cloth.",
+        ],
+      },
+      {
+        heading: "Practical Display Ideas",
+        paragraphs: [
+          "Start with one strong frame—or build the wall in seasons.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-botanical-gallery-wreaths-b-20260723.jpg",
+            alt: "Detail of framed floral wreath embroidery",
+            caption: "Add frames over time",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+          {
+            src: "/images/blog-botanical-gallery-bouquets-b-20260723.jpg",
+            alt: "Detail of framed floral bouquet embroidery",
+            caption: "Or rotate a single slot by season",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+        bullets: [
+          "Gallery walls — group matching frames for a botanical exhibition",
+          "Seasonal rotation — swap wreaths or singles for fresh impact",
+          "Room themes — echo a framed bloom on a coaster, pillow, or tote nearby",
+          "Gifting — small framed florals make personal, finished presents",
+        ],
+      },
+      {
+        heading: "Product Recommendations",
+        paragraphs: [
+          "A clear floral stash makes it easier to answer each bloom as you hang the next frame.",
+        ],
+        figure: {
+          src: "/images/blog-botanical-gallery-products-20260723.jpg",
+          alt: "Diagonal arrangement of COSMO Seasons variegated floss skeins in a pink-to-red gradient",
+          caption:
+            "Solids for structure, Seasons for petal breath, metallic for a single gleam, sashiko weight for textured fills.",
+          fit: "contain",
+          width: 1080,
+          height: 1350,
+        },
+        bullets: [
+          "COSMO® No. 25 Cotton Floss — 500+ solid colors for crisp lines and botanical detail.",
+          "COSMO® Seasons Variegated Floss — 140 colors for soft shading and natural gradients.",
+          "COSMO® Nishikiito® Metallic Thread — 33 specialty colors across five finishes for quiet sparkle.",
+          "COSMO® hidamari® Sashiko Thread — 40 soft, matte colors on mini cones for lattice fills and heavier texture.",
+        ],
+      },
+      {
+        heading: "Final Note",
+        paragraphs: [
+          "Transform a love of flowers into lasting wall art. COSMO threads give every bloom, leaf, and herb the color, depth, and texture it deserves. Curate a gallery, combine wreaths and single stems, and let embroidery bloom year-round in your home.",
+        ],
+      },
+    ],
+    ctaLabel: "Explore COSMO Threads",
+    ctaDescription:
+      "Shop COSMO® No. 25 floss, Seasons variegated colors, Nishikiito® metallic thread, and hidamari® sashiko cotton—for botanicals meant to hang.",
+    cta: {
+      label: "Shop COSMO Floss",
+      href: "/floss",
+    },
+  },
+
+  {
     slug: "japanese-festival-stitching",
     title:
       "Japanese Festival Stitching (四季の祝い): Celebrating the Seasons with COSMO Threads",

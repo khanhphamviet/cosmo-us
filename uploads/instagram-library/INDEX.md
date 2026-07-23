@@ -13,6 +13,17 @@ When publishing, copy chosen files into `public/images/` with a dated `blog-<slu
 
 | ID | Slides | Status / subject |
 |----|-------:|------------------|
+| Cg-1Kx6vR-l | 1 | **used** Framed Botanical Gallery (hero) — 12-frame floral wall |
+| ChBdHaYPQgd | 5 | **used** Framed Botanical Gallery (wreaths) — seasonal wreath set |
+| ChEDPCbv5Ti | 5 | **used** Framed Botanical Gallery (bouquets) — bouquet set |
+| CkcbqFkP7v- | 3 | **used** Framed Botanical Gallery (winter) — poinsettia wreath |
+| DKYaZdLJUOB | 4 | **used** Framed Botanical Gallery (roses) — rose bouquet frame |
+| DCF-i4Tyyun | 2 | **used** Framed Botanical Gallery (daisies) — daisy bouquet |
+| DQGCXfpjeh7 | 2 | **used** Framed Botanical Gallery (herbarium _01); _02 already in Seasonal |
+| Cy5ZMAIPOyt | 6 | **used** Framed Botanical Gallery (fuji _02); _01 already in Seasonal |
+| C5PgzfVINLp | 5 | **used** Framed Botanical Gallery (sakura _03); _01/_02 already in Seasonal |
+| DKrHQEQRqZd | 2+ | **used** Framed Botanical Gallery (meadow _02); _01 already in Seasonal |
+| BhUzczsAe1p | 1 | **used** Framed Botanical Gallery (products) — Seasons pink→red skeins |
 | C0scJgXPtuV | 2 | **used** Japanese Festival Stitching (hero) — four festival hangings |
 | C0tH7vcP0Ft | 2 | **used** Japanese Festival Stitching (Hina) — Girls’ Day dolls |
 | C0vre0Npw0n | 2 | **used** Japanese Festival Stitching (koinobori) — Children’s Day |
@@ -33,7 +44,7 @@ Remaining Jul 23 Downloads (~60 posts) not yet indexed line-by-line — still in
 |----|-------:|--------|------------------|
 | Bg9m6byAsTa | 1 | square | **used** Patterns from the Past (blackwork project) — geometric mandala hoop |
 | BhFcD0XABZa | 1 | square | available — Heart floral “LOVE” hoop with Seasons floss + scissors |
-| BhUzczsAe1p | 1 | portrait | available — Diagonal Seasons skeins, pink→red gradient |
+| BhUzczsAe1p | 1 | portrait | **used** Framed Botanical Gallery (products) — Diagonal Seasons skeins, pink→red gradient |
 | BhW9pToD5iK | 1 | portrait | **used** Patterns from the Past (pairing) — Seasons on floral fabrics |
 | BqiV0EDnziC | 1 | square | **used** Patterns from the Past (tapestry) — floral wreath hoop |
 | BrgS_3uHqqz | 1 | square | **used** Patterns from the Past (Europe) — folk village bag |
@@ -61,15 +72,15 @@ Remaining Jul 23 Downloads (~60 posts) not yet indexed line-by-line — still in
 | C1Qu2Zwvgpm | available | Framed Christmas tree cross-stitch with milk/cookies styling |
 | C1bboaYiOVD | available | Person holding bouquet-shaped bundle of multicolor skeins |
 | C4hXA6rJPUr | **used** Wearable Art & Home Décor (bag & hoop) | Floral/fern hoop on matching purple embroidered bag |
-| C5PgzfVINLp | available | Framed cherry-tree landscape cross-stitch |
+| C5PgzfVINLp | **used** Framed Botanical Gallery (sakura _03) | Framed cherry-tree landscape cross-stitch |
 | C5SVypCPrRk | **used** Seasonal Projects | Framed pink/peach rose bouquet cross-stitch |
 | C5p2x6zy4NK | **used** Wearable Art & Home Décor (project pouch) | Sage linen drawstring pouch with white flower embroidery |
 | Cu5q6YuPsh0 | **used** Seasonal Projects (summer) | Sunflower embroidery gallery (hoops + frames) |
-| Cy5ZMAIPOyt | available | Framed Mount Fuji + autumn maple cross-stitch |
+| Cy5ZMAIPOyt | **used** Framed Botanical Gallery (fuji _02) | Framed Mount Fuji + autumn maple cross-stitch |
 | DBvhvdQqMe6 | available | COSMO illustrated thread cards in a glass jar |
-| DKrHQEQRqZd | available | Framed mountain + wildflower meadow needlework |
+| DKrHQEQRqZd | **used** Framed Botanical Gallery (meadow _02) | Framed mountain + wildflower meadow needlework |
 | DMty6k7ISGV | **used** Seasonal Projects (spring) | Framed girl sewing pansies (birds, cat, tools) |
-| DQGCXfpjeh7 | available | Herbarium-style labeled botanical embroideries |
+| DQGCXfpjeh7 | **used** Framed Botanical Gallery (herbarium _01) | Herbarium-style labeled botanical embroideries |
 | DQYk1G-jGk3 | available | Autumn Seasons floss flat lay with maple + pumpkin |
 | DSZWbnaD9GR | **used** Seasonal Projects (winter) | Oval linen Christmas ornaments with metallic thread |
 | DVm4sTmCuGk | available | Mimosa embroidery sachet with real mimosa flowers |
