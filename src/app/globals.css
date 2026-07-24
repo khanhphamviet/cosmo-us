@@ -289,6 +289,10 @@ img { display: block; max-width: 100%; height: auto; }
 
 .brand-hero {
   position: relative;
+  /* Match Featured Collections / product heroes: centered content column, not full-bleed */
+  max-width: var(--max-w);
+  width: calc(100% - 48px);
+  margin: 0 auto;
   height: clamp(300px, 34vw, 400px);
   overflow: hidden;
   border-bottom: 1px solid var(--border);
@@ -4721,6 +4725,7 @@ img { display: block; max-width: 100%; height: auto; }
   .footer-nav { gap: 28px; }
 
   .brand-hero {
+    width: calc(100% - 40px);
     height: clamp(280px, 42vw, 340px);
   }
   .brand-hero-bg {
@@ -4816,6 +4821,10 @@ img { display: block; max-width: 100%; height: auto; }
   }
   .logo {
     max-width: calc(100% - 56px);
+  }
+
+  .brand-hero {
+    width: calc(100% - 32px);
   }
 
   /* Hero — font handled by clamp */
