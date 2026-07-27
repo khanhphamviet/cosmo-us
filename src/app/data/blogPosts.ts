@@ -81,6 +81,249 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "embroidery-lesson-eight-stitches",
+    title: "Embroidery Lesson: Eight Essential Stitches with COSMO® Threads",
+    excerpt:
+      "Learn eight foundation stitches on a COSMO lesson sampler—then turn the same habits into a small finished motif, with an optional bridge to cross-stitch.",
+    publishedAt: "2026-07-27",
+    image: "/images/blog-embroidery-lesson-hero-20260727.jpg",
+    imageAlt:
+      "COSMO Embroidery Lesson flat lay with stitch sampler cloth, geometric flower hoop, cream teal and yellow floss, needle, and gold scissors",
+    heroAspectRatio: "1 / 1",
+    sections: [
+      {
+        paragraphs: [
+          "Learn the Basics, Create Something Beautiful",
+          "Embroidery begins with the simplest motions. A single line, a tiny knot, a looping curve—mastered one stitch at a time, these movements build the foundation for work you can wear, gift, or hang. COSMO threads give you a clear alphabet to practice: from a quiet sampler to a small finished motif.",
+          "Start with a calm kit and a short palette. Three complementary No. 25 shades—cream, teal, and yellow—teach control, tension, and consistency without distraction.",
+        ],
+      },
+      {
+        heading: "A Calm Kit to Begin",
+        paragraphs: [
+          "A lesson cloth, a few skeins, needles, and a wooden hoop are enough. The point is not to own every color—it is to see each stitch clearly.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-embroidery-lesson-hero-20260727.jpg",
+            alt: "Embroidery Lesson sampler with finished geometric flower hoop and three COSMO floss skeins",
+            caption: "Lesson cloth beside a finished motif—practice, then apply",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+          {
+            src: "/images/blog-embroidery-lesson-kit-20260727.jpg",
+            alt: "COSMO Embroidery Lesson kit contents: sampler fabric, dark motif cloth, floss 110 2019 2009, hoop, and needles",
+            caption: "Kit overview — sampler, motif cloth, and a three-color palette",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+        bulletsLabel: "Keep the first palette small",
+        bullets: [
+          "COSMO® No. 25 solids in cream, teal, and yellow (or a similar quiet trio)",
+          "A medium-weight lesson cloth so stitch structure stays visible",
+          "A 4–6 inch wooden hoop and embroidery needles (often sizes 5–7)",
+        ],
+      },
+      {
+        heading: "The Eight Essential Stitches",
+        paragraphs: [
+          "Each stitch has a job—drawing a line, filling a shape, or adding texture. Work them on one lesson cloth so the page becomes a reference you keep.",
+        ],
+        figure: {
+          src: "/images/blog-embroidery-lesson-sampler-20260727.jpg",
+          alt: "COSMO Embroidery Lesson cloth showing eight labeled stitches in teal and yellow",
+          caption:
+            "Straight, running, back, outline, lazy daisy, chain, satin, French knot—one cloth, eight foundations.",
+          fit: "contain",
+          width: 1080,
+          height: 1080,
+        },
+        bulletsLabel: "What each stitch does",
+        bullets: [
+          "Straight stitch — short structural lines, rays, or geometric accents; keep lengths even and tension gentle.",
+          "Running stitch — dashed borders and sashiko-like rhythm; equal stitch and space for a calm beat.",
+          "Backstitch — continuous crisp lines for stems, lettering, and outlines; come up one stitch ahead, then go back into the previous end.",
+          "Outline stitch — smooth curves and plant stems; keep the working thread on the same side of the needle for a clean rope-like line.",
+          "Lazy daisy (detached chain) — petals and teardrops; anchor each loop with a tiny stitch and avoid overtightening.",
+          "Chain stitch — borders and textured lines; insert into the exact exit point so loops stay the same size.",
+          "Satin stitch — solid fills with sheen; lay No. 25 strands flat, side by side, without overlap.",
+          "French knot — centers, seeds, and raised dots; wrap once or twice and keep gentle off-hand tension as the needle goes through.",
+        ],
+      },
+      {
+        heading: "Sampler as Reference",
+        paragraphs: [
+          "As you fill the lesson cloth, watch how length, spacing, and strand count change the line. That observation becomes your personal library for later projects.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-embroidery-lesson-practice-20260727.jpg",
+            alt: "Beginner embroidery practice samples with COSMO orange pink and green skeins",
+            caption: "Small practice strips — tension and spacing before a finished motif",
+            fit: "contain",
+            width: 1000,
+            height: 1250,
+          },
+          {
+            src: "/images/blog-embroidery-lesson-tension-20260727.jpg",
+            alt: "Close-up of hand stitching parallel rainbow running stitches on blue fabric",
+            caption: "Even rhythm — stitch length and spacing working together",
+            fit: "contain",
+            width: 850,
+            height: 1508,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+      },
+      {
+        heading: "From Sampler to Finished Motif",
+        paragraphs: [
+          "Carry the same habits into a small completed piece—a flower on dark cloth in a hoop, or a hand-stitched brooch. Outline for stems, lazy daisy for petals, French knots for centers: the sampler already taught the grammar.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-embroidery-lesson-brooch-20260727.jpg",
+            alt: "Circular brooch with yellow and teal geometric flower embroidery on dark purple cloth",
+            caption: "Finished brooch — sampler stitches at wearable scale",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+          {
+            src: "/images/blog-embroidery-lesson-finished-hoop-20260727.jpg",
+            alt: "Wooden hoop with geometric yellow and teal flower embroidery on dark fabric",
+            caption: "Hoop motif — the same stitch set, ready to display",
+            fit: "contain",
+            width: 1080,
+            height: 720,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+        bulletsLabel: "Layer with intention",
+        bullets: [
+          "Structure first — outlines and stems in No. 25 solids",
+          "Petals and fills — lazy daisy, satin, or chain where the design asks",
+          "Accents last — French knots; optional Seasons for soft shifts, or Nishikiito® for a single gleam",
+          "Scale & tension — muscle memory from the sampler keeps small motifs even",
+        ],
+      },
+      {
+        heading: "Optional: A Cross-Stitch Companion",
+        paragraphs: [
+          "The same discipline—consistent tension, a small palette, sample before project—transfers to counted work on Aida. A second starter path practices cross-stitch, French knot, and double cross before a tiny floral grid.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-embroidery-lesson-crossstitch-20260727.jpg",
+            alt: "Cross-stitch sampler with French knot and double cross labels beside a small floral hoop and COSMO floss",
+            caption: "Counted companion — sample stitches, then a small flower grid",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+          {
+            src: "/images/blog-embroidery-lesson-crossstitch-detail-20260727.jpg",
+            alt: "Close-up of Aida sampler labeled CROSS STITCH, FRENCH KNOT, and DOUBLE CROSS",
+            caption: "Labeled practice — cross, knot, and double cross on grid cloth",
+            fit: "contain",
+            width: 720,
+            height: 777,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+      },
+      {
+        heading: "Materials & Tools",
+        paragraphs: [
+          "A short, honest kit is enough for the whole lesson arc.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-embroidery-lesson-palette-20260727.jpg",
+            alt: "COSMO cross-stitch starter kit packaging with white teal and ochre No. 25 floss",
+            caption: "Starter-ready — No. 25 solids, hoop, needles, and practice cloth",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+          {
+            src: "/images/blog-embroidery-lesson-in-progress-20260727.jpg",
+            alt: "Aida cloth stack with COSMO floss skeins 100, 577A, and 536A plus hoop and needles",
+            caption: "Counted kit layout — grid cloth and a three-color path",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+        bullets: [
+          "COSMO® No. 25 Cotton Floss — extra-long staple cotton; smooth, soft, and easy to separate into strands",
+          "COSMO® Seasons (5000 / 8000 / 9000) — self-shading variegated floss when you are ready for soft gradients",
+          "COSMO® Nishikiito® Metallic Thread — optional shimmer for a single highlight after the solids are clear",
+          "Hoop & needles — 4–6 inch wooden hoop; embroidery needles sized to your cloth",
+          "Lesson cloth — medium-weight cotton or linen for surface practice; Aida when you bridge to counted work",
+        ],
+      },
+      {
+        heading: "Tips for a Clear Lesson",
+        paragraphs: [
+          "Good habits on the sampler save time on every motif that follows.",
+        ],
+        bullets: [
+          "Limit the first palette to three or four No. 25 solids so stitch structure stays readable.",
+          "Match strand count to the job—fewer strands for fine lines, more for satin fills.",
+          "Press finished pieces from the back on low heat with a cloth if you add Nishikiito® later.",
+          "Keep a photo or the physical sampler nearby; it is faster than relearning a stitch mid-project.",
+        ],
+      },
+      {
+        heading: "Product Recommendations",
+        paragraphs: [
+          "Build from solids; add variegation and metallic only when the foundation feels natural.",
+        ],
+        figure: {
+          src: "/images/blog-embroidery-lesson-products-20260727.jpg",
+          alt: "Floral heart embroidery hoop with COSMO Seasons floss skeins and ornate scissors on a wood tray",
+          caption:
+            "After the lesson—Seasons and specialty finishes expand what the eight stitches can say.",
+          fit: "contain",
+          width: 1080,
+          height: 1080,
+        },
+        bullets: [
+          "COSMO® No. 25 Cotton Floss — 500+ solid colors for clear lines, fills, and sampler work.",
+          "COSMO® Seasons Variegated Floss — 140 self-shading colors across series with different change rhythms (5000 / 8000 / 9000).",
+          "COSMO® Nishikiito® Metallic Thread — 33 specialty colors across five finishes for quiet sparkle.",
+          "Starter and lesson kits — sampler cloth, motif fabric, hoop, and needles in one calm set.",
+        ],
+      },
+      {
+        heading: "Final Note",
+        paragraphs: [
+          "One lesson, eight stitches, one finished motif. COSMO threads help you build confidence, explore texture, and make something you are proud to display or wear. Master the foundation, and every later project—surface or counted—becomes more intuitive, controlled, and beautiful.",
+        ],
+      },
+    ],
+    ctaLabel: "Explore COSMO Threads",
+    ctaDescription:
+      "Shop COSMO® No. 25 floss, Seasons variegated colors, and Nishikiito® metallic thread—for lessons that become finished pieces.",
+    cta: {
+      label: "Shop COSMO Floss",
+      href: "/floss",
+    },
+  },
+
+  {
     slug: "framed-botanical-gallery",
     title:
       "Framed Botanical Gallery: Bringing Flowers to Your Walls with COSMO Threads",

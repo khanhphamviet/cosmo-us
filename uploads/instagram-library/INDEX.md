@@ -9,6 +9,18 @@ When publishing, copy chosen files into `public/images/` with a dated `blog-<slu
 
 ---
 
+## Batch 2026-07-27 (embroidery lesson)
+
+| ID | Slides | Status / subject |
+|----|-------:|------------------|
+| CXuHufMNHla | 10 | **used** Embroidery Lesson (hero/kit/sampler/brooch/cross-stitch/starter kits) |
+| DSBdvIijwne | 2 | **used** Embroidery Lesson (practice) — beginner samples + skeins |
+| DbC4nMITCYG | 1 | **used** Embroidery Lesson (tension) — running-stitch close-up |
+| BhFcD0XABZa | 1 | **used** Embroidery Lesson (products) — heart floral hoop + Seasons |
+| CXe7-WjP-CE | 2 | available — Named botanical herbarium wall (hold; Botanical Gallery already published) |
+
+---
+
 ## Batch 2026-07-23 (festival story + new Downloads drop)
 
 | ID | Slides | Status / subject |
@@ -43,7 +55,7 @@ Remaining Jul 23 Downloads (~60 posts) not yet indexed line-by-line — still in
 | ID | Slides | Aspect | Status / subject |
 |----|-------:|--------|------------------|
 | Bg9m6byAsTa | 1 | square | **used** Patterns from the Past (blackwork project) — geometric mandala hoop |
-| BhFcD0XABZa | 1 | square | available — Heart floral “LOVE” hoop with Seasons floss + scissors |
+| BhFcD0XABZa | 1 | square | **used** Embroidery Lesson (products) — Heart floral “LOVE” hoop with Seasons floss + scissors |
 | BhUzczsAe1p | 1 | portrait | **used** Framed Botanical Gallery (products) — Diagonal Seasons skeins, pink→red gradient |
 | BhW9pToD5iK | 1 | portrait | **used** Patterns from the Past (pairing) — Seasons on floral fabrics |
 | BqiV0EDnziC | 1 | square | **used** Patterns from the Past (tapestry) — floral wreath hoop |
