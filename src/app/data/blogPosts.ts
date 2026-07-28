@@ -81,6 +81,269 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "sashiko-soft-goods",
+    title: "Sashiko Soft Goods: Stitching Everyday Cloth with hidamari®",
+    excerpt:
+      "Bring sashiko into pouches, coasters, and cloths you use every day—construction tips, relaxed tension, and COSMO® hidamari® for matte running-stitch rhythm.",
+    publishedAt: "2026-07-28",
+    image: "/images/blog-sashiko-soft-goods-hero-20260728.jpg",
+    imageAlt:
+      "Collection of sashiko-stitched pouches and mini bags arranged on a mustard corduroy chair",
+    heroAspectRatio: "1080 / 1350",
+    imageFit: "contain",
+    sections: [
+      {
+        paragraphs: [
+          "Traditional Rhythm, Everyday Objects",
+          "Sashiko has always been connected to the life of cloth. Developed as a way to reinforce and repair fabric, its repeated running stitches created strength, warmth, and beauty at the same time.",
+          "Today, sashiko can move beyond the sampler or framed textile and become part of objects we use every day—a pouch carried in a bag, a coaster on the table, or a small cloth resting quietly at home.",
+          "With its soft matte texture and smooth stitching rhythm, COSMO® hidamari® Sashiko Thread brings that traditional character into modern soft goods: practical pieces shaped by function and the maker’s hand.",
+        ],
+      },
+      {
+        heading: "Soft Goods, Made to Be Used",
+        paragraphs: [
+          "Unlike embroidery created only to be displayed, soft goods are touched, carried, opened, folded, and used. The thread must not only look beautiful—it must work with the structure of the fabric.",
+        ],
+        figure: {
+          src: "/images/blog-sashiko-soft-goods-overview-20260728.jpg",
+          alt: "Sashiko pouches and mini totes on a mustard chair with antique books",
+          caption:
+            "Pouches and small bags—traditional stitching that leaves the wall and enters the day.",
+          fit: "contain",
+          width: 1080,
+          height: 1350,
+        },
+        bulletsLabel: "What sashiko brings to usable cloth",
+        bullets: [
+          "Repeated patterns that create rhythm and balance",
+          "Raised stitches that add quiet texture",
+          "Strong contrast between matte thread and cloth",
+          "A handmade quality that grows richer through use",
+        ],
+      },
+      {
+        heading: "What Everyday Cloth Asks For",
+        paragraphs: [
+          "Pouches, bags, and cloth accessories meet friction and movement. Thoughtful construction helps the stitching last.",
+        ],
+        bulletsLabel: "Fabric & tension",
+        bullets: [
+          "On denser cotton canvas or heavier cloth, keep stitches slightly relaxed so the fabric stays flat.",
+          "Avoid overtightening—puckering weakens both look and hand.",
+          "Let the matte surface of hidamari® remain visible; that calm even rhythm is the point of sashiko.",
+        ],
+      },
+      {
+        heading: "Protecting the Inside",
+        paragraphs: [
+          "Functional pieces need care on the reverse before you assemble them.",
+        ],
+        bullets: [
+          "Apply a lightweight fusible interfacing to the back of the stitched panel, or",
+          "Add a full interior lining to cover thread tails",
+          "Either approach keeps tails from catching on keys, pens, or cosmetics—and adds stability",
+        ],
+      },
+      {
+        heading: "Planning for Seams",
+        paragraphs: [
+          "Plan sashiko with construction in mind. Leave at least a ½-inch (1.25 cm) unstitched border around fabric panels so running stitches are not caught, cut, or weakened when seams are sewn. That small margin protects both appearance and durability.",
+        ],
+      },
+      {
+        heading: "Pouches & Mini Totes",
+        paragraphs: [
+          "Small bags are a natural way to bring sashiko into daily life. Their surfaces hold repeating patterns while remaining approachable projects for rhythm and composition.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-sashiko-soft-goods-pouches-20260728.jpg",
+            alt: "Close arrangement of sashiko pouches with geometric and wheat motifs",
+            caption: "Geometric borders and textured fills on usable bags",
+            fit: "contain",
+            width: 1080,
+            height: 1350,
+          },
+          {
+            src: "/images/blog-sashiko-soft-goods-floral-pouch-20260728.jpg",
+            alt: "Cream drawstring pouch with multicolor circular floral wreath embroidery",
+            caption: "Circular floral motifs on a drawstring pouch",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+          {
+            src: "/images/blog-sashiko-soft-goods-floral-pouch-b-20260728.jpg",
+            alt: "Sage drawstring pouch with cream blooms and navy French-knot berries",
+            caption: "Soft florals with tactile knot accents",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+        ],
+        galleryVariant: "row",
+        galleryZoom: true,
+        bulletsLabel: "Try with hidamari®",
+        bullets: [
+          "Geometric borders and repeating fills",
+          "Circular patterns and floral motifs",
+          "Textured background rhythm behind a simple shape",
+        ],
+      },
+      {
+        heading: "Cloth, Coasters & Table Accents",
+        paragraphs: [
+          "Sashiko has a natural place at the table. A coaster under a cup or a folded cloth in a basket turns ordinary moments into quiet craftsmanship.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-sashiko-soft-goods-table-20260728.jpg",
+            alt: "Indigo and cream sashiko coasters and rolled cloths in a basket with tea glass",
+            caption: "Tea-table soft goods — stitched, stacked, and used",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+          {
+            src: "/images/blog-sashiko-soft-goods-cloth-20260728.jpg",
+            alt: "Cream kaki-no-hana sashiko cloth draped on a basket",
+            caption: "Repetition on cloth — depth as light moves across raised stitches",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+      },
+      {
+        heading: "Coin Purses & Small Closures",
+        paragraphs: [
+          "Small accessories are ideal for detailed motifs. Floral patterns and contrasting accents create a focal point while the overall design stays balanced.",
+        ],
+        figure: {
+          src: "/images/blog-sashiko-soft-goods-coin-purse-20260728.jpg",
+          alt: "Navy kiss-lock coin purse with white floral French-knot embroidery",
+          caption:
+            "hidamari® for sashiko weight; No. 25 for fine floral accents when needed.",
+          fit: "contain",
+          width: 1000,
+          height: 1000,
+        },
+        bulletsLabel: "Pairing threads",
+        bullets: [
+          "Keep hidamari® as the main sashiko thread for matte texture and weight",
+          "Use COSMO® No. 25 for smaller decorative motifs or outlined details",
+          "Let different thread personalities add depth without losing sashiko’s calm",
+        ],
+      },
+      {
+        heading: "Botanical Zip Pouches",
+        paragraphs: [
+          "A zip pouch joins beauty and practicality. Botanical vines and repeating motifs sit naturally with sashiko’s structured rhythm—especially when placement respects seams and closures.",
+        ],
+        figure: {
+          src: "/images/blog-sashiko-soft-goods-zip-pouch-20260728.jpg",
+          alt: "Gray zip pouch with dense white botanical vine embroidery and empty hoop prop",
+          caption:
+            "Reinforce the reverse, protect tails, and plan pattern around the zipper line.",
+          fit: "contain",
+          width: 600,
+          height: 750,
+        },
+        bulletsLabel: "For cloth that gets handled",
+        bullets: [
+          "Reinforce the reverse side before assembly",
+          "Protect thread tails with lining or interfacing",
+          "Place motifs so seams and zippers do not cut the rhythm short",
+        ],
+      },
+      {
+        heading: "Choosing Thread & Needle",
+        paragraphs: [
+          "The character of sashiko comes from how thread and fabric meet.",
+        ],
+        bulletsLabel: "COSMO® hidamari® Sashiko Thread",
+        bullets: [
+          "40 colors — 20 solids (No. 88 series) and 20 multi-color / variegated options (No. 89 series)",
+          "Signature mini-cone winding for tangle-free lengths",
+          "Soft matte cotton texture suited to sashiko’s running stitch",
+          "Non-divisible construction—use as wound, for a full even line",
+        ],
+      },
+      {
+        heading: "Needle & Accent Floss",
+        paragraphs: [
+          "Because hidamari® is thicker and non-divisible, needle choice shapes comfort. Pair it with a long sashiko needle—elongated eye, sturdy shaft, sized to your cloth—so the thread passes without unnecessary friction.",
+          "COSMO® No. 25 Embroidery Floss can complement as an accent: extra-long staple cotton, 500+ solid colors, and fine detail for small motifs beside sashiko weight.",
+        ],
+      },
+      {
+        heading: "Keeping Tools Close",
+        paragraphs: [
+          "Sashiko is built on repetition. An organized box—cones by color, needles ready, a pincushion nearby—makes it easier to stitch a little at a time.",
+        ],
+        figure: {
+          src: "/images/blog-sashiko-soft-goods-tools-20260728.jpg",
+          alt: "Wooden shaker box with COSMO mini cones and a white sashiko pincushion",
+          caption:
+            "Mini cones and a stitched pincushion—tools that invite the next few stitches.",
+          fit: "contain",
+          width: 1080,
+          height: 1080,
+        },
+      },
+      {
+        heading: "Tips for Sashiko Soft Goods",
+        paragraphs: [
+          "A few habits keep usable pieces calm, flat, and lasting.",
+        ],
+        bullets: [
+          "Plan a small palette so pattern and cloth texture stay the main feature.",
+          "Pair hidamari® with a long, sturdy sashiko needle so matte cotton glides without dragging.",
+          "Protect the reverse with lightweight fusible interfacing or a lining.",
+          "Leave at least ½ inch (1.25 cm) unstitched at panel edges for seams.",
+          "On canvas and heavy cloth, keep tension slightly relaxed so soft goods stay supple when folded or zipped.",
+        ],
+      },
+      {
+        heading: "Product Recommendations",
+        paragraphs: [
+          "Start with sashiko weight; add No. 25 only where fine detail belongs.",
+        ],
+        figure: {
+          src: "/images/blog-sashiko-soft-goods-products-20260728.jpg",
+          alt: "COSMO embroidery floss and cotton cloth stacks with gold scissors on a wooden table",
+          caption:
+            "hidamari® for running-stitch body; No. 25 when a small accent needs finer lines.",
+          fit: "contain",
+          width: 1671,
+          height: 2089,
+        },
+        bullets: [
+          "COSMO® hidamari® Sashiko Thread — 40 soft, matte colors on mini cones for traditional running stitches and textured soft goods.",
+          "COSMO® No. 25 Cotton Floss — 500+ solid colors for embroidery accents and fine decorative stitching.",
+        ],
+      },
+      {
+        heading: "Final Note",
+        paragraphs: [
+          "Sashiko began as a way to strengthen and care for cloth. That same spirit continues in objects designed to be used, touched, and loved—a stitched pouch, a coaster on the table, a folded cloth in a basket. Each carries the rhythm of the maker’s hands.",
+          "With COSMO® hidamari®, sashiko becomes more than a pattern: a quiet form of everyday beauty in the objects around us.",
+        ],
+      },
+    ],
+    ctaLabel: "Explore COSMO Threads",
+    ctaDescription:
+      "Shop COSMO® hidamari® sashiko cotton and No. 25 floss—for soft goods made to be carried, opened, and used.",
+    cta: {
+      label: "Shop hidamari® Sashiko",
+      href: "/sashiko/hidamari-thread",
+    },
+  },
+
+  {
     slug: "embroidery-lesson-eight-stitches",
     title: "Embroidery Lesson: Eight Essential Stitches with COSMO® Threads",
     excerpt:

@@ -9,6 +9,22 @@ When publishing, copy chosen files into `public/images/` with a dated `blog-<slu
 
 ---
 
+## Batch 2026-07-28 (sashiko soft goods)
+
+| ID | Slides | Status / subject |
+|----|-------:|------------------|
+| Cd78j9Xt3bz | 8 | **used** Sashiko Soft Goods (hero/pouches) — sashiko bags on mustard chair |
+| C4MkI4bqNXo | 4 | **used** Sashiko Soft Goods (floral pouch) — cream drawstring wreath |
+| C4NQzbOJ7NC | 4 | **used** Sashiko Soft Goods (floral pouch b) — sage berry pouch |
+| DEFFOEQJz5d | 1 | **used** Sashiko Soft Goods (table) — coasters + cloths in basket |
+| DBuqz2vzwvB | 3 | **used** Sashiko Soft Goods (cloth) — kaki-no-hana drape |
+| DC6GQOsPn_p | 1 | **used** Sashiko Soft Goods (coin purse) — navy kiss-lock |
+| DLPKIVgRnUV | 4 | **used** Sashiko Soft Goods (zip pouch) — gray white-vine zip |
+| CYDxY-ALmZN | 1 | **used** Sashiko Soft Goods (tools) — shaker box + pincushion |
+| DYWYwtpDwxo | 4 | **used** Festival products _01 + Soft Goods products _02; other slides free |
+
+---
+
 ## Batch 2026-07-27 (embroidery lesson)
 
 | ID | Slides | Status / subject |
@@ -43,7 +59,7 @@ When publishing, copy chosen files into `public/images/` with a dated `blog-<slu
 | DWQKqfYjzVs | 8 | **used** Japanese Festival Stitching (sashiko) — fan + lucky motifs |
 | DLG-NOVPxZt | 2 | **used** Japanese Festival Stitching (temari) — ball + floss |
 | DE1xYO5P9je | 1 | **used** Japanese Festival Stitching (nightscape) — canal night |
-| DYWYwtpDwxo | 4 | **used** Japanese Festival Stitching (products _01) — floss + cotton cloth; other slides free |
+| DYWYwtpDwxo | 4 | **used** Festival (products _01) + Soft Goods (products _02) — floss + cotton cloth; other slides free |
 | DFml4Jzp8XK | 5 | available — Hina hanging (**near-dup** of C0tH7vcP0Ft; skip if Hina already used) |
 
 Remaining Jul 23 Downloads (~60 posts) not yet indexed line-by-line — still in `~/Downloads/instagram_*`; rsync into this library when drafting next Story.
