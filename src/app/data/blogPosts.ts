@@ -81,6 +81,377 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "folk-wall-hangings",
+    title: "Folk Wall Hangings: Stories Woven in Thread",
+    excerpt:
+      "Turn cloth into wall art—folk-inspired motifs, balanced composition, and COSMO® No. 25, Seasons, Nishikiito®, and hidamari® for textile hangings that tell a story.",
+    publishedAt: "2026-07-29",
+    image: "/images/blog-folk-wall-hangings-hero-20260729.jpg",
+    imageAlt:
+      "Four folk-inspired embroidered wall hangings displayed on a textured white wall",
+    heroAspectRatio: "1079 / 1080",
+    imageFit: "contain",
+    sections: [
+      {
+        paragraphs: [
+          "Textile Art That Brings Tradition to the Wall",
+          "Embroidery has always been more than decoration. Across cultures and generations, stitched textiles have carried stories—symbols of nature, seasons, community, and identity.",
+          "While many embroidery projects are created to be worn or used, wall hangings offer a different way to experience thread. Freed from the demands of daily handling, fabric becomes a canvas for color, texture, and storytelling.",
+          "With COSMO® threads, traditional motifs and contemporary designs come together in textile pieces designed to be displayed, appreciated, and passed on.",
+        ],
+      },
+      {
+        heading: "From Cloth to Wall Art",
+        paragraphs: [
+          "A stitched wall hanging transforms fabric into a piece of artwork. Unlike smaller functional projects, larger textile pieces allow makers to explore pattern, color, and imagination as a complete composition.",
+          "A wall hanging does not simply show what was stitched. It shows how the maker interpreted color, pattern, and imagination.",
+        ],
+        figure: {
+          src: "/images/blog-folk-wall-hangings-hero-20260729.jpg",
+          alt: "Four embroidered fabric hangings with domestic and nature motifs on wooden magnetic bars",
+          caption:
+            "Cloth on the wall—folk motifs, wooden bars, and a quiet gallery of handmade textiles.",
+          fit: "contain",
+          width: 1079,
+          height: 1080,
+        },
+        bulletsLabel: "Larger pieces invite",
+        bullets: [
+          "Repeating patterns and borders",
+          "Layered colors and textures",
+          "Decorative motifs inspired by nature and tradition",
+          "Movement created by thread direction and stitch rhythm",
+        ],
+      },
+      {
+        heading: "Patterns That Carry Stories",
+        paragraphs: [
+          "Folk embroidery traditions often use motifs that appear simple at first glance but carry deeper meaning. Flowers may represent growth and renewal. Geometric patterns may reflect balance and harmony. Animals, plants, and symbolic designs can connect textiles to landscapes, seasons, and memories.",
+          "Today, these ideas continue to inspire modern embroidery. The beauty of folk-inspired work lies in making these patterns your own.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-folk-wall-hangings-rabbits-20260729.jpg",
+            alt: "Taupe hanging with two white rabbits among red flowers on a wooden magnetic bar",
+            caption: "Rabbits and flowers—a symmetrical folk scene as wall textile",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+          {
+            src: "/images/blog-folk-wall-hangings-breakfast-20260729.jpg",
+            alt: "Dusty pink wall hanging with whimsical breakfast embroidery motifs",
+            caption: "Domestic storytelling—breakfast motifs as quiet wall art",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+          {
+            src: "/images/blog-folk-wall-hangings-stamp-duo-20260729.jpg",
+            alt: "Teal stamp-frame hanging beside a gray rabbit folk hanging on the wall",
+            caption: "Stamp vignettes and folk symmetry side by side",
+            fit: "contain",
+            width: 1156,
+            height: 1157,
+          },
+        ],
+        galleryVariant: "row",
+        galleryZoom: true,
+        bulletsLabel: "A single motif can become",
+        bullets: [
+          "A botanical centerpiece",
+          "A geometric textile panel",
+          "A decorative wall hanging",
+          "A personal interpretation of folk-inspired art",
+        ],
+      },
+      {
+        heading: "Building a Textile Landscape",
+        paragraphs: [
+          "Wall hangings create opportunities to think beyond individual stitches and consider the entire textile. A balanced composition often combines a focal motif, supporting details, and careful contrast of texture and thread.",
+          "The result is a textile that changes as light moves across the surface.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-folk-wall-hangings-duo-20260729.jpg",
+            alt: "Blue stamp-panel hanging beside gray rabbit folk hanging",
+            caption: "Focal motif plus supporting rhythm—two hangings, one conversation",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+          {
+            src: "/images/blog-folk-wall-hangings-domestic-pair-20260729.jpg",
+            alt: "Pink breakfast hanging and entryway closet hanging laid on a wood table",
+            caption: "Domestic landscapes—breakfast table and entryway scenes",
+            fit: "contain",
+            width: 1168,
+            height: 1168,
+          },
+          {
+            src: "/images/blog-folk-wall-hangings-lifestyle-pair-20260729.jpg",
+            alt: "Breakfast and entryway hangings styled flat with spools and bird figurine",
+            caption: "Composition on cloth before it meets the wall",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+        ],
+        galleryVariant: "row",
+        galleryZoom: true,
+        bulletsLabel: "Balance often combines",
+        bullets: [
+          "A focal motif—the main design that draws the eye",
+          "Supporting details—smaller shapes, borders, and repeated elements",
+          "Texture and contrast—smooth cotton, variegation, metallic light, or thicker matte lines",
+        ],
+      },
+      {
+        heading: "Threads for Storytelling",
+        paragraphs: [
+          "Different COSMO threads create different visual effects. Choosing the right thread helps bring the character of a design forward.",
+        ],
+      },
+      {
+        heading: "COSMO® No. 25 Cotton Floss",
+        paragraphs: [
+          "A versatile foundation for detailed embroidery. Made from 100% extra-long staple cotton, No. 25 offers a smooth surface with soft sheen and fine detail capability for outlines, flowers, and decorative elements. Its polished appearance creates clean lines and refined filled areas.",
+        ],
+        bullets: [
+          "Over 500 solid colors",
+          "Smooth surface with soft sheen",
+          "Fine detail for outlines, flowers, and decorative elements",
+        ],
+      },
+      {
+        heading: "COSMO® Seasons Variegated Floss",
+        paragraphs: [
+          "Color movement is built directly into the thread. With 140 self-shading colors, Seasons creates natural transitions—landscapes, leaves and flowers, skies and water, and folk-inspired motifs with organic shading. Instead of changing colors repeatedly, the thread creates gentle variation as you stitch.",
+        ],
+      },
+      {
+        heading: "COSMO® Nishikiito® Metallic Thread",
+        paragraphs: [
+          "Small accents can transform a design. Nishikiito® adds highlights for decorative borders, stars and light effects, special motifs, and traditional-inspired embellishments. A small amount of metallic thread creates contrast against matte cotton and adds movement when light reflects across the surface.",
+        ],
+        bullets: [
+          "33 specialty colors across five finishes",
+          "Use sparingly where light should catch",
+        ],
+      },
+      {
+        heading: "COSMO® hidamari® Sashiko Thread",
+        paragraphs: [
+          "With its soft matte texture, hidamari® brings a more tactile quality to textile art. Available in 40 colors on signature mini cones, it works beautifully for bold running stitches, geometric patterns, and textured background elements—adding a handmade, woven feeling to larger textile pieces.",
+        ],
+      },
+      {
+        heading: "Creating Depth Through Stitch and Texture",
+        paragraphs: [
+          "Wall hangings are an opportunity to combine different embroidery approaches. A single piece can include fine embroidered details alongside bold stitched lines, smooth areas beside textured sections, and solid colors balanced with shifting gradients.",
+          "The contrast between threads gives the artwork dimension and allows each area of the design to feel intentional.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-folk-wall-hangings-rabbit-detail-20260729.jpg",
+            alt: "Close-up of white outline rabbit with checkered cape among red folk flowers",
+            caption: "Fine outlines and small fills—detail that rewards a closer look",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+          {
+            src: "/images/blog-folk-wall-hangings-flowers-detail-20260729.jpg",
+            alt: "Close-up of red floral motifs and rabbits with blue checkered fabric accents",
+            caption: "Texture in the motif—knots, fills, and cloth accents",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+          {
+            src: "/images/blog-folk-wall-hangings-breakfast-detail-a-20260729.jpg",
+            alt: "Close-up of embroidered toaster, jam jar, and fruit on pink fabric",
+            caption: "Domestic detail in cotton—clear shapes with quiet character",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+          {
+            src: "/images/blog-folk-wall-hangings-breakfast-detail-b-20260729.jpg",
+            alt: "Close-up of embroidered teapot, mug, and breakfast plate motifs",
+            caption: "Smooth fills and outline work side by side",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+        bulletsLabel: "For example",
+        bullets: [
+          "Use No. 25 for delicate flowers and outlines",
+          "Add Seasons for natural shading",
+          "Introduce Nishikiito® where light would naturally catch",
+          "Use hidamari® for stronger textile texture",
+        ],
+      },
+      {
+        heading: "Displaying Embroidery as Art",
+        paragraphs: [
+          "Once complete, a wall hanging becomes part of the space around it. Unlike smaller framed pieces, larger textile artworks need thoughtful preparation so the fabric, stitches, and composition remain beautiful over time.",
+        ],
+        figure: {
+          src: "/images/blog-folk-wall-hangings-display-bars-20260729.jpg",
+          alt: "Wooden magnetic wall bars in 13 cm and 18 cm sizes on a light wood surface",
+          caption:
+            "Magnetic wooden bars—a clean hanging edge for cloth ready to become wall art.",
+          fit: "contain",
+          width: 1080,
+          height: 1080,
+        },
+      },
+      {
+        heading: "Stabilize Heavy Stitching",
+        paragraphs: [
+          "Large folk-inspired pieces often combine multiple stitch styles and thread weights. Dense embroidery, layered fills, or thicker threads such as COSMO® hidamari® Sashiko Thread can add visual richness, but they also add weight to the fabric.",
+          "A stable foundation allows detailed patterns and textured stitches to remain smooth rather than pulling the fabric out of shape.",
+        ],
+        bulletsLabel: "For larger wall hangings",
+        bullets: [
+          "Consider a medium-weight fusible stabilizer or backing layer behind the base fabric before stitching",
+          "Choose a fabric with enough structure to support the embroidery",
+          "Keep the fabric grain aligned to prevent distortion during stitching and display",
+        ],
+      },
+      {
+        heading: "Mounting & Weight Distribution",
+        paragraphs: [
+          "The way a textile hangs affects how it ages. For pieces displayed on wooden rods, dowels, or textile hangers, a weighted bottom helps the textile hang naturally—preventing lower corners from curling inward due to gravity, humidity, or uneven stitch tension.",
+        ],
+        bullets: [
+          "Ensure the top edge follows a straight horizontal grain line",
+          "Distribute weight evenly across the hanging edge",
+          "Consider adding a concealed weighted dowel or weighted hem at the bottom edge",
+        ],
+      },
+      {
+        heading: "Protection and Placement",
+        paragraphs: [
+          "The display method becomes part of the artwork—supporting the textile while allowing the stitches, colors, and textures to remain the focus.",
+        ],
+        bulletsLabel: "To help preserve colors and fibers",
+        bullets: [
+          "Avoid placing embroidered textiles in direct sunlight for long periods",
+          "Keep pieces away from excessive moisture or humidity",
+          "Handle finished textiles with clean hands when mounting or adjusting",
+        ],
+      },
+      {
+        heading: "From Studio to Wall",
+        paragraphs: [
+          "Supporting scenes—work in progress, small vignettes, and framed companions—remind us that a hanging begins at the needle long before it meets the peg.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-folk-wall-hangings-vignettes-20260729.jpg",
+            alt: "Embroidered tote, framed bunny wreath, picnic rabbits, and small accessories on a wood table",
+            caption: "Folk motifs beyond the banner—frames, bags, and small textiles",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+          {
+            src: "/images/blog-folk-wall-hangings-wip-20260729.jpg",
+            alt: "Hands stitching a floral wreath beside a finished framed bunny embroidery",
+            caption: "Composition takes shape stitch by stitch",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+          {
+            src: "/images/blog-folk-wall-hangings-framed-20260729.jpg",
+            alt: "Framed picnic rabbits and scooter motif embroidery by a window with floss and tools",
+            caption: "Line work and storybook scenes as display companions",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+          {
+            src: "/images/blog-folk-wall-hangings-outline-20260729.jpg",
+            alt: "White line embroidery of rabbits and botanical sprigs on medium grey fabric",
+            caption: "Outline simplicity—folk forms with room for the cloth to breathe",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+        ],
+        galleryVariant: "row",
+        galleryZoom: true,
+      },
+      {
+        heading: "Tips for Creating Folk-Inspired Wall Hangings",
+        paragraphs: [
+          "A few calm choices keep large textiles balanced—on the needle and on the wall.",
+        ],
+        bullets: [
+          "Choose the right foundation—select fabric with enough structure for density and weight; larger pieces may benefit from stabilizing layers before stitching.",
+          "Balance color and empty space—not every area needs to be filled; open fabric helps stitched areas stand out.",
+          "Mix thread personalities—No. 25 for detail, Seasons for organic movement, Nishikiito® for light-catching accents, hidamari® for tactile texture.",
+          "Think about the final display—consider hanging method, mounting style, and surrounding space before choosing final size and palette.",
+        ],
+      },
+      {
+        heading: "Project Ideas",
+        paragraphs: [
+          "Start with a story you want to hang—then let motif, palette, and thread personalities follow.",
+        ],
+        bullets: [
+          "Botanical Folk Panel — floral motifs with layered leaves and textured backgrounds.",
+          "Seasonal Story Textile — spring blossoms, summer skies, autumn harvest, or winter landscapes.",
+          "Geometric Heritage Design — repeating shapes and borders inspired by traditional folk patterns.",
+          "Personal Story Hanging — textiles based on meaningful places, memories, or symbols.",
+        ],
+      },
+      {
+        heading: "Product Recommendations",
+        paragraphs: [
+          "Build a hanging palette from solids, self-shading color, metallic light, and matte sashiko weight.",
+        ],
+        figure: {
+          src: "/images/blog-folk-wall-hangings-products-20260729.jpg",
+          alt: "COSMO embroidery floss skeins and craft materials arranged for project planning",
+          caption:
+            "No. 25, Seasons, Nishikiito®, and hidamari®—four personalities for one textile story.",
+          fit: "contain",
+          width: 1671,
+          height: 2089,
+        },
+        bullets: [
+          "COSMO® No. 25 Cotton Floss — over 500 solid colors for detailed embroidery and rich color expression.",
+          "COSMO® Seasons Variegated Floss — 140 self-shading colors for natural transitions and depth.",
+          "COSMO® Nishikiito® Metallic Thread — 33 specialty colors across five finishes for metallic highlights and decorative accents.",
+          "COSMO® hidamari® Sashiko Thread — 40 soft matte colors on mini cones for bold stitched lines and textured patterns.",
+        ],
+      },
+      {
+        heading: "Final Note",
+        paragraphs: [
+          "A folk wall hanging is more than fabric and thread. It is a collection of choices—colors selected, patterns repeated, and stitches placed by hand.",
+          "From traditional inspirations to modern interpretations, every textile carries the story of the person who created it.",
+          "With COSMO threads, those stories can move from the needle to the wall, creating artwork that brings warmth, texture, and handmade beauty into everyday spaces.",
+        ],
+      },
+    ],
+    ctaLabel: "Explore COSMO Threads",
+    ctaDescription:
+      "Shop COSMO® No. 25 floss, Seasons variegated colors, Nishikiito® metallic thread, and hidamari® sashiko cotton—for folk hangings and textile art.",
+    cta: {
+      label: "Shop COSMO Floss",
+      href: "/floss",
+    },
+  },
+
+  {
     slug: "sashiko-soft-goods",
     title: "Sashiko Soft Goods: Stitching Everyday Cloth with hidamari®",
     excerpt:
@@ -95,21 +466,22 @@ export const BLOG_POSTS: BlogPost[] = [
       {
         paragraphs: [
           "Traditional Rhythm, Everyday Objects",
-          "Sashiko has always been connected to the life of cloth. Developed as a way to reinforce and repair fabric, its repeated running stitches created strength, warmth, and beauty at the same time.",
-          "Today, sashiko can move beyond the sampler or framed textile and become part of objects we use every day—a pouch carried in a bag, a coaster on the table, or a small cloth resting quietly at home.",
-          "With its soft matte texture and smooth stitching rhythm, COSMO® hidamari® Sashiko Thread brings that traditional character into modern soft goods: practical pieces shaped by function and the maker’s hand.",
+          "Sashiko has always been connected to the life of cloth. Originally developed as a way to reinforce and repair fabric, its repeated running stitches created strength, warmth, and beauty at the same time.",
+          "Today, sashiko can move beyond the sampler or framed textile and become part of the objects we use every day—a pouch carried in a bag, a coaster placed on the table, or a small cloth resting quietly at home.",
+          "With its soft matte texture and smooth stitching rhythm, COSMO® hidamari® Sashiko Thread brings the traditional character of sashiko into modern soft goods: practical pieces shaped by both function and the maker’s hand.",
         ],
       },
       {
         heading: "Soft Goods, Made to Be Used",
         paragraphs: [
-          "Unlike embroidery created only to be displayed, soft goods are touched, carried, opened, folded, and used. The thread must not only look beautiful—it must work with the structure of the fabric.",
+          "Unlike embroidery created only to be displayed, soft goods are touched, carried, opened, folded, and used. This changes the way we think about stitching—the thread must not only look beautiful, but also work together with the structure of the fabric.",
+          "The result is embroidery that does not simply decorate an object—it becomes part of the object itself.",
         ],
         figure: {
           src: "/images/blog-sashiko-soft-goods-overview-20260728.jpg",
           alt: "Sashiko pouches and mini totes on a mustard chair with antique books",
           caption:
-            "Pouches and small bags—traditional stitching that leaves the wall and enters the day.",
+            "A collection of sashiko pouches, small bags, and textile pieces—traditional stitching for everyday life.",
           fit: "contain",
           width: 1080,
           height: 1350,
@@ -118,43 +490,58 @@ export const BLOG_POSTS: BlogPost[] = [
         bullets: [
           "Repeated patterns that create rhythm and balance",
           "Raised stitches that add quiet texture",
-          "Strong contrast between matte thread and cloth",
-          "A handmade quality that grows richer through use",
+          "Strong visual contrast between thread and cloth",
+          "A handmade quality that becomes richer through use",
         ],
       },
       {
         heading: "What Everyday Cloth Asks For",
         paragraphs: [
-          "Pouches, bags, and cloth accessories meet friction and movement. Thoughtful construction helps the stitching last.",
+          "Soft goods require a different approach from framed embroidery. Pouches, bags, and cloth accessories experience friction, movement, and repeated handling, so thoughtful preparation helps preserve the stitching.",
         ],
-        bulletsLabel: "Fabric & tension",
+        bulletsLabel: "Choosing fabric and managing tension",
         bullets: [
-          "On denser cotton canvas or heavier cloth, keep stitches slightly relaxed so the fabric stays flat.",
-          "Avoid overtightening—puckering weakens both look and hand.",
-          "Let the matte surface of hidamari® remain visible; that calm even rhythm is the point of sashiko.",
+          "Keep stitches slightly relaxed on denser fabrics such as cotton canvas or heavier cloth so the fabric remains flat",
+          "Avoid pulling too tightly, which can cause puckering",
+          "Allow the natural texture of the matte thread to remain visible—a relaxed stitch creates the calm, even rhythm that defines sashiko",
         ],
       },
       {
-        heading: "Protecting the Inside",
+        heading: "Pre-Wash Your Fabrics",
         paragraphs: [
-          "Functional pieces need care on the reverse before you assemble them.",
+          "Natural fabrics such as linen and cotton canvas can shrink slightly during their first wash.",
+          "Always pre-wash and press base fabrics before transferring sashiko patterns. This prevents the fabric from contracting around the stitches later, helping finished soft goods remain flat and smooth after laundering.",
+        ],
+      },
+      {
+        heading: "Protecting the Inside of Soft Goods",
+        paragraphs: [
+          "Functional pieces such as pouches, zip bags, and coin purses need protection on the reverse side. Before assembling your finished item:",
         ],
         bullets: [
-          "Apply a lightweight fusible interfacing to the back of the stitched panel, or",
-          "Add a full interior lining to cover thread tails",
-          "Either approach keeps tails from catching on keys, pens, or cosmetics—and adds stability",
+          "Apply a lightweight fusible interfacing to the back of the stitched panel",
+          "Or add a full interior lining to cover thread tails",
+          "Either approach helps prevent thread ends from catching on keys, pens, cosmetics, or other items inside the bag while adding stability to the finished piece",
         ],
       },
       {
         heading: "Planning for Seams",
         paragraphs: [
-          "Plan sashiko with construction in mind. Leave at least a ½-inch (1.25 cm) unstitched border around fabric panels so running stitches are not caught, cut, or weakened when seams are sewn. That small margin protects both appearance and durability.",
+          "Sashiko patterns should be planned with construction in mind. Leave at least a ½-inch (1.5 cm standard seam allowance) unstitched around fabric panels so running stitches are not caught, cut, or weakened when seams are sewn.",
+          "This small planning step helps preserve both the appearance and durability of the finished object.",
         ],
       },
       {
-        heading: "Pouches & Mini Totes",
+        heading: "A Family of Forms",
         paragraphs: [
-          "Small bags are a natural way to bring sashiko into daily life. Their surfaces hold repeating patterns while remaining approachable projects for rhythm and composition.",
+          "Pouches, cloths, and small accessories share one idea: sashiko that lives with you, not only on the wall.",
+        ],
+      },
+      {
+        heading: "Pouches and Mini Totes",
+        paragraphs: [
+          "Small bags are one of the most natural ways to bring sashiko into daily life. Their surfaces provide enough space for repeating patterns while remaining approachable projects for exploring stitch rhythm and composition.",
+          "A simple pouch becomes something personal—a small object carrying both function and the memory of making.",
         ],
         gallery: [
           {
@@ -184,23 +571,25 @@ export const BLOG_POSTS: BlogPost[] = [
         ],
         galleryVariant: "row",
         galleryZoom: true,
-        bulletsLabel: "Try with hidamari®",
+        bulletsLabel: "Using COSMO® hidamari® Sashiko Thread, makers can create",
         bullets: [
-          "Geometric borders and repeating fills",
-          "Circular patterns and floral motifs",
-          "Textured background rhythm behind a simple shape",
+          "Geometric borders",
+          "Repeating floral motifs",
+          "Circular patterns",
+          "Textured background fills",
         ],
       },
       {
-        heading: "Cloth, Coasters & Table Accents",
+        heading: "Cloth, Coasters, and Table Accents",
         paragraphs: [
-          "Sashiko has a natural place at the table. A coaster under a cup or a folded cloth in a basket turns ordinary moments into quiet craftsmanship.",
+          "Sashiko has a natural place in the home. Coasters, folded cloths, and small textile pieces bring handmade texture into everyday moments.",
+          "A stitched coaster placed beneath a cup or a folded cloth displayed in a basket transforms ordinary household objects into quiet expressions of craftsmanship. The beauty of sashiko often appears through repetition—even simple running stitches create depth as light moves across the raised thread surface.",
         ],
         gallery: [
           {
             src: "/images/blog-sashiko-soft-goods-table-20260728.jpg",
             alt: "Indigo and cream sashiko coasters and rolled cloths in a basket with tea glass",
-            caption: "Tea-table soft goods — stitched, stacked, and used",
+            caption: "Tea-table soft goods—stitched, stacked, and used",
             fit: "contain",
             width: 1080,
             height: 1080,
@@ -208,7 +597,7 @@ export const BLOG_POSTS: BlogPost[] = [
           {
             src: "/images/blog-sashiko-soft-goods-cloth-20260728.jpg",
             alt: "Cream kaki-no-hana sashiko cloth draped on a basket",
-            caption: "Repetition on cloth — depth as light moves across raised stitches",
+            caption: "Repetition on cloth—depth as light moves across raised stitches",
             fit: "contain",
             width: 1080,
             height: 1080,
@@ -218,93 +607,120 @@ export const BLOG_POSTS: BlogPost[] = [
         galleryZoom: true,
       },
       {
-        heading: "Coin Purses & Small Closures",
+        heading: "Coin Purses and Decorative Closures",
         paragraphs: [
-          "Small accessories are ideal for detailed motifs. Floral patterns and contrasting accents create a focal point while the overall design stays balanced.",
+          "Small accessories offer the perfect scale for experimenting with detailed motifs. Floral patterns, French knots, and contrasting thread accents create focal points while keeping the overall design balanced.",
+          "The combination of different thread personalities creates depth without losing the traditional feeling of sashiko.",
         ],
         figure: {
           src: "/images/blog-sashiko-soft-goods-coin-purse-20260728.jpg",
           alt: "Navy kiss-lock coin purse with white floral French-knot embroidery",
           caption:
-            "hidamari® for sashiko weight; No. 25 for fine floral accents when needed.",
+            "Keep hidamari® as the main sashiko thread; reach for No. 25 when fine floral accents belong.",
           fit: "contain",
           width: 1000,
           height: 1000,
         },
-        bulletsLabel: "Pairing threads",
+        bulletsLabel: "For additional details",
         bullets: [
-          "Keep hidamari® as the main sashiko thread for matte texture and weight",
-          "Use COSMO® No. 25 for smaller decorative motifs or outlined details",
-          "Let different thread personalities add depth without losing sashiko’s calm",
+          "Use COSMO® No. 25 Embroidery Floss for smaller decorative motifs",
+          "Add fine floral accents or outlined elements",
+          "Keep hidamari® as the main sashiko thread for the characteristic texture and weight",
         ],
       },
       {
         heading: "Botanical Zip Pouches",
         paragraphs: [
-          "A zip pouch joins beauty and practicality. Botanical vines and repeating motifs sit naturally with sashiko’s structured rhythm—especially when placement respects seams and closures.",
+          "A zip pouch combines beauty and practicality. Botanical vines, flowers, and repeating motifs work naturally with sashiko’s calm, structured rhythm.",
+          "Good construction allows the embroidery to remain beautiful through everyday use.",
         ],
         figure: {
           src: "/images/blog-sashiko-soft-goods-zip-pouch-20260728.jpg",
           alt: "Gray zip pouch with dense white botanical vine embroidery and empty hoop prop",
           caption:
-            "Reinforce the reverse, protect tails, and plan pattern around the zipper line.",
+            "Reinforce the reverse, protect tails, and plan placement around seams and closures.",
           fit: "contain",
           width: 600,
           height: 750,
         },
-        bulletsLabel: "For cloth that gets handled",
+        bulletsLabel: "When creating pieces that will be handled frequently",
         bullets: [
-          "Reinforce the reverse side before assembly",
+          "Reinforce the reverse side",
           "Protect thread tails with lining or interfacing",
-          "Place motifs so seams and zippers do not cut the rhythm short",
+          "Consider how pattern placement interacts with seams and closures",
         ],
       },
       {
-        heading: "Choosing Thread & Needle",
+        heading: "Choosing the Right Thread and Needle",
         paragraphs: [
-          "The character of sashiko comes from how thread and fabric meet.",
+          "The character of sashiko comes from the relationship between the fabric and the thread.",
         ],
         bulletsLabel: "COSMO® hidamari® Sashiko Thread",
         bullets: [
-          "40 colors — 20 solids (No. 88 series) and 20 multi-color / variegated options (No. 89 series)",
-          "Signature mini-cone winding for tangle-free lengths",
-          "Soft matte cotton texture suited to sashiko’s running stitch",
-          "Non-divisible construction—use as wound, for a full even line",
+          "40 colors — 20 solid colors in the No. 88 series and 20 multi-color / variegated colors in the No. 89 series",
+          "Signature mini-cone winding",
+          "Soft matte cotton texture suited to sashiko stitching",
+          "Smooth, non-divisible construction for the full, even appearance associated with sashiko",
         ],
       },
       {
-        heading: "Needle & Accent Floss",
+        heading: "Pairing hidamari® with the Right Needle",
         paragraphs: [
-          "Because hidamari® is thicker and non-divisible, needle choice shapes comfort. Pair it with a long sashiko needle—elongated eye, sturdy shaft, sized to your cloth—so the thread passes without unnecessary friction.",
-          "COSMO® No. 25 Embroidery Floss can complement as an accent: extra-long staple cotton, 500+ solid colors, and fine detail for small motifs beside sashiko weight.",
+          "Because hidamari® is a thicker, non-divisible sashiko thread, needle choice affects stitching comfort. The correct needle helps the thread pass through the fabric without unnecessary friction or fraying.",
+        ],
+        bulletsLabel: "Use a long sashiko needle with",
+        bullets: [
+          "An elongated eye for easier threading",
+          "A sturdy shaft that moves smoothly through fabric",
+          "A size appropriate for the fabric thickness",
+        ],
+      },
+      {
+        heading: "COSMO® No. 25 Embroidery Floss",
+        paragraphs: [
+          "No. 25 can complement sashiko projects as an accent thread. Made from 100% extra-long staple cotton, it offers a smooth surface with soft sheen and fine detail capability for small motifs and decorative accents.",
+          "Together, hidamari® and No. 25 allow makers to combine sashiko texture with embroidery detail.",
+        ],
+        bullets: [
+          "Over 500 solid colors",
+          "Smooth surface with soft sheen",
+          "Fine detail for small motifs and decorative accents beside sashiko weight",
         ],
       },
       {
         heading: "Keeping Tools Close",
         paragraphs: [
-          "Sashiko is built on repetition. An organized box—cones by color, needles ready, a pincushion nearby—makes it easier to stitch a little at a time.",
+          "A peaceful stitching practice begins with an organized workspace. Because sashiko is built on repetition, keeping materials accessible encourages the simple habit of stitching a little at a time.",
         ],
         figure: {
           src: "/images/blog-sashiko-soft-goods-tools-20260728.jpg",
           alt: "Wooden shaker box with COSMO mini cones and a white sashiko pincushion",
           caption:
-            "Mini cones and a stitched pincushion—tools that invite the next few stitches.",
+            "hidamari® cones by color, needles ready, and a pincushion nearby—tools that invite the next few stitches.",
           fit: "contain",
           width: 1080,
           height: 1080,
         },
+        bulletsLabel: "A small sewing box with",
+        bullets: [
+          "hidamari® cones arranged by color",
+          "Needles ready for the next project",
+          "A pincushion nearby",
+          "Essential tools kept together",
+        ],
       },
       {
         heading: "Tips for Sashiko Soft Goods",
         paragraphs: [
-          "A few habits keep usable pieces calm, flat, and lasting.",
+          "A few calm habits keep usable pieces flat, lasting, and true to sashiko’s rhythm.",
         ],
         bullets: [
-          "Plan a small palette so pattern and cloth texture stay the main feature.",
-          "Pair hidamari® with a long, sturdy sashiko needle so matte cotton glides without dragging.",
-          "Protect the reverse with lightweight fusible interfacing or a lining.",
-          "Leave at least ½ inch (1.25 cm) unstitched at panel edges for seams.",
-          "On canvas and heavy cloth, keep tension slightly relaxed so soft goods stay supple when folded or zipped.",
+          "Plan a small palette—choose a focused color group so stitch pattern and fabric texture stay the main feature.",
+          "Use the right needle—pair hidamari® with a long, sturdy sashiko needle so matte cotton can glide without dragging or fraying.",
+          "Pre-wash and press fabrics before transferring patterns so soft goods stay smooth after laundering.",
+          "Mind the seam allowance—leave at least a ½-inch (1.5 cm) unstitched border around fabric panels so sashiko stitches remain clear and protected during assembly.",
+          "Protect the reverse side—for pouches, bags, and other functional items, use lightweight fusible interfacing or a lining.",
+          "Relax thread tension—especially on heavier fabrics such as canvas, slightly relaxed stitches help soft goods remain supple and lie flat when folded or zipped.",
         ],
       },
       {
@@ -322,15 +738,16 @@ export const BLOG_POSTS: BlogPost[] = [
           height: 2089,
         },
         bullets: [
-          "COSMO® hidamari® Sashiko Thread — 40 soft, matte colors on mini cones for traditional running stitches and textured soft goods.",
-          "COSMO® No. 25 Cotton Floss — 500+ solid colors for embroidery accents and fine decorative stitching.",
+          "COSMO® hidamari® Sashiko Thread — 40 soft, matte colors on mini cones for traditional running stitches and textured textile projects.",
+          "COSMO® No. 25 Cotton Floss — over 500 solid colors for embroidery accents, fine details, and decorative stitching.",
         ],
       },
       {
         heading: "Final Note",
         paragraphs: [
-          "Sashiko began as a way to strengthen and care for cloth. That same spirit continues in objects designed to be used, touched, and loved—a stitched pouch, a coaster on the table, a folded cloth in a basket. Each carries the rhythm of the maker’s hands.",
-          "With COSMO® hidamari®, sashiko becomes more than a pattern: a quiet form of everyday beauty in the objects around us.",
+          "Sashiko began as a way to strengthen and care for cloth. Today, that same spirit continues through objects designed to be used, touched, and loved.",
+          "A stitched pouch. A coaster on the table. A folded cloth resting in a basket. Each carries the rhythm of the maker’s hands.",
+          "With COSMO® hidamari®, sashiko becomes more than a pattern—it becomes a quiet form of everyday beauty woven into the objects around us.",
         ],
       },
     ],

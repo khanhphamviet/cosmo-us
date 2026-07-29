@@ -9,6 +9,18 @@ When publishing, copy chosen files into `public/images/` with a dated `blog-<slu
 
 ---
 
+## Batch 2026-07-29 (folk wall hangings)
+
+| ID | Slides | Status / subject |
+|----|-------:|------------------|
+| C8_rZdcJBG- | 4 | **used** Folk Wall Hangings (hero/duo/lifestyle/display bars) — four hangings + magnetic bars |
+| C93yjZOpdC0 | 5 | **used** Folk Wall Hangings (rabbits / outline / details / stamp duo) |
+| C94U58QK4gV | 5 | **used** Folk Wall Hangings (breakfast / details / domestic pair); _02 printed guide unused |
+| Cx-DJpOpeOw | 3 | **used** Folk Wall Hangings (vignettes / WIP / framed) — supporting studio scenes |
+| DYWYwtpDwxo | 4 | _03 **used** Folk Wall Hangings products; _01 Festival / Soft Goods products; _02 Soft Goods; _04 free |
+
+---
+
 ## Batch 2026-07-28 (sashiko soft goods)
 
 | ID | Slides | Status / subject |
@@ -21,7 +33,7 @@ When publishing, copy chosen files into `public/images/` with a dated `blog-<slu
 | DC6GQOsPn_p | 1 | **used** Sashiko Soft Goods (coin purse) — navy kiss-lock |
 | DLPKIVgRnUV | 4 | **used** Sashiko Soft Goods (zip pouch) — gray white-vine zip |
 | CYDxY-ALmZN | 1 | **used** Sashiko Soft Goods (tools) — shaker box + pincushion |
-| DYWYwtpDwxo | 4 | **used** Festival products _01 + Soft Goods products _02; other slides free |
+| DYWYwtpDwxo | 4 | **used** Festival _01 + Soft Goods _02 + Folk Wall Hangings products _03; _04 free |
 
 ---
 
