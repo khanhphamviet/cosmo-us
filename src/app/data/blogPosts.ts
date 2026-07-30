@@ -81,6 +81,277 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "floss-tiny-gifts",
+    title:
+      "Tiny Gifts from a Skein: Bracelets, Mini Hoops & Small Treasures",
+    excerpt:
+      "Take COSMO® floss beyond the sampler—braided bracelets, floss hoop earrings, mini gift hoops, embroidered buttons, and bookmarks made to give.",
+    publishedAt: "2026-07-30",
+    image: "/images/blog-floss-tiny-gifts-hero-20260730.jpg",
+    imageAlt:
+      "Seven miniature cross-stitch motifs in small wood hanging hoops on a white surface",
+    heroAspectRatio: "1 / 1",
+    imageFit: "contain",
+    sections: [
+      {
+        paragraphs: [
+          "Small Scale, Full Color",
+          "Most embroidery stories begin on cloth meant to hang, fill, or finish a larger piece. Tiny gifts begin differently: one skein, a few tools, and an object small enough to wrap, wear, or tuck into a note.",
+          "COSMO® No. 25 Embroidery Floss—and Seasons when you want color that shifts as you work—was made for fine detail. That same six-strand cotton also braids, wraps, and fills miniature motifs with surprising clarity.",
+          "This is not another tote or wall hanging. It is floss as jewelry, as a one-afternoon gift, and as a pocket-sized canvas.",
+        ],
+      },
+      {
+        heading: "Why Tiny Projects Suit COSMO Floss",
+        paragraphs: [
+          "Small objects ask for color that stays clean at close range. Extra-long staple cotton keeps lines smooth; separable strands let you thin the thread for earrings and thicken it for braid.",
+          "A finished bracelet or mini hoop travels farther than a sampler—onto a wrist, into a stocking, across a desk.",
+        ],
+        bulletsLabel: "Tiny work rewards",
+        bullets: [
+          "Clear solids from COSMO® No. 25 for readable mini motifs",
+          "Seasons variegation for bracelets and cords that shade themselves",
+          "Optional Nishikiito® for a single glint on a charm or finding",
+          "Projects that use one skein—or less—from start to finish",
+        ],
+      },
+      {
+        heading: "Braided Bracelets from One Skein",
+        paragraphs: [
+          "Friendship-style braids are one of the simplest ways to wear COSMO color. A solid skein gives a bold band; Seasons adds soft movement without changing strands mid-braid.",
+          "Some makers start with a hair elastic as the base and wrap or braid No. 25 around it—one skein, one afternoon, something you can wear immediately.",
+          "COSMO® No. 25 is dyed for colorfast stitching, but cotton worn against skin still meets oils, sweat, and water. A light pass of thread conditioner or beeswax on a finished braid can help the cord stay smoother longer; a tiny dab of flexible fabric adhesive on knot ends keeps friction from unraveling the join.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-floss-tiny-gifts-one-skein-20260730.jpg",
+            alt: "Wrist with braided embroidery-floss bracelets; Japanese tip about one skein and a hair tie",
+            caption: "One skein and a hair tie—an approachable on-ramp to wearable floss",
+            fit: "contain",
+            width: 880,
+            height: 1100,
+          },
+          {
+            src: "/images/blog-floss-tiny-gifts-bracelets-solids-20260730.jpg",
+            alt: "Bright pink and sky-blue solid braided floss bracelets with small tassels",
+            caption: "Solid No. 25 bands—clear color, simple finish",
+            fit: "contain",
+            width: 720,
+            height: 720,
+          },
+          {
+            src: "/images/blog-floss-tiny-gifts-bracelets-detail-20260730.jpg",
+            alt: "Two variegated braided floss bracelets—bright multi and soft pastel—with tassels",
+            caption: "Seasons braids—color that shifts along the cord",
+            fit: "contain",
+            width: 720,
+            height: 720,
+          },
+        ],
+        galleryVariant: "row",
+        galleryZoom: true,
+        bulletsLabel: "Bracelet tips",
+        bullets: [
+          "Keep braid tension even so the band stays round and comfortable",
+          "When wrapping over a hair elastic or stretch cord, hold the base slightly taut so coverage stays seamless when stretched",
+          "Use all six strands for a fuller cord, or fewer for a finer bracelet",
+          "Seasons 8000’s longer shade shifts read beautifully in a continuous braid",
+        ],
+      },
+      {
+        heading: "Hoop Earrings from Floss Cord",
+        paragraphs: [
+          "Tubular cord—French knitting, spool knitting, or a tight braid—turns variegated No. 25 into lightweight hoops. Cap the join with a simple finding and an ear wire, and the thread becomes jewelry without leaving the COSMO palette.",
+          "Unlike crocheted motifs or metallic tassel drops shown elsewhere on the site, these hoops keep the floss itself as the form. Seal the cord ends and finding join with a microscopic drop of flexible fabric glue or clear craft sealant so everyday wear does not fray the cotton.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-floss-tiny-gifts-earrings-b-20260730.jpg",
+            alt: "Hands spool-knitting pastel variegated floss into cord with a plastic French knitter",
+            caption: "Cord in progress—French knitting turns floss into hoop-ready tube",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+          {
+            src: "/images/blog-floss-tiny-gifts-earrings-c-20260730.jpg",
+            alt: "Finished pastel rainbow floss hoop earrings with silver ear wires on wood",
+            caption: "Finished hoops—one length of variegated floss, worn as color in the round",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+      },
+      {
+        heading: "Miniature Hoops as Instant Gifts",
+        paragraphs: [
+          "A three-inch motif in a tiny hanging hoop is embroidery at greeting-card scale: a pet, a clover, a sunflower—finished, framed, and ready to give.",
+          "Cross-stitch on Aida keeps edges crisp; No. 25 solids keep eyes and petals readable even when the hoop is small. Before adding a pin or hanging loop for wear, back the reverse with a neatly trimmed disc of stiff felt, cardstock, or a lightweight wood circle—hiding thread tails and giving the gift a polished finish from every angle.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-floss-tiny-gifts-mini-hoops-b-20260730.jpg",
+            alt: "Close arrangement of miniature cross-stitch animal and flower hoops",
+            caption: "A set of small stories—easy to stitch in batches for gifts",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+          {
+            src: "/images/blog-floss-tiny-gifts-mini-hoops-c-20260730.jpg",
+            alt: "Detail of miniature hoop motifs including otter, cat, and sunflower",
+            caption: "Detail that still reads from arm’s length",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+        bulletsLabel: "Mini-hoop habits",
+        bullets: [
+          "Limit motifs to about 2–4 high-contrast solid colors so detail stays clear at arm’s length",
+          "Leave a narrow unstitched margin so the hoop rim does not crowd the design",
+          "Back with felt or card before findings—mini gifts get flipped and handled",
+        ],
+      },
+      {
+        heading: "Embroidered Buttons & Brooches",
+        paragraphs: [
+          "Covered buttons and small brooch discs turn leftover floss into wearable samples. Geometric fills, tiny florals, and honeycombs all work at button scale—and a WIP brooch with the needle still in place is a reminder that gifts can stay intimate.",
+          "When the piece will pin to a jacket or bag, finish the reverse the same way as a mini hoop: a stiff felt or cardstock disc hides tails, supports the cloth, and keeps the gift looking intentional from both sides.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-floss-tiny-gifts-buttons-20260730.jpg",
+            alt: "Nine embroidered covered buttons with floral and geometric motifs on blue cloth",
+            caption: "A button tray of experiments—color tests you can wear",
+            fit: "contain",
+            width: 739,
+            height: 736,
+          },
+          {
+            src: "/images/blog-floss-tiny-gifts-buttons-b-20260730.jpg",
+            alt: "Close view of embroidered button covers with small floral and chevron patterns",
+            caption: "Small fields, full stitch vocabulary",
+            fit: "contain",
+            width: 487,
+            height: 486,
+          },
+          {
+            src: "/images/blog-floss-tiny-gifts-brooch-20260730.jpg",
+            alt: "Embroidered floral brooch in progress with yellow thread and needles on grey fabric",
+            caption: "A brooch in progress—tiny canvas, full attention",
+            fit: "contain",
+            width: 1080,
+            height: 1080,
+          },
+        ],
+        galleryVariant: "row",
+        galleryZoom: true,
+        galleryCompact: true,
+      },
+      {
+        heading: "Bookmarks & Keepsake Tags",
+        paragraphs: [
+          "When the gift is a book—or a note slipped between pages—lace figures, floss tassels, and slim plastic sleeves become bookmarks that carry color without needing a full sampler.",
+          "Pair a quiet silhouette with a bright Seasons tassel, or keep the floss accent as a simple cord loop.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-floss-tiny-gifts-bookmarks-20260730.jpg",
+            alt: "Lace figure bookmarks with multicolor floss tassel and pastel backgrounds",
+            caption: "Slim keepsakes—lace, color, and a tassel that moves",
+            fit: "contain",
+            width: 1638,
+            height: 2047,
+          },
+          {
+            src: "/images/blog-floss-tiny-gifts-bookmarks-b-20260730.jpg",
+            alt: "Handmade lace lady bookmarks with floss details on dark surface",
+            caption: "Gift tags and page markers from leftover lengths",
+            fit: "contain",
+            width: 1638,
+            height: 2047,
+          },
+          {
+            src: "/images/blog-floss-tiny-gifts-bookmarks-c-20260730.jpg",
+            alt: "Close arrangement of lace silhouette bookmarks with colorful accents",
+            caption: "Small enough for an envelope, special enough to keep",
+            fit: "contain",
+            width: 1638,
+            height: 2047,
+          },
+        ],
+        galleryVariant: "row",
+        galleryZoom: true,
+      },
+      {
+        heading: "Choosing Thread for Tiny Work",
+        paragraphs: [
+          "Match the thread personality to the object—not every tiny gift needs every finish.",
+        ],
+        bullets: [
+          "COSMO® No. 25 — extra-long staple cotton; over 500 solids for mini motifs, buttons, and clean bracelet bands",
+          "COSMO® Seasons — 140 self-shading colors for braids, cords, and tassels that change as you work",
+          "COSMO® Nishikiito® — 33 specialty colors across five finishes; use sparingly on findings or a single highlight",
+        ],
+      },
+      {
+        heading: "Tips for Tiny Gifts",
+        paragraphs: [
+          "Jewelry and small treasures meet skin, water, and handling that framed work never sees. A few calm habits keep pieces gift-ready and lasting.",
+        ],
+        bullets: [
+          "Lock your knots — apply a microscopic drop of flexible fabric glue to thread ends on bracelets, brooches, and jewelry findings to prevent unraveling from everyday wear.",
+          "Finish the reverse side — back mini-hoop charms and brooches with a neatly trimmed disc of stiff felt or cardstock so the gift looks complete from every angle.",
+          "Wrap stretch bases at tension — when wrapping floss around elastic hair ties or stretch cords, hold the base slightly taut while wrapping so the thread coverage stays smooth when stretched.",
+          "Keep palettes readable — miniature work loses detail under complex shading; limit mini-hoop motifs to 2–4 high-contrast solid colors for clarity at arm’s length.",
+          "Condition wearable cords — a light beeswax or thread conditioner on finished braids can help cotton stay smoother against daily moisture and friction.",
+          "Batch similar gifts — one afternoon of mini hoops or bracelets goes farther than a single large start.",
+        ],
+      },
+      {
+        heading: "Product Recommendations",
+        paragraphs: [
+          "Start with solids for clarity; add Seasons where color should move on its own.",
+        ],
+        figure: {
+          src: "/images/blog-floss-tiny-gifts-products-20260730.jpg",
+          alt: "COSMO embroidery floss and craft materials arranged for small projects",
+          caption:
+            "No. 25 for detail, Seasons for shifting color—enough for a tray of tiny gifts.",
+          fit: "contain",
+          width: 1671,
+          height: 2089,
+        },
+        bullets: [
+          "COSMO® No. 25 Cotton Floss — over 500 solid colors for miniature motifs, buttons, and solid braid bands.",
+          "COSMO® Seasons Variegated Floss — 140 self-shading colors for bracelets, hoop cords, and tassels.",
+          "COSMO® Nishikiito® Metallic Thread — 33 specialty colors across five finishes for quiet sparkle on findings or accents.",
+        ],
+      },
+      {
+        heading: "Final Note",
+        paragraphs: [
+          "A skein does not have to become a wall. Sometimes it becomes a bracelet on a wrist, a hoop on an ear, a bookmark in a novel, or a button that holds a coat closed.",
+          "With COSMO threads, those small endings still carry Kyoto color—and the quiet pleasure of something handmade, finished, and given.",
+        ],
+      },
+    ],
+    ctaLabel: "Explore COSMO Threads",
+    ctaDescription:
+      "Shop COSMO® No. 25 floss and Seasons variegated colors—for bracelets, mini hoops, and tiny gifts from a single skein.",
+    cta: {
+      label: "Shop COSMO Floss",
+      href: "/floss",
+    },
+  },
+
+  {
     slug: "folk-wall-hangings",
     title: "Folk Wall Hangings: Stories Woven in Thread",
     excerpt:

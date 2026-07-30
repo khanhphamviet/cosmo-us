@@ -9,6 +9,22 @@ When publishing, copy chosen files into `public/images/` with a dated `blog-<slu
 
 ---
 
+## Batch 2026-07-30 (floss tiny gifts)
+
+| ID | Slides | Status / subject |
+|----|-------:|------------------|
+| C-uEBXiv4XU | 3 | **used** Floss Tiny Gifts (hero / mini hoops) — miniature cross-stitch hanging hoops |
+| CfloAVBP362 | 5 | **used** Floss Tiny Gifts (bracelet solids _03 + variegated flat _02); other slides free |
+| DNwq-KdXraK | 5 | **used** Floss Tiny Gifts (one-skein bracelets) — 1 skein + hair tie tip |
+| Cgtq0jYvjTc | 3 | **used** Floss Tiny Gifts (earrings) — variegated floss hoop earrings |
+| DMeYGFZiS3S | 3 | **used** Floss Tiny Gifts (earrings c) — pastel hoop earrings on wood |
+| C_ICo9xs993 | 4 | **used** Floss Tiny Gifts (buttons) — embroidered covered buttons |
+| DPijR52kaa5 | 3 | **used** Floss Tiny Gifts (brooch) — floral brooch WIP |
+| DLzDpcOBCqQ | 7 | **used** Floss Tiny Gifts (bookmarks) — lace figure bookmarks + tassels |
+| DYWYwtpDwxo | 4 | _04 **used** Floss Tiny Gifts products; _01–_03 earlier Stories |
+
+---
+
 ## Batch 2026-07-29 (folk wall hangings)
 
 | ID | Slides | Status / subject |
