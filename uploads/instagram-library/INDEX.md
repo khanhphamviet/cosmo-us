@@ -9,6 +9,17 @@ When publishing, copy chosen files into `public/images/` with a dated `blog-<slu
 
 ---
 
+## Batch 2026-07-31 (color cards & palettes)
+
+| ID | Slides | Status / subject |
+|----|-------:|------------------|
+| DBvhvdQqMe6 | 9 | **used** Color Cards (hero/palettes/in-use); _03 Seasonal supplies already; _07/_09 unused WIP |
+| C37CKdOvKNt | 3 | **used** Color Cards (pink family _01 + products _03); _02 free |
+| CmvhqyHP7On | 1 | **used** Color Cards (studio jars by color family) |
+| DQYk1G-jGk3 | 2 | **used** Color Cards (seasonal palette _02); _01 status unchanged |
+
+---
+
 ## Batch 2026-07-30 (floss tiny gifts)
 
 | ID | Slides | Status / subject |
@@ -133,11 +144,11 @@ Remaining Jul 23 Downloads (~60 posts) not yet indexed line-by-line — still in
 | C5p2x6zy4NK | **used** Wearable Art & Home Décor (project pouch) | Sage linen drawstring pouch with white flower embroidery |
 | Cu5q6YuPsh0 | **used** Seasonal Projects (summer) | Sunflower embroidery gallery (hoops + frames) |
 | Cy5ZMAIPOyt | **used** Framed Botanical Gallery (fuji _02) | Framed Mount Fuji + autumn maple cross-stitch |
-| DBvhvdQqMe6 | available | COSMO illustrated thread cards in a glass jar |
+| DBvhvdQqMe6 | **used** Color Cards & Palettes (2026-07-31) | COSMO illustrated thread cards in a glass jar |
 | DKrHQEQRqZd | **used** Framed Botanical Gallery (meadow _02) | Framed mountain + wildflower meadow needlework |
 | DMty6k7ISGV | **used** Seasonal Projects (spring) | Framed girl sewing pansies (birds, cat, tools) |
 | DQGCXfpjeh7 | **used** Framed Botanical Gallery (herbarium _01) | Herbarium-style labeled botanical embroideries |
-| DQYk1G-jGk3 | available | Autumn Seasons floss flat lay with maple + pumpkin |
+| DQYk1G-jGk3 | **used** Color Cards (_02) | Autumn Seasons floss flat lay with maple + pumpkin |
 | DSZWbnaD9GR | **used** Seasonal Projects (winter) | Oval linen Christmas ornaments with metallic thread |
 | DVm4sTmCuGk | available | Mimosa embroidery sachet with real mimosa flowers |
 | DWY6ZQEGNYJ | **used** Seasonal Projects (Nishikiito gallery) | Crocheted pale-pink cherry-blossom earrings on kraft card |

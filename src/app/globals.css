@@ -1060,6 +1060,28 @@ img { display: block; max-width: 100%; height: auto; }
   color: var(--foreground);
   letter-spacing: 0.01em;
 }
+.blog-article-gallery--comparison .blog-article-gallery-caption:has(.blog-article-gallery-caption-title) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+.blog-article-gallery--comparison .blog-article-gallery-caption-title {
+  font-family: var(--brand-sans);
+  font-size: clamp(0.875rem, 0.2vw + 0.8rem, 0.9375rem);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--foreground);
+  line-height: 1.35;
+}
+.blog-article-gallery--comparison .blog-article-gallery-caption-body {
+  font-family: var(--brand-sans);
+  font-size: clamp(0.8125rem, 0.35vw + 0.72rem, 0.875rem);
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+  color: #555;
+}
 .blog-article-before-after {
   margin: clamp(20px, 3vw, 32px) 0 0;
 }

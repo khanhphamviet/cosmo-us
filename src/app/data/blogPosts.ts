@@ -81,6 +81,201 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "color-cards-palettes",
+    title: "Color Cards & Curated Palettes: Choosing COSMO® Colors with Intention",
+    excerpt:
+      "Build stitch-ready color stories with COSMO® No. 25—DIY curated palette cards, color families, and calm ways to choose threads before the first stitch.",
+    publishedAt: "2026-07-31",
+    image: "/images/blog-color-cards-hero-20260731.jpg",
+    imageAlt:
+      "Hand-wrapped COSMO floss palette cards fanned in a clear glass jar on wood",
+    heroAspectRatio: "1462 / 1452",
+    imageFit: "contain",
+    sections: [
+      {
+        paragraphs: [
+          "Color Before the First Stitch",
+          "A beautiful project often begins before the needle touches cloth. It begins with color—how hues sit beside each other, how many tones a motif can hold, and which family feels right for the season or the gift.",
+          "COSMO® No. 25 Embroidery Floss offers over 500 solid colors of extra-long staple cotton. That range is a gift and a challenge: without a plan, a drawer of skeins can feel endless.",
+          "Curated palette cards—small boards you wrap yourself with a handful of related solids—turn that abundance into something calm and usable: color stories you can stitch from, gift, or adapt.",
+        ],
+      },
+      {
+        heading: "What a Curated Palette Card Is For",
+        paragraphs: [
+          "This is not the manufacturer’s full shade card—the master sample book that shows every COSMO No. 25 color. A curated palette card is something smaller and personal: a board or bobbin card you make yourself, wrapping six or seven related solids so you can see relationships at a glance.",
+          "The illustrated cards shown here follow that idea—hand-wrapped bands of No. 25 on a single board, with a quiet row of figures at the top as a reminder that color is meant to become something: a dress, a motif, a season on cloth.",
+          "Unlike a wall of numbered skeins, a curated card answers a simpler question: does this group already feel finished?",
+        ],
+        bulletsLabel: "A curated palette card helps you",
+        bullets: [
+          "Compare solids side by side without hunting the drawer",
+          "Limit a project to a readable set of tones",
+          "Gift a complete color story with one small object",
+          "Bridge from inspiration to the first stitch faster",
+        ],
+      },
+      {
+        heading: "Reading a Palette",
+        paragraphs: [
+          "Each card is its own mood. Warm earth and berry. Citrus and teal. Classic reds with forest and mustard. Bright primaries that wake a white ground.",
+          "Look for contrast where detail must read, and for neighborly tones where shading or clothing textures should feel soft.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-color-cards-palette-a-20260731.jpg",
+            alt: "Curated COSMO palette card with mustard, lime, sky blue, pink, fuchsia, purple, and brown floss",
+            caption: "Cool brights with a brown anchor—clear steps from light to deep",
+            fit: "contain",
+            width: 1375,
+            height: 1366,
+          },
+          {
+            src: "/images/blog-color-cards-palette-b-20260731.jpg",
+            alt: "Curated COSMO palette card with yellow, lavender, orange, teal, red, lime, and brown floss",
+            caption: "Playful contrast—yellow and lavender beside citrus and teal",
+            fit: "contain",
+            width: 1375,
+            height: 1366,
+          },
+          {
+            src: "/images/blog-color-cards-palette-c-20260731.jpg",
+            alt: "Curated COSMO palette card with red, forest green, mustard, taupe, blue, purple, and burgundy floss",
+            caption: "Heritage depth—reds, forest, mustard, and jewel accents",
+            fit: "contain",
+            width: 1375,
+            height: 1366,
+          },
+          {
+            src: "/images/blog-color-cards-palette-d-20260731.jpg",
+            alt: "Curated COSMO palette card with a seven-band solid floss wrap on white board",
+            caption: "Another story on one board—solids chosen to travel together",
+            fit: "contain",
+            width: 1375,
+            height: 1366,
+          },
+        ],
+        galleryVariant: "row",
+        galleryZoom: true,
+      },
+      {
+        heading: "Building a Color Family",
+        paragraphs: [
+          "Wrapped cards are one path. Another is gathering a family yourself—pinks from blush to cherry, stacked with cloth and scissors until the group feels inevitable.",
+          "Working inside one family keeps small motifs readable and large fills calm. COSMO’s solid No. 25 range is designed so neighboring numbers and related hues sit naturally together.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-color-cards-family-pink-20260731.jpg",
+            alt: "Pink and coral COSMO floss skeins with peach fabrics, gold scissors, and pink spools",
+            caption: "A pink–coral family",
+            description:
+              "Start with 4–7 related solids and one darker anchor so highlights stay clear. Test neighbors on white cloth before a large fill.",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+          {
+            src: "/images/blog-color-cards-seasonal-20260731.jpg",
+            alt: "Autumn-toned COSMO Seasons and solid floss arranged with maple and pumpkin accents",
+            caption: "A seasonal mood",
+            description:
+              "Name the season first, then pick solids that serve it. Add Seasons when the set needs breath—gradual 8000 shifts or shorter, dramatic 9000 bursts.",
+            fit: "contain",
+            width: 1638,
+            height: 2048,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+      },
+      {
+        heading: "From Palette to Stitch",
+        paragraphs: [
+          "A curated set earns its keep when color lands on cloth. That idea is especially clear on COSMO® 100 Ladies® (100 Neesan) fabric by Kazue Nakajima—pre-printed monochrome figures waiting to be “dressed” with needle and thread.",
+          "Curating a tight 4–7 color palette is the exact technique that keeps those outfits cohesive: limited solids turn outlines into stripes, grids, and French-knot texture without drowning the line drawing.",
+          "That is the quiet power of a palette: fewer decisions mid-project, more confidence in every fill—whether you are finishing one lady or a whole gathering.",
+        ],
+        figure: {
+          src: "/images/blog-color-cards-inuse-20260731.jpg",
+          alt: "100 Ladies–style printed figures on white fabric partially filled with colorful COSMO embroidery floss",
+          caption:
+            "100 Ladies® on cloth—a tight palette dressing pre-printed figures one stitch at a time.",
+          fit: "contain",
+          width: 709,
+          height: 705,
+        },
+        linkCta: {
+          label: "Explore 100 Ladies® fabric",
+          href: "/stories/100-ladies-embroidery-fabric",
+        },
+      },
+      {
+        heading: "Keeping Color Within Reach",
+        paragraphs: [
+          "Whether you stitch from DIY palette cards or jars, organization is part of color thinking. Grouping by family—and leaving room to see edges—makes it easier to pull a harmonious set for the next afternoon’s work.",
+        ],
+        figure: {
+          src: "/images/blog-color-cards-studio-20260731.jpg",
+          alt: "Studio desk with glass jars of COSMO floss sorted by color family and patterns on the wall",
+          caption:
+            "Color families in glass—easy to see, easy to choose.",
+          fit: "contain",
+          width: 1080,
+          height: 1080,
+        },
+      },
+      {
+        heading: "Tips for Curating COSMO Colors",
+        paragraphs: [
+          "A few calm habits keep a large palette feeling intentional.",
+        ],
+        bullets: [
+          "Choose the mood first—season, gift, or motif—then select 4–7 solids that serve it.",
+          "Prefer high contrast for tiny work and for dressing 100 Ladies® figures; save close neighbors for larger fills.",
+          "Keep one dark and one light in every set so edges and accents stay clear.",
+          "Store families together—DIY cards, jars, or boxes—so the next project starts with seeing, not searching.",
+          "Add Seasons for breath: the 8000 series offers longer, gradual shade shifts; the 9000 series brings shorter, more dramatic bursts—choose the rhythm that fits your solid palette.",
+        ],
+      },
+      {
+        heading: "Product Recommendations",
+        paragraphs: [
+          "Build DIY palette cards and families from solids; reach for Seasons only where color should shift on its own.",
+        ],
+        figure: {
+          src: "/images/blog-color-cards-products-20260731.jpg",
+          alt: "COSMO embroidery floss and related craft materials arranged for color planning",
+          caption:
+            "No. 25 solids for structure; Seasons 8000 for gentle breath, 9000 when you want a faster change of mood.",
+          fit: "contain",
+          width: 1440,
+          height: 1440,
+        },
+        bullets: [
+          "COSMO® No. 25 Cotton Floss — over 500 solid colors for curated palette cards, families, and clear motifs.",
+          "COSMO® Seasons Variegated Floss — 140 self-shading colors across series with different change rhythms (including gradual 8000 and more dramatic 9000).",
+          "COSMO® 100 Ladies® embroidery fabric — pre-printed figures by Kazue Nakajima, ideal for practicing a tight 4–7 color wardrobe.",
+        ],
+      },
+      {
+        heading: "Final Note",
+        paragraphs: [
+          "Color is a kind of planning that feels like play. A DIY card in a jar, a pink family on the table, a few solids chosen before the needle moves—these small decisions shape everything that follows.",
+          "With COSMO® No. 25, you are never short of options. Curated palettes simply help those options become stories you can stitch.",
+        ],
+      },
+    ],
+    ctaLabel: "Explore COSMO Threads",
+    ctaDescription:
+      "Shop COSMO® No. 25 floss, Seasons variegated colors, and 100 Ladies® fabric—for palette cards, color families, and projects planned in color first.",
+    cta: {
+      label: "Shop COSMO Floss",
+      href: "/floss",
+    },
+  },
+
+  {
     slug: "floss-tiny-gifts",
     title:
       "Tiny Gifts from a Skein: Bracelets, Mini Hoops & Small Treasures",
