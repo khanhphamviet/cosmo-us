@@ -81,6 +81,219 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "dark-ground-florals",
+    title: "Dark-Ground Florals: Dense Sprays on Structured Cloth",
+    excerpt:
+      "Learn the grammar of surface embroidery on dark and structured cloth—spray motifs, panel balance, and how COSMO® No. 25 solids (with quiet Nishikiito® accents) keep florals luminous against teal, bronze, chocolate, and olive grounds.",
+    publishedAt: "2026-08-03",
+    image: "/images/blog-dark-ground-florals-hero-20260803.jpg",
+    imageAlt:
+      "Close-up of a teal silk vest with dense rose and leaf embroidery along the lapels and button placket",
+    heroAspectRatio: "1 / 1",
+    imageFit: "contain",
+    sections: [
+      {
+        paragraphs: [
+          "When the Cloth Is Part of the Palette",
+          "Most stitchers meet florals on pale linen or open Aida, where every petal sits on light. Dark-ground work asks a different question: how do roses, leaves, and star accents stay luminous when the fabric itself is teal, bronze, chocolate, or deep olive?",
+          "The answer is not more color—it is clearer structure. Historical waistcoats and tailored panels show the same grammar again and again: dense sprays that rise from openings—plackets, buttonholes, pocket flaps—thin punctuation across open fields, and borders that frame the eye without crowding it.",
+          "COSMO® No. 25 Embroidery Floss—extra-long staple cotton in over 500 solids, with a polished soft sheen—is built for that kind of control. Separate strands for fine stems; keep fuller strands for satin petals that catch light effectively off a dark weave.",
+        ],
+      },
+      {
+        heading: "Why a Dark Ground Changes Everything",
+        paragraphs: [
+          "On white cloth, mid-tones do much of the work. On a dark ground, mid-tones disappear and only the lightest and brightest solids read as bloom. That is why cream-to-crimson roses and chartreuse leaves feel so alive on teal silk: they are chosen to outshine the cloth, not blend into it.",
+          "Think of the fabric as your darkest “thread.” Then choose a short solid palette—often 5–8 colors—that climbs clearly above that floor. A quick check: lay candidate skeins on the dark cloth and photograph them in grayscale on your phone—if a color disappears in black-and-white, it lacks the value contrast to pop.",
+        ],
+        figure: {
+          src: "/images/blog-dark-ground-florals-teal-detail-20260803.jpg",
+          alt: "Detail of magenta-to-cream embroidered roses and yellow-green leaves on dark teal ribbed cloth beside sunburst buttons",
+          caption:
+            "Petals that climb from cream into deep rose—high contrast is what keeps sprays readable on teal.",
+          fit: "contain",
+          width: 1440,
+          height: 1440,
+        },
+        bulletsLabel: "Dark-ground habits",
+        bullets: [
+          "Test candidate solids on a scrap of the same dark cloth before filling a large spray",
+          "Snap a grayscale phone photo of skeins on the fabric—colors that vanish in monochrome need a higher-contrast swap",
+          "Keep one near-white or pale cream for petal highlights and French-knot stars",
+          "Reserve the deepest reds and olives for shadow—never as the only petal color",
+          "Let empty ground breathe between sprays so the cloth remains part of the design",
+        ],
+      },
+      {
+        heading: "The Spray: A Motif Built for Openings",
+        paragraphs: [
+          "A classic spray grows from a placket, pocket edge, or collar point and fans outward. It is not a centered bouquet. The stem line often follows the garment’s architecture—buttons, bound edges, or a vertical vine—so embroidery and construction feel inseparable.",
+          "Work the largest blossoms first where light should land, then add elongated leaves, then the smallest buds and star dots that scatter into open cloth.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-dark-ground-florals-cream-sprays-20260803.jpg",
+            alt: "Cream silk waistcoat with horizontal floral sprays growing from a button placket, each rising from a tiny brown basket motif",
+            caption: "Spray from the placket",
+            description:
+              "Horizontal clusters step out from the button line—flowers appear to grow from tiny basket bases, not float in open space.",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+          {
+            src: "/images/blog-dark-ground-florals-cream-dense-20260803.jpg",
+            alt: "Cream ribbed silk with dense Rococo embroidery: grape clusters, rosebuds, lavender sprays, and rose-embroidered buttons",
+            caption: "Density with air",
+            description:
+              "Grapes, baskets, and ribboned stems can sit close together if each motif keeps a clear silhouette against the dark weave.",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+      },
+      {
+        heading: "Quiet Grounds, Quiet Accents",
+        paragraphs: [
+          "Not every structured panel needs jewel contrast. Olive-bronze and chocolate grounds favor cream, white, and soft gold—florals that feel like light falling on cloth rather than paint on a dark canvas.",
+          "Here, COSMO® Nishikiito® Metallic Thread earns a sparing role: a sunburst on a covered button, a thin border glint, or a single pollen spark. Across its 33 specialty colors and five finishes—Kagami, Opali, Fuji, Champagne, and Classic—one metallic note on dark silk reads farther than a field of glitter.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-dark-ground-florals-olive-20260803.jpg",
+            alt: "Olive-bronze silk waistcoat with cream and yellow botanical sprays and cascading white French-knot trails",
+            caption: "Olive bronze",
+            description:
+              "Cream sprays and cascading knot trails—light that falls on cloth rather than paint on a canvas.",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+          {
+            src: "/images/blog-dark-ground-florals-bronze-20260803.jpg",
+            alt: "Dark chocolate brown silk with white and gold floral embroidery, fabric-covered buttons, and vertical French-knot columns",
+            caption: "Chocolate ground",
+            description:
+              "Gold petals and white punctuation—keep metallics on buttons and borders, not as the main fill.",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+      },
+      {
+        heading: "Designing for Panels, Not Pictures",
+        paragraphs: [
+          "Structured cloth—waistcoat fronts, jacket panels, firm linen facings—divides space into zones: collar, chest, placket, pocket flap, hem. Embroidery that respects those zones looks intentional; embroidery that ignores them looks stuck on.",
+          "Before the first stitch, name the zones you will decorate and the zones you will leave bare. Symmetry across a center opening is powerful; so is a single asymmetric spray when the opposite panel stays quiet.",
+        ],
+        figure: {
+          src: "/images/blog-dark-ground-florals-panels-20260803.jpg",
+          alt: "Four historical waistcoats displayed in clear wall cases, showing how embroidered and patterned panels read as complete garment faces",
+          caption:
+            "Panel thinking—each front is a finished composition bounded by collar, buttons, and hem.",
+          fit: "contain",
+          width: 1440,
+          height: 1440,
+        },
+      },
+      {
+        heading: "Stitch Choices That Hold on Dense Cloth",
+        paragraphs: [
+          "Satin and long-and-short stitches build petal volume; stem or outline stitches keep vines thin enough to travel. French knots and tiny star stitches become the “air” between larger forms—especially useful for scattering light across dark fields.",
+          "On tightly woven silk, tailored wool, or heavy structured linen, needle choice matters as much as strand count. A sharp, slim Crewel or Milliners needle in sizes 7–10 pierces the weave cleanly and is less likely to leave permanent puncture marks if a stitch must be unpicked. Pair that with gentle tension so highlights stay on the surface instead of sinking into the cloth.",
+          "Transfer is the other dark-ground friction point: lightboxes and blue water-soluble pens often fail on teal, bronze, or chocolate fabric. Use white dressmaker’s carbon, white chalk transfer, or a water-soluble stick-and-stitch stabilizer topper so spray outlines stay visible until you cover them with thread.",
+        ],
+        bulletsLabel: "Practical notes",
+        bullets: [
+          "Match strand count to scale—fewer strands for fine vines; more for satin roses that must catch light",
+          "Prefer a size 7–9 Crewel needle on structured silks or dense wools",
+          "Transfer spray outlines with white carbon, chalk, or a stick-and-stitch topper before filling",
+          "Echo button and border colors in tiny accents so hardware and stitch feel related",
+          "Optional: one Seasons strand in foliage only when you want soft leaf movement—keep petals in solids so blooms stay crisp",
+        ],
+      },
+      {
+        heading: "Tips for Dark-Ground Florals",
+        paragraphs: [
+          "A short checklist keeps dense work from becoming muddy.",
+        ],
+        bullets: [
+          "Test values in monochrome — snap a grayscale photo of your chosen No. 25 skeins resting on the dark fabric; if a color disappears in black-and-white, swap it for a higher-contrast tint before stitching.",
+          "Transfer with care — use white dressmaker’s carbon or a water-soluble stabilizer topper to transfer spray outlines clearly onto dark teal, bronze, or chocolate grounds.",
+          "Choose sharp, slim needles — use a size 7–9 Crewel needle on structured silks or dense wools to avoid leaving permanent puncture marks in the fabric weave.",
+          "Anchor sprays to openings — align sprays with button lines, plackets, or border edges rather than floating bouquets in open space.",
+          "Punctuate with Nishikiito® — keep metallics to single-strand highlights—button details, pollen sparks, or narrow border accents—so they catch light without overpowering the floral work.",
+        ],
+      },
+      {
+        heading: "Product Recommendations",
+        paragraphs: [
+          "Build sprays with solids for clarity; reserve metallics and variegation for deliberate accents. The charts below show the real ranges—so you can picture petal lights, one metallic catch, and soft foliage shifts before you buy.",
+        ],
+        gallery: [
+          {
+            src: "/images/floss-cosmo-500-color-chart-tight-20260710.jpg",
+            alt: "COSMO No. 25 embroidery floss color chart showing the full solid color range across numbered boards",
+            caption: "No. 25 solids",
+            description:
+              "Over 500 solid colors of extra-long staple cotton—choose luminous petal and leaf tones that climb above a dark ground.",
+            fit: "contain",
+            width: 2400,
+            height: 878,
+          },
+          {
+            src: "/images/nishikiito-finishes-hd-20260701.jpg",
+            alt: "Five COSMO Nishikiito metallic thread spools showing specialty finishes and colors",
+            caption: "Nishikiito® metallics",
+            description:
+              "33 specialty colors across five finishes (Kagami, Opali, Fuji, Champagne, Classic)—one spark on a button or pollen tip.",
+            fit: "contain",
+            width: 1500,
+            height: 938,
+          },
+          {
+            src: "/images/floss-seasons-color-chart-20260710-v2.jpg",
+            alt: "COSMO Seasons variegated floss color chart showing the full self-shading color range",
+            caption: "Seasons variegated",
+            description:
+              "140 self-shading colors—optional soft shifts in foliage only; keep primary blooms in solids so sprays stay sharp.",
+            fit: "contain",
+            width: 1200,
+            height: 454,
+          },
+        ],
+        galleryVariant: "row",
+        galleryZoom: true,
+        bullets: [
+          "COSMO® No. 25 Cotton Floss — over 500 solid colors of extra-long staple cotton with a polished soft sheen that reflects light effectively off dark grounds.",
+          "COSMO® Nishikiito® Metallic Thread — 33 specialty colors across five finishes (Kagami, Opali, Fuji, Champagne, Classic); use sparingly on buttons, borders, or pollen highlights.",
+          "COSMO® Seasons Variegated Floss — 140 self-shading colors; optional soft shifts in foliage only—keep primary blooms in solids so sprays stay sharp.",
+        ],
+      },
+      {
+        heading: "Final Note",
+        paragraphs: [
+          "Dark-ground florals are less about recreating a garment and more about learning a visual language: sprays that grow from structure, lights that outshine the cloth, and quiet fields that let dense work breathe.",
+          "With a short COSMO® No. 25 palette—and one metallic note when the panel asks for it—structured cloth becomes a stage where every blossom can hold its light.",
+        ],
+      },
+    ],
+    ctaLabel: "Explore COSMO Threads",
+    ctaDescription:
+      "Shop COSMO® No. 25 solids and Nishikiito® metallics for sprays, panels, and florals that stay luminous on dark cloth.",
+    cta: {
+      label: "Shop COSMO Floss",
+      href: "/floss",
+    },
+  },
+
+  {
     slug: "color-cards-palettes",
     title: "Color Cards & Curated Palettes: Choosing COSMO® Colors with Intention",
     excerpt:

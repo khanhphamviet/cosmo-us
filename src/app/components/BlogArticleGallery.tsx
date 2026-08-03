@@ -200,8 +200,7 @@ export default function BlogArticleGallery({
               )}
               {item.caption ? (
                 <figcaption className="blog-article-gallery-caption">
-                  {variant === "pillars" ||
-                  (variant === "comparison" && item.description) ? (
+                  {variant === "pillars" || item.description ? (
                     <>
                       <span className="blog-article-gallery-caption-title">
                         {item.caption}

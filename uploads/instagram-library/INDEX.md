@@ -9,6 +9,56 @@ When publishing, copy chosen files into `public/images/` with a dated `blog-<slu
 
 ---
 
+## Batch 2026-08-03 (dark-ground florals)
+
+| ID | Slides | Status / subject |
+|----|-------:|------------------|
+| DCqpDsyvFeL | 10 | **used** Dark-Ground Florals (_01–_07 hero/details/panels); _08–_10 still free (100 Ladies tote/display — hold for other Story) |
+| C37CKdOvKNt | 3 | **used** Color Cards (_01 family + _03 products); _02 free (hidamari pink cards—not used for Dark-Ground products) |
+
+---
+
+## Batch 2026-07-31 evening (new available drop)
+
+Synced from `~/Downloads/instagram_*` into `uploads/instagram-library/instagram_<ID>/`. All **available** — not yet wired to a Story.
+
+**Likely Story angles from this drop**
+
+| Angle | Strong IDs | Why |
+|-------|------------|-----|
+| 100 Ladies® wardrobe deep-dive | DbHhEe7j9An, DBN8o6CyZEx | Tote grids of dressed Neesan + magazine spread on 18–19c dress wardrobe |
+| Historical dress → stitch inspiration | DAao_gFNixP, DCQ5M4ttYBC, C_wr9cBvAva | Museum court suit / Rococo gowns / sculptural floral fashion as palette references |
+| Embroidered garments & vests | DCqpDsyvFeL | **used** Dark-Ground Florals (_01–_07); _08–_10 still free |
+| Framed botanicals / monthly flower | C6aAexzvSvX, DY6kpbeD8k_ | Lily-of-the-valley frame; June “月の刺しゅう” rose + pink rose bouquet |
+| Pictorial cross-stitch landscape | DJtU3wPxuhw | Café street scene (detail + full framed) — large solid palette showcase |
+| Visible mending on denim | DT3-prnD9Qy | Patchwork/sashiko-style patches on light jeans; Seasons-friendly |
+| Valentine / gift-tag floss flats | DUafweNgfWN, DUXHcPBF0lX | COSMO skeins + LOVE tags / kraft gift with bird + heart tags |
+| Seasonal festival hangings (extra) | DTr7Zo-j-tT | Desk + wall: Hina, moon rabbits, floral wreath hangings |
+| Floss crochet jewelry | DWc2l0AGNSC | Hanami dango earrings (pink/white/green) |
+| Kid / beginner sampler motifs | DaU_sCTD5kL | 3×3 red–black motif grid (girl, pets, fruit, flowers) |
+| Wearable miniature floral | C81XjC6x8oQ | Oval floral brooch on lace |
+
+| ID | Slides | Status / subject |
+|----|-------:|------------------|
+| DbHhEe7j9An | 5 | available — 100 Ladies® tote grids; red/black + multi-palette “dressed” figures (stripes, grids, French knots) |
+| DBN8o6CyZEx | 2 | available — Magazine/book spread: 100 Neesan 18–19c dress wardrobe; hoop of couple in period dress |
+| DAao_gFNixP | 6 | available — Museum 18c men’s court suit with dense floral embroidery + lace jabot (historical ref) |
+| DCQ5M4ttYBC | 6 | available — Museum Rococo / floral gowns on mannequins (peacock-feather cream gown hero) |
+| C_wr9cBvAva | 1 | available — Avant-garde sculptural pink cape + floral lace trousers on mannequin (fashion texture ref) |
+| DCqpDsyvFeL | 10 | **used** Dark-Ground Florals (_01–_07); _08–_10 free (100 Ladies retail/display) |
+| DJtU3wPxuhw | 2 | available — Pictorial café street cross-stitch (close detail + full blue-grey framed piece) |
+| C6aAexzvSvX | 1 | available — Framed lily-of-the-valley bouquet cross-stitch on grey Aida, light wood frame |
+| DY6kpbeD8k_ | 2 | available — June monthly embroidery: labeled “Rose” stem in white frame; pink rose bouquet cross-stitch |
+| C81XjC6x8oQ | 1 | available — Oval dusty-blue floral brooch (rose + bud + lavender bow) on white lace |
+| DT3-prnD9Qy | 3 | available — Visible mending: colorful embroidered patches on light-wash denim jeans |
+| DTr7Zo-j-tT | 3 | available — Seasonal wall hangings at desk (Hina dolls, moon rabbits/otsukimi, floral wreaths) |
+| DUafweNgfWN | 3 | available — Valentine flat lay: COSMO 406/706/4311/3115 + LOVE tags + heart cookie box |
+| DUXHcPBF0lX | 2 | available — Rustic Valentine gift: kraft wrap, lace, bird/heart tags, COSMO brown–red skeins |
+| DWc2l0AGNSC | 1 | available — Crochet hanami dango earrings (pink/white/green) on kraft card + real dango prop |
+| DaU_sCTD5kL | 4 | available — Framed 3×3 beginner motif sampler (red/black/green icons) on yellow gingham |
+
+---
+
 ## Batch 2026-07-31 (color cards & palettes)
 
 | ID | Slides | Status / subject |
