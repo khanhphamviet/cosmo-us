@@ -81,6 +81,280 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "painting-with-crosses",
+    title: "Painting with Crosses: Creating Depth in Pictorial Cross-Stitch",
+    excerpt:
+      "Treat pictorial cross-stitch like painting with thread—value, strand blending, fabric count as canvas resolution, and how COSMO® No. 25 solids build cafés, façades, and living scenes one cross at a time.",
+    publishedAt: "2026-08-04",
+    image: "/images/blog-painting-with-crosses-hero-20260804.jpg",
+    imageAlt:
+      "Framed pictorial cross-stitch of a European café street with blue shutters, flower boxes, and terracotta roofs",
+    heroAspectRatio: "1211 / 1513",
+    imageFit: "contain",
+    sections: [
+      {
+        paragraphs: [
+          "From Single Stitches to Living Scenes",
+          "A cross-stitch is small—just two diagonal lines crossing each other. But thousands of those marks can become something larger: a café street filled with flowers, a quiet building façade, or a landscape shaped by light and shadow.",
+          "Like painting with tiny brushstrokes, pictorial cross-stitch turns individual stitches into color, depth, and atmosphere. Each thread choice contributes to the final scene—from warm brick and awning stripes to cool sky and deep street shadow.",
+          "With COSMO® No. 25 Embroidery Floss—over 500 solid colors of extra-long staple cotton—stitchers can build detailed places one cross at a time.",
+        ],
+      },
+      {
+        heading: "A Cross-Stitch Scene Comes to Life",
+        paragraphs: [
+          "A finished pictorial piece becomes more than a pattern—it becomes a place. In this café street, the blue façade, pink flower boxes, cobbles, and terracotta roofs are built from carefully chosen solids stacked across the grid.",
+          "Close-ups only make sense beside the whole. Left: the finished street. Right: the same architecture as individual crosses—ivy, roof, and awning stripes waiting for your eye to reassemble them.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-painting-with-crosses-cafe-full-20260804.jpg",
+            alt: "Full framed café street pictorial cross-stitch",
+            caption: "Full scene",
+            description: "Step back—the café reads as one place.",
+            fit: "contain",
+            width: 1211,
+            height: 1513,
+          },
+          {
+            src: "/images/blog-painting-with-crosses-cafe-close-20260804.jpg",
+            alt: "Close-up of the same café cross-stitch: greenery, terracotta roof, and awnings",
+            caption: "Same piece, close-up",
+            description: "Step in—only crosses until the mind rebuilds the street.",
+            fit: "contain",
+            width: 1047,
+            height: 1308,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+        bulletsLabel: "Painter’s questions at the hoop",
+        bullets: [
+          "Where is the light coming from?",
+          "Which colors create distance?",
+          "Where should details stand out?",
+          "How can small value shifts create depth?",
+        ],
+      },
+      {
+        heading: "Cross-Stitch as Pixel Painting",
+        paragraphs: [
+          "From a distance, a stitched image can look smooth and complete. Up close, the individual crosses reveal the construction—petal yellows, seed centers, leaf greens meeting like paint dabs on a grid.",
+          "Each stitch works like a tiny painted mark: darker shades build shadow; lighter shades suggest sunlight; neighboring colors blend optically into softer transitions—pointillism in cotton.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-painting-with-crosses-sunflower-full-20260804.jpg",
+            alt: "Framed sunflower bouquet cross-stitch on light blue Aida",
+            caption: "Full scene",
+            description: "Sunflowers resolve as a bouquet from viewing distance.",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+          {
+            src: "/images/blog-painting-with-crosses-sunflower-close-20260804.jpg",
+            alt: "Zoomed detail of the same sunflower cross-stitch petals and centers",
+            caption: "Same piece, close-up",
+            description: "Yellow and brown crosses—optical blending does the rest.",
+            fit: "contain",
+            width: 1200,
+            height: 1200,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+      },
+      {
+        heading: "Building an Architectural Scene",
+        paragraphs: [
+          "Buildings are structure: straight lines, repeated shapes, changing surfaces, and small details. Cross-stitch captures those qualities through careful color placement—not one flat wall color.",
+          "The café pair above shows the idea clearly: terracotta shadows, mid-tone brick, soft highlights, striped awnings, cool window panes. Small value changes turn blocks into surfaces.",
+        ],
+      },
+      {
+        heading: "Mixing Strands for Half-Step Shades",
+        paragraphs: [
+          "Sometimes the perfect step does not exist as a single skein. Combine two neighboring No. 25 colors on the needle—one darker strand with one lighter—for a custom intermediate tone.",
+          "Call it strand blending or tweeding: mixing paint on the canvas. Half-steps smooth petal edges, glass reflections, and soft shadows without jumping to an unrelated hue.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-painting-with-crosses-pitcher-full-20260804.jpg",
+            alt: "Framed pictorial cross-stitch of sunflowers in a glass pitcher",
+            caption: "Full scene",
+            description: "Glass, stems, and blooms read as a still life.",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+          {
+            src: "/images/blog-painting-with-crosses-pitcher-close-20260804.jpg",
+            alt: "Close-up of the same pitcher piece showing petal and glass stitch detail",
+            caption: "Same piece, close-up",
+            description: "Neighboring yellows and pale greys—half-steps for light on glass and petal.",
+            fit: "contain",
+            width: 1200,
+            height: 999,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+        bulletsLabel: "Where blending helps",
+        bullets: [
+          "Skies and soft atmospheric distance",
+          "Stone walls and cobbled streets",
+          "Petal and glass reflections",
+          "Layered greens in leaves and vines",
+        ],
+      },
+      {
+        heading: "Defining Details with Fine Lines",
+        paragraphs: [
+          "Full crosses build larger shapes. Fine single-strand backstitch works like a detail brush: whiskers, petal edges, window frames, wrought-iron lines.",
+          "Used selectively, backstitch adds structure so soft fields of color become a finished scene.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-painting-with-crosses-garden-full-20260804.jpg",
+            alt: "Framed pictorial cross-stitch of a kitten among sunflowers",
+            caption: "Full scene",
+            description: "Cat, blooms, and sky hold together from a step back.",
+            fit: "contain",
+            width: 1440,
+            height: 1440,
+          },
+          {
+            src: "/images/blog-painting-with-crosses-garden-close-20260804.jpg",
+            alt: "Close-up of the same garden piece showing fur and petal crosses",
+            caption: "Same piece, close-up",
+            description: "Fur and petal pixels—fine lines finish whiskers and edges.",
+            fit: "contain",
+            width: 1200,
+            height: 1198,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+      },
+      {
+        heading: "Choosing Colors Like a Painter",
+        paragraphs: [
+          "Pictorial stitching gets easier when you think about relationships rather than isolated numbers. Instead of “What is the exact color?” ask “How does this color work beside the colors around it?”",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-painting-with-crosses-roses-full-20260804.jpg",
+            alt: "Framed pink rose bouquet pictorial cross-stitch on pale pink Aida",
+            caption: "Full scene",
+            description: "A pink family with green support—related solids build the bouquet.",
+            fit: "contain",
+            width: 1668,
+            height: 2085,
+          },
+          {
+            src: "/images/blog-painting-with-crosses-roses-close-20260804.jpg",
+            alt: "Close-up of the same rose bouquet showing shaded pink crosses",
+            caption: "Same piece, close-up",
+            description: "Magenta beside blush—value contrast inside one color family.",
+            fit: "contain",
+            width: 1200,
+            height: 1200,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+        bulletsLabel: "Color habits for scenes",
+        bullets: [
+          "Create value contrast — light beside shadow creates form.",
+          "Build color families — related pinks, greens, or blues for smooth transitions.",
+          "Reserve the brightest colors — small highlights suggest sunlight and reflection.",
+        ],
+      },
+      {
+        heading: "The Role of COSMO® No. 25",
+        paragraphs: [
+          "COSMO® No. 25 Embroidery Floss is made for detailed color expression: over 500 solid colors of extra-long staple cotton with a smooth surface and soft, silk-like luster. That polished sheen matters in pictorial work because stitched surfaces catch ambient light differently depending on stitch direction.",
+          "Keeping the top leg of each cross consistent lets light reflect evenly across large areas—walls, petals, and skies—so the scene reads smoother from a step back.",
+          "Use solids for precision, blend neighboring shades for transitions, and layer highlights and shadows for atmosphere. The thread becomes the palette; the cross becomes the brushstroke.",
+        ],
+        figure: {
+          src: "/images/floss-cosmo-500-color-chart-tight-20260710.jpg",
+          alt: "COSMO No. 25 embroidery floss color chart showing the full solid color range",
+          caption:
+            "A painter’s palette in cotton—over 500 solids for façades, foliage, sky, and half-step blends.",
+          fit: "contain",
+          width: 2400,
+          height: 878,
+        },
+        linkCta: {
+          label: "Explore COSMO No. 25 floss",
+          href: "/floss",
+        },
+      },
+      {
+        heading: "Fabric Count: Choosing Your Canvas Resolution",
+        paragraphs: [
+          "The fabric grid is your canvas resolution. Lower counts create larger stitches and a more visible pixel effect; higher counts create smaller stitches and smoother transitions.",
+          "14-count Aida reads bold and graphic. 16- or 18-count Aida tightens the “pixels” for finer café and floral detail. Higher-count linen can push the scene toward a softer, more painterly finish.",
+          "Match count to how you want the picture to be viewed—from stylized and clear to smooth and atmospheric.",
+        ],
+        linkCta: {
+          label: "Read more on embroidery fabrics",
+          href: "/stories/embroidery-fabric-types",
+        },
+      },
+      {
+        heading: "Beyond Buildings: Creating Places Through Stitch",
+        paragraphs: [
+          "The same pictorial approach works beyond architecture: still lifes, garden scenes, travel memories. A stitched scene becomes a small record of a place—kept in color and thread.",
+          "Whether the subject is a café street or a sunflower pitcher, the habit stays the same: judge the full scene, then the close-up—value first, neighbors next, fine lines last.",
+        ],
+      },
+      {
+        heading: "Tips for Pictorial Cross-Stitch",
+        paragraphs: [
+          "A short checklist keeps complex scenes readable.",
+        ],
+        bullets: [
+          "Always check full scene and close-up — if the close-up looks like noise, step back before changing colors.",
+          "Work from large areas to small details — backgrounds before windows, flowers, and fine lines.",
+          "Match fabric count to visual resolution — higher counts help skies, water, and soft blooms blend.",
+          "Keep top stitches uniform — the same top-leg direction keeps sheen even across large fills.",
+          "Organize colors by family — grouping related No. 25 solids makes complex charts easier to follow.",
+          "Blend strands for half-steps — two neighboring solids on the needle soften transitions where a single skein jumps too far.",
+        ],
+      },
+      {
+        heading: "Product Recommendations",
+        paragraphs: [
+          "Pictorial work leans on solids first; add other lines only when the scene asks for them.",
+        ],
+        bullets: [
+          "COSMO® No. 25 Cotton Floss — over 500 solid colors of extra-long staple cotton with a polished soft sheen; the primary palette for façades, foliage, sky, and strand blending.",
+          "COSMO® Seasons Variegated Floss — 140 self-shading colors; optional for soft sky or distant greenery when you want movement without changing strands mid-fill.",
+          "Evenweave or Aida suited to your target resolution — choose count for bold pixels or smoother painterly blends.",
+        ],
+      },
+      {
+        heading: "From Crosses to a Complete Scene",
+        paragraphs: [
+          "A single cross is simple. Thousands of crosses become a street, a bouquet, a garden, or a memory.",
+          "Pictorial cross-stitch reminds us that embroidery is not only about following a chart—it is about creating images through patience, color, and countless small decisions.",
+          "With COSMO® No. 25, every shade becomes another tool for painting with thread.",
+        ],
+      },
+    ],
+    ctaLabel: "Explore COSMO Threads",
+    ctaDescription:
+      "Shop COSMO® No. 25 solids for pictorial scenes—architecture, foliage, and painterly depth one cross at a time.",
+    cta: {
+      label: "Shop COSMO Floss",
+      href: "/floss",
+    },
+  },
+
+  {
     slug: "dark-ground-florals",
     title: "Dark-Ground Florals: Dense Sprays on Structured Cloth",
     excerpt:

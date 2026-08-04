@@ -9,6 +9,16 @@ When publishing, copy chosen files into `public/images/` with a dated `blog-<slu
 
 ---
 
+## Batch 2026-08-04 (painting with crosses)
+
+| ID | Slides | Status / subject |
+|----|-------:|------------------|
+| DJtU3wPxuhw | 2 | **used** Painting with Crosses (café full _02 + close _01) |
+| Cu5q6YuPsh0 | 8 | _04/_06/_07 **used** Painting with Crosses (sunflower / pitcher / garden full+zoom pairs); _02 Seasonal earlier; other slides free |
+| DY6kpbeD8k_ | 2 | _02 **used** Painting with Crosses (rose bouquet full+zoom); _01 free |
+
+---
+
 ## Batch 2026-08-03 (dark-ground florals)
 
 | ID | Slides | Status / subject |
@@ -30,7 +40,7 @@ Synced from `~/Downloads/instagram_*` into `uploads/instagram-library/instagram_
 | Historical dress → stitch inspiration | DAao_gFNixP, DCQ5M4ttYBC, C_wr9cBvAva | Museum court suit / Rococo gowns / sculptural floral fashion as palette references |
 | Embroidered garments & vests | DCqpDsyvFeL | **used** Dark-Ground Florals (_01–_07); _08–_10 still free |
 | Framed botanicals / monthly flower | C6aAexzvSvX, DY6kpbeD8k_ | Lily-of-the-valley frame; June “月の刺しゅう” rose + pink rose bouquet |
-| Pictorial cross-stitch landscape | DJtU3wPxuhw | Café street scene (detail + full framed) — large solid palette showcase |
+| Pictorial cross-stitch landscape | DJtU3wPxuhw | **used** Painting with Crosses (2026-08-04) — café full + close |
 | Visible mending on denim | DT3-prnD9Qy | Patchwork/sashiko-style patches on light jeans; Seasons-friendly |
 | Valentine / gift-tag floss flats | DUafweNgfWN, DUXHcPBF0lX | COSMO skeins + LOVE tags / kraft gift with bird + heart tags |
 | Seasonal festival hangings (extra) | DTr7Zo-j-tT | Desk + wall: Hina, moon rabbits, floral wreath hangings |
@@ -46,7 +56,7 @@ Synced from `~/Downloads/instagram_*` into `uploads/instagram-library/instagram_
 | DCQ5M4ttYBC | 6 | available — Museum Rococo / floral gowns on mannequins (peacock-feather cream gown hero) |
 | C_wr9cBvAva | 1 | available — Avant-garde sculptural pink cape + floral lace trousers on mannequin (fashion texture ref) |
 | DCqpDsyvFeL | 10 | **used** Dark-Ground Florals (_01–_07); _08–_10 free (100 Ladies retail/display) |
-| DJtU3wPxuhw | 2 | available — Pictorial café street cross-stitch (close detail + full blue-grey framed piece) |
+| DJtU3wPxuhw | 2 | **used** Painting with Crosses (hero _02 + detail _01) |
 | C6aAexzvSvX | 1 | available — Framed lily-of-the-valley bouquet cross-stitch on grey Aida, light wood frame |
 | DY6kpbeD8k_ | 2 | available — June monthly embroidery: labeled “Rose” stem in white frame; pink rose bouquet cross-stitch |
 | C81XjC6x8oQ | 1 | available — Oval dusty-blue floral brooch (rose + bud + lavender bow) on white lace |
