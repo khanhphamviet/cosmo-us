@@ -9,6 +9,21 @@ When publishing, copy chosen files into `public/images/` with a dated `blog-<slu
 
 ---
 
+## Batch 2026-08-05 (everyday personalization)
+
+Synced from `~/Downloads/instagram_C4XiD7kpeQt`, `instagram_C4PI8qWMTkG`, `instagram_C4P1pn4O8Hr`, plus later drop `DKGaLP4PVHi`, `DFUDotyqJic`, `DIOAV24Rj-C`.
+
+| ID | Slides | Status / subject |
+|----|-------:|------------------|
+| C4XiD7kpeQt | 10 | _01/_09/_08 **used** Everyday Personalization (hero accessories; shirt WIP; finished letter); _04–_07 process + _02/_03/_10 packaging unused (transfer product not sold) |
+| DKGaLP4PVHi | 5 | _01/_02 **used** Everyday Personalization (embroidered envelopes + Seasons cool skeins); _03/_04 more Seasons rows free; _05 JP chart hold |
+| DFUDotyqJic | 4 | **used** Everyday Personalization (blue daisy pouch + detail; rose scatter pouch + detail) |
+| DIOAV24Rj-C | 8 | available — mini framed seasonal cross-stitch gallery (park; overlaps Festival/Botanical/Seasonal angles) |
+| C4PI8qWMTkG | 4 | available — teal mimosa/fern zip pouch (_01–_03); _04 = same MD5 as unwired seasonal extra |
+| C4P1pn4O8Hr | 3 | available — taupe whitework vine zip pouch |
+
+---
+
 ## Batch 2026-08-04 (painting with crosses)
 
 | ID | Slides | Status / subject |

@@ -81,6 +81,178 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: "everyday-personalization",
+    title: "Small Motifs, Soft Cloth: Personalizing Everyday Pieces with Floss",
+    excerpt:
+      "Add initials, tiny icons, and mini florals to cloth and stationery you already use—with COSMO® No. 25 solids, and Seasons when an edge should shift color on its own.",
+    publishedAt: "2026-08-05",
+    image: "/images/blog-everyday-personalization-hero-20260805.jpg",
+    imageAlt:
+      "Pink cap with embroidered bow, white and pink drawstring bags with flower and heart motifs, and light blue cloths with yellow stars",
+    heroAspectRatio: "886 / 872",
+    imageFit: "contain",
+    sections: [
+      {
+        paragraphs: [
+          "Motifs Made for Real Life",
+          "Not every embroidery project needs a frame. Some of the best stitching lives on things you already carry or send: a cap, a pouch, a pocket, a tee, an envelope flap.",
+          "Personalization means one clear mark that belongs to someone—an initial, a tiny icon, a few miniature flowers—without turning the piece into a sampler. Scale stays small. The object still works when you are done.",
+          "COSMO® No. 25 Embroidery Floss—over 500 solid colors of extra-long staple cotton—keeps those marks bright and smooth after wash and wear.",
+        ],
+      },
+      {
+        heading: "One Motif Per Piece",
+        paragraphs: [
+          "The grouping above shows the habit: one motif where the eye already lands. A dotted bow on a pink cap. A single flower on a white drawstring bag. Two hearts on a soft pink pouch. Tiny yellow stars in the corner of a light blue cloth.",
+          "Closed, geometric shapes read from arm’s length and stay clean after washing. Skip the full palette—two or three No. 25 solids is enough.",
+        ],
+      },
+      {
+        heading: "Letters as a Signature",
+        paragraphs: [
+          "An initial is the classic personal mark. Satin-stitched in one solid, it reads bold on pale cloth and still feels handmade when the serifs catch light along the thread direction.",
+          "Size the letter to the space: too small and satin gaps show; too large and a pocket crowds. Use two or three strands of No. 25 and keep the top stitch direction consistent so the fill sheen stays even.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-everyday-personalization-shirt-wip-20260805.jpg",
+            alt: "Light blue children’s tee with orange satin-stitch letter A in progress on the chest pocket",
+            caption: "On a pocket",
+            description: "Outline first, then even satin passes.",
+            fit: "contain",
+            width: 885,
+            height: 873,
+          },
+          {
+            src: "/images/blog-everyday-personalization-letter-finish-20260805.jpg",
+            alt: "Finished magenta satin-stitch letter A on cream fabric",
+            caption: "Finished initial",
+            description: "One No. 25 solid—dense fill, even sheen.",
+            fit: "contain",
+            width: 588,
+            height: 410,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+      },
+      {
+        heading: "Scattered Florals on Pouches",
+        paragraphs: [
+          "Not every mark is a letter. A few scattered flowers make a soft pouch feel handmade the moment someone picks it up—if each bloom stays small and the cloth between them stays open.",
+          "On cool blue linen: white daisies, yellow knot centers, dark green sprigs. On dusty rose: a short multi-color scatter that still reads personal because nothing is carpeted edge to edge.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-everyday-personalization-pouch-blue-20260805.jpg",
+            alt: "Light blue linen envelope pouch with white daisy embroidery resting on an open French book",
+            caption: "Blue pouch",
+            description: "A few daisies—enough to mark the piece.",
+            fit: "contain",
+            width: 1500,
+            height: 1500,
+          },
+          {
+            src: "/images/blog-everyday-personalization-pouch-blue-detail-20260805.jpg",
+            alt: "Close-up of white daisy embroidery with yellow French-knot centers and green leaves on light blue linen",
+            caption: "Detail",
+            description: "Satin petals, knot centers, short sprigs.",
+            fit: "contain",
+            width: 389,
+            height: 389,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+        galleryCompact: true,
+      },
+      {
+        paragraphs: [
+          "Same habit on warmer cloth: three to five tiny clusters, stems before knot centers, open ground between them.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-everyday-personalization-pouch-rose-20260805.jpg",
+            alt: "Dusty rose envelope pouch with scattered multi-color floral embroidery on an open vintage book",
+            caption: "Rose pouch",
+            description: "A short scatter—personal, not busy.",
+            fit: "contain",
+            width: 1000,
+            height: 1000,
+          },
+          {
+            src: "/images/blog-everyday-personalization-pouch-rose-detail-20260805.jpg",
+            alt: "Close-up of small embroidered flowers in burgundy, blue, lavender, and brown on dusty rose fabric",
+            caption: "Detail",
+            description: "Closed shapes and short stems.",
+            fit: "contain",
+            width: 1000,
+            height: 1000,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+      },
+      {
+        heading: "Edges on Stationery",
+        paragraphs: [
+          "The same idea works on paper you send. Embroidered envelope flaps—blanket stitch, chevron, tiny stars, herringbone—turn ordinary stationery into something someone keeps. One flap, one stitch family, one color story.",
+          "Solids keep the line graphic. For an edge that shifts as you sew, use COSMO® Seasons (140 variegated shades) and keep the stitch simple so the color change stays visible.",
+        ],
+        gallery: [
+          {
+            src: "/images/blog-everyday-personalization-envelopes-20260805.jpg",
+            alt: "Grid of cream envelopes with different embroidered flap-edge stitch patterns in red, brown, and variegated colors",
+            caption: "Stitched flaps",
+            description: "One flap, one stitch family.",
+            fit: "contain",
+            width: 1271,
+            height: 1589,
+          },
+          {
+            src: "/images/blog-everyday-personalization-seasons-cool-20260805.jpg",
+            alt: "Six COSMO Seasons variegated embroidery floss skeins in cool blue, teal, green, and pink families",
+            caption: "Seasons for shifting edges",
+            description: "One skein—color moves as you stitch.",
+            fit: "contain",
+            width: 1440,
+            height: 1800,
+          },
+        ],
+        galleryVariant: "comparison",
+        galleryZoom: true,
+        linkCta: {
+          label: "Explore COSMO Seasons",
+          href: "/floss/seasons",
+        },
+      },
+      {
+        heading: "Thread for Marks That Get Used",
+        paragraphs: [
+          "Everyday marks need thread that stays clear after handling and laundering. COSMO® No. 25 is extra-long staple cotton with a soft, silk-like luster—not Egyptian cotton—so satin fills and crisp outlines keep their definition on caps, bags, and pockets. Match a short solid shortlist to the cloth you already own; reach for Seasons only when you want the color to travel for you.",
+        ],
+        linkCta: {
+          label: "Explore COSMO No. 25 floss",
+          href: "/floss",
+        },
+      },
+      {
+        heading: "A Mark That Belongs to Someone",
+        paragraphs: [
+          "A bow on a cap, a daisy on a pouch, a stitched flap, an initial on a pocket—small marks are enough. Start with one motif, one color family, and an object you already use or send.",
+        ],
+      },
+    ],
+    ctaLabel: "Explore COSMO Threads",
+    ctaDescription:
+      "Shop COSMO® No. 25 solids and Seasons for initials, tiny florals, and personalized edges.",
+    cta: {
+      label: "Shop COSMO Floss",
+      href: "/floss",
+    },
+  },
+
+  {
     slug: "painting-with-crosses",
     title: "Painting with Crosses: Creating Depth in Pictorial Cross-Stitch",
     excerpt:
