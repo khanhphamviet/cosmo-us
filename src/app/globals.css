@@ -642,6 +642,14 @@ img { display: block; max-width: 100%; height: auto; }
   letter-spacing: 0.005em;
   margin: 0;
 }
+/* 100 Ladies — sans lockup so numerals match “Ladies” visually */
+.ladies100-page .ladies100-hero-title,
+.blog-article--100-ladies .blog-article-title {
+  font-family: var(--brand-sans);
+  font-weight: 600;
+  font-variant-numeric: lining-nums tabular-nums;
+  letter-spacing: 0.01em;
+}
 .blog-article-body {
   font-size: var(--blog-body);
   line-height: 1.75;

@@ -366,7 +366,14 @@ function Section({
 export default function BlogArticle({ post }: Props) {
   return (
     <article
-      className="blog-article"
+      className={[
+        "blog-article",
+        post.slug === "100-ladies-embroidery-fabric"
+          ? "blog-article--100-ladies"
+          : "",
+      ]
+        .filter(Boolean)
+        .join(" ")}
       style={
         post.heroAspectRatio
           ? ({ "--blog-hero-aspect": post.heroAspectRatio } as CSSProperties)

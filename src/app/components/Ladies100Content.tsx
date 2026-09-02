@@ -237,7 +237,7 @@ export default function Ladies100Content() {
         </p>
         <ProductStoryLink
           href="/stories/100-ladies-embroidery-fabric"
-          title="100 Ladies®: Design Your Own Fashion Story"
+          title="100 Ladies: Design Your Own Fashion Story"
         />
       </section>
     </div>
