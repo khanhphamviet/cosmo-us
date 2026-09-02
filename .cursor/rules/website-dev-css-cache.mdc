@@ -1,0 +1,33 @@
+---
+description: Local dev CSS cache — use webpack dev and dev:clean after globals.css edits
+globs: src/app/globals.css,package.json
+alwaysApply: false
+---
+
+# Local Dev CSS Cache
+
+**Policy:** Default local dev uses **webpack**, not Turbopack, so `globals.css` HMR stays in sync with JSX.
+
+## Why
+
+Turbopack (`next dev --turbopack`) can serve **stale CSS** from `.next` while component HTML updates via HMR. Production builds are always fresh; localhost may look wrong until cache is cleared.
+
+## Commands
+
+| Script | Use |
+|--------|-----|
+| `npm run dev` | Normal dev (**webpack** — preferred) |
+| `npm run dev:turbo` | Faster dev when not editing global CSS |
+| `npm run dev:clean` | Styles still wrong after `globals.css` changes — deletes `.next` then starts webpack dev |
+
+## After editing `globals.css`
+
+1. Save the file; webpack dev should hot-reload CSS.
+2. If localhost still shows old styles: stop dev, run `npm run dev:clean`, hard-refresh browser (`Cmd+Shift+R`).
+3. Verify in DevTools that the expected rule exists in the loaded CSS bundle.
+
+## Agent checklist
+
+- [ ] After `globals.css` typography/layout changes, remind user to hard-refresh if verifying locally
+- [ ] Do not assume localhost matches production if only Turbopack dev was running with a stale `.next`
+- [ ] Prefer `npm run dev` (webpack) over `dev:turbo` when changing global styles
