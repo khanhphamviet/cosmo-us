@@ -3,14 +3,16 @@ import Image from "next/image";
 export default function BrandHero() {
   return (
     <section className="brand-hero">
-      <Image
-        src="/images/brand-hero-floss.png"
-        alt="COSMO embroidery floss skein"
-        fill
-        priority
-        sizes="100vw"
-        className="brand-hero-bg"
-      />
+      <div className="brand-hero-media">
+        <Image
+          src="/images/brand-hero-floss.png"
+          alt="COSMO embroidery floss skein"
+          fill
+          priority
+          sizes="(max-width: 900px) 100vw, (max-width: 1200px) 92vw, 1100px"
+          className="brand-hero-bg"
+        />
+      </div>
       <div className="brand-hero-overlay" aria-hidden="true" />
       <div className="brand-hero-inner">
         <div className="brand-hero-copy">

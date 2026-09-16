@@ -318,6 +318,11 @@ img { display: block; max-width: 100%; height: auto; }
   border-bottom: 1px solid var(--border);
   background: var(--bg-light);
 }
+.brand-hero-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
 .brand-hero-bg {
   object-fit: cover;
   object-position: 88% 42%;
@@ -326,6 +331,7 @@ img { display: block; max-width: 100%; height: auto; }
   position: absolute;
   inset: 0;
   z-index: 1;
+  pointer-events: none;
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0.98) 0%,
@@ -4810,51 +4816,53 @@ img { display: block; max-width: 100%; height: auto; }
   .footer-top { gap: 32px; }
   .footer-nav { gap: 28px; }
 
+  /* Stack: clear photo on top, solid copy band below (no translucent wash) */
   .brand-hero {
     width: calc(100% - 40px);
-    height: clamp(280px, 42vw, 340px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .brand-hero-media {
+    position: relative;
+    inset: auto;
+    width: 100%;
+    height: clamp(210px, 56vw, 300px);
+    flex-shrink: 0;
   }
   .brand-hero-bg {
-    object-position: 84% 40%;
+    object-position: 82% 38%;
   }
-  /* Top stays clear; denser white only behind bottom-aligned copy */
   .brand-hero-overlay {
-    background: linear-gradient(
-      180deg,
-      transparent 0%,
-      transparent 40%,
-      rgba(255, 255, 255, 0.5) 58%,
-      rgba(255, 255, 255, 0.9) 78%,
-      rgba(255, 255, 255, 0.98) 100%
-    );
+    display: none;
   }
   .brand-hero-inner {
-    align-items: flex-end;
-    padding: 0 20px 28px;
+    position: relative;
+    height: auto;
+    align-items: flex-start;
+    padding: 22px 20px 26px;
+    background: var(--bg-light);
   }
   .brand-hero-copy {
     max-width: 100%;
   }
-  .brand-hero-title,
-  .brand-hero-subtitle {
-    text-shadow: 0 0 18px rgba(255, 255, 255, 0.95);
-  }
   .brand-hero-title {
-    font-size: clamp(1.3125rem, 4.2vw + 0.55rem, 1.625rem);
-    line-height: 1.3;
+    font-size: clamp(1.375rem, 3.8vw + 0.7rem, 1.75rem);
+    line-height: 1.28;
   }
   .brand-hero-subtitle {
-    font-size: clamp(0.9375rem, 2.5vw + 0.55rem, 1.125rem);
+    font-size: clamp(1rem, 2.2vw + 0.65rem, 1.1875rem);
     margin-top: 12px;
   }
   .brand-hero-rule {
-    margin: 12px 0 10px;
+    margin: 14px 0 12px;
     width: 44px;
   }
   .brand-hero-body {
-    font-size: 0.8125rem;
-    line-height: 1.65;
-    color: #333;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    color: #555;
   }
 
   .brand-story-inner {
@@ -4919,6 +4927,12 @@ img { display: block; max-width: 100%; height: auto; }
 
   .brand-hero {
     width: calc(100% - 32px);
+  }
+  .brand-hero-media {
+    height: clamp(190px, 58vw, 260px);
+  }
+  .brand-hero-inner {
+    padding: 18px 16px 22px;
   }
 
   /* Hero — font handled by clamp */
