@@ -8,7 +8,7 @@ import SiteJsonLd from "./components/SiteJsonLd";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import { brandSans, brandSerif } from "./fonts";
 import { PRODUCT_NAV } from "./data/productNav";
-import { SITE_NAME, SITE_URL } from "./data/site";
+import { LECIEN_GLOBAL_URL, SITE_NAME, SITE_URL } from "./data/site";
 
 const bingVerification = process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION;
 
@@ -103,7 +103,17 @@ export default function RootLayout({
         <SiteJsonLd />
         {/* ── US OFFICIAL STORE BANNER — required every page (PE compliance) ── */}
         <div className="us-banner">
-          Operated by TANAAKK INC., Authorized U.S. Seller for LECIEN COSMO
+          <span className="us-banner-text">
+            Operated by TANAAKK INC., Authorized U.S. Seller for LECIEN COSMO
+          </span>
+          <a
+            className="us-banner-link"
+            href={LECIEN_GLOBAL_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LECIEN GLOBAL&nbsp;↗
+          </a>
         </div>
 
         {/* ── HEADER ── */}
@@ -136,7 +146,17 @@ export default function RootLayout({
             <div className="footer-top">
               <div className="footer-brand">
                 <h2>COSMO</h2>
-                <p>Embroidery by <a href="https://www.lecien.co.jp/embroidery" target="_blank" rel="noopener noreferrer">LECIEN Corporation</a></p>
+                <p className="footer-brand-lecien">LECIEN Corporation</p>
+                <p>
+                  <a
+                    className="footer-lecien-global"
+                    href={LECIEN_GLOBAL_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Visit LECIEN Global&nbsp;↗
+                  </a>
+                </p>
               </div>
               <nav className="footer-nav">
                 <div className="footer-col">
