@@ -4817,12 +4817,14 @@ img { display: block; max-width: 100%; height: auto; }
   .brand-hero-bg {
     object-position: 84% 40%;
   }
+  /* Keep photo clear; soft white only under bottom-aligned copy */
   .brand-hero-overlay {
     background: linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.1) 0%,
-      rgba(255, 255, 255, 0.65) 45%,
-      rgba(255, 255, 255, 0.96) 100%
+      transparent 0%,
+      transparent 58%,
+      rgba(255, 255, 255, 0.55) 78%,
+      rgba(255, 255, 255, 0.92) 100%
     );
   }
   .brand-hero-inner {
