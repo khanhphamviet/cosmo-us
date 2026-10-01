@@ -25,9 +25,9 @@ export default function BrandHero() {
             </span>
           </h1>
           <p className="brand-hero-subtitle">
-            <span className="brand-hero-subtitle-line">Designed in Kyoto,</span>
+            <span className="brand-hero-subtitle-line">Designed in Kyoto.</span>
             <span className="brand-hero-subtitle-line">
-              Crafted with Care in Japan.
+              Crafted with care in Japan.
             </span>
           </p>
           <hr className="brand-hero-rule" />

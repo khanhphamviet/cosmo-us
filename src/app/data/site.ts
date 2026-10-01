@@ -5,7 +5,7 @@ export const GA_MEASUREMENT_ID =
 export const FAIRE_STORE_URL = "https://lecien.faire.com";
 export const LECIEN_EMBROIDERY_URL = "https://www.lecien.co.jp/en/embroidery";
 /** LECIEN Global embroidery site (header/footer outbound link) */
-export const LECIEN_GLOBAL_URL = "https://www.lecien.com/embroidery";
+export const LECIEN_GLOBAL_URL = "https://www.lecien.co.jp/en/embroidery";
 export const INSTAGRAM_URL = "https://instagram.com/lecien_cosmo/";
 
 export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
